@@ -18,4 +18,4 @@ Welcome to the Smart Car Parking Management System repository! This project intr
 
 - **Environmentally Friendly:** Reduce emissions and promote eco-friendly practices with efficient parking management.
 
-Streamline parking operations and elevate the parking experience with our Smart Car Parking Management System. Enhance convenience, security, and efficiency for both facility operators and vehicle owners.
+Streamline parking operations and elevate the parking experience with my Smart Car Parking Management System. Enhance convenience, security, and efficiency for both facility operators and vehicle owners.
