@@ -1,6 +1,6 @@
 # Smart Car Parking Management System
 
-Welcome to the Smart Car Parking Management System repository! This project introduces an innovative parking management system driven by the STM32F401VE microcontroller. Experience efficient, hassle-free parking with real-time monitoring and smart features.
+Welcome to the Smart Car Parking Management System repository! This project introduces an innovative parking management system driven by the STM32F401VE microcontroller. Experience efficient, hassle-free parking with real-time monitoring and smart features. 
 
 **Key Features:**
 
