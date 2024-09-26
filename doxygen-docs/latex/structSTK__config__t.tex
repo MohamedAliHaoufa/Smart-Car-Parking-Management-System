@@ -1,0 +1,67 @@
+\hypertarget{structSTK__config__t}{}\doxysection{STK\+\_\+config\+\_\+t Struct Reference}
+\label{structSTK__config__t}\index{STK\_config\_t@{STK\_config\_t}}
+
+
+Sys\+Tick Configuration Structure Definition.  
+
+
+
+
+{\ttfamily \#include $<$stm32f401xx\+\_\+systick\+\_\+driver.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{structSTK__config__t_af5e465ba2aee429eaf4b33645bd8715f}{running\+\_\+mode}}
+\item 
+\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{structSTK__config__t_a3251cbde2183963314badf4b7d677f5b}{clock\+\_\+config}}
+\item 
+\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{structSTK__config__t_adc68bc4b1a7ccf2644f37e2976d87d36}{interrupt\+\_\+config}}
+\item 
+\mbox{\hyperlink{group__Platform__Types_ga4b435a49c74bb91f284f075e63416cb6}{uint32}} \mbox{\hyperlink{structSTK__config__t_a8002bce004a2bf27e5377d41b984269f}{reload\+\_\+value}}
+\item 
+void($\ast$ \mbox{\hyperlink{structSTK__config__t_a52e8b47c23f58e1206f452b4739787ac}{Callback\+\_\+\+Function}} )(void)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Sys\+Tick Configuration Structure Definition. 
+
+This structure contains the configuration options for the Sys\+Tick timer, including the running mode, clock source, interrupt configuration, and reload value. A callback function can also be specified to handle the Sys\+Tick interrupt. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structSTK__config__t_a52e8b47c23f58e1206f452b4739787ac}\label{structSTK__config__t_a52e8b47c23f58e1206f452b4739787ac}} 
+\index{STK\_config\_t@{STK\_config\_t}!Callback\_Function@{Callback\_Function}}
+\index{Callback\_Function@{Callback\_Function}!STK\_config\_t@{STK\_config\_t}}
+\doxysubsubsection{\texorpdfstring{Callback\_Function}{Callback\_Function}}
+{\footnotesize\ttfamily void($\ast$ STK\+\_\+config\+\_\+t\+::\+Callback\+\_\+\+Function) (void)}
+
+Pointer to the callback function for Sys\+Tick interrupt \mbox{\Hypertarget{structSTK__config__t_a3251cbde2183963314badf4b7d677f5b}\label{structSTK__config__t_a3251cbde2183963314badf4b7d677f5b}} 
+\index{STK\_config\_t@{STK\_config\_t}!clock\_config@{clock\_config}}
+\index{clock\_config@{clock\_config}!STK\_config\_t@{STK\_config\_t}}
+\doxysubsubsection{\texorpdfstring{clock\_config}{clock\_config}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} STK\+\_\+config\+\_\+t\+::clock\+\_\+config}
+
+\mbox{\hyperlink{group__stk__clock__config__define}{Sys\+Tick Clock Configuration}} -\/ Clock source for the Sys\+Tick timer \mbox{\Hypertarget{structSTK__config__t_adc68bc4b1a7ccf2644f37e2976d87d36}\label{structSTK__config__t_adc68bc4b1a7ccf2644f37e2976d87d36}} 
+\index{STK\_config\_t@{STK\_config\_t}!interrupt\_config@{interrupt\_config}}
+\index{interrupt\_config@{interrupt\_config}!STK\_config\_t@{STK\_config\_t}}
+\doxysubsubsection{\texorpdfstring{interrupt\_config}{interrupt\_config}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} STK\+\_\+config\+\_\+t\+::interrupt\+\_\+config}
+
+\mbox{\hyperlink{group__stk__interrupt__config__define}{Sys\+Tick Interrupt Configuration}} -\/ Interrupt enable/disable configuration \mbox{\Hypertarget{structSTK__config__t_a8002bce004a2bf27e5377d41b984269f}\label{structSTK__config__t_a8002bce004a2bf27e5377d41b984269f}} 
+\index{STK\_config\_t@{STK\_config\_t}!reload\_value@{reload\_value}}
+\index{reload\_value@{reload\_value}!STK\_config\_t@{STK\_config\_t}}
+\doxysubsubsection{\texorpdfstring{reload\_value}{reload\_value}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__Platform__Types_ga4b435a49c74bb91f284f075e63416cb6}{uint32}} STK\+\_\+config\+\_\+t\+::reload\+\_\+value}
+
+Reload value to define the Sys\+Tick timer\textquotesingle{}s duration \mbox{\Hypertarget{structSTK__config__t_af5e465ba2aee429eaf4b33645bd8715f}\label{structSTK__config__t_af5e465ba2aee429eaf4b33645bd8715f}} 
+\index{STK\_config\_t@{STK\_config\_t}!running\_mode@{running\_mode}}
+\index{running\_mode@{running\_mode}!STK\_config\_t@{STK\_config\_t}}
+\doxysubsubsection{\texorpdfstring{running\_mode}{running\_mode}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} STK\+\_\+config\+\_\+t\+::running\+\_\+mode}
+
+\mbox{\hyperlink{group__stk__running__mode__define}{Sys\+Tick Running Mode Configuration}} -\/ Running mode of the Sys\+Tick timer 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+drivers/\+Inc/\mbox{\hyperlink{stm32f401xx__systick__driver_8h}{stm32f401xx\+\_\+systick\+\_\+driver.\+h}}\end{DoxyCompactItemize}

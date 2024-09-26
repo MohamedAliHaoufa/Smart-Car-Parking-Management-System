@@ -1,0 +1,43 @@
+\hypertarget{keypad__driver_8c}{}\doxysection{bsp/\+Src/keypad\+\_\+driver.c File Reference}
+\label{keypad__driver_8c}\index{bsp/Src/keypad\_driver.c@{bsp/Src/keypad\_driver.c}}
+
+
+Source file for the keypad driver, implementing functionality to initialize and read input from a keypad connected to the STM32\+F401xx MCU.  
+
+
+{\ttfamily \#include \char`\"{}keypad\+\_\+driver.\+h\char`\"{}}\newline
+Include dependency graph for keypad\+\_\+driver.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{keypad__driver_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__KEYPAD__Functions_ga6251d77640c20427e931246b9b1547f0}{keypad\+\_\+init}} (void)
+\begin{DoxyCompactList}\small\item\em Initializes the keypad by configuring the GPIO pins. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{group__KEYPAD__Functions_gab7128233004e2e4484a3cc37d248a602}{keypad\+\_\+\+Get\+\_\+\+Pressed\+\_\+\+Key}} (void)
+\begin{DoxyCompactList}\small\item\em Reads the pressed key from the keypad. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Source file for the keypad driver, implementing functionality to initialize and read input from a keypad connected to the STM32\+F401xx MCU. 
+
+~\newline
+ \begin{DoxyAuthor}{Author}
+Mohamed Ali Haoufa 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2024-\/09-\/21
+\end{DoxyDate}
+This file contains the implementation of functions for initializing the keypad and reading the pressed key values. It includes definitions and configurations for keypad rows and columns, as well as utility functions to interface with the hardware.
+
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2024 Mohamed Ali Haoufa. All rights reserved. 
+\end{DoxyCopyright}

@@ -1,0 +1,158 @@
+\hypertarget{group__SERVO__MOTOR__Functions}{}\doxysection{API Function Prototypes}
+\label{group__SERVO__MOTOR__Functions}\index{API Function Prototypes@{API Function Prototypes}}
+Collaboration diagram for API Function Prototypes\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__SERVO__MOTOR__Functions}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__SERVO__MOTOR__Functions_ga5d292c70c2c7843dda65c341d109b9ef}{Servo1\+\_\+\+Entry\+\_\+\+Gate\+\_\+\+Init}} (void)
+\begin{DoxyCompactList}\small\item\em Initializes the servo motor for the entry gate. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__SERVO__MOTOR__Functions_gaa346e8092d394ef0ae2baccd5e63fd5a}{Servo1\+\_\+\+Entry\+\_\+\+Gate}} (\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} Direction)
+\begin{DoxyCompactList}\small\item\em Controls the servo motor for the entry gate. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__SERVO__MOTOR__Functions_gad5194df52c75d9269baadcbe291fee52}{Servo2\+\_\+\+Exit\+\_\+\+Gate\+\_\+\+Init}} (void)
+\begin{DoxyCompactList}\small\item\em Initializes the servo motor for the exit gate. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__SERVO__MOTOR__Functions_gaa368c172184920a62f69580c4e595959}{Servo2\+\_\+\+Exit\+\_\+\+Gate}} (\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} Direction)
+\begin{DoxyCompactList}\small\item\em Controls the servo motor for the exit gate. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__SERVO__MOTOR__Functions_gaa346e8092d394ef0ae2baccd5e63fd5a}\label{group__SERVO__MOTOR__Functions_gaa346e8092d394ef0ae2baccd5e63fd5a}} 
+\index{API Function Prototypes@{API Function Prototypes}!Servo1\_Entry\_Gate@{Servo1\_Entry\_Gate}}
+\index{Servo1\_Entry\_Gate@{Servo1\_Entry\_Gate}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{Servo1\_Entry\_Gate()}{Servo1\_Entry\_Gate()}}
+{\footnotesize\ttfamily void Servo1\+\_\+\+Entry\+\_\+\+Gate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}}}]{Direction }\end{DoxyParamCaption})}
+
+
+
+Controls the servo motor for the entry gate. 
+
+This function sets the servo motor to the specified direction (up or down) based on the {\ttfamily Direction} parameter.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Direction} & Specifies the direction of the servo motor. This can be either {\ttfamily SERVO\+\_\+\+UP} to move the gate upwards or {\ttfamily SERVO\+\_\+\+DOWN} to move the gate downwards.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Ensure that {\ttfamily \mbox{\hyperlink{group__SERVO__MOTOR__Functions_ga5d292c70c2c7843dda65c341d109b9ef}{Servo1\+\_\+\+Entry\+\_\+\+Gate\+\_\+\+Init()}}} is called prior to using this function.
+\end{DoxyNote}
+Controls the servo motor for the entry gate.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Direction} & Direction for the servo motor movement (SERVO\+\_\+\+UP or SERVO\+\_\+\+DOWN). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+This function controls the servo motor connected to pin B8 to either move the entry gate up or down.
+\begin{DoxyItemize}
+\item If {\ttfamily Direction} is {\ttfamily SERVO\+\_\+\+UP}, the servo moves to +90 degrees.
+\item If {\ttfamily Direction} is {\ttfamily SERVO\+\_\+\+DOWN}, the servo moves to -\/90 degrees. The movement duration is controlled by setting the pin high, waiting for the required duration, and then setting the pin low. 
+\end{DoxyItemize}\mbox{\Hypertarget{group__SERVO__MOTOR__Functions_ga5d292c70c2c7843dda65c341d109b9ef}\label{group__SERVO__MOTOR__Functions_ga5d292c70c2c7843dda65c341d109b9ef}} 
+\index{API Function Prototypes@{API Function Prototypes}!Servo1\_Entry\_Gate\_Init@{Servo1\_Entry\_Gate\_Init}}
+\index{Servo1\_Entry\_Gate\_Init@{Servo1\_Entry\_Gate\_Init}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{Servo1\_Entry\_Gate\_Init()}{Servo1\_Entry\_Gate\_Init()}}
+{\footnotesize\ttfamily void Servo1\+\_\+\+Entry\+\_\+\+Gate\+\_\+\+Init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Initializes the servo motor for the entry gate. 
+
+This function configures the necessary GPIO and timer settings for controlling the servo motor associated with the entry gate.
+
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This function must be called before operating the entry gate servo motor.
+\end{DoxyNote}
+Initializes the servo motor for the entry gate.
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+This function configures the GPIO pin B8 as an output pin to control Servo Motor 1. The pin configuration includes setting the mode to output, push-\/pull operation type, no pull-\/up/pull-\/down, and fast speed. \mbox{\Hypertarget{group__SERVO__MOTOR__Functions_gaa368c172184920a62f69580c4e595959}\label{group__SERVO__MOTOR__Functions_gaa368c172184920a62f69580c4e595959}} 
+\index{API Function Prototypes@{API Function Prototypes}!Servo2\_Exit\_Gate@{Servo2\_Exit\_Gate}}
+\index{Servo2\_Exit\_Gate@{Servo2\_Exit\_Gate}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{Servo2\_Exit\_Gate()}{Servo2\_Exit\_Gate()}}
+{\footnotesize\ttfamily void Servo2\+\_\+\+Exit\+\_\+\+Gate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}}}]{Direction }\end{DoxyParamCaption})}
+
+
+
+Controls the servo motor for the exit gate. 
+
+This function sets the servo motor to the specified direction (up or down) based on the {\ttfamily Direction} parameter.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Direction} & Specifies the direction of the servo motor. This can be either {\ttfamily SERVO\+\_\+\+UP} to move the gate upwards or {\ttfamily SERVO\+\_\+\+DOWN} to move the gate downwards.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Ensure that {\ttfamily \mbox{\hyperlink{group__SERVO__MOTOR__Functions_gad5194df52c75d9269baadcbe291fee52}{Servo2\+\_\+\+Exit\+\_\+\+Gate\+\_\+\+Init()}}} is called prior to using this function.
+\end{DoxyNote}
+Controls the servo motor for the exit gate.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Direction} & Direction for the servo motor movement (SERVO\+\_\+\+UP or SERVO\+\_\+\+DOWN). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+This function controls the servo motor connected to pin B9 to either move the exit gate up or down.
+\begin{DoxyItemize}
+\item If {\ttfamily Direction} is {\ttfamily SERVO\+\_\+\+UP}, the servo moves to +90 degrees.
+\item If {\ttfamily Direction} is {\ttfamily SERVO\+\_\+\+DOWN}, the servo moves to -\/90 degrees. The movement duration is controlled by setting the pin high, waiting for the required duration, and then setting the pin low. 
+\end{DoxyItemize}\mbox{\Hypertarget{group__SERVO__MOTOR__Functions_gad5194df52c75d9269baadcbe291fee52}\label{group__SERVO__MOTOR__Functions_gad5194df52c75d9269baadcbe291fee52}} 
+\index{API Function Prototypes@{API Function Prototypes}!Servo2\_Exit\_Gate\_Init@{Servo2\_Exit\_Gate\_Init}}
+\index{Servo2\_Exit\_Gate\_Init@{Servo2\_Exit\_Gate\_Init}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{Servo2\_Exit\_Gate\_Init()}{Servo2\_Exit\_Gate\_Init()}}
+{\footnotesize\ttfamily void Servo2\+\_\+\+Exit\+\_\+\+Gate\+\_\+\+Init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Initializes the servo motor for the exit gate. 
+
+This function configures the necessary GPIO and timer settings for controlling the servo motor associated with the exit gate.
+
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This function must be called before operating the exit gate servo motor.
+\end{DoxyNote}
+Initializes the servo motor for the exit gate.
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+This function configures the GPIO pin B9 as an output pin to control Servo Motor 2. The pin configuration includes setting the mode to output, push-\/pull operation type, no pull-\/up/pull-\/down, and fast speed. 

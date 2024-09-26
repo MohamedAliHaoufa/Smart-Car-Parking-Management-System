@@ -1,0 +1,107 @@
+\hypertarget{ecu_8h}{}\doxysection{Inc/ecu.h File Reference}
+\label{ecu_8h}\index{Inc/ecu.h@{Inc/ecu.h}}
+
+
+Header file containing all the necessary information about the STM32\+F401xx MCU.  
+
+
+{\ttfamily \#include \char`\"{}servo\+\_\+motor\+\_\+driver.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lcd\+\_\+driver.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}led\+\_\+driver.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}keypad\+\_\+driver.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}eeprom\+\_\+flash.\+h\char`\"{}}\newline
+Include dependency graph for ecu.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ecu_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{ecu_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__ECU__Macros_ga11e9d667b8fcf94b5d911bdf2e890eb9}{NO\+\_\+\+OF\+\_\+\+SLOTS}}~3
+\begin{DoxyCompactList}\small\item\em Number of parking slots. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__ECU__Macros_ga56d62b1dfc38532b81a2291a0b0541c2}{USERS\+\_\+\+COUNT}}~3
+\begin{DoxyCompactList}\small\item\em Total number of users. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__ECU__Macros_ga17bc39fc649b20234737a25ead9737df}{USER1}}~0
+\begin{DoxyCompactList}\small\item\em User 1 ID. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__ECU__Macros_ga7f174600ff3c059d71cd5d8d30a60bce}{USER2}}~1
+\begin{DoxyCompactList}\small\item\em User 2 ID. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__ECU__Macros_ga5d065a077f4bcb410bdb312606b78b49}{USER3}}~2
+\begin{DoxyCompactList}\small\item\em User 3 ID. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__ECU__Macros_gaa69e52e92bb038f3dc2a918702ba8123}{ENTER\+\_\+\+USART\+\_\+\+INSTANT}}~\mbox{\hyperlink{group__USART__USART__Instances_ga92871691058ff7ccffd7635930cb08da}{USART1}}
+\begin{DoxyCompactList}\small\item\em Enter gate USART instance. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__ECU__Macros_gaba7c28c8b430ccc878d43dea7954ce69}{EXIT\+\_\+\+USART\+\_\+\+INSTANT}}~\mbox{\hyperlink{group__USART__USART__Instances_gaf114a9eab03ca08a6fb720e511595930}{USART2}}
+\begin{DoxyCompactList}\small\item\em Exit gate USART instance. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__ECU__Macros_ga19c892d63e9a58ab7deb2844fbf8c56f}{ENTER\+\_\+\+PIR\+\_\+\+PORT}}~\mbox{\hyperlink{group__GPIO__GPIO__Instances_gac485358099728ddae050db37924dd6b7}{GPIOA}}
+\begin{DoxyCompactList}\small\item\em Enter gate PIR sensor GPIO port. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__ECU__Macros_ga8334c7f95662b61c06cce6814e5bcd70}{ENTER\+\_\+\+PIR\+\_\+\+PIN}}~GPIO\+\_\+\+PIN\+\_\+7
+\begin{DoxyCompactList}\small\item\em Enter gate PIR sensor GPIO pin. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__ECU__Macros_ga20fbf949324cb8370427fb24f6298dbc}{EXIT\+\_\+\+PIR\+\_\+\+PORT}}~\mbox{\hyperlink{group__GPIO__GPIO__Instances_gac485358099728ddae050db37924dd6b7}{GPIOA}}
+\begin{DoxyCompactList}\small\item\em Exit gate PIR sensor GPIO port. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__ECU__Macros_ga533a9a8b37c167f24d44c50a82cab0b9}{EXIT\+\_\+\+PIR\+\_\+\+PIN}}~GPIO\+\_\+\+PIN\+\_\+1
+\begin{DoxyCompactList}\small\item\em Exit gate PIR sensor GPIO pin. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__ID__Check_gaddfbbbd4fbf131c3f3c9b4b22c9e0e8f}{ID\+\_\+\+Check\+\_\+\+Result}} \{ \mbox{\hyperlink{group__ID__Check_ggaddfbbbd4fbf131c3f3c9b4b22c9e0e8fafe599ba251071dc673e82dd5095e39fe}{ID\+\_\+\+NOT\+\_\+\+Found}}
+, \mbox{\hyperlink{group__ID__Check_ggaddfbbbd4fbf131c3f3c9b4b22c9e0e8faf8293453f53ea864570477552d2bf2bb}{ID\+\_\+\+Found}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__ECU__APIs_ga114349133ddf496b9ec98d514f082651}{ECU\+\_\+\+Init}} (void)
+\begin{DoxyCompactList}\small\item\em Initializes all hardware components and peripherals. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__ECU__APIs_ga8f707f3c5d18398a05118002a2d7c92e}{Admin\+\_\+\+Init}} (void)
+\begin{DoxyCompactList}\small\item\em Initializes the admin settings, including setting up user IDs. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__ECU__APIs_gacc7d7576d60033a810374b783a3e1089}{User\+LCD\+\_\+\+Print\+Free\+Slots}} (void)
+\begin{DoxyCompactList}\small\item\em Prints the number of free parking slots on the LCD. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__ID__Check_gaddfbbbd4fbf131c3f3c9b4b22c9e0e8f}{ID\+\_\+\+Check\+\_\+\+Result}} \mbox{\hyperlink{group__ECU__APIs_gaaded311a1a7a0f916cf1d12f6d8b7106}{Check\+\_\+\+ID}} (\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \+\_\+\+ID)
+\begin{DoxyCompactList}\small\item\em Checks if the given ID exists in the system. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{group__ECU__APIs_ga06d565ca71c83a93a053e2edf8714012}{Check\+\_\+\+Flag}} (\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \+\_\+\+ID)
+\begin{DoxyCompactList}\small\item\em Returns the status flag associated with the given ID. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__ECU__APIs_ga0dc95de0d543dc20a08ae05669300e96}{Flag\+\_\+\+SET\+\_\+\+RESET}} (\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \+\_\+\+ID)
+\begin{DoxyCompactList}\small\item\em Toggles the flag associated with the given ID. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{group__ECU__APIs_ga6757e46fabfc552ef0aaa7965b2f2eb3}{Check\+\_\+\+Password}} (\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \+\_\+\+ID)
+\begin{DoxyCompactList}\small\item\em Checks if the entered password matches the stored password for the given ID. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__ECU__APIs_ga0ef83bf1abec10b58e37eea06083b95a}{combine\+Arrays}} (uint8\+\_\+t $\ast$array1, int size1, uint8\+\_\+t $\ast$array2, int size2, uint8\+\_\+t $\ast$array3, int size3, uint8\+\_\+t $\ast$array4, int size4, uint8\+\_\+t $\ast$combined\+Array)
+\begin{DoxyCompactList}\small\item\em Combines four arrays into a single array. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__ECU__APIs_ga834868a3aa2a8b573fb935ea0b4f6f37}{Enter\+\_\+\+Gate\+\_\+\+Open}} (void)
+\begin{DoxyCompactList}\small\item\em Opens the entrance gate and displays the status on the LCD. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__ECU__APIs_gad15430485bcc08c284fe7451e7fb24a2}{Exit\+\_\+\+Gate\+\_\+\+Open}} (void)
+\begin{DoxyCompactList}\small\item\em Opens the exit gate and displays the status on the LCD. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__ECU__APIs_ga23ed05a62f0a4712f8d33022d6ee8695}{Wrong\+\_\+\+RFID}} (void)
+\begin{DoxyCompactList}\small\item\em Triggers the alarm and prints \char`\"{}\+UNKNOWN ID!\char`\"{} on the LCD. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__ECU__APIs_gab08ff0d42e1be4cfb55a0e9f99c9771f}{Trigger\+\_\+\+Alarm}} (\mbox{\hyperlink{structUSART__TypeDef}{USART\+\_\+\+Type\+Def}} $\ast$\+\_\+\+USART)
+\begin{DoxyCompactList}\small\item\em Echoes the entered ID via USART and flashes the red LED. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file containing all the necessary information about the STM32\+F401xx MCU. 
+
+~\newline
+ \begin{DoxyAuthor}{Author}
+Mohamed Ali Haoufa 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2024-\/09-\/21
+\end{DoxyDate}
+This file contains the definitions and macros for the STM32\+F401xx microcontroller peripherals and memory maps. It also provides APIs for the initialization and management of key hardware components and system peripherals used in the application.
+
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2024 
+\end{DoxyCopyright}

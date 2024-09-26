@@ -1,0 +1,78 @@
+\hypertarget{group__KEYPAD__Driver}{}\doxysection{KEYPAD Driver}
+\label{group__KEYPAD__Driver}\index{KEYPAD Driver@{KEYPAD Driver}}
+
+
+Driver for interfacing with a keypad for STM32\+F401xx MCUs.  
+
+
+Collaboration diagram for KEYPAD Driver\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{group__KEYPAD__Driver}
+\end{center}
+\end{figure}
+\doxysubsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{group__KEYPAD__Functions}{API Function Prototypes}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__KEYPAD__Driver_ga523efa4e1291847d32d475a70ae85c24}{KEYPAD\+\_\+\+PORT}}~\mbox{\hyperlink{group__GPIO__GPIO__Instances_gae04bdb5e8acc47cab1d0532e6b0d0763}{GPIOE}}
+\begin{DoxyCompactList}\small\item\em Defines the GPIO port and pins for the keypad. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__KEYPAD__Driver_gabd9688ad154d21624cdfe267048a8afe}\label{group__KEYPAD__Driver_gabd9688ad154d21624cdfe267048a8afe}} 
+\#define {\bfseries KEYPAD\+\_\+\+ROWS}~4
+\item 
+\mbox{\Hypertarget{group__KEYPAD__Driver_ga9b57cc0f3fb296d88842beacef759406}\label{group__KEYPAD__Driver_ga9b57cc0f3fb296d88842beacef759406}} 
+\#define {\bfseries ROW0}~GPIO\+\_\+\+PIN\+\_\+0
+\item 
+\mbox{\Hypertarget{group__KEYPAD__Driver_ga19c3058579f691a6d7a84b90843b94b4}\label{group__KEYPAD__Driver_ga19c3058579f691a6d7a84b90843b94b4}} 
+\#define {\bfseries ROW1}~GPIO\+\_\+\+PIN\+\_\+1
+\item 
+\mbox{\Hypertarget{group__KEYPAD__Driver_ga7e621a2fee10ba3a2bd9641e8ef01267}\label{group__KEYPAD__Driver_ga7e621a2fee10ba3a2bd9641e8ef01267}} 
+\#define {\bfseries ROW2}~GPIO\+\_\+\+PIN\+\_\+3
+\item 
+\mbox{\Hypertarget{group__KEYPAD__Driver_ga97453a94a7c983fbc183a5a7aec8fd7f}\label{group__KEYPAD__Driver_ga97453a94a7c983fbc183a5a7aec8fd7f}} 
+\#define {\bfseries ROW3}~GPIO\+\_\+\+PIN\+\_\+4
+\item 
+\mbox{\Hypertarget{group__KEYPAD__Driver_gaa2475470b1b54f61b0f112b9340a4d6f}\label{group__KEYPAD__Driver_gaa2475470b1b54f61b0f112b9340a4d6f}} 
+\#define {\bfseries KEYPAD\+\_\+\+COLS}~3
+\item 
+\mbox{\Hypertarget{group__KEYPAD__Driver_gae62d8f75226ea8375bea932aa52a4936}\label{group__KEYPAD__Driver_gae62d8f75226ea8375bea932aa52a4936}} 
+\#define {\bfseries COL0}~GPIO\+\_\+\+PIN\+\_\+5
+\item 
+\mbox{\Hypertarget{group__KEYPAD__Driver_ga9c43cc82671177bdb2b4ac78035ed01b}\label{group__KEYPAD__Driver_ga9c43cc82671177bdb2b4ac78035ed01b}} 
+\#define {\bfseries COL1}~GPIO\+\_\+\+PIN\+\_\+6
+\item 
+\mbox{\Hypertarget{group__KEYPAD__Driver_ga90090f6ae9c2a1d93ab868b45baa545d}\label{group__KEYPAD__Driver_ga90090f6ae9c2a1d93ab868b45baa545d}} 
+\#define {\bfseries COL2}~GPIO\+\_\+\+PIN\+\_\+7
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Driver for interfacing with a keypad for STM32\+F401xx MCUs. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__KEYPAD__Driver_ga523efa4e1291847d32d475a70ae85c24}\label{group__KEYPAD__Driver_ga523efa4e1291847d32d475a70ae85c24}} 
+\index{KEYPAD Driver@{KEYPAD Driver}!KEYPAD\_PORT@{KEYPAD\_PORT}}
+\index{KEYPAD\_PORT@{KEYPAD\_PORT}!KEYPAD Driver@{KEYPAD Driver}}
+\doxysubsubsection{\texorpdfstring{KEYPAD\_PORT}{KEYPAD\_PORT}}
+{\footnotesize\ttfamily \#define KEYPAD\+\_\+\+PORT~\mbox{\hyperlink{group__GPIO__GPIO__Instances_gae04bdb5e8acc47cab1d0532e6b0d0763}{GPIOE}}}
+
+
+
+Defines the GPIO port and pins for the keypad. 
+
+The following macros are used to configure the keypad\+:
+\begin{DoxyItemize}
+\item KEYPAD\+\_\+\+PORT\+: GPIO port used for the keypad.
+\item KEYPAD\+\_\+\+ROWS\+: Number of rows in the keypad.
+\item ROW0, ROW1, ROW2, ROW3\+: GPIO pins for each row.
+\item KEYPAD\+\_\+\+COLS\+: Number of columns in the keypad.
+\item COL0, COL1, COL2\+: GPIO pins for each column. 
+\end{DoxyItemize}

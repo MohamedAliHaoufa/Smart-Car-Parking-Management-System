@@ -1,0 +1,58 @@
+\hypertarget{eeprom__flash_8h}{}\doxysection{bsp/\+Inc/eeprom\+\_\+flash.h File Reference}
+\label{eeprom__flash_8h}\index{bsp/Inc/eeprom\_flash.h@{bsp/Inc/eeprom\_flash.h}}
+
+
+Header file for EEPROM flash memory operations.  
+
+
+{\ttfamily \#include \char`\"{}stm32f401xx\+\_\+i2c\+\_\+driver.\+h\char`\"{}}\newline
+Include dependency graph for eeprom\+\_\+flash.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{eeprom__flash_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{eeprom__flash_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__EEPROM__Constants_ga89bacbcd9ce2663258e852e7fbc098f0}{EEPROM\+\_\+\+Slave\+\_\+address}}~0x50
+\begin{DoxyCompactList}\small\item\em AT24\+C1024B EEPROM slave address for I2C communication. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__EEPROM__Functions_ga9b96be87feb3d06051077ffd4c53f38d}{EEPROM\+\_\+\+Init}} (void)
+\begin{DoxyCompactList}\small\item\em Initializes the EEPROM for communication. \end{DoxyCompactList}\item 
+unsigned char \mbox{\hyperlink{group__EEPROM__Functions_ga62809128ad58a308650f2001b3c45e58}{EEPROM\+\_\+\+Write\+\_\+\+NBytes}} (unsigned int Memory\+\_\+address, unsigned char $\ast$bytes, uint8\+\_\+t Data\+\_\+\+Length)
+\begin{DoxyCompactList}\small\item\em Writes multiple bytes to the EEPROM. \end{DoxyCompactList}\item 
+unsigned char \mbox{\hyperlink{group__EEPROM__Functions_gafa97580968925317b35a8cfd4d254f75}{EEPROM\+\_\+\+Read\+\_\+byte}} (unsigned int Memory\+\_\+address, uint8\+\_\+t $\ast$dataout, uint8\+\_\+t datalen)
+\begin{DoxyCompactList}\small\item\em Reads a byte from the EEPROM. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file for EEPROM flash memory operations. 
+
+\begin{DoxyAuthor}{Author}
+Mohamed Ali Haoufa 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2024-\/09-\/21
+\end{DoxyDate}
+This file provides the function prototypes and constants for initializing and managing EEPROM flash memory using the STM32\+F401xx MCU. It includes functions for writing and reading data from the EEPROM and defines the EEPROM slave address used in I2C communication.
+
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2024 Mohamed Ali Haoufa. All rights reserved.
+\end{DoxyCopyright}
+The EEPROM is configured as an I2C slave device with the address 0x50. The provided functions allow for initialization, writing, and reading data from the AT24\+C1024B EEPROM. Ensure the correct I2C driver is included and configured for communication with the EEPROM. 

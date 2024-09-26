@@ -1,0 +1,75 @@
+\hypertarget{structGPIO__PinConfig__t}{}\doxysection{GPIO\+\_\+\+Pin\+Config\+\_\+t Struct Reference}
+\label{structGPIO__PinConfig__t}\index{GPIO\_PinConfig\_t@{GPIO\_PinConfig\_t}}
+
+
+Configuration structure for GPIO pins.  
+
+
+
+
+{\ttfamily \#include $<$stm32f401xx\+\_\+gpio\+\_\+driver.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{structGPIO__PinConfig__t_aaef24834232c9e91d7eb227f2ee5f43c}{GPIO\+\_\+\+MODE}}
+\item 
+\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{structGPIO__PinConfig__t_a22860e7be09224bbe77e5b164d5a3a0d}{GPIO\+\_\+\+Pin\+Speed}}
+\item 
+\mbox{\hyperlink{group__Platform__Types_ga05f6b0ae8f6a6e135b0e290c25fe0e4e}{uint16}} \mbox{\hyperlink{structGPIO__PinConfig__t_a0dc995f12026331d4c377d397058086a}{GPIO\+\_\+\+Pin\+Number}}
+\item 
+\mbox{\hyperlink{group__Platform__Types_ga4b435a49c74bb91f284f075e63416cb6}{uint32}} \mbox{\hyperlink{structGPIO__PinConfig__t_ad6e92d51803bfa00241f0f2dec813299}{GPIO\+\_\+\+Pin\+Pu\+Pd\+Control}}
+\item 
+\mbox{\hyperlink{group__Platform__Types_ga4b435a49c74bb91f284f075e63416cb6}{uint32}} \mbox{\hyperlink{structGPIO__PinConfig__t_ab3a988bac527892d5b05fa69ca0c000b}{GPIO\+\_\+\+Pin\+OPType}}
+\item 
+\mbox{\hyperlink{group__Platform__Types_ga4b435a49c74bb91f284f075e63416cb6}{uint32}} \mbox{\hyperlink{structGPIO__PinConfig__t_ad848183bbf3bdf97028c6a2d8d36de66}{GPIO\+\_\+\+Pin\+Alt\+Fun\+Mode}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Configuration structure for GPIO pins. 
+
+This structure defines the configuration parameters for a GPIO pin, including mode, speed, pull-\/up/pull-\/down configuration, output type, and alternate function mode. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structGPIO__PinConfig__t_aaef24834232c9e91d7eb227f2ee5f43c}\label{structGPIO__PinConfig__t_aaef24834232c9e91d7eb227f2ee5f43c}} 
+\index{GPIO\_PinConfig\_t@{GPIO\_PinConfig\_t}!GPIO\_MODE@{GPIO\_MODE}}
+\index{GPIO\_MODE@{GPIO\_MODE}!GPIO\_PinConfig\_t@{GPIO\_PinConfig\_t}}
+\doxysubsubsection{\texorpdfstring{GPIO\_MODE}{GPIO\_MODE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} GPIO\+\_\+\+Pin\+Config\+\_\+t\+::\+GPIO\+\_\+\+MODE}
+
+Specifies the operating mode for the selected pins. This parameter can be a value of \mbox{\hyperlink{group__GPIO__MODE__define}{GPIO Pin Modes}} \mbox{\Hypertarget{structGPIO__PinConfig__t_ad848183bbf3bdf97028c6a2d8d36de66}\label{structGPIO__PinConfig__t_ad848183bbf3bdf97028c6a2d8d36de66}} 
+\index{GPIO\_PinConfig\_t@{GPIO\_PinConfig\_t}!GPIO\_PinAltFunMode@{GPIO\_PinAltFunMode}}
+\index{GPIO\_PinAltFunMode@{GPIO\_PinAltFunMode}!GPIO\_PinConfig\_t@{GPIO\_PinConfig\_t}}
+\doxysubsubsection{\texorpdfstring{GPIO\_PinAltFunMode}{GPIO\_PinAltFunMode}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__Platform__Types_ga4b435a49c74bb91f284f075e63416cb6}{uint32}} GPIO\+\_\+\+Pin\+Config\+\_\+t\+::\+GPIO\+\_\+\+Pin\+Alt\+Fun\+Mode}
+
+Specifies the alternate function mode of the GPIO pin. \mbox{\Hypertarget{structGPIO__PinConfig__t_a0dc995f12026331d4c377d397058086a}\label{structGPIO__PinConfig__t_a0dc995f12026331d4c377d397058086a}} 
+\index{GPIO\_PinConfig\_t@{GPIO\_PinConfig\_t}!GPIO\_PinNumber@{GPIO\_PinNumber}}
+\index{GPIO\_PinNumber@{GPIO\_PinNumber}!GPIO\_PinConfig\_t@{GPIO\_PinConfig\_t}}
+\doxysubsubsection{\texorpdfstring{GPIO\_PinNumber}{GPIO\_PinNumber}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__Platform__Types_ga05f6b0ae8f6a6e135b0e290c25fe0e4e}{uint16}} GPIO\+\_\+\+Pin\+Config\+\_\+t\+::\+GPIO\+\_\+\+Pin\+Number}
+
+Specifies the GPIO pins to be configured. This parameter can be a value of \mbox{\hyperlink{group__GPIO__PINS__define}{GPIO Pin Numbers}} \mbox{\Hypertarget{structGPIO__PinConfig__t_ab3a988bac527892d5b05fa69ca0c000b}\label{structGPIO__PinConfig__t_ab3a988bac527892d5b05fa69ca0c000b}} 
+\index{GPIO\_PinConfig\_t@{GPIO\_PinConfig\_t}!GPIO\_PinOPType@{GPIO\_PinOPType}}
+\index{GPIO\_PinOPType@{GPIO\_PinOPType}!GPIO\_PinConfig\_t@{GPIO\_PinConfig\_t}}
+\doxysubsubsection{\texorpdfstring{GPIO\_PinOPType}{GPIO\_PinOPType}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__Platform__Types_ga4b435a49c74bb91f284f075e63416cb6}{uint32}} GPIO\+\_\+\+Pin\+Config\+\_\+t\+::\+GPIO\+\_\+\+Pin\+OPType}
+
+Specifies the output type of the GPIO pin. \mbox{\Hypertarget{structGPIO__PinConfig__t_ad6e92d51803bfa00241f0f2dec813299}\label{structGPIO__PinConfig__t_ad6e92d51803bfa00241f0f2dec813299}} 
+\index{GPIO\_PinConfig\_t@{GPIO\_PinConfig\_t}!GPIO\_PinPuPdControl@{GPIO\_PinPuPdControl}}
+\index{GPIO\_PinPuPdControl@{GPIO\_PinPuPdControl}!GPIO\_PinConfig\_t@{GPIO\_PinConfig\_t}}
+\doxysubsubsection{\texorpdfstring{GPIO\_PinPuPdControl}{GPIO\_PinPuPdControl}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__Platform__Types_ga4b435a49c74bb91f284f075e63416cb6}{uint32}} GPIO\+\_\+\+Pin\+Config\+\_\+t\+::\+GPIO\+\_\+\+Pin\+Pu\+Pd\+Control}
+
+Specifies the pull-\/up/pull-\/down configuration for the GPIO pin. \mbox{\Hypertarget{structGPIO__PinConfig__t_a22860e7be09224bbe77e5b164d5a3a0d}\label{structGPIO__PinConfig__t_a22860e7be09224bbe77e5b164d5a3a0d}} 
+\index{GPIO\_PinConfig\_t@{GPIO\_PinConfig\_t}!GPIO\_PinSpeed@{GPIO\_PinSpeed}}
+\index{GPIO\_PinSpeed@{GPIO\_PinSpeed}!GPIO\_PinConfig\_t@{GPIO\_PinConfig\_t}}
+\doxysubsubsection{\texorpdfstring{GPIO\_PinSpeed}{GPIO\_PinSpeed}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} GPIO\+\_\+\+Pin\+Config\+\_\+t\+::\+GPIO\+\_\+\+Pin\+Speed}
+
+Specifies the speed for the selected pins. This parameter can be a value of \mbox{\hyperlink{group__GPIO__SPEED__define}{GPIO Pin Speeds}} 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+drivers/\+Inc/\mbox{\hyperlink{stm32f401xx__gpio__driver_8h}{stm32f401xx\+\_\+gpio\+\_\+driver.\+h}}\end{DoxyCompactItemize}

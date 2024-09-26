@@ -1,0 +1,111 @@
+\hypertarget{stm32f401xx__rcc__driver_8h}{}\doxysection{drivers/\+Inc/stm32f401xx\+\_\+rcc\+\_\+driver.h File Reference}
+\label{stm32f401xx__rcc__driver_8h}\index{drivers/Inc/stm32f401xx\_rcc\_driver.h@{drivers/Inc/stm32f401xx\_rcc\_driver.h}}
+
+
+Header file for RCC (Reset and Clock Control) driver for STM32\+F401xx MCU.  
+
+
+{\ttfamily \#include \char`\"{}stm32f401xx.\+h\char`\"{}}\newline
+Include dependency graph for stm32f401xx\+\_\+rcc\+\_\+driver.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{stm32f401xx__rcc__driver_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{stm32f401xx__rcc__driver_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__RCC__CLOCK__SOURCE__define_gae3a86c3918526efe2258ecbb34b91587}{RCC\+\_\+\+PLLCFGR\+\_\+\+PLLSRC\+\_\+\+HSE}}~((uint32\+\_\+t)0x00400000)
+\item 
+\#define \mbox{\hyperlink{group__RCC__CLOCK__SOURCE__define_gaaa8c76e274d0f6dd2cefb5d0b17fbc37}{HSI\+\_\+\+VALUE}}~16000000U
+\item 
+\#define \mbox{\hyperlink{group__RCC__CLOCK__SOURCE__define_gaeafcff4f57440c60e64812dddd13e7cb}{HSE\+\_\+\+VALUE}}~8000000U
+\item 
+\#define \mbox{\hyperlink{group__RCC__PERIPHERALS__define_ga5f294ce1b65c56d4d52d2ce1d131f9f9}{RCC\+\_\+\+GPIOA}}~((uint8\+\_\+t)0x00)
+\item 
+\#define \mbox{\hyperlink{group__RCC__PERIPHERALS__define_ga37d84b496623cbe20d28971a58de2586}{RCC\+\_\+\+GPIOB}}~((uint8\+\_\+t)0x01)
+\item 
+\#define \mbox{\hyperlink{group__RCC__PERIPHERALS__define_ga159b9b9aa5c8fee4ec3b665a8ad29359}{RCC\+\_\+\+GPIOC}}~((uint8\+\_\+t)0x02)
+\item 
+\#define \mbox{\hyperlink{group__RCC__PERIPHERALS__define_ga7ac2be461cf8ca143c9d58572b189297}{RCC\+\_\+\+GPIOD}}~((uint8\+\_\+t)0x03)
+\item 
+\#define \mbox{\hyperlink{group__RCC__PERIPHERALS__define_ga92706799c31e1e5db1c8a03563c80f6b}{RCC\+\_\+\+GPIOE}}~((uint8\+\_\+t)0x04)
+\item 
+\#define \mbox{\hyperlink{group__RCC__PERIPHERALS__define_ga2999200b6ef5e9d440706c4eab6941cd}{RCC\+\_\+\+USART1}}~((uint8\+\_\+t)0x08)
+\item 
+\#define \mbox{\hyperlink{group__RCC__PERIPHERALS__define_ga17fa46b68c52bea4152920055ece2c51}{RCC\+\_\+\+USART2}}~((uint8\+\_\+t)0x09)
+\item 
+\#define \mbox{\hyperlink{group__RCC__PERIPHERALS__define_ga04140e6ae760b17d4d3bb0ff7db5b80e}{RCC\+\_\+\+USART6}}~((uint8\+\_\+t)0x0A)
+\item 
+\#define \mbox{\hyperlink{group__RCC__PERIPHERALS__define_ga1892ce13cbaab99f88c1f807c6479542}{RCC\+\_\+\+SPI1}}~((uint8\+\_\+t)0x0B)
+\item 
+\#define \mbox{\hyperlink{group__RCC__PERIPHERALS__define_ga1c85464045b1bfb086abda79b2f22551}{RCC\+\_\+\+SPI2}}~((uint8\+\_\+t)0x0C)
+\item 
+\#define \mbox{\hyperlink{group__RCC__PERIPHERALS__define_ga25a455985188b6c424c359accafed697}{RCC\+\_\+\+I2\+C1}}~((uint8\+\_\+t)0x0D)
+\item 
+\#define \mbox{\hyperlink{group__RCC__PERIPHERALS__define_ga21cd85c4faf575ec92f2de4d077db1b2}{RCC\+\_\+\+I2\+C2}}~((uint8\+\_\+t)0x0E)
+\item 
+\#define \mbox{\hyperlink{group__RCC__PERIPHERALS__define_gae296cc820be125aa891c3d8a2b6a5d3d}{RCC\+\_\+\+CRC}}~((uint8\+\_\+t)0x0F)
+\item 
+\#define \mbox{\hyperlink{group__RCC__PERIPHERALS__define_ga5dfaf9be400253a806d0f35d07fc7141}{RCC\+\_\+\+TIM2}}~((uint8\+\_\+t)0x10)
+\item 
+\#define \mbox{\hyperlink{group__RCC__PERIPHERALS__define_ga83eb5bda59e67d59bb8a9d8e257140af}{RCC\+\_\+\+SYSCFG}}~((uint8\+\_\+t)0x11)
+\item 
+\#define \mbox{\hyperlink{group__RCC__CLOCK__SOURCE__define_ga398d391450723dc81869e8f64eb0bcb7}{HSI\+\_\+\+RC\+\_\+\+CLK}}~8000000\+UL
+\item 
+\#define \mbox{\hyperlink{group__RCC__CLOCK__SOURCE__define_ga1c1cd962e8c172fc60edfaf3ee4e2d14}{HSE\+\_\+\+CLK}}~8000000\+UL
+\item 
+\#define \mbox{\hyperlink{group__RCC__CLOCK__SOURCE__define_ga2b2e7a7ac69c392f70ffd4c91c451b7c}{RCC\+\_\+\+SELECT\+\_\+\+HSI}}~((uint8\+\_\+t)0x00)
+\item 
+\#define \mbox{\hyperlink{group__RCC__CLOCK__SOURCE__define_gac23052965c2b7f648c67b556e562e42c}{RCC\+\_\+\+SELECT\+\_\+\+HSE}}~((uint8\+\_\+t)0x01)
+\item 
+\#define \mbox{\hyperlink{group__RCC__CLOCK__SOURCE__define_ga04b00d0ff2fb4a123ebed0b90b2b4103}{RCC\+\_\+\+SELECT\+\_\+\+PLL}}~((uint8\+\_\+t)0x02)
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__RCC__Functions_ga750edf69053325d7ba3c84bff5714a61}{MCAL\+\_\+\+RCC\+\_\+\+Select\+\_\+\+Clock}} (uint8\+\_\+t clock)
+\begin{DoxyCompactList}\small\item\em Select the clock source for the MCU. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__RCC__Functions_gae8f354a9bcd4e18bc159459cce9c771a}{MCAL\+\_\+\+RCC\+\_\+\+Enable\+\_\+\+Peripheral}} (uint8\+\_\+t peripheral)
+\begin{DoxyCompactList}\small\item\em Enable the clock for a specific peripheral. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__RCC__Functions_ga893a5d2c3fc9f1b06b275e3e7364fba0}{MCAL\+\_\+\+RCC\+\_\+\+Reset\+\_\+\+Peripheral}} (uint8\+\_\+t peripheral)
+\begin{DoxyCompactList}\small\item\em Reset a specific peripheral. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{group__RCC__Functions_gaf3af4b099caa7ae245b400edfd0d45dd}{MCAL\+\_\+\+RCC\+\_\+\+Get\+SYS\+\_\+\+CLKFreq}} (void)
+\begin{DoxyCompactList}\small\item\em Get the frequency of the system clock. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{group__RCC__Functions_gad2d528cfb287685ebb89c8779ec19c16}{MCAL\+\_\+\+RCC\+\_\+\+Get\+HCLKFreq}} (void)
+\begin{DoxyCompactList}\small\item\em Get the frequency of the AHB bus clock. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{group__RCC__Functions_ga94962bbf968298b8547a9b97fd63ce1c}{MCAL\+\_\+\+RCC\+\_\+\+Get\+PCLK1\+Freq}} (void)
+\begin{DoxyCompactList}\small\item\em Get the frequency of the APB1 bus clock. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{group__RCC__Functions_gabd40775c1d738c3196b2bbde4dc1bc3c}{MCAL\+\_\+\+RCC\+\_\+\+Get\+PCLK2\+Freq}} (void)
+\begin{DoxyCompactList}\small\item\em Get the frequency of the APB2 bus clock. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{group__RCC__Functions_gad90448e5252ea8b6e9d0063909cb9446}{RCC\+\_\+\+Get\+PLLOutput\+Clock}} (void)
+\begin{DoxyCompactList}\small\item\em Get the frequency of the PLL (Phase-\/\+Locked Loop) output clock. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file for RCC (Reset and Clock Control) driver for STM32\+F401xx MCU. 
+
+\begin{DoxyAuthor}{Author}
+Mohamed Ali Haoufa 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2024-\/09-\/21
+\end{DoxyDate}
+This header file defines the macros, constants, and function prototypes for managing the Reset and Clock Control (RCC) peripheral of the STM32\+F401xx microcontroller. It includes clock source selection, peripheral enablement, and clock frequency retrieval.
+
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2024 Mohamed Ali Haoufa 
+\end{DoxyCopyright}

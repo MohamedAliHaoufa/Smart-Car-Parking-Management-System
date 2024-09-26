@@ -1,0 +1,264 @@
+\hypertarget{group__I2C__Driver}{}\doxysection{I2C Driver}
+\label{group__I2C__Driver}\index{I2C Driver@{I2C Driver}}
+
+
+I2C driver APIs for STM32\+F401xx MCU.  
+
+
+Collaboration diagram for I2C Driver\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{group__I2C__Driver}
+\end{center}
+\end{figure}
+\doxysubsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{group__I2C__Speed__Define}{I2\+C Speed Definitions}}
+\item 
+\mbox{\hyperlink{group__I2C__StretchMode__Define}{I2\+C Stretch Mode Definitions}}
+\item 
+\mbox{\hyperlink{group__I2C__Mode__Define}{I2\+C Mode Definitions}}
+\item 
+\mbox{\hyperlink{group__I2C__Addressing__Slave}{I2\+C Addressing Modes}}
+\item 
+\mbox{\hyperlink{group__I2C__Ack__Control__Define}{I2\+C Acknowledge Control Definitions}}
+\item 
+\mbox{\hyperlink{group__I2C__ENGC}{I2\+C General Call Enable Definitions}}
+\item 
+\mbox{\hyperlink{group__I2C__Functions}{API Function Prototypes}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structS__I2C__Slave__address}{S\+\_\+\+I2\+C\+\_\+\+Slave\+\_\+address}}
+\begin{DoxyCompactList}\small\item\em Structure for I2C slave address configuration. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structS__I2C__Config__t}{S\+\_\+\+I2\+C\+\_\+\+Config\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Structure for I2C configuration. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__I2C__Driver_gafb74f066bbdcc3f4b4d838405a46675b}{Slave\+\_\+\+State}} \{ \newline
+\mbox{\hyperlink{group__I2C__Driver_ggafb74f066bbdcc3f4b4d838405a46675ba5fadbc77673cd23c60381ee9000fa294}{I2\+C\+\_\+\+EV\+\_\+\+Stop}}
+, \mbox{\hyperlink{group__I2C__Driver_ggafb74f066bbdcc3f4b4d838405a46675ba646602ba2f03a6dacd0e63142b8d67b5}{I2\+C\+\_\+\+Error\+\_\+\+AF}}
+, \mbox{\hyperlink{group__I2C__Driver_ggafb74f066bbdcc3f4b4d838405a46675baaa8a1ada8461aee6e673ecd6a842cc72}{I2\+C\+\_\+\+Ev\+\_\+\+Address\+\_\+\+Matched}}
+, \mbox{\hyperlink{group__I2C__Driver_ggafb74f066bbdcc3f4b4d838405a46675ba3c469e88540218534a7658e2404fea75}{I2\+C\+\_\+\+Ev\+\_\+\+Data\+\_\+\+Req}}
+, \newline
+\mbox{\hyperlink{group__I2C__Driver_ggafb74f066bbdcc3f4b4d838405a46675ba5975c5cba0fe51d6d7e3950d9fe4d289}{I2\+C\+\_\+\+Ev\+\_\+\+Data\+\_\+\+RCV}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeration for I2C slave states. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__I2C__Driver_gad28059d4f7c1eed28786a8a79a8eebca}{Stop\+Condition}} \{ \mbox{\hyperlink{group__I2C__Driver_ggad28059d4f7c1eed28786a8a79a8eebcaafdc4f5674461e7394cae8a43adb17938}{With\+Stop}}
+, \mbox{\hyperlink{group__I2C__Driver_ggad28059d4f7c1eed28786a8a79a8eebcaab05daf7de55896d39332ae1f237685cd}{Without\+Stop}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeration for I2C stop condition. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__I2C__Driver_ga322c6c98c49987a2cdb0d4e16262ddfc}{Repeated\+\_\+\+Start}} \{ \mbox{\hyperlink{group__I2C__Driver_gga322c6c98c49987a2cdb0d4e16262ddfcabd5f9c956752ce4dc707b4624b3a36f7}{Start}}
+, \mbox{\hyperlink{group__I2C__Driver_gga322c6c98c49987a2cdb0d4e16262ddfcaadb35125235cce27e3ce0878d4cd7feb}{Repeated}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeration for I2C repeated start condition. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__I2C__Driver_ga059f052a2fc4426778fd92549bd923d9}{Functional\+\_\+\+State}} \{ \mbox{\hyperlink{group__I2C__Driver_gga059f052a2fc4426778fd92549bd923d9ad3a9df141be0ccf10389b640f492b26d}{DISABLE}}
+, \mbox{\hyperlink{group__I2C__Driver_gga059f052a2fc4426778fd92549bd923d9a7d46875fa3ebd2c34d2756950eda83bf}{ENABLE}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeration for functional state. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__I2C__Driver_ga89136caac2e14c55151f527ac02daaff}{Flag\+Status}} \{ {\bfseries RESET} = 0
+, {\bfseries SET} = !\+RESET
+, \mbox{\hyperlink{group__I2C__Driver_gga89136caac2e14c55151f527ac02daaffa92793663441ced378f4676b8a6524385}{Reset}}
+, \mbox{\hyperlink{group__I2C__Driver_gga89136caac2e14c55151f527ac02daaffa20120ef9c542d271e929c93efa56b665}{Set}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeration for flag status. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__I2C__Driver_ga67a0db04d321a74b7e7fcfd3f1a3f70b}{Status}} \{ \newline
+\mbox{\hyperlink{group__I2C__Driver_gga67a0db04d321a74b7e7fcfd3f1a3f70ba5e10fc52d837ecc365ebc5714c70114b}{I2\+C\+\_\+\+Flag\+\_\+\+Busy}}
+, \mbox{\hyperlink{group__I2C__Driver_gga67a0db04d321a74b7e7fcfd3f1a3f70ba494c582cdbd23916f642f300efb808e6}{EV5}}
+, \mbox{\hyperlink{group__I2C__Driver_gga67a0db04d321a74b7e7fcfd3f1a3f70ba59209ee62853ae0634bc91bcdf412a80}{EV6}}
+, \mbox{\hyperlink{group__I2C__Driver_gga67a0db04d321a74b7e7fcfd3f1a3f70ba0eaac06e6fdd52de131725b891884cf1}{EV7}}
+, \newline
+\mbox{\hyperlink{group__I2C__Driver_gga67a0db04d321a74b7e7fcfd3f1a3f70badcd7d5cea20df0101bf9697abcce25c2}{EV8}}
+, \mbox{\hyperlink{group__I2C__Driver_gga67a0db04d321a74b7e7fcfd3f1a3f70ba019b8162569759cd5137dd2933a3b272}{EV8\+\_\+1}}
+, \mbox{\hyperlink{group__I2C__Driver_gga67a0db04d321a74b7e7fcfd3f1a3f70ba9db62e63f3c926182117469cb269b719}{Master\+\_\+\+Byte\+\_\+\+Transmitting}} = (uint32\+\_\+t)(0x00070080)
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeration for I2C status flags. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__I2C__Driver_gad75a0ed7a23161498c3ab8a520181c4a}{I2\+C\+\_\+\+Direction}} \{ \mbox{\hyperlink{group__I2C__Driver_ggad75a0ed7a23161498c3ab8a520181c4aa85ed1df0ec8457ab5298f45ceb9ee0ef}{I2\+C\+\_\+\+Direction\+\_\+\+Transmitter}}
+, \mbox{\hyperlink{group__I2C__Driver_ggad75a0ed7a23161498c3ab8a520181c4aa006d83e645bf8f7e68e649b1a02d1b39}{I2\+C\+\_\+\+Direction\+\_\+\+Receiver}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeration for I2C direction. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+I2C driver APIs for STM32\+F401xx MCU. 
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{group__I2C__Driver_ga89136caac2e14c55151f527ac02daaff}\label{group__I2C__Driver_ga89136caac2e14c55151f527ac02daaff}} 
+\index{I2C Driver@{I2C Driver}!FlagStatus@{FlagStatus}}
+\index{FlagStatus@{FlagStatus}!I2C Driver@{I2C Driver}}
+\doxysubsubsection{\texorpdfstring{FlagStatus}{FlagStatus}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__Exported__types_ga89136caac2e14c55151f527ac02daaff}{Flag\+Status}}}
+
+
+
+Enumeration for flag status. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Reset@{Reset}!I2C Driver@{I2C Driver}}\index{I2C Driver@{I2C Driver}!Reset@{Reset}}}\mbox{\Hypertarget{group__I2C__Driver_gga89136caac2e14c55151f527ac02daaffa92793663441ced378f4676b8a6524385}\label{group__I2C__Driver_gga89136caac2e14c55151f527ac02daaffa92793663441ced378f4676b8a6524385}} 
+Reset&Flag is reset. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Set@{Set}!I2C Driver@{I2C Driver}}\index{I2C Driver@{I2C Driver}!Set@{Set}}}\mbox{\Hypertarget{group__I2C__Driver_gga89136caac2e14c55151f527ac02daaffa20120ef9c542d271e929c93efa56b665}\label{group__I2C__Driver_gga89136caac2e14c55151f527ac02daaffa20120ef9c542d271e929c93efa56b665}} 
+Set&Flag is set. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{group__I2C__Driver_ga059f052a2fc4426778fd92549bd923d9}\label{group__I2C__Driver_ga059f052a2fc4426778fd92549bd923d9}} 
+\index{I2C Driver@{I2C Driver}!Functional\_State@{Functional\_State}}
+\index{Functional\_State@{Functional\_State}!I2C Driver@{I2C Driver}}
+\doxysubsubsection{\texorpdfstring{Functional\_State}{Functional\_State}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__I2C__Driver_ga059f052a2fc4426778fd92549bd923d9}{Functional\+\_\+\+State}}}
+
+
+
+Enumeration for functional state. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DISABLE@{DISABLE}!I2C Driver@{I2C Driver}}\index{I2C Driver@{I2C Driver}!DISABLE@{DISABLE}}}\mbox{\Hypertarget{group__I2C__Driver_gga059f052a2fc4426778fd92549bd923d9ad3a9df141be0ccf10389b640f492b26d}\label{group__I2C__Driver_gga059f052a2fc4426778fd92549bd923d9ad3a9df141be0ccf10389b640f492b26d}} 
+DISABLE&Disable the functionality. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ENABLE@{ENABLE}!I2C Driver@{I2C Driver}}\index{I2C Driver@{I2C Driver}!ENABLE@{ENABLE}}}\mbox{\Hypertarget{group__I2C__Driver_gga059f052a2fc4426778fd92549bd923d9a7d46875fa3ebd2c34d2756950eda83bf}\label{group__I2C__Driver_gga059f052a2fc4426778fd92549bd923d9a7d46875fa3ebd2c34d2756950eda83bf}} 
+ENABLE&Enable the functionality. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{group__I2C__Driver_gad75a0ed7a23161498c3ab8a520181c4a}\label{group__I2C__Driver_gad75a0ed7a23161498c3ab8a520181c4a}} 
+\index{I2C Driver@{I2C Driver}!I2C\_Direction@{I2C\_Direction}}
+\index{I2C\_Direction@{I2C\_Direction}!I2C Driver@{I2C Driver}}
+\doxysubsubsection{\texorpdfstring{I2C\_Direction}{I2C\_Direction}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__I2C__Driver_gad75a0ed7a23161498c3ab8a520181c4a}{I2\+C\+\_\+\+Direction}}}
+
+
+
+Enumeration for I2C direction. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I2C\_Direction\_Transmitter@{I2C\_Direction\_Transmitter}!I2C Driver@{I2C Driver}}\index{I2C Driver@{I2C Driver}!I2C\_Direction\_Transmitter@{I2C\_Direction\_Transmitter}}}\mbox{\Hypertarget{group__I2C__Driver_ggad75a0ed7a23161498c3ab8a520181c4aa85ed1df0ec8457ab5298f45ceb9ee0ef}\label{group__I2C__Driver_ggad75a0ed7a23161498c3ab8a520181c4aa85ed1df0ec8457ab5298f45ceb9ee0ef}} 
+I2\+C\+\_\+\+Direction\+\_\+\+Transmitter&Transmitter mode. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I2C\_Direction\_Receiver@{I2C\_Direction\_Receiver}!I2C Driver@{I2C Driver}}\index{I2C Driver@{I2C Driver}!I2C\_Direction\_Receiver@{I2C\_Direction\_Receiver}}}\mbox{\Hypertarget{group__I2C__Driver_ggad75a0ed7a23161498c3ab8a520181c4aa006d83e645bf8f7e68e649b1a02d1b39}\label{group__I2C__Driver_ggad75a0ed7a23161498c3ab8a520181c4aa006d83e645bf8f7e68e649b1a02d1b39}} 
+I2\+C\+\_\+\+Direction\+\_\+\+Receiver&Receiver mode. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{group__I2C__Driver_ga322c6c98c49987a2cdb0d4e16262ddfc}\label{group__I2C__Driver_ga322c6c98c49987a2cdb0d4e16262ddfc}} 
+\index{I2C Driver@{I2C Driver}!Repeated\_Start@{Repeated\_Start}}
+\index{Repeated\_Start@{Repeated\_Start}!I2C Driver@{I2C Driver}}
+\doxysubsubsection{\texorpdfstring{Repeated\_Start}{Repeated\_Start}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__I2C__Driver_ga322c6c98c49987a2cdb0d4e16262ddfc}{Repeated\+\_\+\+Start}}}
+
+
+
+Enumeration for I2C repeated start condition. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Start@{Start}!I2C Driver@{I2C Driver}}\index{I2C Driver@{I2C Driver}!Start@{Start}}}\mbox{\Hypertarget{group__I2C__Driver_gga322c6c98c49987a2cdb0d4e16262ddfcabd5f9c956752ce4dc707b4624b3a36f7}\label{group__I2C__Driver_gga322c6c98c49987a2cdb0d4e16262ddfcabd5f9c956752ce4dc707b4624b3a36f7}} 
+Start&Start condition is generated. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Repeated@{Repeated}!I2C Driver@{I2C Driver}}\index{I2C Driver@{I2C Driver}!Repeated@{Repeated}}}\mbox{\Hypertarget{group__I2C__Driver_gga322c6c98c49987a2cdb0d4e16262ddfcaadb35125235cce27e3ce0878d4cd7feb}\label{group__I2C__Driver_gga322c6c98c49987a2cdb0d4e16262ddfcaadb35125235cce27e3ce0878d4cd7feb}} 
+Repeated&Repeated start condition is generated. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{group__I2C__Driver_gafb74f066bbdcc3f4b4d838405a46675b}\label{group__I2C__Driver_gafb74f066bbdcc3f4b4d838405a46675b}} 
+\index{I2C Driver@{I2C Driver}!Slave\_State@{Slave\_State}}
+\index{Slave\_State@{Slave\_State}!I2C Driver@{I2C Driver}}
+\doxysubsubsection{\texorpdfstring{Slave\_State}{Slave\_State}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__I2C__Driver_gafb74f066bbdcc3f4b4d838405a46675b}{Slave\+\_\+\+State}}}
+
+
+
+Enumeration for I2C slave states. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I2C\_EV\_Stop@{I2C\_EV\_Stop}!I2C Driver@{I2C Driver}}\index{I2C Driver@{I2C Driver}!I2C\_EV\_Stop@{I2C\_EV\_Stop}}}\mbox{\Hypertarget{group__I2C__Driver_ggafb74f066bbdcc3f4b4d838405a46675ba5fadbc77673cd23c60381ee9000fa294}\label{group__I2C__Driver_ggafb74f066bbdcc3f4b4d838405a46675ba5fadbc77673cd23c60381ee9000fa294}} 
+I2\+C\+\_\+\+EV\+\_\+\+Stop&Stop condition detected. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I2C\_Error\_AF@{I2C\_Error\_AF}!I2C Driver@{I2C Driver}}\index{I2C Driver@{I2C Driver}!I2C\_Error\_AF@{I2C\_Error\_AF}}}\mbox{\Hypertarget{group__I2C__Driver_ggafb74f066bbdcc3f4b4d838405a46675ba646602ba2f03a6dacd0e63142b8d67b5}\label{group__I2C__Driver_ggafb74f066bbdcc3f4b4d838405a46675ba646602ba2f03a6dacd0e63142b8d67b5}} 
+I2\+C\+\_\+\+Error\+\_\+\+AF&Acknowledge failure error. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I2C\_Ev\_Address\_Matched@{I2C\_Ev\_Address\_Matched}!I2C Driver@{I2C Driver}}\index{I2C Driver@{I2C Driver}!I2C\_Ev\_Address\_Matched@{I2C\_Ev\_Address\_Matched}}}\mbox{\Hypertarget{group__I2C__Driver_ggafb74f066bbdcc3f4b4d838405a46675baaa8a1ada8461aee6e673ecd6a842cc72}\label{group__I2C__Driver_ggafb74f066bbdcc3f4b4d838405a46675baaa8a1ada8461aee6e673ecd6a842cc72}} 
+I2\+C\+\_\+\+Ev\+\_\+\+Address\+\_\+\+Matched&Address matched event. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I2C\_Ev\_Data\_Req@{I2C\_Ev\_Data\_Req}!I2C Driver@{I2C Driver}}\index{I2C Driver@{I2C Driver}!I2C\_Ev\_Data\_Req@{I2C\_Ev\_Data\_Req}}}\mbox{\Hypertarget{group__I2C__Driver_ggafb74f066bbdcc3f4b4d838405a46675ba3c469e88540218534a7658e2404fea75}\label{group__I2C__Driver_ggafb74f066bbdcc3f4b4d838405a46675ba3c469e88540218534a7658e2404fea75}} 
+I2\+C\+\_\+\+Ev\+\_\+\+Data\+\_\+\+Req&Data request event (Slave\+\_\+\+Send\+\_\+\+Data). \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I2C\_Ev\_Data\_RCV@{I2C\_Ev\_Data\_RCV}!I2C Driver@{I2C Driver}}\index{I2C Driver@{I2C Driver}!I2C\_Ev\_Data\_RCV@{I2C\_Ev\_Data\_RCV}}}\mbox{\Hypertarget{group__I2C__Driver_ggafb74f066bbdcc3f4b4d838405a46675ba5975c5cba0fe51d6d7e3950d9fe4d289}\label{group__I2C__Driver_ggafb74f066bbdcc3f4b4d838405a46675ba5975c5cba0fe51d6d7e3950d9fe4d289}} 
+I2\+C\+\_\+\+Ev\+\_\+\+Data\+\_\+\+RCV&Data received event (Slave\+\_\+\+Read\+\_\+\+Data). \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{group__I2C__Driver_ga67a0db04d321a74b7e7fcfd3f1a3f70b}\label{group__I2C__Driver_ga67a0db04d321a74b7e7fcfd3f1a3f70b}} 
+\index{I2C Driver@{I2C Driver}!Status@{Status}}
+\index{Status@{Status}!I2C Driver@{I2C Driver}}
+\doxysubsubsection{\texorpdfstring{Status}{Status}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__I2C__Driver_ga67a0db04d321a74b7e7fcfd3f1a3f70b}{Status}}}
+
+
+
+Enumeration for I2C status flags. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I2C\_Flag\_Busy@{I2C\_Flag\_Busy}!I2C Driver@{I2C Driver}}\index{I2C Driver@{I2C Driver}!I2C\_Flag\_Busy@{I2C\_Flag\_Busy}}}\mbox{\Hypertarget{group__I2C__Driver_gga67a0db04d321a74b7e7fcfd3f1a3f70ba5e10fc52d837ecc365ebc5714c70114b}\label{group__I2C__Driver_gga67a0db04d321a74b7e7fcfd3f1a3f70ba5e10fc52d837ecc365ebc5714c70114b}} 
+I2\+C\+\_\+\+Flag\+\_\+\+Busy&I2C is busy. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EV5@{EV5}!I2C Driver@{I2C Driver}}\index{I2C Driver@{I2C Driver}!EV5@{EV5}}}\mbox{\Hypertarget{group__I2C__Driver_gga67a0db04d321a74b7e7fcfd3f1a3f70ba494c582cdbd23916f642f300efb808e6}\label{group__I2C__Driver_gga67a0db04d321a74b7e7fcfd3f1a3f70ba494c582cdbd23916f642f300efb808e6}} 
+EV5&Event 5\+: Start bit transmitted. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EV6@{EV6}!I2C Driver@{I2C Driver}}\index{I2C Driver@{I2C Driver}!EV6@{EV6}}}\mbox{\Hypertarget{group__I2C__Driver_gga67a0db04d321a74b7e7fcfd3f1a3f70ba59209ee62853ae0634bc91bcdf412a80}\label{group__I2C__Driver_gga67a0db04d321a74b7e7fcfd3f1a3f70ba59209ee62853ae0634bc91bcdf412a80}} 
+EV6&Event 6\+: Address sent. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EV7@{EV7}!I2C Driver@{I2C Driver}}\index{I2C Driver@{I2C Driver}!EV7@{EV7}}}\mbox{\Hypertarget{group__I2C__Driver_gga67a0db04d321a74b7e7fcfd3f1a3f70ba0eaac06e6fdd52de131725b891884cf1}\label{group__I2C__Driver_gga67a0db04d321a74b7e7fcfd3f1a3f70ba0eaac06e6fdd52de131725b891884cf1}} 
+EV7&Event 7\+: Data register not empty. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EV8@{EV8}!I2C Driver@{I2C Driver}}\index{I2C Driver@{I2C Driver}!EV8@{EV8}}}\mbox{\Hypertarget{group__I2C__Driver_gga67a0db04d321a74b7e7fcfd3f1a3f70badcd7d5cea20df0101bf9697abcce25c2}\label{group__I2C__Driver_gga67a0db04d321a74b7e7fcfd3f1a3f70badcd7d5cea20df0101bf9697abcce25c2}} 
+EV8&Event 8\+: Transmit data register empty. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EV8\_1@{EV8\_1}!I2C Driver@{I2C Driver}}\index{I2C Driver@{I2C Driver}!EV8\_1@{EV8\_1}}}\mbox{\Hypertarget{group__I2C__Driver_gga67a0db04d321a74b7e7fcfd3f1a3f70ba019b8162569759cd5137dd2933a3b272}\label{group__I2C__Driver_gga67a0db04d321a74b7e7fcfd3f1a3f70ba019b8162569759cd5137dd2933a3b272}} 
+EV8\+\_\+1&Event 8\+\_\+1\+: Transmit data register empty, write Data1 in DR. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Master\_Byte\_Transmitting@{Master\_Byte\_Transmitting}!I2C Driver@{I2C Driver}}\index{I2C Driver@{I2C Driver}!Master\_Byte\_Transmitting@{Master\_Byte\_Transmitting}}}\mbox{\Hypertarget{group__I2C__Driver_gga67a0db04d321a74b7e7fcfd3f1a3f70ba9db62e63f3c926182117469cb269b719}\label{group__I2C__Driver_gga67a0db04d321a74b7e7fcfd3f1a3f70ba9db62e63f3c926182117469cb269b719}} 
+Master\+\_\+\+Byte\+\_\+\+Transmitting&Master mode, byte transmitting. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{group__I2C__Driver_gad28059d4f7c1eed28786a8a79a8eebca}\label{group__I2C__Driver_gad28059d4f7c1eed28786a8a79a8eebca}} 
+\index{I2C Driver@{I2C Driver}!StopCondition@{StopCondition}}
+\index{StopCondition@{StopCondition}!I2C Driver@{I2C Driver}}
+\doxysubsubsection{\texorpdfstring{StopCondition}{StopCondition}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__I2C__Driver_gad28059d4f7c1eed28786a8a79a8eebca}{Stop\+Condition}}}
+
+
+
+Enumeration for I2C stop condition. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WithStop@{WithStop}!I2C Driver@{I2C Driver}}\index{I2C Driver@{I2C Driver}!WithStop@{WithStop}}}\mbox{\Hypertarget{group__I2C__Driver_ggad28059d4f7c1eed28786a8a79a8eebcaafdc4f5674461e7394cae8a43adb17938}\label{group__I2C__Driver_ggad28059d4f7c1eed28786a8a79a8eebcaafdc4f5674461e7394cae8a43adb17938}} 
+With\+Stop&Stop condition is generated after the transfer. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WithoutStop@{WithoutStop}!I2C Driver@{I2C Driver}}\index{I2C Driver@{I2C Driver}!WithoutStop@{WithoutStop}}}\mbox{\Hypertarget{group__I2C__Driver_ggad28059d4f7c1eed28786a8a79a8eebcaab05daf7de55896d39332ae1f237685cd}\label{group__I2C__Driver_ggad28059d4f7c1eed28786a8a79a8eebcaab05daf7de55896d39332ae1f237685cd}} 
+Without\+Stop&Stop condition is not generated. \\
+\hline
+
+\end{DoxyEnumFields}

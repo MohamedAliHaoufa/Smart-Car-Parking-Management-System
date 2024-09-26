@@ -1,0 +1,106 @@
+\hypertarget{group__TIMER__Functions}{}\doxysection{API Function Prototypes}
+\label{group__TIMER__Functions}\index{API Function Prototypes@{API Function Prototypes}}
+Collaboration diagram for API Function Prototypes\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{group__TIMER__Functions}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__TIMER__Functions_gabb4523665e9a6aab3b16e3d33ae49bc8}{Timer2\+\_\+init}} (void)
+\begin{DoxyCompactList}\small\item\em Initialize Timer 2 (TIM2) for basic timing functionalities. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__TIMER__Functions_ga7b7d0274a670a934f1e92cebd34383d9}{dus}} (int us)
+\begin{DoxyCompactList}\small\item\em Delay execution for a specified number of microseconds. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__TIMER__Functions_ga3259614a52dbe2f0de711bc638b689d1}{dms}} (int ms)
+\begin{DoxyCompactList}\small\item\em Delay execution for a specified number of milliseconds. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__TIMER__Functions_ga3259614a52dbe2f0de711bc638b689d1}\label{group__TIMER__Functions_ga3259614a52dbe2f0de711bc638b689d1}} 
+\index{API Function Prototypes@{API Function Prototypes}!dms@{dms}}
+\index{dms@{dms}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{dms()}{dms()}}
+{\footnotesize\ttfamily void dms (\begin{DoxyParamCaption}\item[{int}]{ms }\end{DoxyParamCaption})}
+
+
+
+Delay execution for a specified number of milliseconds. 
+
+This function uses TIM2 to generate a delay in milliseconds. 
+\begin{DoxyParams}{Parameters}
+{\em ms} & Number of milliseconds to delay.\\
+\hline
+\end{DoxyParams}
+Delay execution for a specified number of milliseconds.
+
+This function generates a delay by repeatedly calling the {\ttfamily dus} function for each millisecond required. It effectively creates a delay by generating multiple microsecond delays.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em ms} & Number of milliseconds to delay.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__TIMER__Functions_ga7b7d0274a670a934f1e92cebd34383d9}\label{group__TIMER__Functions_ga7b7d0274a670a934f1e92cebd34383d9}} 
+\index{API Function Prototypes@{API Function Prototypes}!dus@{dus}}
+\index{dus@{dus}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{dus()}{dus()}}
+{\footnotesize\ttfamily void dus (\begin{DoxyParamCaption}\item[{int}]{us }\end{DoxyParamCaption})}
+
+
+
+Delay execution for a specified number of microseconds. 
+
+This function uses TIM2 to generate a delay in microseconds. 
+\begin{DoxyParams}{Parameters}
+{\em us} & Number of microseconds to delay.\\
+\hline
+\end{DoxyParams}
+Delay execution for a specified number of microseconds.
+
+This function generates a delay by counting timer ticks for the specified number of microseconds using Timer2. The timer is reset and counts up until the desired delay duration is reached.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em us} & Number of microseconds to delay.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__TIMER__Functions_gabb4523665e9a6aab3b16e3d33ae49bc8}\label{group__TIMER__Functions_gabb4523665e9a6aab3b16e3d33ae49bc8}} 
+\index{API Function Prototypes@{API Function Prototypes}!Timer2\_init@{Timer2\_init}}
+\index{Timer2\_init@{Timer2\_init}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{Timer2\_init()}{Timer2\_init()}}
+{\footnotesize\ttfamily void Timer2\+\_\+init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Initialize Timer 2 (TIM2) for basic timing functionalities. 
+
+This function configures the TIM2 peripheral with the necessary prescaler and auto-\/reload values, enabling it to function as a basic timer for timing and delay applications.
+
+Initialize Timer 2 (TIM2) for basic timing functionalities.
+
+This function configures Timer2 with a prescaler and auto-\/reload register to generate interrupts at a specific interval. The timer is set to produce a delay of 50 milliseconds based on the configured settings.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The function enables the clock for Timer2, sets the prescaler to achieve a 1 MHz clock input, and configures the auto-\/reload register for a delay of 50 milliseconds. The timer is started, and the function waits until the timer\textquotesingle{}s update interrupt flag is set. 
+\end{DoxyNote}

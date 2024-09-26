@@ -1,0 +1,268 @@
+\hypertarget{group__SPI__Functions}{}\doxysection{API Function Prototypes}
+\label{group__SPI__Functions}\index{API Function Prototypes@{API Function Prototypes}}
+Collaboration diagram for API Function Prototypes\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{group__SPI__Functions}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__SPI__Functions_gad0933510ba93f5f2399aa9432d95677d}{MCAL\+\_\+\+SPI\+\_\+\+Init}} (\mbox{\hyperlink{structSPI__TypeDef}{SPI\+\_\+\+Type\+Def}} $\ast$SPIx, \mbox{\hyperlink{structS__SPI__Config__t}{S\+\_\+\+SPI\+\_\+\+Config\+\_\+t}} $\ast$Config)
+\begin{DoxyCompactList}\small\item\em Initializes the SPI peripheral according to the specified configuration. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__SPI__Functions_gac9b61ad97e351ca9e9c4b2dfdfff8f12}{MCAL\+\_\+\+SPI\+\_\+\+De\+Init}} (\mbox{\hyperlink{structSPI__TypeDef}{SPI\+\_\+\+Type\+Def}} $\ast$SPIx)
+\begin{DoxyCompactList}\small\item\em Deinitializes the SPI peripheral. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__SPI__Functions_ga5c6038e9c666ffdf7a8d9fc4f01775be}{MCAL\+\_\+\+SPI\+\_\+\+GPIO\+\_\+\+Set\+\_\+\+Pins}} (\mbox{\hyperlink{structSPI__TypeDef}{SPI\+\_\+\+Type\+Def}} $\ast$SPIx)
+\begin{DoxyCompactList}\small\item\em Configures the GPIO pins used for SPI communication. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__SPI__Functions_ga67af48d357d5b49a77b6238923d803f6}{MCAL\+\_\+\+SPI\+\_\+\+Send\+Data}} (\mbox{\hyperlink{structSPI__TypeDef}{SPI\+\_\+\+Type\+Def}} $\ast$SPIx, uint16\+\_\+t $\ast$p\+TXBuffer, enum \mbox{\hyperlink{group__SPI__Driver_ga0977830bf93ba7dd23eed509c7635026}{SPI\+\_\+\+Polling\+Mechanism}} Polling\+\_\+\+En)
+\begin{DoxyCompactList}\small\item\em Sends data through SPI. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__SPI__Functions_ga24b81b28cdd035688be6f966c9112e8b}{MCAL\+\_\+\+SPI\+\_\+\+Receive\+Data}} (\mbox{\hyperlink{structSPI__TypeDef}{SPI\+\_\+\+Type\+Def}} $\ast$SPIx, uint16\+\_\+t $\ast$p\+RXBuffer, enum \mbox{\hyperlink{group__SPI__Driver_ga0977830bf93ba7dd23eed509c7635026}{SPI\+\_\+\+Polling\+Mechanism}} Polling\+\_\+\+En)
+\begin{DoxyCompactList}\small\item\em Receives data from SPI. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__SPI__Functions_ga0440ff036aeb6197d6b2c60e2862d47e}{MCAL\+\_\+\+SPI\+\_\+\+Tx\+\_\+\+Rx}} (\mbox{\hyperlink{structSPI__TypeDef}{SPI\+\_\+\+Type\+Def}} $\ast$SPIx, uint16\+\_\+t $\ast$TX\+\_\+\+RX\+\_\+p\+Buffer, enum \mbox{\hyperlink{group__SPI__Driver_ga0977830bf93ba7dd23eed509c7635026}{SPI\+\_\+\+Polling\+Mechanism}} Polling\+\_\+\+En)
+\begin{DoxyCompactList}\small\item\em Transmits and receives data through SPI. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__SPI__Functions_gac9b61ad97e351ca9e9c4b2dfdfff8f12}\label{group__SPI__Functions_gac9b61ad97e351ca9e9c4b2dfdfff8f12}} 
+\index{API Function Prototypes@{API Function Prototypes}!MCAL\_SPI\_DeInit@{MCAL\_SPI\_DeInit}}
+\index{MCAL\_SPI\_DeInit@{MCAL\_SPI\_DeInit}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{MCAL\_SPI\_DeInit()}{MCAL\_SPI\_DeInit()}}
+{\footnotesize\ttfamily void MCAL\+\_\+\+SPI\+\_\+\+De\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structSPI__TypeDef}{SPI\+\_\+\+Type\+Def}} $\ast$}]{SPIx }\end{DoxyParamCaption})}
+
+
+
+Deinitializes the SPI peripheral. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em SPIx} & Pointer to the SPI peripheral register base address.\\
+\hline
+\end{DoxyParams}
+This function resets the SPI peripheral and disables its interrupt.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em SPIx} & Pointer to the SPI peripheral (SPI1 or SPI2) to deinitialize.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+This function disables the SPI peripheral clock and IRQ. 
+\end{DoxyNote}
+\mbox{\Hypertarget{group__SPI__Functions_ga5c6038e9c666ffdf7a8d9fc4f01775be}\label{group__SPI__Functions_ga5c6038e9c666ffdf7a8d9fc4f01775be}} 
+\index{API Function Prototypes@{API Function Prototypes}!MCAL\_SPI\_GPIO\_Set\_Pins@{MCAL\_SPI\_GPIO\_Set\_Pins}}
+\index{MCAL\_SPI\_GPIO\_Set\_Pins@{MCAL\_SPI\_GPIO\_Set\_Pins}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{MCAL\_SPI\_GPIO\_Set\_Pins()}{MCAL\_SPI\_GPIO\_Set\_Pins()}}
+{\footnotesize\ttfamily void MCAL\+\_\+\+SPI\+\_\+\+GPIO\+\_\+\+Set\+\_\+\+Pins (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structSPI__TypeDef}{SPI\+\_\+\+Type\+Def}} $\ast$}]{SPIx }\end{DoxyParamCaption})}
+
+
+
+Configures the GPIO pins used for SPI communication. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em SPIx} & Pointer to the SPI peripheral register base address.\\
+\hline
+\end{DoxyParams}
+Configures the GPIO pins used for SPI communication.
+
+This function configures the necessary GPIO pins for SPI communication (NSS, SCK, MISO, MOSI) according to the selected SPI peripheral (SPI1 or SPI2) and the device mode (Master or Slave).
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em SPIx} & Pointer to the SPI peripheral (SPI1 or SPI2).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This function sets the alternate function for the pins used in SPI communication.
+\end{DoxyNote}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{group__SPI__Functions_gad0933510ba93f5f2399aa9432d95677d}\label{group__SPI__Functions_gad0933510ba93f5f2399aa9432d95677d}} 
+\index{API Function Prototypes@{API Function Prototypes}!MCAL\_SPI\_Init@{MCAL\_SPI\_Init}}
+\index{MCAL\_SPI\_Init@{MCAL\_SPI\_Init}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{MCAL\_SPI\_Init()}{MCAL\_SPI\_Init()}}
+{\footnotesize\ttfamily void MCAL\+\_\+\+SPI\+\_\+\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structSPI__TypeDef}{SPI\+\_\+\+Type\+Def}} $\ast$}]{SPIx,  }\item[{\mbox{\hyperlink{structS__SPI__Config__t}{S\+\_\+\+SPI\+\_\+\+Config\+\_\+t}} $\ast$}]{Config }\end{DoxyParamCaption})}
+
+
+
+Initializes the SPI peripheral according to the specified configuration. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em SPIx} & Pointer to the SPI peripheral register base address. \\
+\hline
+{\em Config} & Pointer to the SPI configuration structure.\\
+\hline
+\end{DoxyParams}
+Initializes the SPI peripheral according to the specified configuration.
+
+This function configures the SPI peripheral according to the provided configuration.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em SPIx} & Pointer to the SPI peripheral (SPI1 or SPI2) to initialize. \\
+\hline
+\mbox{\texttt{ in}}  & {\em Config} & Pointer to the SPI configuration structure.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+This function enables the SPI peripheral clock and configures the SPI registers according to the specified settings. 
+\end{DoxyNote}
+$<$ Temporary register for SPI CR1 configuration
+
+$<$ Temporary register for SPI CR2 configuration
+
+$<$ Enable SPI bit in CR1
+
+$<$ Set device mode (Master/\+Slave)
+
+$<$ Set communication mode (Full Duplex/\+Transmit/\+Receive)
+
+$<$ Set frame format (MSB/\+LSB)
+
+$<$ Set payload length (8-\/bit/16-\/bit)
+
+$<$ Set clock polarity
+
+$<$ Set clock phase
+
+$<$ Set SPI prescaler\mbox{\Hypertarget{group__SPI__Functions_ga24b81b28cdd035688be6f966c9112e8b}\label{group__SPI__Functions_ga24b81b28cdd035688be6f966c9112e8b}} 
+\index{API Function Prototypes@{API Function Prototypes}!MCAL\_SPI\_ReceiveData@{MCAL\_SPI\_ReceiveData}}
+\index{MCAL\_SPI\_ReceiveData@{MCAL\_SPI\_ReceiveData}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{MCAL\_SPI\_ReceiveData()}{MCAL\_SPI\_ReceiveData()}}
+{\footnotesize\ttfamily void MCAL\+\_\+\+SPI\+\_\+\+Receive\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structSPI__TypeDef}{SPI\+\_\+\+Type\+Def}} $\ast$}]{SPIx,  }\item[{uint16\+\_\+t $\ast$}]{p\+RXBuffer,  }\item[{enum \mbox{\hyperlink{group__SPI__Driver_ga0977830bf93ba7dd23eed509c7635026}{SPI\+\_\+\+Polling\+Mechanism}}}]{Polling\+\_\+\+En }\end{DoxyParamCaption})}
+
+
+
+Receives data from SPI. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em SPIx} & Pointer to the SPI peripheral register base address. \\
+\hline
+{\em p\+RXBuffer} & Pointer to the buffer where received data will be stored. \\
+\hline
+{\em Polling\+\_\+\+En} & Specifies whether polling is enabled or disabled.\\
+\hline
+\end{DoxyParams}
+Receives data from SPI.
+
+This function receives data from the SPI peripheral. It can operate in polling mode or non-\/polling mode.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em SPIx} & Pointer to the SPI peripheral (SPI1 or SPI2) to use for reception. \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+RXBuffer} & Pointer to the buffer where received data will be stored. \\
+\hline
+\mbox{\texttt{ in}}  & {\em Polling\+\_\+\+En} & Indicates whether polling is enabled or not.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+In polling mode, the function waits until the RXNE flag is set before reading data from the data register. 
+\end{DoxyNote}
+$<$ Wait until RXNE flag is set
+
+$<$ Receive data\mbox{\Hypertarget{group__SPI__Functions_ga67af48d357d5b49a77b6238923d803f6}\label{group__SPI__Functions_ga67af48d357d5b49a77b6238923d803f6}} 
+\index{API Function Prototypes@{API Function Prototypes}!MCAL\_SPI\_SendData@{MCAL\_SPI\_SendData}}
+\index{MCAL\_SPI\_SendData@{MCAL\_SPI\_SendData}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{MCAL\_SPI\_SendData()}{MCAL\_SPI\_SendData()}}
+{\footnotesize\ttfamily void MCAL\+\_\+\+SPI\+\_\+\+Send\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structSPI__TypeDef}{SPI\+\_\+\+Type\+Def}} $\ast$}]{SPIx,  }\item[{uint16\+\_\+t $\ast$}]{p\+TXBuffer,  }\item[{enum \mbox{\hyperlink{group__SPI__Driver_ga0977830bf93ba7dd23eed509c7635026}{SPI\+\_\+\+Polling\+Mechanism}}}]{Polling\+\_\+\+En }\end{DoxyParamCaption})}
+
+
+
+Sends data through SPI. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em SPIx} & Pointer to the SPI peripheral register base address. \\
+\hline
+{\em p\+TXBuffer} & Pointer to the buffer containing the data to be transmitted. \\
+\hline
+{\em Polling\+\_\+\+En} & Specifies whether polling is enabled or disabled.\\
+\hline
+\end{DoxyParams}
+Sends data through SPI.
+
+This function transmits data via the SPI peripheral. It can operate in polling mode or non-\/polling mode.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em SPIx} & Pointer to the SPI peripheral (SPI1 or SPI2) to use for transmission. \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+TXBuffer} & Pointer to the data buffer to transmit. \\
+\hline
+\mbox{\texttt{ in}}  & {\em Polling\+\_\+\+En} & Indicates whether polling is enabled or not.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+In polling mode, the function waits until the TXE flag is set before writing data to the data register. 
+\end{DoxyNote}
+$<$ Wait until TXE flag is set
+
+$<$ Send data\mbox{\Hypertarget{group__SPI__Functions_ga0440ff036aeb6197d6b2c60e2862d47e}\label{group__SPI__Functions_ga0440ff036aeb6197d6b2c60e2862d47e}} 
+\index{API Function Prototypes@{API Function Prototypes}!MCAL\_SPI\_Tx\_Rx@{MCAL\_SPI\_Tx\_Rx}}
+\index{MCAL\_SPI\_Tx\_Rx@{MCAL\_SPI\_Tx\_Rx}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{MCAL\_SPI\_Tx\_Rx()}{MCAL\_SPI\_Tx\_Rx()}}
+{\footnotesize\ttfamily void MCAL\+\_\+\+SPI\+\_\+\+Tx\+\_\+\+Rx (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structSPI__TypeDef}{SPI\+\_\+\+Type\+Def}} $\ast$}]{SPIX,  }\item[{uint16\+\_\+t $\ast$}]{TX\+\_\+\+RX\+\_\+p\+Buffer,  }\item[{enum \mbox{\hyperlink{group__SPI__Driver_ga0977830bf93ba7dd23eed509c7635026}{SPI\+\_\+\+Polling\+Mechanism}}}]{Polling\+\_\+\+En }\end{DoxyParamCaption})}
+
+
+
+Transmits and receives data through SPI. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em SPIx} & Pointer to the SPI peripheral register base address. \\
+\hline
+{\em TX\+\_\+\+RX\+\_\+p\+Buffer} & Pointer to the buffer containing data to be transmitted and where received data will be stored. \\
+\hline
+{\em Polling\+\_\+\+En} & Specifies whether polling is enabled or disabled.\\
+\hline
+\end{DoxyParams}
+Transmits and receives data through SPI.
+
+This function handles the transmission and reception of data through the specified SPI peripheral. It writes data to the SPI data register and waits for the transmission and reception to complete.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em SPIx} & Pointer to the SPI peripheral (SPI1 or SPI2). \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em TX\+\_\+\+RX\+\_\+p\+Buffer} & Pointer to the data buffer for transmission and reception. \\
+\hline
+\mbox{\texttt{ in}}  & {\em Polling\+\_\+\+En} & Specifies whether polling should be used (Enabled/\+Disabled).\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}

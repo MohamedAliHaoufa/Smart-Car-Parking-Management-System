@@ -1,0 +1,80 @@
+\hypertarget{group__SPI__Driver}{}\doxysection{SPI Driver}
+\label{group__SPI__Driver}\index{SPI Driver@{SPI Driver}}
+
+
+SPI driver APIs for STM32\+F401xx MCU.  
+
+
+Collaboration diagram for SPI Driver\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{group__SPI__Driver}
+\end{center}
+\end{figure}
+\doxysubsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{group__SPI__Mode__Define}{SPI Mode Definitions}}
+\item 
+\mbox{\hyperlink{group__SPI__Communication__Mode__Define}{SPI Communication Mode Definitions}}
+\item 
+\mbox{\hyperlink{group__SPI__Payload__Length__Define}{SPI Payload Length Definitions}}
+\item 
+\mbox{\hyperlink{group__SPI__Frame__Format__Define}{SPI Frame Format Definitions}}
+\item 
+\mbox{\hyperlink{group__SPI__Clock__Polarity__Define}{SPI Clock Polarity Definitions}}
+\item 
+\mbox{\hyperlink{group__SPI__Clock__Phase__Define}{SPI Clock Phase Definitions}}
+\item 
+\mbox{\hyperlink{group__SPI__NSS__Define}{SPI NSS Definitions}}
+\item 
+\mbox{\hyperlink{group__SPI__Prescaler__Define}{SPI Prescaler Definitions}}
+\item 
+\mbox{\hyperlink{group__SPI__IRQ__Enable__Define}{SPI IRQ Enable Definitions}}
+\item 
+\mbox{\hyperlink{group__SPI__Functions}{API Function Prototypes}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structS__IRQ__SRC}{S\+\_\+\+IRQ\+\_\+\+SRC}}
+\begin{DoxyCompactList}\small\item\em Structure to identify the source of SPI interrupts. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structS__SPI__Config__t}{S\+\_\+\+SPI\+\_\+\+Config\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Configuration structure for SPI. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__SPI__Driver_ga0977830bf93ba7dd23eed509c7635026}{SPI\+\_\+\+Polling\+Mechanism}} \{ \mbox{\hyperlink{group__SPI__Driver_gga0977830bf93ba7dd23eed509c7635026a19edda9ba8a31d63e5007e1880440553}{Enabled}}
+, \mbox{\hyperlink{group__SPI__Driver_gga0977830bf93ba7dd23eed509c7635026af31108c24daa76e574c8259d9fe46c09}{Disabled}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeration for SPI polling mechanisms. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+SPI driver APIs for STM32\+F401xx MCU. 
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{group__SPI__Driver_ga0977830bf93ba7dd23eed509c7635026}\label{group__SPI__Driver_ga0977830bf93ba7dd23eed509c7635026}} 
+\index{SPI Driver@{SPI Driver}!SPI\_PollingMechanism@{SPI\_PollingMechanism}}
+\index{SPI\_PollingMechanism@{SPI\_PollingMechanism}!SPI Driver@{SPI Driver}}
+\doxysubsubsection{\texorpdfstring{SPI\_PollingMechanism}{SPI\_PollingMechanism}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__SPI__Driver_ga0977830bf93ba7dd23eed509c7635026}{SPI\+\_\+\+Polling\+Mechanism}}}
+
+
+
+Enumeration for SPI polling mechanisms. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Enabled@{Enabled}!SPI Driver@{SPI Driver}}\index{SPI Driver@{SPI Driver}!Enabled@{Enabled}}}\mbox{\Hypertarget{group__SPI__Driver_gga0977830bf93ba7dd23eed509c7635026a19edda9ba8a31d63e5007e1880440553}\label{group__SPI__Driver_gga0977830bf93ba7dd23eed509c7635026a19edda9ba8a31d63e5007e1880440553}} 
+Enabled&Polling is enabled \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Disabled@{Disabled}!SPI Driver@{SPI Driver}}\index{SPI Driver@{SPI Driver}!Disabled@{Disabled}}}\mbox{\Hypertarget{group__SPI__Driver_gga0977830bf93ba7dd23eed509c7635026af31108c24daa76e574c8259d9fe46c09}\label{group__SPI__Driver_gga0977830bf93ba7dd23eed509c7635026af31108c24daa76e574c8259d9fe46c09}} 
+Disabled&Polling is disabled \\
+\hline
+
+\end{DoxyEnumFields}

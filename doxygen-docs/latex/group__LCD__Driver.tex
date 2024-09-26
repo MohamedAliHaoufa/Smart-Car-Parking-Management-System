@@ -1,0 +1,88 @@
+\hypertarget{group__LCD__Driver}{}\doxysection{LCD Driver}
+\label{group__LCD__Driver}\index{LCD Driver@{LCD Driver}}
+
+
+LCD (Liquid Crystal Display) driver for STM32\+F401xx MCUs.  
+
+
+Collaboration diagram for LCD Driver\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=317pt]{group__LCD__Driver}
+\end{center}
+\end{figure}
+\doxysubsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{group__LCD__COMMANDS__define}{LCD Commands}}
+\item 
+\mbox{\hyperlink{group__LCD__ROWS__POS__define}{LCD Row Positions}}
+\item 
+\mbox{\hyperlink{group__LCD__Functions}{API Function Prototypes}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structLCD__t}{LCD\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Structure for configuring the LCD. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__LCD__Driver_gac7a0680c1b56eb884b1225e0791c3b85}{LCD\+\_\+\+MODE\+\_\+t}} \{ \mbox{\hyperlink{group__LCD__Driver_ggac7a0680c1b56eb884b1225e0791c3b85a5b880d2c16f25ea80561fd510d1228db}{LCD\+\_\+8\+BIT}}
+, \mbox{\hyperlink{group__LCD__Driver_ggac7a0680c1b56eb884b1225e0791c3b85a9321a3799433406c0c454fb571f5fca0}{LCD\+\_\+4\+BIT}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enum for specifying the LCD mode. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__LCD__Driver_ga76915c0e9fa9564d35da87ce5dc6083d}{LCD\+\_\+\+ROWS\+\_\+t}} \{ \mbox{\hyperlink{group__LCD__Driver_gga76915c0e9fa9564d35da87ce5dc6083da96c49c04b86f0f54e9710e0e6e07874b}{LCD\+\_\+2\+ROWS}}
+, \mbox{\hyperlink{group__LCD__Driver_gga76915c0e9fa9564d35da87ce5dc6083da01eb20a4631c5f4675081a0228ea9c0e}{LCD\+\_\+4\+ROWS}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enum for specifying the number of rows on the LCD. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+LCD (Liquid Crystal Display) driver for STM32\+F401xx MCUs. 
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{group__LCD__Driver_gac7a0680c1b56eb884b1225e0791c3b85}\label{group__LCD__Driver_gac7a0680c1b56eb884b1225e0791c3b85}} 
+\index{LCD Driver@{LCD Driver}!LCD\_MODE\_t@{LCD\_MODE\_t}}
+\index{LCD\_MODE\_t@{LCD\_MODE\_t}!LCD Driver@{LCD Driver}}
+\doxysubsubsection{\texorpdfstring{LCD\_MODE\_t}{LCD\_MODE\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__LCD__Driver_gac7a0680c1b56eb884b1225e0791c3b85}{LCD\+\_\+\+MODE\+\_\+t}}}
+
+
+
+Enum for specifying the LCD mode. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LCD\_8BIT@{LCD\_8BIT}!LCD Driver@{LCD Driver}}\index{LCD Driver@{LCD Driver}!LCD\_8BIT@{LCD\_8BIT}}}\mbox{\Hypertarget{group__LCD__Driver_ggac7a0680c1b56eb884b1225e0791c3b85a5b880d2c16f25ea80561fd510d1228db}\label{group__LCD__Driver_ggac7a0680c1b56eb884b1225e0791c3b85a5b880d2c16f25ea80561fd510d1228db}} 
+LCD\+\_\+8\+BIT&8-\/bit mode for LCD communication. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LCD\_4BIT@{LCD\_4BIT}!LCD Driver@{LCD Driver}}\index{LCD Driver@{LCD Driver}!LCD\_4BIT@{LCD\_4BIT}}}\mbox{\Hypertarget{group__LCD__Driver_ggac7a0680c1b56eb884b1225e0791c3b85a9321a3799433406c0c454fb571f5fca0}\label{group__LCD__Driver_ggac7a0680c1b56eb884b1225e0791c3b85a9321a3799433406c0c454fb571f5fca0}} 
+LCD\+\_\+4\+BIT&4-\/bit mode for LCD communication. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{group__LCD__Driver_ga76915c0e9fa9564d35da87ce5dc6083d}\label{group__LCD__Driver_ga76915c0e9fa9564d35da87ce5dc6083d}} 
+\index{LCD Driver@{LCD Driver}!LCD\_ROWS\_t@{LCD\_ROWS\_t}}
+\index{LCD\_ROWS\_t@{LCD\_ROWS\_t}!LCD Driver@{LCD Driver}}
+\doxysubsubsection{\texorpdfstring{LCD\_ROWS\_t}{LCD\_ROWS\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__LCD__Driver_ga76915c0e9fa9564d35da87ce5dc6083d}{LCD\+\_\+\+ROWS\+\_\+t}}}
+
+
+
+Enum for specifying the number of rows on the LCD. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LCD\_2ROWS@{LCD\_2ROWS}!LCD Driver@{LCD Driver}}\index{LCD Driver@{LCD Driver}!LCD\_2ROWS@{LCD\_2ROWS}}}\mbox{\Hypertarget{group__LCD__Driver_gga76915c0e9fa9564d35da87ce5dc6083da96c49c04b86f0f54e9710e0e6e07874b}\label{group__LCD__Driver_gga76915c0e9fa9564d35da87ce5dc6083da96c49c04b86f0f54e9710e0e6e07874b}} 
+LCD\+\_\+2\+ROWS&LCD with 2 rows. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LCD\_4ROWS@{LCD\_4ROWS}!LCD Driver@{LCD Driver}}\index{LCD Driver@{LCD Driver}!LCD\_4ROWS@{LCD\_4ROWS}}}\mbox{\Hypertarget{group__LCD__Driver_gga76915c0e9fa9564d35da87ce5dc6083da01eb20a4631c5f4675081a0228ea9c0e}\label{group__LCD__Driver_gga76915c0e9fa9564d35da87ce5dc6083da01eb20a4631c5f4675081a0228ea9c0e}} 
+LCD\+\_\+4\+ROWS&LCD with 4 rows. \\
+\hline
+
+\end{DoxyEnumFields}

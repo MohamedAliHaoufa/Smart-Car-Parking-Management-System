@@ -1,0 +1,64 @@
+\hypertarget{group__SYSTICK__Driver}{}\doxysection{SYSTICK Driver}
+\label{group__SYSTICK__Driver}\index{SYSTICK Driver@{SYSTICK Driver}}
+
+
+SYSTICK driver APIs for STM32\+F401xx MCU.  
+
+
+Collaboration diagram for SYSTICK Driver\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__SYSTICK__Driver}
+\end{center}
+\end{figure}
+\doxysubsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{group__stk__interrupt__config__define}{Sys\+Tick Interrupt Configuration}}
+\item 
+\mbox{\hyperlink{group__stk__clock__config__define}{Sys\+Tick Clock Configuration}}
+\item 
+\mbox{\hyperlink{group__stk__running__mode__define}{Sys\+Tick Running Mode Configuration}}
+\item 
+\mbox{\hyperlink{group__SYSTICK__Functions}{API Function Prototypes}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structSTK__config__t}{STK\+\_\+config\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Sys\+Tick Configuration Structure Definition. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__SYSTICK__Driver_gabee289c1d34dc724976a06f35b3c2679}\label{group__SYSTICK__Driver_gabee289c1d34dc724976a06f35b3c2679}} 
+\#define \mbox{\hyperlink{group__SYSTICK__Driver_gabee289c1d34dc724976a06f35b3c2679}{STK\+\_\+\+INTERRUPT\+\_\+\+MASK}}~0x02\+UL
+\begin{DoxyCompactList}\small\item\em Interrupt enable/disable mask for the Sys\+Tick timer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__SYSTICK__Driver_gae089bdae66af7609d335f5b3aa653600}\label{group__SYSTICK__Driver_gae089bdae66af7609d335f5b3aa653600}} 
+\#define \mbox{\hyperlink{group__SYSTICK__Driver_gae089bdae66af7609d335f5b3aa653600}{STK\+\_\+\+CLK\+\_\+\+MASK}}~0x04\+UL
+\begin{DoxyCompactList}\small\item\em Clock source mask for the Sys\+Tick timer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__SYSTICK__Driver_ga08d1931820e640fe2fb0e5f6fa1e48b3}\label{group__SYSTICK__Driver_ga08d1931820e640fe2fb0e5f6fa1e48b3}} 
+\#define \mbox{\hyperlink{group__SYSTICK__Driver_ga08d1931820e640fe2fb0e5f6fa1e48b3}{STK\+\_\+\+RELOAD\+\_\+\+MASK}}~0x00\+FFFFFFUL
+\begin{DoxyCompactList}\small\item\em Reload value mask for the Sys\+Tick timer. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__SYSTICK__Driver_ga9c47b7f579570ae0116d4d96c3106fc0}{STK\+\_\+\+FCPU}}~8000000\+UL
+\begin{DoxyCompactList}\small\item\em CPU frequency definition for the Sys\+Tick timer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+SYSTICK driver APIs for STM32\+F401xx MCU. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__SYSTICK__Driver_ga9c47b7f579570ae0116d4d96c3106fc0}\label{group__SYSTICK__Driver_ga9c47b7f579570ae0116d4d96c3106fc0}} 
+\index{SYSTICK Driver@{SYSTICK Driver}!STK\_FCPU@{STK\_FCPU}}
+\index{STK\_FCPU@{STK\_FCPU}!SYSTICK Driver@{SYSTICK Driver}}
+\doxysubsubsection{\texorpdfstring{STK\_FCPU}{STK\_FCPU}}
+{\footnotesize\ttfamily \#define STK\+\_\+\+FCPU~8000000\+UL}
+
+
+
+CPU frequency definition for the Sys\+Tick timer. 
+
+8 MHz CPU frequency 

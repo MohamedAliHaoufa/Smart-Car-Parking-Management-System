@@ -1,0 +1,230 @@
+\hypertarget{group__USART__Functions}{}\doxysection{API Function Prototypes}
+\label{group__USART__Functions}\index{API Function Prototypes@{API Function Prototypes}}
+Collaboration diagram for API Function Prototypes\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=331pt]{group__USART__Functions}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__USART__Functions_gaaeca545de502e83469c40393cac653d2}{MCAL\+\_\+\+USART\+\_\+\+Init}} (\mbox{\hyperlink{structUSART__TypeDef}{USART\+\_\+\+Type\+Def}} $\ast$USARTx, \mbox{\hyperlink{structUSART__cfg__t}{USART\+\_\+cfg\+\_\+t}} $\ast$USART\+\_\+cfg)
+\begin{DoxyCompactList}\small\item\em Initializes UART (Asynchronous mode only). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__USART__Functions_ga00606d66433aa9ceb63f0e376881b784}{MCAL\+\_\+\+USART\+\_\+\+De\+Init}} (\mbox{\hyperlink{structUSART__TypeDef}{USART\+\_\+\+Type\+Def}} $\ast$USARTx)
+\begin{DoxyCompactList}\small\item\em Deinitializes UART (Asynchronous mode only). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__USART__Functions_ga651202b09e8601ac5a82e0af0fb8c655}{MCAL\+\_\+\+USART\+\_\+\+GPIO\+\_\+\+Set\+\_\+\+Pins}} (\mbox{\hyperlink{structUSART__TypeDef}{USART\+\_\+\+Type\+Def}} $\ast$USARTx)
+\begin{DoxyCompactList}\small\item\em Initializes GPIO pins for UART. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__USART__Functions_gaeeb64c133c24060904b82f596b04b44e}{MCAL\+\_\+\+USART\+\_\+\+Send\+Data}} (\mbox{\hyperlink{structUSART__TypeDef}{USART\+\_\+\+Type\+Def}} $\ast$USARTx, uint16\+\_\+t $\ast$p\+Tx\+Buffer, \mbox{\hyperlink{group__USART__Types_ga2fc4223243c5260955aeb1db3fc8e0d6}{Polling\+\_\+\+Mechanism}} Polling\+En)
+\begin{DoxyCompactList}\small\item\em Sends buffer via UART. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__USART__Functions_ga950eec31c80b96bedee533cf78252f84}{MCAL\+\_\+\+USART\+\_\+\+Send\+String}} (\mbox{\hyperlink{structUSART__TypeDef}{USART\+\_\+\+Type\+Def}} $\ast$USARTx, uint8\+\_\+t $\ast$str, uint8\+\_\+t str\+\_\+len)
+\begin{DoxyCompactList}\small\item\em Sends a string via UART. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__USART__Functions_ga8663eb2482fedff6cd3b015e639370df}{MCAL\+\_\+\+USART\+\_\+\+Receive\+Data}} (\mbox{\hyperlink{structUSART__TypeDef}{USART\+\_\+\+Type\+Def}} $\ast$USARTx, uint16\+\_\+t $\ast$p\+Rx\+Buffer, \mbox{\hyperlink{group__USART__Types_ga2fc4223243c5260955aeb1db3fc8e0d6}{Polling\+\_\+\+Mechanism}} Polling\+En)
+\begin{DoxyCompactList}\small\item\em Receives buffer from UART. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__USART__Functions_gaa4a035d6d8dc29eec8d0c77b4a9426b4}{MCAL\+\_\+\+USART\+\_\+\+Receive\+Buffer}} (\mbox{\hyperlink{structUSART__TypeDef}{USART\+\_\+\+Type\+Def}} $\ast$USARTx, uint16\+\_\+t $\ast$p\+Rx\+Buffer, uint8\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em Receives buffer from UART with specified length. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__USART__Functions_ga4b353fbe55debff1d5b3f4f7c35c08c5}{MCAL\+\_\+\+USART\+\_\+\+Wait\+\_\+\+TC}} (\mbox{\hyperlink{structUSART__TypeDef}{USART\+\_\+\+Type\+Def}} $\ast$USARTx)
+\begin{DoxyCompactList}\small\item\em Waits until transmission is completed by polling on TC flag. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__USART__Functions_ga00606d66433aa9ceb63f0e376881b784}\label{group__USART__Functions_ga00606d66433aa9ceb63f0e376881b784}} 
+\index{API Function Prototypes@{API Function Prototypes}!MCAL\_USART\_DeInit@{MCAL\_USART\_DeInit}}
+\index{MCAL\_USART\_DeInit@{MCAL\_USART\_DeInit}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{MCAL\_USART\_DeInit()}{MCAL\_USART\_DeInit()}}
+{\footnotesize\ttfamily void MCAL\+\_\+\+USART\+\_\+\+De\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structUSART__TypeDef}{USART\+\_\+\+Type\+Def}} $\ast$}]{USARTx }\end{DoxyParamCaption})}
+
+
+
+Deinitializes UART (Asynchronous mode only). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em USARTx} & Pointer to the USART peripheral instance.\\
+\hline
+\end{DoxyParams}
+Deinitializes UART (Asynchronous mode only).
+
+This function resets the USART peripheral and disables its associated NVIC interrupt.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em USARTx} & Pointer to the USART peripheral instance (USART1, USART2, or USART6). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__USART__Functions_ga651202b09e8601ac5a82e0af0fb8c655}\label{group__USART__Functions_ga651202b09e8601ac5a82e0af0fb8c655}} 
+\index{API Function Prototypes@{API Function Prototypes}!MCAL\_USART\_GPIO\_Set\_Pins@{MCAL\_USART\_GPIO\_Set\_Pins}}
+\index{MCAL\_USART\_GPIO\_Set\_Pins@{MCAL\_USART\_GPIO\_Set\_Pins}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{MCAL\_USART\_GPIO\_Set\_Pins()}{MCAL\_USART\_GPIO\_Set\_Pins()}}
+{\footnotesize\ttfamily void MCAL\+\_\+\+USART\+\_\+\+GPIO\+\_\+\+Set\+\_\+\+Pins (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structUSART__TypeDef}{USART\+\_\+\+Type\+Def}} $\ast$}]{USARTx }\end{DoxyParamCaption})}
+
+
+
+Initializes GPIO pins for UART. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em USARTx} & Pointer to the USART peripheral instance.\\
+\hline
+\end{DoxyParams}
+Initializes GPIO pins for UART.
+
+This function sets up the GPIO pins used by the USART peripheral, including TX, RX, and optional CTS/\+RTS pins, depending on the hardware flow control settings.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em USARTx} & Pointer to the USART peripheral instance (USART1, USART2, or USART6). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Called automatically at the end of \mbox{\hyperlink{group__USART__Functions_gaaeca545de502e83469c40393cac653d2}{MCAL\+\_\+\+USART\+\_\+\+Init()}}. 
+\end{DoxyNote}
+\mbox{\Hypertarget{group__USART__Functions_gaaeca545de502e83469c40393cac653d2}\label{group__USART__Functions_gaaeca545de502e83469c40393cac653d2}} 
+\index{API Function Prototypes@{API Function Prototypes}!MCAL\_USART\_Init@{MCAL\_USART\_Init}}
+\index{MCAL\_USART\_Init@{MCAL\_USART\_Init}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{MCAL\_USART\_Init()}{MCAL\_USART\_Init()}}
+{\footnotesize\ttfamily void MCAL\+\_\+\+USART\+\_\+\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structUSART__TypeDef}{USART\+\_\+\+Type\+Def}} $\ast$}]{USARTx,  }\item[{\mbox{\hyperlink{structUSART__cfg__t}{USART\+\_\+cfg\+\_\+t}} $\ast$}]{USART\+\_\+cfg }\end{DoxyParamCaption})}
+
+
+
+Initializes UART (Asynchronous mode only). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em USARTx} & Pointer to the USART peripheral instance. \\
+\hline
+{\em USART\+\_\+cfg} & Pointer to the UART configuration.\\
+\hline
+\end{DoxyParams}
+Initializes UART (Asynchronous mode only).
+
+This function configures the USART peripheral based on the settings provided in the USART configuration structure. It supports asynchronous mode and sets up the necessary GPIO pins.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em USARTx} & Pointer to the USART peripheral instance (USART1, USART2, or USART6). \\
+\hline
+\mbox{\texttt{ in}}  & {\em USART\+\_\+cfg} & Pointer to the USART configuration structure. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Supports asynchronous mode only with an 8MHz clock. 
+\end{DoxyNote}
+\mbox{\Hypertarget{group__USART__Functions_gaa4a035d6d8dc29eec8d0c77b4a9426b4}\label{group__USART__Functions_gaa4a035d6d8dc29eec8d0c77b4a9426b4}} 
+\index{API Function Prototypes@{API Function Prototypes}!MCAL\_USART\_ReceiveBuffer@{MCAL\_USART\_ReceiveBuffer}}
+\index{MCAL\_USART\_ReceiveBuffer@{MCAL\_USART\_ReceiveBuffer}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{MCAL\_USART\_ReceiveBuffer()}{MCAL\_USART\_ReceiveBuffer()}}
+{\footnotesize\ttfamily void MCAL\+\_\+\+USART\+\_\+\+Receive\+Buffer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structUSART__TypeDef}{USART\+\_\+\+Type\+Def}} $\ast$}]{USARTx,  }\item[{uint16\+\_\+t $\ast$}]{p\+Rx\+Buffer,  }\item[{uint8\+\_\+t}]{length }\end{DoxyParamCaption})}
+
+
+
+Receives buffer from UART with specified length. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em USARTx} & Pointer to the USART peripheral instance. \\
+\hline
+{\em p\+Rx\+Buffer} & Buffer to be received. \\
+\hline
+{\em length} & Length of data to be received (0 = until receiving \textquotesingle{}\textbackslash{}r\textquotesingle{}). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__USART__Functions_ga8663eb2482fedff6cd3b015e639370df}\label{group__USART__Functions_ga8663eb2482fedff6cd3b015e639370df}} 
+\index{API Function Prototypes@{API Function Prototypes}!MCAL\_USART\_ReceiveData@{MCAL\_USART\_ReceiveData}}
+\index{MCAL\_USART\_ReceiveData@{MCAL\_USART\_ReceiveData}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{MCAL\_USART\_ReceiveData()}{MCAL\_USART\_ReceiveData()}}
+{\footnotesize\ttfamily void MCAL\+\_\+\+USART\+\_\+\+Receive\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structUSART__TypeDef}{USART\+\_\+\+Type\+Def}} $\ast$}]{USARTx,  }\item[{uint16\+\_\+t $\ast$}]{p\+Rx\+Buffer,  }\item[{\mbox{\hyperlink{group__USART__Types_ga2fc4223243c5260955aeb1db3fc8e0d6}{Polling\+\_\+\+Mechanism}}}]{Polling\+En }\end{DoxyParamCaption})}
+
+
+
+Receives buffer from UART. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em USARTx} & Pointer to the USART peripheral instance. \\
+\hline
+{\em p\+Rx\+Buffer} & Buffer to be received. \\
+\hline
+{\em Polling\+En} & Enable or disable polling mechanism. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__USART__Functions_gaeeb64c133c24060904b82f596b04b44e}\label{group__USART__Functions_gaeeb64c133c24060904b82f596b04b44e}} 
+\index{API Function Prototypes@{API Function Prototypes}!MCAL\_USART\_SendData@{MCAL\_USART\_SendData}}
+\index{MCAL\_USART\_SendData@{MCAL\_USART\_SendData}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{MCAL\_USART\_SendData()}{MCAL\_USART\_SendData()}}
+{\footnotesize\ttfamily void MCAL\+\_\+\+USART\+\_\+\+Send\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structUSART__TypeDef}{USART\+\_\+\+Type\+Def}} $\ast$}]{USARTx,  }\item[{uint16\+\_\+t $\ast$}]{p\+Tx\+Buffer,  }\item[{\mbox{\hyperlink{group__USART__Types_ga2fc4223243c5260955aeb1db3fc8e0d6}{Polling\+\_\+\+Mechanism}}}]{Polling\+En }\end{DoxyParamCaption})}
+
+
+
+Sends buffer via UART. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em USARTx} & Pointer to the USART peripheral instance. \\
+\hline
+{\em p\+Tx\+Buffer} & Buffer to be transmitted. \\
+\hline
+{\em Polling\+En} & Enable or disable polling mechanism. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__USART__Functions_ga950eec31c80b96bedee533cf78252f84}\label{group__USART__Functions_ga950eec31c80b96bedee533cf78252f84}} 
+\index{API Function Prototypes@{API Function Prototypes}!MCAL\_USART\_SendString@{MCAL\_USART\_SendString}}
+\index{MCAL\_USART\_SendString@{MCAL\_USART\_SendString}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{MCAL\_USART\_SendString()}{MCAL\_USART\_SendString()}}
+{\footnotesize\ttfamily void MCAL\+\_\+\+USART\+\_\+\+Send\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structUSART__TypeDef}{USART\+\_\+\+Type\+Def}} $\ast$}]{USARTx,  }\item[{uint8\+\_\+t $\ast$}]{str,  }\item[{uint8\+\_\+t}]{str\+\_\+len }\end{DoxyParamCaption})}
+
+
+
+Sends a string via UART. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em USARTx} & Pointer to the USART peripheral instance. \\
+\hline
+{\em str} & Pointer to the string to be transmitted. \\
+\hline
+{\em str\+\_\+len} & Length of string to be transmitted (0 = send until null \textquotesingle{}\textbackslash{}0\textquotesingle{}). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__USART__Functions_ga4b353fbe55debff1d5b3f4f7c35c08c5}\label{group__USART__Functions_ga4b353fbe55debff1d5b3f4f7c35c08c5}} 
+\index{API Function Prototypes@{API Function Prototypes}!MCAL\_USART\_Wait\_TC@{MCAL\_USART\_Wait\_TC}}
+\index{MCAL\_USART\_Wait\_TC@{MCAL\_USART\_Wait\_TC}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{MCAL\_USART\_Wait\_TC()}{MCAL\_USART\_Wait\_TC()}}
+{\footnotesize\ttfamily void MCAL\+\_\+\+USART\+\_\+\+Wait\+\_\+\+TC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structUSART__TypeDef}{USART\+\_\+\+Type\+Def}} $\ast$}]{USARTx }\end{DoxyParamCaption})}
+
+
+
+Waits until transmission is completed by polling on TC flag. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em USARTx} & Pointer to the USART peripheral instance.\\
+\hline
+\end{DoxyParams}
+Waits until transmission is completed by polling on TC flag.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em USARTx} & Pointer to the USART peripheral instance. It can be one of the following\+: USART1, USART2, or USART6. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This function continuously polls the TC flag in the SR (Status Register) until the flag is set, indicating that the transmission is complete. 
+\end{DoxyNote}

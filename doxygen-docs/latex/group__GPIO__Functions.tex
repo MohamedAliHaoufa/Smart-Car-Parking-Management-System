@@ -1,0 +1,428 @@
+\hypertarget{group__GPIO__Functions}{}\doxysection{API Function Prototypes}
+\label{group__GPIO__Functions}\index{API Function Prototypes@{API Function Prototypes}}
+Collaboration diagram for API Function Prototypes\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{group__GPIO__Functions}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__GPIO__Functions_ga215a5c7757fa42f0b11f9d1257462156}{MCAL\+\_\+\+GPIO\+\_\+\+Init}} (\mbox{\hyperlink{structGPIO__TypeDef}{GPIO\+\_\+\+Type\+Def}} $\ast$GPIOx, \mbox{\hyperlink{structGPIO__PinConfig__t}{GPIO\+\_\+\+Pin\+Config\+\_\+t}} $\ast$Pin\+Config)
+\begin{DoxyCompactList}\small\item\em Initializes the specified GPIO pin according to the provided configuration. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__GPIO__Functions_ga3b9e24a9bee907a6436e9a5fe6504a1f}{MCAL\+\_\+\+GPIO\+\_\+\+De\+Init}} (\mbox{\hyperlink{structGPIO__TypeDef}{GPIO\+\_\+\+Type\+Def}} $\ast$GPIOx)
+\begin{DoxyCompactList}\small\item\em Resets the specified GPIO port. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{group__GPIO__Functions_ga2383583317e5236b9d9faa783abac74c}{MCAL\+\_\+\+GPIO\+\_\+\+Read\+Pin}} (\mbox{\hyperlink{structGPIO__TypeDef}{GPIO\+\_\+\+Type\+Def}} $\ast$GPIOx, \mbox{\hyperlink{group__Platform__Types_ga05f6b0ae8f6a6e135b0e290c25fe0e4e}{uint16}} Pin\+Number)
+\begin{DoxyCompactList}\small\item\em Reads the value of a specified GPIO pin. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__Platform__Types_ga05f6b0ae8f6a6e135b0e290c25fe0e4e}{uint16}} \mbox{\hyperlink{group__GPIO__Functions_ga50c8e47be7541f84acb8ddb217722ebe}{MCAL\+\_\+\+GPIO\+\_\+\+Read\+Port}} (\mbox{\hyperlink{structGPIO__TypeDef}{GPIO\+\_\+\+Type\+Def}} $\ast$GPIOx)
+\begin{DoxyCompactList}\small\item\em Reads the value of the entire GPIO port. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__GPIO__Functions_ga6e2b68d519bddd1f214fecd75465d670}{MCAL\+\_\+\+GPIO\+\_\+\+Write\+Pin}} (\mbox{\hyperlink{structGPIO__TypeDef}{GPIO\+\_\+\+Type\+Def}} $\ast$GPIOx, \mbox{\hyperlink{group__Platform__Types_ga05f6b0ae8f6a6e135b0e290c25fe0e4e}{uint16}} Pin\+Number, \mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} Value)
+\begin{DoxyCompactList}\small\item\em Writes a value to a specified GPIO pin. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__GPIO__Functions_gafb6f56a606270825197b3a47e3b67b29}{MCAL\+\_\+\+GPIO\+\_\+\+Write\+Port}} (\mbox{\hyperlink{structGPIO__TypeDef}{GPIO\+\_\+\+Type\+Def}} $\ast$GPIOx, \mbox{\hyperlink{group__Platform__Types_ga05f6b0ae8f6a6e135b0e290c25fe0e4e}{uint16}} Value)
+\begin{DoxyCompactList}\small\item\em Writes a value to the entire GPIO port. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__GPIO__Functions_gabb92cd9e935de6ea3f07cf856ac230ad}{MCAL\+\_\+\+GPIO\+\_\+\+Toggle\+Pin}} (\mbox{\hyperlink{structGPIO__TypeDef}{GPIO\+\_\+\+Type\+Def}} $\ast$GPIOx, \mbox{\hyperlink{group__Platform__Types_ga05f6b0ae8f6a6e135b0e290c25fe0e4e}{uint16}} Pin\+Number)
+\begin{DoxyCompactList}\small\item\em Toggles the state of a specified GPIO pin. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__GPIO__Functions_ga0581014960e2e1f8180c1ac5872c9865}{MCAL\+\_\+\+GPIO\+\_\+\+Toggle\+Port}} (\mbox{\hyperlink{structGPIO__TypeDef}{GPIO\+\_\+\+Type\+Def}} $\ast$GPIOx)
+\begin{DoxyCompactList}\small\item\em Toggles the value of a specific GPIO Port. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{group__GPIO__Functions_ga58f814251a43dc441f951c992ab01edd}{MCAL\+\_\+\+GPIO\+\_\+\+Lock\+Pin}} (\mbox{\hyperlink{structGPIO__TypeDef}{GPIO\+\_\+\+Type\+Def}} $\ast$GPIOx, \mbox{\hyperlink{group__Platform__Types_ga05f6b0ae8f6a6e135b0e290c25fe0e4e}{uint16}} Pin\+Number)
+\begin{DoxyCompactList}\small\item\em Locks the configuration of a specific GPIO pin to prevent further changes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__GPIO__Functions_ga3b9e24a9bee907a6436e9a5fe6504a1f}\label{group__GPIO__Functions_ga3b9e24a9bee907a6436e9a5fe6504a1f}} 
+\index{API Function Prototypes@{API Function Prototypes}!MCAL\_GPIO\_DeInit@{MCAL\_GPIO\_DeInit}}
+\index{MCAL\_GPIO\_DeInit@{MCAL\_GPIO\_DeInit}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{MCAL\_GPIO\_DeInit()}{MCAL\_GPIO\_DeInit()}}
+{\footnotesize\ttfamily void MCAL\+\_\+\+GPIO\+\_\+\+De\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGPIO__TypeDef}{GPIO\+\_\+\+Type\+Def}} $\ast$}]{GPIOx }\end{DoxyParamCaption})}
+
+
+
+Resets the specified GPIO port. 
+
+This function resets the GPIO port, clearing all configuration settings.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em GPIOx} & Pointer to the GPIO peripheral base address. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+This function does not affect other GPIO ports.
+\end{DoxyNote}
+This function resets the GPIO port by toggling the appropriate reset bit in the RCC\+\_\+\+AHB1\+RSTR register.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em GPIOx} & The GPIO peripheral to be reset (e.\+g., GPIOA, GPIOB, GPIOC, etc.).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+None 
+\end{DoxyNote}
+\mbox{\Hypertarget{group__GPIO__Functions_ga215a5c7757fa42f0b11f9d1257462156}\label{group__GPIO__Functions_ga215a5c7757fa42f0b11f9d1257462156}} 
+\index{API Function Prototypes@{API Function Prototypes}!MCAL\_GPIO\_Init@{MCAL\_GPIO\_Init}}
+\index{MCAL\_GPIO\_Init@{MCAL\_GPIO\_Init}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{MCAL\_GPIO\_Init()}{MCAL\_GPIO\_Init()}}
+{\footnotesize\ttfamily void MCAL\+\_\+\+GPIO\+\_\+\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGPIO__TypeDef}{GPIO\+\_\+\+Type\+Def}} $\ast$}]{GPIOx,  }\item[{\mbox{\hyperlink{structGPIO__PinConfig__t}{GPIO\+\_\+\+Pin\+Config\+\_\+t}} $\ast$}]{Pin\+Config }\end{DoxyParamCaption})}
+
+
+
+Initializes the specified GPIO pin according to the provided configuration. 
+
+This function configures the GPIO pin based on the parameters specified in the \mbox{\hyperlink{structGPIO__PinConfig__t}{GPIO\+\_\+\+Pin\+Config\+\_\+t}} structure. It is essential to enable the RCC clock for the corresponding GPIO port before calling this function.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em GPIOx} & Pointer to the GPIO peripheral base address. \\
+\hline
+\mbox{\texttt{ in}}  & {\em Pin\+Config} & Pointer to a \mbox{\hyperlink{structGPIO__PinConfig__t}{GPIO\+\_\+\+Pin\+Config\+\_\+t}} structure containing the pin configuration. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+This function configures the GPIO pins and their associated settings.
+\end{DoxyNote}
+This function sets up the GPIO pin mode, output type, speed, pull-\/up/pull-\/down resistors, and alternate function if needed.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em GPIOx} & The GPIO peripheral to be initialized (e.\+g., GPIOA, GPIOB, GPIOC, etc.). \\
+\hline
+\mbox{\texttt{ in}}  & {\em Pin\+Config} & Pointer to a \mbox{\hyperlink{structGPIO__PinConfig__t}{GPIO\+\_\+\+Pin\+Config\+\_\+t}} structure containing the configuration details for the pin.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+It is mandatory to enable the RCC clock for the corresponding GPIO port before initialization. 
+\end{DoxyNote}
+\mbox{\Hypertarget{group__GPIO__Functions_ga58f814251a43dc441f951c992ab01edd}\label{group__GPIO__Functions_ga58f814251a43dc441f951c992ab01edd}} 
+\index{API Function Prototypes@{API Function Prototypes}!MCAL\_GPIO\_LockPin@{MCAL\_GPIO\_LockPin}}
+\index{MCAL\_GPIO\_LockPin@{MCAL\_GPIO\_LockPin}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{MCAL\_GPIO\_LockPin()}{MCAL\_GPIO\_LockPin()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} MCAL\+\_\+\+GPIO\+\_\+\+Lock\+Pin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGPIO__TypeDef}{GPIO\+\_\+\+Type\+Def}} $\ast$}]{GPIOx,  }\item[{\mbox{\hyperlink{group__Platform__Types_ga05f6b0ae8f6a6e135b0e290c25fe0e4e}{uint16}}}]{Pin\+Number }\end{DoxyParamCaption})}
+
+
+
+Locks the configuration of a specific GPIO pin to prevent further changes. 
+
+This function locks the configuration of the specified GPIO pin. Once locked, the pin\textquotesingle{}s configuration cannot be modified until the reset of the device. This is useful for protecting the pin configuration from accidental changes.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em GPIOx} & Pointer to the GPIO peripheral base address. This parameter can be one of the following values depending on the device used\+: GPIOA, GPIOB, GPIOC, GPIOD, GPIOE. \\
+\hline
+\mbox{\texttt{ in}}  & {\em Pin\+Number} & The number of the pin to lock. This parameter should be a value defined in \mbox{\hyperlink{group__GPIO__PINS__define}{GPIO Pin Numbers}}. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em uint8} & Returns GPIO\+\_\+\+RETURN\+\_\+\+LOCK\+\_\+\+OK if the pin configuration is successfully locked, or GPIO\+\_\+\+RETURN\+\_\+\+LOCK\+\_\+\+ERROR if the locking operation fails.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+Ensure that the pin\textquotesingle{}s configuration is correctly set before calling this function, as the configuration cannot be changed once locked.
+\end{DoxyNote}
+Locks the configuration of a specific GPIO pin to prevent further changes.
+
+This function implements a locking mechanism to prevent further changes to the configuration of a specified GPIO pin. The locking sequence must be followed to successfully lock the pin configuration.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em GPIOx} & The GPIO peripheral to be used (e.\+g., GPIOA, GPIOB, GPIOC, etc.). \\
+\hline
+\mbox{\texttt{ in}}  & {\em Pin\+Number} & The pin number to be locked, specified according to \mbox{\hyperlink{group__GPIO__PINS__define}{GPIO Pin Numbers}}.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em uint8} & Returns {\ttfamily GPIO\+\_\+\+RETURN\+\_\+\+LOCK\+\_\+\+OK} if the pin configuration is successfully locked, or {\ttfamily GPIO\+\_\+\+RETURN\+\_\+\+LOCK\+\_\+\+ERROR} if the locking process fails.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+The locking sequence is as follows\+:
+\begin{DoxyItemize}
+\item Write 1 to the lock key bit.
+\item Write 0 to the lock key bit.
+\item Write 1 to the lock key bit.
+\item Read the lock key bit (should be 0).
+\item Optionally, read the lock key bit again (should be 1 to confirm the lock).
+\end{DoxyItemize}
+\end{DoxyNote}
+The value of the lock bits (LCK\mbox{[}15\+:0\mbox{]}) must not change during this sequence, otherwise, the lock process will be aborted. \mbox{\Hypertarget{group__GPIO__Functions_ga2383583317e5236b9d9faa783abac74c}\label{group__GPIO__Functions_ga2383583317e5236b9d9faa783abac74c}} 
+\index{API Function Prototypes@{API Function Prototypes}!MCAL\_GPIO\_ReadPin@{MCAL\_GPIO\_ReadPin}}
+\index{MCAL\_GPIO\_ReadPin@{MCAL\_GPIO\_ReadPin}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{MCAL\_GPIO\_ReadPin()}{MCAL\_GPIO\_ReadPin()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} MCAL\+\_\+\+GPIO\+\_\+\+Read\+Pin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGPIO__TypeDef}{GPIO\+\_\+\+Type\+Def}} $\ast$}]{GPIOx,  }\item[{\mbox{\hyperlink{group__Platform__Types_ga05f6b0ae8f6a6e135b0e290c25fe0e4e}{uint16}}}]{Pin\+Number }\end{DoxyParamCaption})}
+
+
+
+Reads the value of a specified GPIO pin. 
+
+This function retrieves the current state of the specified GPIO pin.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em GPIOx} & Pointer to the GPIO peripheral base address. \\
+\hline
+\mbox{\texttt{ in}}  & {\em Pin\+Number} & The number of the pin to read. This parameter should be a value defined in \mbox{\hyperlink{group__GPIO__PINS__define}{GPIO Pin Numbers}}. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em uint8} & The state of the GPIO pin. This value can be one of the values defined in \mbox{\hyperlink{group__GPIO__PIN__STATE}{GPIO Pin States}}. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+This function reads the input value of the pin.
+\end{DoxyNote}
+Reads the value of a specified GPIO pin.
+
+This function reads the input data register to retrieve the value of the specified GPIO pin.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em GPIOx} & The GPIO peripheral from which to read (e.\+g., GPIOA, GPIOB, GPIOC, etc.). \\
+\hline
+\mbox{\texttt{ in}}  & {\em Pin\+Number} & The pin number to be read (e.\+g., GPIO\+\_\+\+PIN\+\_\+0, GPIO\+\_\+\+PIN\+\_\+1, etc.).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value of the specified pin (0 or 1).
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+None 
+\end{DoxyNote}
+\mbox{\Hypertarget{group__GPIO__Functions_ga50c8e47be7541f84acb8ddb217722ebe}\label{group__GPIO__Functions_ga50c8e47be7541f84acb8ddb217722ebe}} 
+\index{API Function Prototypes@{API Function Prototypes}!MCAL\_GPIO\_ReadPort@{MCAL\_GPIO\_ReadPort}}
+\index{MCAL\_GPIO\_ReadPort@{MCAL\_GPIO\_ReadPort}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{MCAL\_GPIO\_ReadPort()}{MCAL\_GPIO\_ReadPort()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__Platform__Types_ga05f6b0ae8f6a6e135b0e290c25fe0e4e}{uint16}} MCAL\+\_\+\+GPIO\+\_\+\+Read\+Port (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGPIO__TypeDef}{GPIO\+\_\+\+Type\+Def}} $\ast$}]{GPIOx }\end{DoxyParamCaption})}
+
+
+
+Reads the value of the entire GPIO port. 
+
+This function retrieves the current state of all the pins in the specified GPIO port.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em GPIOx} & Pointer to the GPIO peripheral base address. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em uint16} & The state of the entire GPIO port. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+This function reads the input values of all pins in the port.
+\end{DoxyNote}
+Reads the value of the entire GPIO port.
+
+This function reads the input data register to retrieve the value of all the pins in the specified GPIO port.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em GPIOx} & The GPIO peripheral from which to read (e.\+g., GPIOA, GPIOB, GPIOC, etc.).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value of the entire port.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+None 
+\end{DoxyNote}
+\mbox{\Hypertarget{group__GPIO__Functions_gabb92cd9e935de6ea3f07cf856ac230ad}\label{group__GPIO__Functions_gabb92cd9e935de6ea3f07cf856ac230ad}} 
+\index{API Function Prototypes@{API Function Prototypes}!MCAL\_GPIO\_TogglePin@{MCAL\_GPIO\_TogglePin}}
+\index{MCAL\_GPIO\_TogglePin@{MCAL\_GPIO\_TogglePin}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{MCAL\_GPIO\_TogglePin()}{MCAL\_GPIO\_TogglePin()}}
+{\footnotesize\ttfamily void MCAL\+\_\+\+GPIO\+\_\+\+Toggle\+Pin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGPIO__TypeDef}{GPIO\+\_\+\+Type\+Def}} $\ast$}]{GPIOx,  }\item[{\mbox{\hyperlink{group__Platform__Types_ga05f6b0ae8f6a6e135b0e290c25fe0e4e}{uint16}}}]{Pin\+Number }\end{DoxyParamCaption})}
+
+
+
+Toggles the state of a specified GPIO pin. 
+
+This function toggles the output state of the specified GPIO pin.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em GPIOx} & Pointer to the GPIO peripheral base address. \\
+\hline
+\mbox{\texttt{ in}}  & {\em Pin\+Number} & The number of the pin to toggle. This parameter should be a value defined in \mbox{\hyperlink{group__GPIO__PINS__define}{GPIO Pin Numbers}}. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+This function changes the state of the pin from high to low or low to high.
+\end{DoxyNote}
+Toggles the state of a specified GPIO pin.
+
+This function inverts the state of the specified GPIO pin.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em GPIOx} & The GPIO peripheral to which to write (e.\+g., GPIOA, GPIOB, GPIOC, etc.). \\
+\hline
+\mbox{\texttt{ in}}  & {\em Pin\+Number} & The pin number to be toggled (e.\+g., GPIO\+\_\+\+PIN\+\_\+0, GPIO\+\_\+\+PIN\+\_\+1, etc.).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+None 
+\end{DoxyNote}
+\mbox{\Hypertarget{group__GPIO__Functions_ga0581014960e2e1f8180c1ac5872c9865}\label{group__GPIO__Functions_ga0581014960e2e1f8180c1ac5872c9865}} 
+\index{API Function Prototypes@{API Function Prototypes}!MCAL\_GPIO\_TogglePort@{MCAL\_GPIO\_TogglePort}}
+\index{MCAL\_GPIO\_TogglePort@{MCAL\_GPIO\_TogglePort}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{MCAL\_GPIO\_TogglePort()}{MCAL\_GPIO\_TogglePort()}}
+{\footnotesize\ttfamily void MCAL\+\_\+\+GPIO\+\_\+\+Toggle\+Port (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGPIO__TypeDef}{GPIO\+\_\+\+Type\+Def}} $\ast$}]{GPIOx }\end{DoxyParamCaption})}
+
+
+
+Toggles the value of a specific GPIO Port. 
+
+Toggles the state of all pins in the specified GPIO port.
+
+This function inverts the state of the specified GPIO Port.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em GPIOx} & The GPIO peripheral to which to write (e.\+g., GPIOA, GPIOB, GPIOC, etc.).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+None
+\end{DoxyNote}
+This function toggles the output state of each pin in the given GPIO port. If a pin is high, it will be set to low, and if it is low, it will be set to high.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em GPIOx} & Pointer to the GPIO peripheral base address. This parameter can be one of the following values depending on the device used\+: GPIOA, GPIOB, GPIOC, GPIOD, GPIOE. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+This function affects all pins in the specified GPIO port. 
+\end{DoxyNote}
+\mbox{\Hypertarget{group__GPIO__Functions_ga6e2b68d519bddd1f214fecd75465d670}\label{group__GPIO__Functions_ga6e2b68d519bddd1f214fecd75465d670}} 
+\index{API Function Prototypes@{API Function Prototypes}!MCAL\_GPIO\_WritePin@{MCAL\_GPIO\_WritePin}}
+\index{MCAL\_GPIO\_WritePin@{MCAL\_GPIO\_WritePin}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{MCAL\_GPIO\_WritePin()}{MCAL\_GPIO\_WritePin()}}
+{\footnotesize\ttfamily void MCAL\+\_\+\+GPIO\+\_\+\+Write\+Pin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGPIO__TypeDef}{GPIO\+\_\+\+Type\+Def}} $\ast$}]{GPIOx,  }\item[{\mbox{\hyperlink{group__Platform__Types_ga05f6b0ae8f6a6e135b0e290c25fe0e4e}{uint16}}}]{Pin\+Number,  }\item[{\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}}}]{Value }\end{DoxyParamCaption})}
+
+
+
+Writes a value to a specified GPIO pin. 
+
+This function sets the state of the specified GPIO pin to the provided value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em GPIOx} & Pointer to the GPIO peripheral base address. \\
+\hline
+\mbox{\texttt{ in}}  & {\em Pin\+Number} & The number of the pin to write to. This parameter should be a value defined in \mbox{\hyperlink{group__GPIO__PINS__define}{GPIO Pin Numbers}}. \\
+\hline
+\mbox{\texttt{ in}}  & {\em Value} & The value to write to the pin. This parameter should be one of the values defined in \mbox{\hyperlink{group__GPIO__PIN__STATE}{GPIO Pin States}}. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+This function sets the output value of the pin.
+\end{DoxyNote}
+Writes a value to a specified GPIO pin.
+
+This function sets or clears the specified GPIO pin according to the provided value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em GPIOx} & The GPIO peripheral to which to write (e.\+g., GPIOA, GPIOB, GPIOC, etc.). \\
+\hline
+\mbox{\texttt{ in}}  & {\em Pin\+Number} & The pin number to be written (e.\+g., GPIO\+\_\+\+PIN\+\_\+0, GPIO\+\_\+\+PIN\+\_\+1, etc.). \\
+\hline
+\mbox{\texttt{ in}}  & {\em Value} & The value to be written (either GPIO\+\_\+\+PIN\+\_\+\+SET or GPIO\+\_\+\+PIN\+\_\+\+RESET).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+None 
+\end{DoxyNote}
+\mbox{\Hypertarget{group__GPIO__Functions_gafb6f56a606270825197b3a47e3b67b29}\label{group__GPIO__Functions_gafb6f56a606270825197b3a47e3b67b29}} 
+\index{API Function Prototypes@{API Function Prototypes}!MCAL\_GPIO\_WritePort@{MCAL\_GPIO\_WritePort}}
+\index{MCAL\_GPIO\_WritePort@{MCAL\_GPIO\_WritePort}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{MCAL\_GPIO\_WritePort()}{MCAL\_GPIO\_WritePort()}}
+{\footnotesize\ttfamily void MCAL\+\_\+\+GPIO\+\_\+\+Write\+Port (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGPIO__TypeDef}{GPIO\+\_\+\+Type\+Def}} $\ast$}]{GPIOx,  }\item[{\mbox{\hyperlink{group__Platform__Types_ga05f6b0ae8f6a6e135b0e290c25fe0e4e}{uint16}}}]{Value }\end{DoxyParamCaption})}
+
+
+
+Writes a value to the entire GPIO port. 
+
+This function sets the state of all the pins in the specified GPIO port to the provided value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em GPIOx} & Pointer to the GPIO peripheral base address. \\
+\hline
+\mbox{\texttt{ in}}  & {\em Value} & The value to write to the port. This parameter is a 16-\/bit value representing the state of each pin. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+This function sets the output values of all pins in the port.
+\end{DoxyNote}
+This function sets the output data register of the specified GPIO port to the provided value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em GPIOx} & The GPIO peripheral to which to write (e.\+g., GPIOA, GPIOB, GPIOC, etc.). \\
+\hline
+\mbox{\texttt{ in}}  & {\em Value} & The value to be written to the entire port.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+None 
+\end{DoxyNote}

@@ -1,0 +1,107 @@
+\hypertarget{structS__SPI__Config__t}{}\doxysection{S\+\_\+\+SPI\+\_\+\+Config\+\_\+t Struct Reference}
+\label{structS__SPI__Config__t}\index{S\_SPI\_Config\_t@{S\_SPI\_Config\_t}}
+
+
+Configuration structure for SPI.  
+
+
+
+
+{\ttfamily \#include $<$stm32f401xx\+\_\+spi\+\_\+driver.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{structS__SPI__Config__t_abd759e8c88e765c618fe0a7abc267218}{Device\+\_\+\+Mode}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{structS__SPI__Config__t_aa8bedac4e482784d15126c2aa3c1d9f2}{Communication\+\_\+\+Mode}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{structS__SPI__Config__t_ae1bc127f2fd02243969f76f7c9f9f87f}{Payload\+\_\+\+Length}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{structS__SPI__Config__t_ad6480ddf5c884343a15f9aa5ffade28a}{Frame\+\_\+\+Format}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{structS__SPI__Config__t_a9f82675837a06f3d1356325b67d76617}{Clock\+\_\+\+Polarity}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{structS__SPI__Config__t_aee9c7ee610d7196802391d5339d384bb}{Clock\+\_\+\+Phase}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{structS__SPI__Config__t_aca1e334e7e0f8a792e064230e6493a6f}{NSS}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{structS__SPI__Config__t_a0f21899801238acc1d163309a6edaae5}{SPI\+\_\+\+Prescaler}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{structS__SPI__Config__t_a2c3d81774de45e7ea529dedbfddd86f7}{IRQ\+\_\+\+Enable}}
+\item 
+void($\ast$ \mbox{\hyperlink{structS__SPI__Config__t_aa6d6894a8da68f08877132ff191219d0}{P\+\_\+\+IRQ\+\_\+\+Call\+Back}} )(struct \mbox{\hyperlink{structS__IRQ__SRC}{S\+\_\+\+IRQ\+\_\+\+SRC}} IRQ)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Configuration structure for SPI. 
+
+This structure is used to configure the SPI peripheral. It contains settings for device mode, communication mode, payload length, frame format, clock polarity, clock phase, NSS configuration, SPI prescaler, and interrupt enable. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structS__SPI__Config__t_aee9c7ee610d7196802391d5339d384bb}\label{structS__SPI__Config__t_aee9c7ee610d7196802391d5339d384bb}} 
+\index{S\_SPI\_Config\_t@{S\_SPI\_Config\_t}!Clock\_Phase@{Clock\_Phase}}
+\index{Clock\_Phase@{Clock\_Phase}!S\_SPI\_Config\_t@{S\_SPI\_Config\_t}}
+\doxysubsubsection{\texorpdfstring{Clock\_Phase}{Clock\_Phase}}
+{\footnotesize\ttfamily uint16\+\_\+t S\+\_\+\+SPI\+\_\+\+Config\+\_\+t\+::\+Clock\+\_\+\+Phase}
+
+Specifies clock phase (sampling on leading or trailing edge). \mbox{\hyperlink{group__SPI__Clock__Phase__Define}{SPI Clock Phase Definitions}} \mbox{\Hypertarget{structS__SPI__Config__t_a9f82675837a06f3d1356325b67d76617}\label{structS__SPI__Config__t_a9f82675837a06f3d1356325b67d76617}} 
+\index{S\_SPI\_Config\_t@{S\_SPI\_Config\_t}!Clock\_Polarity@{Clock\_Polarity}}
+\index{Clock\_Polarity@{Clock\_Polarity}!S\_SPI\_Config\_t@{S\_SPI\_Config\_t}}
+\doxysubsubsection{\texorpdfstring{Clock\_Polarity}{Clock\_Polarity}}
+{\footnotesize\ttfamily uint16\+\_\+t S\+\_\+\+SPI\+\_\+\+Config\+\_\+t\+::\+Clock\+\_\+\+Polarity}
+
+Specifies clock polarity (idle low or high). \mbox{\hyperlink{group__SPI__Clock__Polarity__Define}{SPI Clock Polarity Definitions}} \mbox{\Hypertarget{structS__SPI__Config__t_aa8bedac4e482784d15126c2aa3c1d9f2}\label{structS__SPI__Config__t_aa8bedac4e482784d15126c2aa3c1d9f2}} 
+\index{S\_SPI\_Config\_t@{S\_SPI\_Config\_t}!Communication\_Mode@{Communication\_Mode}}
+\index{Communication\_Mode@{Communication\_Mode}!S\_SPI\_Config\_t@{S\_SPI\_Config\_t}}
+\doxysubsubsection{\texorpdfstring{Communication\_Mode}{Communication\_Mode}}
+{\footnotesize\ttfamily uint16\+\_\+t S\+\_\+\+SPI\+\_\+\+Config\+\_\+t\+::\+Communication\+\_\+\+Mode}
+
+Specifies communication mode (bidirectional or unidirectional). Communication\+\_\+\+Mode\+\_\+\+Define \mbox{\Hypertarget{structS__SPI__Config__t_abd759e8c88e765c618fe0a7abc267218}\label{structS__SPI__Config__t_abd759e8c88e765c618fe0a7abc267218}} 
+\index{S\_SPI\_Config\_t@{S\_SPI\_Config\_t}!Device\_Mode@{Device\_Mode}}
+\index{Device\_Mode@{Device\_Mode}!S\_SPI\_Config\_t@{S\_SPI\_Config\_t}}
+\doxysubsubsection{\texorpdfstring{Device\_Mode}{Device\_Mode}}
+{\footnotesize\ttfamily uint16\+\_\+t S\+\_\+\+SPI\+\_\+\+Config\+\_\+t\+::\+Device\+\_\+\+Mode}
+
+Specifies if SPI operates in master mode or slave mode. Device\+\_\+\+Mode\+\_\+\+Define \mbox{\Hypertarget{structS__SPI__Config__t_ad6480ddf5c884343a15f9aa5ffade28a}\label{structS__SPI__Config__t_ad6480ddf5c884343a15f9aa5ffade28a}} 
+\index{S\_SPI\_Config\_t@{S\_SPI\_Config\_t}!Frame\_Format@{Frame\_Format}}
+\index{Frame\_Format@{Frame\_Format}!S\_SPI\_Config\_t@{S\_SPI\_Config\_t}}
+\doxysubsubsection{\texorpdfstring{Frame\_Format}{Frame\_Format}}
+{\footnotesize\ttfamily uint16\+\_\+t S\+\_\+\+SPI\+\_\+\+Config\+\_\+t\+::\+Frame\+\_\+\+Format}
+
+Specifies frame format (MSB or LSB first). \mbox{\hyperlink{group__SPI__Frame__Format__Define}{SPI Frame Format Definitions}} \mbox{\Hypertarget{structS__SPI__Config__t_a2c3d81774de45e7ea529dedbfddd86f7}\label{structS__SPI__Config__t_a2c3d81774de45e7ea529dedbfddd86f7}} 
+\index{S\_SPI\_Config\_t@{S\_SPI\_Config\_t}!IRQ\_Enable@{IRQ\_Enable}}
+\index{IRQ\_Enable@{IRQ\_Enable}!S\_SPI\_Config\_t@{S\_SPI\_Config\_t}}
+\doxysubsubsection{\texorpdfstring{IRQ\_Enable}{IRQ\_Enable}}
+{\footnotesize\ttfamily uint16\+\_\+t S\+\_\+\+SPI\+\_\+\+Config\+\_\+t\+::\+IRQ\+\_\+\+Enable}
+
+Enables or disables SPI interrupts. \mbox{\hyperlink{group__SPI__IRQ__Enable__Define}{SPI IRQ Enable Definitions}} \mbox{\Hypertarget{structS__SPI__Config__t_aca1e334e7e0f8a792e064230e6493a6f}\label{structS__SPI__Config__t_aca1e334e7e0f8a792e064230e6493a6f}} 
+\index{S\_SPI\_Config\_t@{S\_SPI\_Config\_t}!NSS@{NSS}}
+\index{NSS@{NSS}!S\_SPI\_Config\_t@{S\_SPI\_Config\_t}}
+\doxysubsubsection{\texorpdfstring{NSS}{NSS}}
+{\footnotesize\ttfamily uint16\+\_\+t S\+\_\+\+SPI\+\_\+\+Config\+\_\+t\+::\+NSS}
+
+Specifies NSS management (hardware or software). \mbox{\hyperlink{group__SPI__NSS__Define}{SPI NSS Definitions}} \mbox{\Hypertarget{structS__SPI__Config__t_aa6d6894a8da68f08877132ff191219d0}\label{structS__SPI__Config__t_aa6d6894a8da68f08877132ff191219d0}} 
+\index{S\_SPI\_Config\_t@{S\_SPI\_Config\_t}!P\_IRQ\_CallBack@{P\_IRQ\_CallBack}}
+\index{P\_IRQ\_CallBack@{P\_IRQ\_CallBack}!S\_SPI\_Config\_t@{S\_SPI\_Config\_t}}
+\doxysubsubsection{\texorpdfstring{P\_IRQ\_CallBack}{P\_IRQ\_CallBack}}
+{\footnotesize\ttfamily void($\ast$ S\+\_\+\+SPI\+\_\+\+Config\+\_\+t\+::\+P\+\_\+\+IRQ\+\_\+\+Call\+Back) (struct \mbox{\hyperlink{structS__IRQ__SRC}{S\+\_\+\+IRQ\+\_\+\+SRC}} IRQ)}
+
+Callback function for interrupt handling \mbox{\Hypertarget{structS__SPI__Config__t_ae1bc127f2fd02243969f76f7c9f9f87f}\label{structS__SPI__Config__t_ae1bc127f2fd02243969f76f7c9f9f87f}} 
+\index{S\_SPI\_Config\_t@{S\_SPI\_Config\_t}!Payload\_Length@{Payload\_Length}}
+\index{Payload\_Length@{Payload\_Length}!S\_SPI\_Config\_t@{S\_SPI\_Config\_t}}
+\doxysubsubsection{\texorpdfstring{Payload\_Length}{Payload\_Length}}
+{\footnotesize\ttfamily uint16\+\_\+t S\+\_\+\+SPI\+\_\+\+Config\+\_\+t\+::\+Payload\+\_\+\+Length}
+
+Specifies payload length (8 or 16 bits). \mbox{\hyperlink{group__SPI__Payload__Length__Define}{SPI Payload Length Definitions}} \mbox{\Hypertarget{structS__SPI__Config__t_a0f21899801238acc1d163309a6edaae5}\label{structS__SPI__Config__t_a0f21899801238acc1d163309a6edaae5}} 
+\index{S\_SPI\_Config\_t@{S\_SPI\_Config\_t}!SPI\_Prescaler@{SPI\_Prescaler}}
+\index{SPI\_Prescaler@{SPI\_Prescaler}!S\_SPI\_Config\_t@{S\_SPI\_Config\_t}}
+\doxysubsubsection{\texorpdfstring{SPI\_Prescaler}{SPI\_Prescaler}}
+{\footnotesize\ttfamily uint16\+\_\+t S\+\_\+\+SPI\+\_\+\+Config\+\_\+t\+::\+SPI\+\_\+\+Prescaler}
+
+Specifies SPI frequency. \mbox{\hyperlink{group__SPI__Prescaler__Define}{SPI Prescaler Definitions}} 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+drivers/\+Inc/\mbox{\hyperlink{stm32f401xx__spi__driver_8h}{stm32f401xx\+\_\+spi\+\_\+driver.\+h}}\end{DoxyCompactItemize}

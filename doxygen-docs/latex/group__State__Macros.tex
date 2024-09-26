@@ -1,0 +1,65 @@
+\hypertarget{group__State__Macros}{}\doxysection{State Macros}
+\label{group__State__Macros}\index{State Macros@{State Macros}}
+
+
+Macros for defining and managing application state handler functions.  
+
+
+Collaboration diagram for State Macros\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{group__State__Macros}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__State__Macros_gaaee3acc692944599db8700eab8aa4fbe}{STATE\+\_\+\+API}}(\+\_\+\+NAME)~void ST\+\_\+\#\#\+\_\+\+NAME(void)
+\begin{DoxyCompactList}\small\item\em Macro to define a state handler function. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__State__Macros_ga7504af73b0ae03874bd7f0a35552c8ea}{STATE\+\_\+\+NAME}}(\+\_\+\+NAME)~ST\+\_\+\#\#\+\_\+\+NAME
+\begin{DoxyCompactList}\small\item\em Macro to create a state handler function name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Macros for defining and managing application state handler functions. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__State__Macros_gaaee3acc692944599db8700eab8aa4fbe}\label{group__State__Macros_gaaee3acc692944599db8700eab8aa4fbe}} 
+\index{State Macros@{State Macros}!STATE\_API@{STATE\_API}}
+\index{STATE\_API@{STATE\_API}!State Macros@{State Macros}}
+\doxysubsubsection{\texorpdfstring{STATE\_API}{STATE\_API}}
+{\footnotesize\ttfamily \#define STATE\+\_\+\+API(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+NAME }\end{DoxyParamCaption})~void ST\+\_\+\#\#\+\_\+\+NAME(void)}
+
+
+
+Macro to define a state handler function. 
+
+@macro STATE\+\_\+\+API
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+NAME} & Name of the state.\\
+\hline
+\end{DoxyParams}
+This macro defines a function prototype for the state handler function corresponding to the specified state. \mbox{\Hypertarget{group__State__Macros_ga7504af73b0ae03874bd7f0a35552c8ea}\label{group__State__Macros_ga7504af73b0ae03874bd7f0a35552c8ea}} 
+\index{State Macros@{State Macros}!STATE\_NAME@{STATE\_NAME}}
+\index{STATE\_NAME@{STATE\_NAME}!State Macros@{State Macros}}
+\doxysubsubsection{\texorpdfstring{STATE\_NAME}{STATE\_NAME}}
+{\footnotesize\ttfamily \#define STATE\+\_\+\+NAME(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+NAME }\end{DoxyParamCaption})~ST\+\_\+\#\#\+\_\+\+NAME}
+
+
+
+Macro to create a state handler function name. 
+
+@macro STATE\+\_\+\+NAME
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+NAME} & Name of the state.\\
+\hline
+\end{DoxyParams}
+This macro generates the name of the state handler function based on the state name. 

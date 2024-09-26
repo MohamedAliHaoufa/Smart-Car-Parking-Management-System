@@ -1,0 +1,59 @@
+\hypertarget{structS__IRQ__SRC}{}\doxysection{S\+\_\+\+IRQ\+\_\+\+SRC Struct Reference}
+\label{structS__IRQ__SRC}\index{S\_IRQ\_SRC@{S\_IRQ\_SRC}}
+
+
+Structure to identify the source of SPI interrupts.  
+
+
+
+
+{\ttfamily \#include $<$stm32f401xx\+\_\+spi\+\_\+driver.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{structS__IRQ__SRC_af9faa3ae6c775ceb4c1897c4e4f99c6d}{TXE}}\+:1
+\item 
+uint8\+\_\+t \mbox{\hyperlink{structS__IRQ__SRC_acff2a84fb88c3371acc9e4b9cc42b0d1}{RXE}}\+:1
+\item 
+uint8\+\_\+t \mbox{\hyperlink{structS__IRQ__SRC_a583e03413eaaa08db82a8fc8d3675c2a}{ERRI}}\+:1
+\item 
+uint8\+\_\+t \mbox{\hyperlink{structS__IRQ__SRC_af2173e252f63ccc2d8551df3638a0f75}{Reserved}}\+:5
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Structure to identify the source of SPI interrupts. 
+
+This structure is used to indicate which interrupt event has occurred in the SPI peripheral. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structS__IRQ__SRC_a583e03413eaaa08db82a8fc8d3675c2a}\label{structS__IRQ__SRC_a583e03413eaaa08db82a8fc8d3675c2a}} 
+\index{S\_IRQ\_SRC@{S\_IRQ\_SRC}!ERRI@{ERRI}}
+\index{ERRI@{ERRI}!S\_IRQ\_SRC@{S\_IRQ\_SRC}}
+\doxysubsubsection{\texorpdfstring{ERRI}{ERRI}}
+{\footnotesize\ttfamily uint8\+\_\+t S\+\_\+\+IRQ\+\_\+\+SRC\+::\+ERRI}
+
+Error interrupt \mbox{\Hypertarget{structS__IRQ__SRC_af2173e252f63ccc2d8551df3638a0f75}\label{structS__IRQ__SRC_af2173e252f63ccc2d8551df3638a0f75}} 
+\index{S\_IRQ\_SRC@{S\_IRQ\_SRC}!Reserved@{Reserved}}
+\index{Reserved@{Reserved}!S\_IRQ\_SRC@{S\_IRQ\_SRC}}
+\doxysubsubsection{\texorpdfstring{Reserved}{Reserved}}
+{\footnotesize\ttfamily uint8\+\_\+t S\+\_\+\+IRQ\+\_\+\+SRC\+::\+Reserved}
+
+Reserved bits \mbox{\Hypertarget{structS__IRQ__SRC_acff2a84fb88c3371acc9e4b9cc42b0d1}\label{structS__IRQ__SRC_acff2a84fb88c3371acc9e4b9cc42b0d1}} 
+\index{S\_IRQ\_SRC@{S\_IRQ\_SRC}!RXE@{RXE}}
+\index{RXE@{RXE}!S\_IRQ\_SRC@{S\_IRQ\_SRC}}
+\doxysubsubsection{\texorpdfstring{RXE}{RXE}}
+{\footnotesize\ttfamily uint8\+\_\+t S\+\_\+\+IRQ\+\_\+\+SRC\+::\+RXE}
+
+RX buffer is empty \mbox{\Hypertarget{structS__IRQ__SRC_af9faa3ae6c775ceb4c1897c4e4f99c6d}\label{structS__IRQ__SRC_af9faa3ae6c775ceb4c1897c4e4f99c6d}} 
+\index{S\_IRQ\_SRC@{S\_IRQ\_SRC}!TXE@{TXE}}
+\index{TXE@{TXE}!S\_IRQ\_SRC@{S\_IRQ\_SRC}}
+\doxysubsubsection{\texorpdfstring{TXE}{TXE}}
+{\footnotesize\ttfamily uint8\+\_\+t S\+\_\+\+IRQ\+\_\+\+SRC\+::\+TXE}
+
+TX buffer is empty 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+drivers/\+Inc/\mbox{\hyperlink{stm32f401xx__spi__driver_8h}{stm32f401xx\+\_\+spi\+\_\+driver.\+h}}\end{DoxyCompactItemize}

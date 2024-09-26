@@ -1,0 +1,121 @@
+\hypertarget{Platform__Types_8h}{}\doxysection{drivers/\+Inc/\+Platform\+\_\+\+Types.h File Reference}
+\label{Platform__Types_8h}\index{drivers/Inc/Platform\_Types.h@{drivers/Inc/Platform\_Types.h}}
+
+
+Defines data types and macros for STM32\+F401xx microcontrollers.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Platform__Types_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__Platform__Types_gad3addcd6d7673b009f614717a4714a6d}{CPU\+\_\+\+TYPE\+\_\+8}}~8
+\begin{DoxyCompactList}\small\item\em CPU Type Definitions. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__Platform__Types_gaff2869eda256580acf5e432929d6fc02}{CPU\+\_\+\+TYPE\+\_\+16}}~16
+\item 
+\#define \mbox{\hyperlink{group__Platform__Types_gaadd4d6cb384cbb2b3c72bb145932bb0e}{CPU\+\_\+\+TYPE\+\_\+32}}~32
+\item 
+\#define \mbox{\hyperlink{group__Platform__Types_ga9a9c0b9a56cb7dffbb267af2f9b48a34}{CPU\+\_\+\+TYPE\+\_\+64}}~64
+\item 
+\#define \mbox{\hyperlink{group__Platform__Types_gad2f1093563dc14c2923f33412a982e83}{MSB\+\_\+\+FIRST}}~0
+\begin{DoxyCompactList}\small\item\em Bit Order Definitions. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__Platform__Types_gaa93c5c73d56a97871b8c595f38fabeba}{LSB\+\_\+\+FIRST}}~1
+\item 
+\#define \mbox{\hyperlink{group__Platform__Types_ga53d883f1077107cc6207cbc86771a896}{HIGH\+\_\+\+BYTE\+\_\+\+FIRST}}~0
+\begin{DoxyCompactList}\small\item\em Byte Order Definitions. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__Platform__Types_gae64b9962012ba9dae5329905c091413e}{LOW\+\_\+\+BYTE\+\_\+\+FIRST}}~1
+\item 
+\#define \mbox{\hyperlink{group__Platform__Types_ga5cac9c7ac310ee52ab50752956638dba}{CPU\+\_\+\+TYPE}}~\mbox{\hyperlink{group__Platform__Types_gaadd4d6cb384cbb2b3c72bb145932bb0e}{CPU\+\_\+\+TYPE\+\_\+32}}
+\begin{DoxyCompactList}\small\item\em Selected CPU Characteristics. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__Platform__Types_gafa6a6b2407852f8963bb2d7e3bec5b29}{CPU\+\_\+\+BIT\+\_\+\+ORDER}}~\mbox{\hyperlink{group__Platform__Types_gaa93c5c73d56a97871b8c595f38fabeba}{LSB\+\_\+\+FIRST}}
+\item 
+\#define \mbox{\hyperlink{group__Platform__Types_ga72da5011d289d156adcd6bba5edd97b3}{CPU\+\_\+\+BYTE\+\_\+\+ORDER}}~\mbox{\hyperlink{group__Platform__Types_gae64b9962012ba9dae5329905c091413e}{LOW\+\_\+\+BYTE\+\_\+\+FIRST}}
+\item 
+\#define \mbox{\hyperlink{group__Platform__Types_gaa8cecfc5c5c054d2875c03e77b7be15d}{TRUE}}~1
+\begin{DoxyCompactList}\small\item\em Boolean Constants. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__Platform__Types_gaa93f0eb578d23995850d61f7d61c55c1}{FALSE}}~0
+\item 
+\#define \mbox{\hyperlink{group__Platform__Types_ga59da1d65e87a723efe808dbabb4fc205}{SET}}~\mbox{\hyperlink{group__Platform__Types_gaa8cecfc5c5c054d2875c03e77b7be15d}{TRUE}}
+\item 
+\#define \mbox{\hyperlink{group__Platform__Types_gab702106cf3b3e96750b6845ded4e0299}{RESET}}~\mbox{\hyperlink{group__Platform__Types_gaa93f0eb578d23995850d61f7d61c55c1}{FALSE}}
+\item 
+\#define \mbox{\hyperlink{group__Platform__Types_gaeadc670e6fd25b11cefab921983d1f63}{FLAG\+\_\+\+SET}}~\mbox{\hyperlink{group__Platform__Types_ga59da1d65e87a723efe808dbabb4fc205}{SET}}
+\item 
+\#define \mbox{\hyperlink{group__Platform__Types_ga61d914b762371cb8ee60a428dfeadf22}{FLAG\+\_\+\+RESET}}~\mbox{\hyperlink{group__Platform__Types_gab702106cf3b3e96750b6845ded4e0299}{RESET}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef unsigned char \mbox{\hyperlink{group__Platform__Types_ga7670a4e8a07d9ebb00411948b0bbf86d}{boolean}}
+\begin{DoxyCompactList}\small\item\em Standard Data Types. \end{DoxyCompactList}\item 
+typedef signed char \mbox{\hyperlink{group__Platform__Types_ga1a6408291ee3cfd0760a61ac64084154}{sint8}}
+\item 
+typedef unsigned char \mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}}
+\item 
+typedef signed short \mbox{\hyperlink{group__Platform__Types_ga74df79fde3c518e55b29ce6360a9c76e}{sint16}}
+\item 
+typedef unsigned short \mbox{\hyperlink{group__Platform__Types_ga05f6b0ae8f6a6e135b0e290c25fe0e4e}{uint16}}
+\item 
+typedef signed long \mbox{\hyperlink{group__Platform__Types_gaa40c0011d4865ca4909ddb5a623116d6}{sint32}}
+\item 
+typedef signed long long \mbox{\hyperlink{group__Platform__Types_gad91d7e42d1c1abce1d9eeacd54cc0497}{sint64}}
+\item 
+typedef unsigned long \mbox{\hyperlink{group__Platform__Types_ga4b435a49c74bb91f284f075e63416cb6}{uint32}}
+\item 
+typedef unsigned long long \mbox{\hyperlink{group__Platform__Types_ga29940ae63ec06c9998bba873e25407ad}{uint64}}
+\item 
+typedef unsigned long \mbox{\hyperlink{group__Platform__Types_gad00cbebd19d0657f36f782f1ec36a684}{uint8\+\_\+least}}
+\begin{DoxyCompactList}\small\item\em Least Type Definitions. \end{DoxyCompactList}\item 
+typedef unsigned long \mbox{\hyperlink{group__Platform__Types_gaff015f06f175946af10363d20113211e}{uint16\+\_\+least}}
+\item 
+typedef unsigned long \mbox{\hyperlink{group__Platform__Types_gae9cbdbf7df8d40bdd23ead61830e8650}{uint32\+\_\+least}}
+\item 
+typedef signed long \mbox{\hyperlink{group__Platform__Types_gad2bdaa1f2c0a0dff303e25f85f6a4bc1}{sint8\+\_\+least}}
+\item 
+typedef signed long \mbox{\hyperlink{group__Platform__Types_ga8e46fba726d21e4da683a42b5f0e7e50}{sint16\+\_\+least}}
+\item 
+typedef signed long \mbox{\hyperlink{group__Platform__Types_gaf142cb3b6edb1d4a96d76c6f45691d51}{sint32\+\_\+least}}
+\item 
+typedef float \mbox{\hyperlink{group__Platform__Types_gaacdc525d6f7bddb3ae95d5c311bd06a1}{float32}}
+\begin{DoxyCompactList}\small\item\em Floating-\/\+Point Types. \end{DoxyCompactList}\item 
+typedef double \mbox{\hyperlink{group__Platform__Types_ga232fad1b0d6dcc7c16aabde98b2e2a80}{float64}}
+\item 
+typedef void $\ast$ \mbox{\hyperlink{group__Platform__Types_ga5cca82c5e941051f93ff720e101e6b53}{Void\+Ptr}}
+\begin{DoxyCompactList}\small\item\em Pointer Types. \end{DoxyCompactList}\item 
+typedef const void $\ast$ \mbox{\hyperlink{group__Platform__Types_ga16628852f3cfd15a5b583223579a9d10}{Const\+Void\+Ptr}}
+\item 
+typedef volatile unsigned char \mbox{\hyperlink{group__Platform__Types_ga758935d2272c08a6b673c270035ef191}{vuint8\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Volatile Types. \end{DoxyCompactList}\item 
+typedef volatile unsigned short \mbox{\hyperlink{group__Platform__Types_ga16dbb0ee0df18c844459c7b743da159c}{vuint16\+\_\+t}}
+\item 
+typedef volatile unsigned long \mbox{\hyperlink{group__Platform__Types_ga9b5ba0b3d357be0e02cbafa9977ef8ef}{vuint32\+\_\+t}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Defines data types and macros for STM32\+F401xx microcontrollers. 
+
+\begin{DoxyAuthor}{Author}
+Mohamed Ali Haoufa 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2024-\/09-\/21
+\end{DoxyDate}
+This header file provides standard data types, CPU-\/specific types, and macros for use with STM32\+F401xx series microcontrollers. It includes definitions for CPU bit and byte order, as well as various data type definitions suited for the platform.
+
+\begin{DoxyNote}{Note}
+This file is specifically tailored for the STM32\+F401xx family. Ensure compatibility with other microcontroller series before use.
+\end{DoxyNote}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2024 Mohamed Ali Haoufa 
+\end{DoxyCopyright}

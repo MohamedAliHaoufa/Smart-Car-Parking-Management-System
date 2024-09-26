@@ -1,0 +1,83 @@
+\hypertarget{app__states_8h}{}\doxysection{Inc/app\+\_\+states.h File Reference}
+\label{app__states_8h}\index{Inc/app\_states.h@{Inc/app\_states.h}}
+
+
+Header file containing definitions and macros for managing application states on the STM32\+F401xx MCU.  
+
+
+{\ttfamily \#include \char`\"{}ecu.\+h\char`\"{}}\newline
+Include dependency graph for app\+\_\+states.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{app__states_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{app__states_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__State__Macros_gaaee3acc692944599db8700eab8aa4fbe}{STATE\+\_\+\+API}}(\+\_\+\+NAME)~void ST\+\_\+\#\#\+\_\+\+NAME(void)
+\begin{DoxyCompactList}\small\item\em Macro to define a state handler function. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__State__Macros_ga7504af73b0ae03874bd7f0a35552c8ea}{STATE\+\_\+\+NAME}}(\+\_\+\+NAME)~ST\+\_\+\#\#\+\_\+\+NAME
+\begin{DoxyCompactList}\small\item\em Macro to create a state handler function name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__App__States_ga94b1da2e055fff4d143aa6aa891f79a9}{STATES}} \{ \newline
+\mbox{\hyperlink{group__App__States_gga94b1da2e055fff4d143aa6aa891f79a9a2847acd039e659572aad85db0c091878}{Init\+\_\+\+STATE}}
+, \mbox{\hyperlink{group__App__States_gga94b1da2e055fff4d143aa6aa891f79a9ac6f38c79bae23cb85a5ef37912107ba7}{Admin\+\_\+\+STATE}}
+, \mbox{\hyperlink{group__App__States_gga94b1da2e055fff4d143aa6aa891f79a9a99932a784534b9d850c6a1e47bcf7f41}{Idle\+\_\+\+STATE}}
+, \mbox{\hyperlink{group__App__States_gga94b1da2e055fff4d143aa6aa891f79a9a9851c861af1e052708bb6536aa9e80b2}{Enter\+\_\+\+Gate\+\_\+\+STATE}}
+, \newline
+\mbox{\hyperlink{group__App__States_gga94b1da2e055fff4d143aa6aa891f79a9a7a6b826bd915657aa25f67051b1655fe}{Exit\+\_\+\+Gate\+\_\+\+STATE}}
+, \mbox{\hyperlink{group__App__States_gga94b1da2e055fff4d143aa6aa891f79a9a1e5a4d3858268c1a9b0e31733cb0379b}{Full\+\_\+\+STATE}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enum representing various application states. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{group__State__Handlers_gabee0ad092198b70b71d561c1b5416fcb}{STATE\+\_\+\+API}} (\mbox{\hyperlink{group__App__States_gga94b1da2e055fff4d143aa6aa891f79a9a2847acd039e659572aad85db0c091878}{Init\+\_\+\+STATE}})
+\begin{DoxyCompactList}\small\item\em Handler function for the initialization state. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__State__Handlers_gad8a2486472ef1a08fb95776d003257c6}{STATE\+\_\+\+API}} (\mbox{\hyperlink{group__App__States_gga94b1da2e055fff4d143aa6aa891f79a9ac6f38c79bae23cb85a5ef37912107ba7}{Admin\+\_\+\+STATE}})
+\begin{DoxyCompactList}\small\item\em Handler function for the administration state. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__State__Handlers_gacc7b9f3bac8f025c559bd68e90b315c3}{STATE\+\_\+\+API}} (\mbox{\hyperlink{group__App__States_gga94b1da2e055fff4d143aa6aa891f79a9a99932a784534b9d850c6a1e47bcf7f41}{Idle\+\_\+\+STATE}})
+\begin{DoxyCompactList}\small\item\em Handler function for the idle state. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__State__Handlers_ga594fb56fad564ace392ecf6be391ac91}{STATE\+\_\+\+API}} (\mbox{\hyperlink{group__App__States_gga94b1da2e055fff4d143aa6aa891f79a9a9851c861af1e052708bb6536aa9e80b2}{Enter\+\_\+\+Gate\+\_\+\+STATE}})
+\begin{DoxyCompactList}\small\item\em Handler function for the entering gate state. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__State__Handlers_gac5b9799daaacaeee545c5ac1dc8aaddf}{STATE\+\_\+\+API}} (\mbox{\hyperlink{group__App__States_gga94b1da2e055fff4d143aa6aa891f79a9a7a6b826bd915657aa25f67051b1655fe}{Exit\+\_\+\+Gate\+\_\+\+STATE}})
+\begin{DoxyCompactList}\small\item\em Handler function for the exiting gate state. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__State__Handlers_gad931edca56701f8ce40a79ddd7f5f38b}{STATE\+\_\+\+API}} (\mbox{\hyperlink{group__App__States_gga94b1da2e055fff4d143aa6aa891f79a9a1e5a4d3858268c1a9b0e31733cb0379b}{Full\+\_\+\+STATE}})
+\begin{DoxyCompactList}\small\item\em Handler function for the full state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+void($\ast$ \mbox{\hyperlink{group__Function_ga1192329f146b59749d3b842a19c7a99c}{fp\+\_\+\+App\+\_\+\+State\+\_\+\+Handler}} )()
+\begin{DoxyCompactList}\small\item\em Function pointer for the current application state handler. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file containing definitions and macros for managing application states on the STM32\+F401xx MCU. 
+
+\begin{DoxyAuthor}{Author}
+Mohamed Ali Haoufa 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2024-\/09-\/21
+\end{DoxyDate}
+This file provides definitions for the application states and macros used in managing these states for the STM32\+F401xx microcontroller. It includes state definitions and function pointer declarations for handling different application states.
+
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2024 
+\end{DoxyCopyright}

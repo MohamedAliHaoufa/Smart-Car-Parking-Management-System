@@ -1,0 +1,143 @@
+\hypertarget{stm32f401xx__usart__driver_8h}{}\doxysection{drivers/\+Inc/stm32f401xx\+\_\+usart\+\_\+driver.h File Reference}
+\label{stm32f401xx__usart__driver_8h}\index{drivers/Inc/stm32f401xx\_usart\_driver.h@{drivers/Inc/stm32f401xx\_usart\_driver.h}}
+
+
+USART driver header file for STM32\+F401 series microcontrollers.  
+
+
+{\ttfamily \#include \char`\"{}stm32f401xx.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stm32f401xx\+\_\+gpio\+\_\+driver.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stm32f401xx\+\_\+rcc\+\_\+driver.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stm32f401xx\+\_\+nvic\+\_\+driver.\+h\char`\"{}}\newline
+Include dependency graph for stm32f401xx\+\_\+usart\+\_\+driver.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{stm32f401xx__usart__driver_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{stm32f401xx__usart__driver_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structUSART__cfg__t}{USART\+\_\+cfg\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Configuration structure for USART (Universal Synchronous Asynchronous Receiver Transmitter) peripheral. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__USART__Macros_gabb2bbf3bd5486f6ac32ab7787e56cf51}{UART\+\_\+\+Mode\+\_\+\+RX}}~((uint32\+\_\+t)(1UL $<$$<$ 2))
+\begin{DoxyCompactList}\small\item\em USART Mode Definitions. \end{DoxyCompactList}\item 
+\#define {\bfseries UART\+\_\+\+Mode\+\_\+\+TX}~((uint32\+\_\+t)(1UL $<$$<$ 3))
+\item 
+\#define {\bfseries UART\+\_\+\+Mode\+\_\+\+TX\+\_\+\+RX}~((uint32\+\_\+t)(1UL $<$$<$ 2 $\vert$ 1UL $<$$<$ 3))
+\item 
+\#define \mbox{\hyperlink{group__USART__Macros_gaeec1eaf082d5a6cfad574e8c3d4f56f9}{UART\+\_\+\+Baud\+Rate\+\_\+2400}}~2400
+\begin{DoxyCompactList}\small\item\em Baud Rate Definitions. \end{DoxyCompactList}\item 
+\#define {\bfseries UART\+\_\+\+Baud\+Rate\+\_\+9600}~9600
+\item 
+\#define {\bfseries UART\+\_\+\+Baud\+Rate\+\_\+19200}~19200
+\item 
+\#define {\bfseries UART\+\_\+\+Baud\+Rate\+\_\+57600}~57600
+\item 
+\#define {\bfseries UART\+\_\+\+Baud\+Rate\+\_\+115200}~115200
+\item 
+\#define {\bfseries UART\+\_\+\+Baud\+Rate\+\_\+230400}~230400
+\item 
+\#define {\bfseries UART\+\_\+\+Baud\+Rate\+\_\+460800}~460800
+\item 
+\#define {\bfseries UART\+\_\+\+Baud\+Rate\+\_\+921600}~921600
+\item 
+\#define {\bfseries UART\+\_\+\+Baud\+Rate\+\_\+2250000}~2250000
+\item 
+\#define {\bfseries UART\+\_\+\+Baud\+Rate\+\_\+4500000}~4500000
+\item 
+\#define \mbox{\hyperlink{group__USART__Macros_ga93ad84b362d250d2f508f6c84efd1c67}{UART\+\_\+\+Payload\+\_\+\+Length\+\_\+8B}}~((uint32\+\_\+t)(0))
+\begin{DoxyCompactList}\small\item\em Payload Length Definitions. \end{DoxyCompactList}\item 
+\#define {\bfseries UART\+\_\+\+Payload\+\_\+\+Length\+\_\+9B}~((uint32\+\_\+t)(1UL $<$$<$ 12))
+\item 
+\#define \mbox{\hyperlink{group__USART__Macros_gaaba70dddd4d5b13b4249a76cf73d3c48}{UART\+\_\+\+Parity\+\_\+\+NONE}}~((uint32\+\_\+t)(0))
+\begin{DoxyCompactList}\small\item\em Parity Definitions. \end{DoxyCompactList}\item 
+\#define {\bfseries UART\+\_\+\+Parity\+\_\+\+EVEN}~((uint32\+\_\+t)(1UL $<$$<$ 10))
+\item 
+\#define {\bfseries UART\+\_\+\+Parity\+\_\+\+ODD}~((uint32\+\_\+t)(1UL $<$$<$ 10) $\vert$ (1UL $<$$<$ 9))
+\item 
+\#define \mbox{\hyperlink{group__USART__Macros_ga7a7a4fc884602b7d56f302069a067cae}{UART\+\_\+\+Stop\+Bits\+\_\+half}}~((uint32\+\_\+t)(1 $<$$<$ 12))
+\begin{DoxyCompactList}\small\item\em Stop Bits Definitions. \end{DoxyCompactList}\item 
+\#define {\bfseries UART\+\_\+\+Stop\+Bits\+\_\+1}~((uint32\+\_\+t)(0))
+\item 
+\#define {\bfseries UART\+\_\+\+Stop\+Bits\+\_\+1\+\_\+half}~((uint32\+\_\+t)(3 $<$$<$ 12))
+\item 
+\#define {\bfseries UART\+\_\+\+Stop\+Bits\+\_\+2}~((uint32\+\_\+t)(2 $<$$<$ 12))
+\item 
+\#define \mbox{\hyperlink{group__USART__Macros_ga8f307fd2d5577d9fe9d4db7791a6361c}{UART\+\_\+\+Hw\+Flow\+Ctl\+\_\+\+NONE}}~((uint32\+\_\+t)(0))
+\begin{DoxyCompactList}\small\item\em Hardware Flow Control Definitions. \end{DoxyCompactList}\item 
+\#define {\bfseries UART\+\_\+\+Hw\+Flow\+Ctl\+\_\+\+RTS}~((uint32\+\_\+t)(1UL $<$$<$ 8))
+\item 
+\#define {\bfseries UART\+\_\+\+Hw\+Flow\+Ctl\+\_\+\+CTS}~((uint32\+\_\+t)(1UL $<$$<$ 9))
+\item 
+\#define {\bfseries UART\+\_\+\+Hw\+Flow\+Ctl\+\_\+\+RTS\+\_\+\+CTS}~((uint32\+\_\+t)(1UL $<$$<$ 8 $\vert$ 1UL $<$$<$ 9))
+\item 
+\#define \mbox{\hyperlink{group__USART__Macros_gafce1d8e1cd1cede0862f37f764a8d7be}{UART\+\_\+\+IRQ\+\_\+\+Enable\+\_\+\+NONE}}~((uint32\+\_\+t)(0))
+\begin{DoxyCompactList}\small\item\em IRQ Enable Definitions. \end{DoxyCompactList}\item 
+\#define {\bfseries UART\+\_\+\+IRQ\+\_\+\+Enable\+\_\+\+TXE}~((uint32\+\_\+t)(1UL $<$$<$ 7))
+\item 
+\#define {\bfseries UART\+\_\+\+IRQ\+\_\+\+Enable\+\_\+\+TC}~((uint32\+\_\+t)(1UL $<$$<$ 6))
+\item 
+\#define {\bfseries UART\+\_\+\+IRQ\+\_\+\+Enable\+\_\+\+RXNE}~((uint32\+\_\+t)(1UL $<$$<$ 5))
+\item 
+\#define {\bfseries UART\+\_\+\+IRQ\+\_\+\+Enable\+\_\+\+PE}~((uint32\+\_\+t)(1UL $<$$<$ 8))
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__USART__Types_ga2fc4223243c5260955aeb1db3fc8e0d6}\label{group__USART__Types_ga2fc4223243c5260955aeb1db3fc8e0d6}} 
+enum \mbox{\hyperlink{group__USART__Types_ga2fc4223243c5260955aeb1db3fc8e0d6}{Polling\+\_\+\+Mechanism}} \{ {\bfseries enable}
+, {\bfseries disable}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeration for Polling Mechanism. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__USART__Functions_gaaeca545de502e83469c40393cac653d2}{MCAL\+\_\+\+USART\+\_\+\+Init}} (\mbox{\hyperlink{structUSART__TypeDef}{USART\+\_\+\+Type\+Def}} $\ast$USARTx, \mbox{\hyperlink{structUSART__cfg__t}{USART\+\_\+cfg\+\_\+t}} $\ast$USART\+\_\+cfg)
+\begin{DoxyCompactList}\small\item\em Initializes UART (Asynchronous mode only). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__USART__Functions_ga00606d66433aa9ceb63f0e376881b784}{MCAL\+\_\+\+USART\+\_\+\+De\+Init}} (\mbox{\hyperlink{structUSART__TypeDef}{USART\+\_\+\+Type\+Def}} $\ast$USARTx)
+\begin{DoxyCompactList}\small\item\em Deinitializes UART (Asynchronous mode only). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__USART__Functions_ga651202b09e8601ac5a82e0af0fb8c655}{MCAL\+\_\+\+USART\+\_\+\+GPIO\+\_\+\+Set\+\_\+\+Pins}} (\mbox{\hyperlink{structUSART__TypeDef}{USART\+\_\+\+Type\+Def}} $\ast$USARTx)
+\begin{DoxyCompactList}\small\item\em Initializes GPIO pins for UART. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__USART__Functions_gaeeb64c133c24060904b82f596b04b44e}{MCAL\+\_\+\+USART\+\_\+\+Send\+Data}} (\mbox{\hyperlink{structUSART__TypeDef}{USART\+\_\+\+Type\+Def}} $\ast$USARTx, uint16\+\_\+t $\ast$p\+Tx\+Buffer, \mbox{\hyperlink{group__USART__Types_ga2fc4223243c5260955aeb1db3fc8e0d6}{Polling\+\_\+\+Mechanism}} Polling\+En)
+\begin{DoxyCompactList}\small\item\em Sends buffer via UART. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__USART__Functions_ga950eec31c80b96bedee533cf78252f84}{MCAL\+\_\+\+USART\+\_\+\+Send\+String}} (\mbox{\hyperlink{structUSART__TypeDef}{USART\+\_\+\+Type\+Def}} $\ast$USARTx, uint8\+\_\+t $\ast$str, uint8\+\_\+t str\+\_\+len)
+\begin{DoxyCompactList}\small\item\em Sends a string via UART. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__USART__Functions_ga8663eb2482fedff6cd3b015e639370df}{MCAL\+\_\+\+USART\+\_\+\+Receive\+Data}} (\mbox{\hyperlink{structUSART__TypeDef}{USART\+\_\+\+Type\+Def}} $\ast$USARTx, uint16\+\_\+t $\ast$p\+Rx\+Buffer, \mbox{\hyperlink{group__USART__Types_ga2fc4223243c5260955aeb1db3fc8e0d6}{Polling\+\_\+\+Mechanism}} Polling\+En)
+\begin{DoxyCompactList}\small\item\em Receives buffer from UART. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__USART__Functions_gaa4a035d6d8dc29eec8d0c77b4a9426b4}{MCAL\+\_\+\+USART\+\_\+\+Receive\+Buffer}} (\mbox{\hyperlink{structUSART__TypeDef}{USART\+\_\+\+Type\+Def}} $\ast$USARTx, uint16\+\_\+t $\ast$p\+Rx\+Buffer, uint8\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em Receives buffer from UART with specified length. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__USART__Functions_ga4b353fbe55debff1d5b3f4f7c35c08c5}{MCAL\+\_\+\+USART\+\_\+\+Wait\+\_\+\+TC}} (\mbox{\hyperlink{structUSART__TypeDef}{USART\+\_\+\+Type\+Def}} $\ast$USARTx)
+\begin{DoxyCompactList}\small\item\em Waits until transmission is completed by polling on TC flag. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+USART driver header file for STM32\+F401 series microcontrollers. 
+
+\begin{DoxyAuthor}{Author}
+Mohamed Ali Haoufa 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2024-\/09-\/21
+\end{DoxyDate}
+This file contains the configuration and function prototypes for the USART peripheral. It includes macros for configuration, API declarations, and enumeration types.
+
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2024 
+\end{DoxyCopyright}

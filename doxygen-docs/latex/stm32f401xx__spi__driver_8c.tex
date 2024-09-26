@@ -1,0 +1,153 @@
+\hypertarget{stm32f401xx__spi__driver_8c}{}\doxysection{drivers/\+Src/stm32f401xx\+\_\+spi\+\_\+driver.c File Reference}
+\label{stm32f401xx__spi__driver_8c}\index{drivers/Src/stm32f401xx\_spi\_driver.c@{drivers/Src/stm32f401xx\_spi\_driver.c}}
+
+
+Contains the implementation of the SPI driver APIs for STM32\+F401.  
+
+
+{\ttfamily \#include \char`\"{}stm32f401xx\+\_\+rcc\+\_\+driver.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stm32f401xx\+\_\+spi\+\_\+driver.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stm32f401xx.\+h\char`\"{}}\newline
+Include dependency graph for stm32f401xx\+\_\+spi\+\_\+driver.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{stm32f401xx__spi__driver_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{stm32f401xx__spi__driver_8c_a8df2e0030e1fdfe39b8ae461b0d0d631}{SPI1\+\_\+\+Index}}~0
+\begin{DoxyCompactList}\small\item\em Macro definitions for SPI indices and status flags. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{stm32f401xx__spi__driver_8c_a5cc183641311d3143cbab0478ae7c891}{SPI2\+\_\+\+Index}}~1
+\item 
+\#define \mbox{\hyperlink{stm32f401xx__spi__driver_8c_a5bd5d21816947fcb25ccae7d3bf8eb2c}{SPI\+\_\+\+SR\+\_\+\+TXE}}~(uint8\+\_\+t)(1 $<$$<$ 1)
+\item 
+\#define \mbox{\hyperlink{stm32f401xx__spi__driver_8c_a40e14de547aa06864abcd4b0422d8b48}{SPI\+\_\+\+SR\+\_\+\+RXNE}}~(uint8\+\_\+t)(1 $<$$<$ 0)
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__SPI__Functions_gad0933510ba93f5f2399aa9432d95677d}{MCAL\+\_\+\+SPI\+\_\+\+Init}} (\mbox{\hyperlink{structSPI__TypeDef}{SPI\+\_\+\+Type\+Def}} $\ast$SPIx, \mbox{\hyperlink{structS__SPI__Config__t}{S\+\_\+\+SPI\+\_\+\+Config\+\_\+t}} $\ast$Config)
+\begin{DoxyCompactList}\small\item\em Initializes the SPI peripheral. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__SPI__Functions_gac9b61ad97e351ca9e9c4b2dfdfff8f12}{MCAL\+\_\+\+SPI\+\_\+\+De\+Init}} (\mbox{\hyperlink{structSPI__TypeDef}{SPI\+\_\+\+Type\+Def}} $\ast$SPIx)
+\begin{DoxyCompactList}\small\item\em Deinitializes the SPI peripheral. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__SPI__Functions_ga67af48d357d5b49a77b6238923d803f6}{MCAL\+\_\+\+SPI\+\_\+\+Send\+Data}} (\mbox{\hyperlink{structSPI__TypeDef}{SPI\+\_\+\+Type\+Def}} $\ast$SPIx, uint16\+\_\+t $\ast$p\+TXBuffer, enum \mbox{\hyperlink{group__SPI__Driver_ga0977830bf93ba7dd23eed509c7635026}{SPI\+\_\+\+Polling\+Mechanism}} Polling\+\_\+\+En)
+\begin{DoxyCompactList}\small\item\em Sends data through the SPI peripheral. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__SPI__Functions_ga24b81b28cdd035688be6f966c9112e8b}{MCAL\+\_\+\+SPI\+\_\+\+Receive\+Data}} (\mbox{\hyperlink{structSPI__TypeDef}{SPI\+\_\+\+Type\+Def}} $\ast$SPIx, uint16\+\_\+t $\ast$p\+RXBuffer, enum \mbox{\hyperlink{group__SPI__Driver_ga0977830bf93ba7dd23eed509c7635026}{SPI\+\_\+\+Polling\+Mechanism}} Polling\+\_\+\+En)
+\begin{DoxyCompactList}\small\item\em Receives data from the SPI peripheral. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__SPI__Functions_ga5c6038e9c666ffdf7a8d9fc4f01775be}{MCAL\+\_\+\+SPI\+\_\+\+GPIO\+\_\+\+Set\+\_\+\+Pins}} (\mbox{\hyperlink{structSPI__TypeDef}{SPI\+\_\+\+Type\+Def}} $\ast$SPIx)
+\begin{DoxyCompactList}\small\item\em Configures GPIO pins for SPI communication based on SPI peripheral. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__SPI__Functions_ga0440ff036aeb6197d6b2c60e2862d47e}{MCAL\+\_\+\+SPI\+\_\+\+Tx\+\_\+\+Rx}} (\mbox{\hyperlink{structSPI__TypeDef}{SPI\+\_\+\+Type\+Def}} $\ast$SPIX, uint16\+\_\+t $\ast$TX\+\_\+\+RX\+\_\+p\+Buffer, enum \mbox{\hyperlink{group__SPI__Driver_ga0977830bf93ba7dd23eed509c7635026}{SPI\+\_\+\+Polling\+Mechanism}} Polling\+\_\+\+En)
+\begin{DoxyCompactList}\small\item\em Transmit and receive data through SPI. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{stm32f401xx__spi__driver_8c_a9bbd8c17ce4f49adcca47d11f482aab6}{SPI1\+\_\+\+IRQHandler}} (void)
+\begin{DoxyCompactList}\small\item\em SPI1 interrupt handler. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{stm32f401xx__spi__driver_8c_a68d8880cd80cb17a2501487c3d649ea1}{SPI2\+\_\+\+IRQHandler}} (void)
+\begin{DoxyCompactList}\small\item\em SPI2 interrupt handler. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structS__SPI__Config__t}{S\+\_\+\+SPI\+\_\+\+Config\+\_\+t}} $\ast$ \mbox{\hyperlink{stm32f401xx__spi__driver_8c_ace52861587cc61073441c39afb041079}{Global\+\_\+\+SPI\+\_\+\+Config}} \mbox{[}2\mbox{]} = \{NULL, NULL\}
+\begin{DoxyCompactList}\small\item\em Global array to hold SPI configurations. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains the implementation of the SPI driver APIs for STM32\+F401. 
+
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2024-\/09-\/21
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2024
+\end{DoxyCopyright}
+This file provides the implementation of the APIs for configuring and using the SPI (Serial Peripheral Interface) module of the STM32\+F401 microcontroller. It includes initialization, deinitialization, data transmission, and reception functions, as well as GPIO pin configuration and IRQ handling. 
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{stm32f401xx__spi__driver_8c_a8df2e0030e1fdfe39b8ae461b0d0d631}\label{stm32f401xx__spi__driver_8c_a8df2e0030e1fdfe39b8ae461b0d0d631}} 
+\index{stm32f401xx\_spi\_driver.c@{stm32f401xx\_spi\_driver.c}!SPI1\_Index@{SPI1\_Index}}
+\index{SPI1\_Index@{SPI1\_Index}!stm32f401xx\_spi\_driver.c@{stm32f401xx\_spi\_driver.c}}
+\doxysubsubsection{\texorpdfstring{SPI1\_Index}{SPI1\_Index}}
+{\footnotesize\ttfamily \#define SPI1\+\_\+\+Index~0}
+
+
+
+Macro definitions for SPI indices and status flags. 
+
+Index for SPI1 in Global\+\_\+\+SPI\+\_\+\+Config array \mbox{\Hypertarget{stm32f401xx__spi__driver_8c_a5cc183641311d3143cbab0478ae7c891}\label{stm32f401xx__spi__driver_8c_a5cc183641311d3143cbab0478ae7c891}} 
+\index{stm32f401xx\_spi\_driver.c@{stm32f401xx\_spi\_driver.c}!SPI2\_Index@{SPI2\_Index}}
+\index{SPI2\_Index@{SPI2\_Index}!stm32f401xx\_spi\_driver.c@{stm32f401xx\_spi\_driver.c}}
+\doxysubsubsection{\texorpdfstring{SPI2\_Index}{SPI2\_Index}}
+{\footnotesize\ttfamily \#define SPI2\+\_\+\+Index~1}
+
+Index for SPI2 in Global\+\_\+\+SPI\+\_\+\+Config array \mbox{\Hypertarget{stm32f401xx__spi__driver_8c_a40e14de547aa06864abcd4b0422d8b48}\label{stm32f401xx__spi__driver_8c_a40e14de547aa06864abcd4b0422d8b48}} 
+\index{stm32f401xx\_spi\_driver.c@{stm32f401xx\_spi\_driver.c}!SPI\_SR\_RXNE@{SPI\_SR\_RXNE}}
+\index{SPI\_SR\_RXNE@{SPI\_SR\_RXNE}!stm32f401xx\_spi\_driver.c@{stm32f401xx\_spi\_driver.c}}
+\doxysubsubsection{\texorpdfstring{SPI\_SR\_RXNE}{SPI\_SR\_RXNE}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+SR\+\_\+\+RXNE~(uint8\+\_\+t)(1 $<$$<$ 0)}
+
+SPI Status Register RXNE flag \mbox{\Hypertarget{stm32f401xx__spi__driver_8c_a5bd5d21816947fcb25ccae7d3bf8eb2c}\label{stm32f401xx__spi__driver_8c_a5bd5d21816947fcb25ccae7d3bf8eb2c}} 
+\index{stm32f401xx\_spi\_driver.c@{stm32f401xx\_spi\_driver.c}!SPI\_SR\_TXE@{SPI\_SR\_TXE}}
+\index{SPI\_SR\_TXE@{SPI\_SR\_TXE}!stm32f401xx\_spi\_driver.c@{stm32f401xx\_spi\_driver.c}}
+\doxysubsubsection{\texorpdfstring{SPI\_SR\_TXE}{SPI\_SR\_TXE}}
+{\footnotesize\ttfamily \#define SPI\+\_\+\+SR\+\_\+\+TXE~(uint8\+\_\+t)(1 $<$$<$ 1)}
+
+SPI Status Register TXE flag 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{stm32f401xx__spi__driver_8c_a9bbd8c17ce4f49adcca47d11f482aab6}\label{stm32f401xx__spi__driver_8c_a9bbd8c17ce4f49adcca47d11f482aab6}} 
+\index{stm32f401xx\_spi\_driver.c@{stm32f401xx\_spi\_driver.c}!SPI1\_IRQHandler@{SPI1\_IRQHandler}}
+\index{SPI1\_IRQHandler@{SPI1\_IRQHandler}!stm32f401xx\_spi\_driver.c@{stm32f401xx\_spi\_driver.c}}
+\doxysubsubsection{\texorpdfstring{SPI1\_IRQHandler()}{SPI1\_IRQHandler()}}
+{\footnotesize\ttfamily void SPI1\+\_\+\+IRQHandler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+SPI1 interrupt handler. 
+
+This function handles the interrupt for SPI1. It retrieves the interrupt status (TXE, RXE, and ERRI) and calls the appropriate callback function.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{stm32f401xx__spi__driver_8c_a68d8880cd80cb17a2501487c3d649ea1}\label{stm32f401xx__spi__driver_8c_a68d8880cd80cb17a2501487c3d649ea1}} 
+\index{stm32f401xx\_spi\_driver.c@{stm32f401xx\_spi\_driver.c}!SPI2\_IRQHandler@{SPI2\_IRQHandler}}
+\index{SPI2\_IRQHandler@{SPI2\_IRQHandler}!stm32f401xx\_spi\_driver.c@{stm32f401xx\_spi\_driver.c}}
+\doxysubsubsection{\texorpdfstring{SPI2\_IRQHandler()}{SPI2\_IRQHandler()}}
+{\footnotesize\ttfamily void SPI2\+\_\+\+IRQHandler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+SPI2 interrupt handler. 
+
+This function handles the interrupt for SPI2. It retrieves the interrupt status (TXE, RXE, and ERRI) and calls the appropriate callback function.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{stm32f401xx__spi__driver_8c_ace52861587cc61073441c39afb041079}\label{stm32f401xx__spi__driver_8c_ace52861587cc61073441c39afb041079}} 
+\index{stm32f401xx\_spi\_driver.c@{stm32f401xx\_spi\_driver.c}!Global\_SPI\_Config@{Global\_SPI\_Config}}
+\index{Global\_SPI\_Config@{Global\_SPI\_Config}!stm32f401xx\_spi\_driver.c@{stm32f401xx\_spi\_driver.c}}
+\doxysubsubsection{\texorpdfstring{Global\_SPI\_Config}{Global\_SPI\_Config}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structS__SPI__Config__t}{S\+\_\+\+SPI\+\_\+\+Config\+\_\+t}}$\ast$ Global\+\_\+\+SPI\+\_\+\+Config\mbox{[}2\mbox{]} = \{NULL, NULL\}}
+
+
+
+Global array to hold SPI configurations. 
+
+This array holds pointers to SPI configurations for SPI1 and SPI2.
+\begin{DoxyItemize}
+\item Index 0\+: SPI1 configuration
+\item Index 1\+: SPI2 configuration 
+\end{DoxyItemize}

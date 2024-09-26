@@ -1,0 +1,83 @@
+\hypertarget{structITM__Type}{}\doxysection{ITM\+\_\+\+Type Struct Reference}
+\label{structITM__Type}\index{ITM\_Type@{ITM\_Type}}
+
+
+Structure type to access the Instrumentation Trace Macrocell Register (ITM).  
+
+
+
+
+{\ttfamily \#include $<$core\+\_\+cm4.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\mbox{\hyperlink{group__CMSIS_ga7e25d9380f9ef903923964322e71f2f6}{\_\_O}} uint8\_t \mbox{\hyperlink{group__CMSIS__core__DebugFunctions_gabea77b06775d325e5f6f46203f582433}{ITM\_Type::u8}}\\
+\>\mbox{\hyperlink{group__CMSIS_ga7e25d9380f9ef903923964322e71f2f6}{\_\_O}} uint16\_t \mbox{\hyperlink{group__CMSIS__core__DebugFunctions_ga12aa4eb4d9dcb589a5d953c836f4e8f4}{ITM\_Type::u16}}\\
+\>\mbox{\hyperlink{group__CMSIS_ga7e25d9380f9ef903923964322e71f2f6}{\_\_O}} uint32\_t \mbox{\hyperlink{group__CMSIS__core__DebugFunctions_ga6882fa5af67ef5c5dfb433b3b68939df}{ITM\_Type::u32}}\\
+\} \mbox{\hyperlink{group__CMSIS__core__DebugFunctions_gad9f8d413a216e7b9a24596ab1071deb0}{PORT}} \mbox{[}32\mbox{]}\\
+
+\end{tabbing}\item 
+uint32\+\_\+t {\bfseries RESERVED0} \mbox{[}864\mbox{]}
+\item 
+\mbox{\hyperlink{group__CMSIS_gaec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} uint32\+\_\+t \mbox{\hyperlink{group__CMSIS__core__DebugFunctions_ga91a040e1b162e1128ac1e852b4a0e589}{TER}}
+\item 
+uint32\+\_\+t {\bfseries RESERVED1} \mbox{[}15\mbox{]}
+\item 
+\mbox{\hyperlink{group__CMSIS_gaec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} uint32\+\_\+t \mbox{\hyperlink{group__CMSIS__core__DebugFunctions_ga93b480aac6da620bbb611212186d47fa}{TPR}}
+\item 
+uint32\+\_\+t {\bfseries RESERVED2} \mbox{[}15\mbox{]}
+\item 
+\mbox{\hyperlink{group__CMSIS_gaec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} uint32\+\_\+t \mbox{\hyperlink{group__CMSIS__core__DebugFunctions_ga58f169e1aa40a9b8afb6296677c3bb45}{TCR}}
+\item 
+uint32\+\_\+t {\bfseries RESERVED3} \mbox{[}29\mbox{]}
+\item 
+\mbox{\hyperlink{group__CMSIS_ga7e25d9380f9ef903923964322e71f2f6}{\+\_\+\+\_\+O}} uint32\+\_\+t \mbox{\hyperlink{group__CMSIS__core__DebugFunctions_gafd0e0c051acd3f6187794a4e8dc7e7ea}{IWR}}
+\item 
+\mbox{\hyperlink{group__CMSIS_gaf63697ed9952cc71e1225efe205f6cd3}{\+\_\+\+\_\+I}} uint32\+\_\+t \mbox{\hyperlink{group__CMSIS__core__DebugFunctions_ga212a614a8d5f2595e5eb049e5143c739}{IRR}}
+\item 
+\mbox{\hyperlink{group__CMSIS_gaec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} uint32\+\_\+t \mbox{\hyperlink{group__CMSIS__core__DebugFunctions_gab2e87d8bb0e3ce9b8e0e4a6a6695228a}{IMCR}}
+\item 
+uint32\+\_\+t {\bfseries RESERVED4} \mbox{[}43\mbox{]}
+\item 
+\mbox{\hyperlink{group__CMSIS_ga7e25d9380f9ef903923964322e71f2f6}{\+\_\+\+\_\+O}} uint32\+\_\+t \mbox{\hyperlink{group__CMSIS__core__DebugFunctions_ga97840d39a9c63331e3689b5fa69175e9}{LAR}}
+\item 
+\mbox{\hyperlink{group__CMSIS_gaf63697ed9952cc71e1225efe205f6cd3}{\+\_\+\+\_\+I}} uint32\+\_\+t \mbox{\hyperlink{group__CMSIS__core__DebugFunctions_gaaa0515b1f6dd5e7d90b61ef67d8de77b}{LSR}}
+\item 
+uint32\+\_\+t {\bfseries RESERVED5} \mbox{[}6\mbox{]}
+\item 
+\mbox{\hyperlink{group__CMSIS_gaf63697ed9952cc71e1225efe205f6cd3}{\+\_\+\+\_\+I}} uint32\+\_\+t \mbox{\hyperlink{group__CMSIS__core__DebugFunctions_gaccfc7de00b0eaba0301e8f4553f70512}{PID4}}
+\item 
+\mbox{\hyperlink{group__CMSIS_gaf63697ed9952cc71e1225efe205f6cd3}{\+\_\+\+\_\+I}} uint32\+\_\+t \mbox{\hyperlink{group__CMSIS__core__DebugFunctions_ga9353055ceb7024e07d59248e54502cb9}{PID5}}
+\item 
+\mbox{\hyperlink{group__CMSIS_gaf63697ed9952cc71e1225efe205f6cd3}{\+\_\+\+\_\+I}} uint32\+\_\+t \mbox{\hyperlink{group__CMSIS__core__DebugFunctions_ga755c0ec919e7dbb5f7ff05c8b56a3383}{PID6}}
+\item 
+\mbox{\hyperlink{group__CMSIS_gaf63697ed9952cc71e1225efe205f6cd3}{\+\_\+\+\_\+I}} uint32\+\_\+t \mbox{\hyperlink{group__CMSIS__core__DebugFunctions_gaa31ca6bb4b749201321b23d0dbbe0704}{PID7}}
+\item 
+\mbox{\hyperlink{group__CMSIS_gaf63697ed9952cc71e1225efe205f6cd3}{\+\_\+\+\_\+I}} uint32\+\_\+t \mbox{\hyperlink{group__CMSIS__core__DebugFunctions_gab69ade751350a7758affdfe396517535}{PID0}}
+\item 
+\mbox{\hyperlink{group__CMSIS_gaf63697ed9952cc71e1225efe205f6cd3}{\+\_\+\+\_\+I}} uint32\+\_\+t \mbox{\hyperlink{group__CMSIS__core__DebugFunctions_ga30e87ec6f93ecc9fe4f135ca8b068990}{PID1}}
+\item 
+\mbox{\hyperlink{group__CMSIS_gaf63697ed9952cc71e1225efe205f6cd3}{\+\_\+\+\_\+I}} uint32\+\_\+t \mbox{\hyperlink{group__CMSIS__core__DebugFunctions_gae139d2e588bb382573ffcce3625a88cd}{PID2}}
+\item 
+\mbox{\hyperlink{group__CMSIS_gaf63697ed9952cc71e1225efe205f6cd3}{\+\_\+\+\_\+I}} uint32\+\_\+t \mbox{\hyperlink{group__CMSIS__core__DebugFunctions_gaf006ee26c7e61c9a3712a80ac74a6cf3}{PID3}}
+\item 
+\mbox{\hyperlink{group__CMSIS_gaf63697ed9952cc71e1225efe205f6cd3}{\+\_\+\+\_\+I}} uint32\+\_\+t \mbox{\hyperlink{group__CMSIS__core__DebugFunctions_ga413f3bb0a15222e5f38fca4baeef14f6}{CID0}}
+\item 
+\mbox{\hyperlink{group__CMSIS_gaf63697ed9952cc71e1225efe205f6cd3}{\+\_\+\+\_\+I}} uint32\+\_\+t \mbox{\hyperlink{group__CMSIS__core__DebugFunctions_ga5f7d524b71f49e444ff0d1d52b3c3565}{CID1}}
+\item 
+\mbox{\hyperlink{group__CMSIS_gaf63697ed9952cc71e1225efe205f6cd3}{\+\_\+\+\_\+I}} uint32\+\_\+t \mbox{\hyperlink{group__CMSIS__core__DebugFunctions_gadee4ccce1429db8b5db3809c4539f876}{CID2}}
+\item 
+\mbox{\hyperlink{group__CMSIS_gaf63697ed9952cc71e1225efe205f6cd3}{\+\_\+\+\_\+I}} uint32\+\_\+t \mbox{\hyperlink{group__CMSIS__core__DebugFunctions_ga0e7aa199619cc7ac6baddff9600aa52e}{CID3}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Structure type to access the Instrumentation Trace Macrocell Register (ITM). 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+CMSIS/\+Inc/\mbox{\hyperlink{core__cm4_8h}{core\+\_\+cm4.\+h}}\end{DoxyCompactItemize}

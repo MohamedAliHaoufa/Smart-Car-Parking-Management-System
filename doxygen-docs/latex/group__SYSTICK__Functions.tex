@@ -1,0 +1,253 @@
+\hypertarget{group__SYSTICK__Functions}{}\doxysection{API Function Prototypes}
+\label{group__SYSTICK__Functions}\index{API Function Prototypes@{API Function Prototypes}}
+Collaboration diagram for API Function Prototypes\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{group__SYSTICK__Functions}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__SYSTICK__Functions_ga36eba3620572f6acbad1102355816ac7}{MCAL\+\_\+\+STK\+\_\+\+Config}} (\mbox{\hyperlink{structSTK__config__t}{STK\+\_\+config\+\_\+t}} $\ast$\+\_\+cfg)
+\begin{DoxyCompactList}\small\item\em Configures the Sys\+Tick timer with the specified parameters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__SYSTICK__Functions_ga721edfb448646eecc4e3e54f3861eb31}{MCAL\+\_\+\+STK\+\_\+\+Set\+Reload}} (\mbox{\hyperlink{group__Platform__Types_ga4b435a49c74bb91f284f075e63416cb6}{uint32}} value)
+\begin{DoxyCompactList}\small\item\em Sets the reload value for the Sys\+Tick timer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__SYSTICK__Functions_ga024450ece04b2df53a63fd0b41f4f14f}{MCAL\+\_\+\+STK\+\_\+\+Set\+Callback}} (void($\ast$pf\+Callback)(void))
+\begin{DoxyCompactList}\small\item\em Sets the callback function for the Sys\+Tick timer interrupt. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__SYSTICK__Functions_ga7debe5f5279aa4b0e9930e3a371ac58e}{MCAL\+\_\+\+STK\+\_\+\+Start\+Timer}} ()
+\begin{DoxyCompactList}\small\item\em Starts the Sys\+Tick timer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__SYSTICK__Functions_ga49458b28a7e8cbdbbe8c7bee8891739f}{MCAL\+\_\+\+STK\+\_\+\+Stop\+Timer}} ()
+\begin{DoxyCompactList}\small\item\em Stops the Sys\+Tick timer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__SYSTICK__Functions_gacc4f8116e14dd1c8a696f3264b53336e}{MCAL\+\_\+\+STK\+\_\+\+Delay}} (\mbox{\hyperlink{group__Platform__Types_ga4b435a49c74bb91f284f075e63416cb6}{uint32}} delay\+\_\+ticks)
+\begin{DoxyCompactList}\small\item\em Delays the system by a specified number of ticks using the Sys\+Tick timer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__SYSTICK__Functions_gac43392c1a1fed482b528b07a39047364}{MCAL\+\_\+\+STK\+\_\+\+Delay1ms}} (\mbox{\hyperlink{group__Platform__Types_ga4b435a49c74bb91f284f075e63416cb6}{uint32}} delay\+\_\+ms)
+\begin{DoxyCompactList}\small\item\em Delays the system by a specified number of milliseconds. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__SYSTICK__Functions_ga36eba3620572f6acbad1102355816ac7}\label{group__SYSTICK__Functions_ga36eba3620572f6acbad1102355816ac7}} 
+\index{API Function Prototypes@{API Function Prototypes}!MCAL\_STK\_Config@{MCAL\_STK\_Config}}
+\index{MCAL\_STK\_Config@{MCAL\_STK\_Config}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{MCAL\_STK\_Config()}{MCAL\_STK\_Config()}}
+{\footnotesize\ttfamily void MCAL\+\_\+\+STK\+\_\+\+Config (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structSTK__config__t}{STK\+\_\+config\+\_\+t}} $\ast$}]{\+\_\+cfg }\end{DoxyParamCaption})}
+
+
+
+Configures the Sys\+Tick timer with the specified parameters. 
+
+This function configures the Sys\+Tick timer\textquotesingle{}s clock source, interrupt settings, and reload value based on the input configuration structure.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em \+\_\+cfg} & Pointer to the configuration structure containing the Sys\+Tick settings. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The Sys\+Tick timer is stopped when this function is called. It must be re-\/enabled manually.
+\end{DoxyNote}
+Configures the Sys\+Tick timer with the specified parameters.
+
+This function initializes the Sys\+Tick timer based on the provided configuration. It sets up the clock source, interrupt enable status, reload value, and callback function if interrupts are enabled.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em \+\_\+cfg} & Pointer to a struct containing Sys\+Tick configuration parameters.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This function stops the timer; you need to re-\/enable it after configuration. 
+\end{DoxyNote}
+\mbox{\Hypertarget{group__SYSTICK__Functions_gacc4f8116e14dd1c8a696f3264b53336e}\label{group__SYSTICK__Functions_gacc4f8116e14dd1c8a696f3264b53336e}} 
+\index{API Function Prototypes@{API Function Prototypes}!MCAL\_STK\_Delay@{MCAL\_STK\_Delay}}
+\index{MCAL\_STK\_Delay@{MCAL\_STK\_Delay}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{MCAL\_STK\_Delay()}{MCAL\_STK\_Delay()}}
+{\footnotesize\ttfamily void MCAL\+\_\+\+STK\+\_\+\+Delay (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__Platform__Types_ga4b435a49c74bb91f284f075e63416cb6}{uint32}}}]{delay\+\_\+ticks }\end{DoxyParamCaption})}
+
+
+
+Delays the system by a specified number of ticks using the Sys\+Tick timer. 
+
+This function uses the Sys\+Tick timer to generate a delay for a specified number of ticks. After the delay, the timer configuration and reload value are restored.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em delay\+\_\+ticks} & The number of ticks to delay. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+Delays the system by a specified number of ticks using the Sys\+Tick timer.
+
+This function generates a delay based on the number of Sys\+Tick timer ticks specified. It temporarily disables the Sys\+Tick timer, sets the reload value, and waits for the timer to expire before restoring the previous configuration.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em delay\+\_\+ticks} & Number of ticks to delay.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__SYSTICK__Functions_gac43392c1a1fed482b528b07a39047364}\label{group__SYSTICK__Functions_gac43392c1a1fed482b528b07a39047364}} 
+\index{API Function Prototypes@{API Function Prototypes}!MCAL\_STK\_Delay1ms@{MCAL\_STK\_Delay1ms}}
+\index{MCAL\_STK\_Delay1ms@{MCAL\_STK\_Delay1ms}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{MCAL\_STK\_Delay1ms()}{MCAL\_STK\_Delay1ms()}}
+{\footnotesize\ttfamily void MCAL\+\_\+\+STK\+\_\+\+Delay1ms (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__Platform__Types_ga4b435a49c74bb91f284f075e63416cb6}{uint32}}}]{delay\+\_\+ms }\end{DoxyParamCaption})}
+
+
+
+Delays the system by a specified number of milliseconds. 
+
+This function generates a delay for the specified number of milliseconds using the Sys\+Tick timer. The user must define the system frequency (stk\+\_\+cpu\+\_\+freq\+\_\+define) to ensure accurate delays.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em delay\+\_\+ms} & The number of milliseconds to delay. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+Delays the system by a specified number of milliseconds.
+
+This function generates a delay of the specified number of milliseconds by repeatedly calling MCAL\+\_\+\+STK\+\_\+\+Delay for each millisecond.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em delay\+\_\+ms} & Number of milliseconds to delay.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The user must define the frequency of the Sys\+Tick timer in stk\+\_\+cpu\+\_\+freq\+\_\+define. 
+\end{DoxyNote}
+\mbox{\Hypertarget{group__SYSTICK__Functions_ga024450ece04b2df53a63fd0b41f4f14f}\label{group__SYSTICK__Functions_ga024450ece04b2df53a63fd0b41f4f14f}} 
+\index{API Function Prototypes@{API Function Prototypes}!MCAL\_STK\_SetCallback@{MCAL\_STK\_SetCallback}}
+\index{MCAL\_STK\_SetCallback@{MCAL\_STK\_SetCallback}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{MCAL\_STK\_SetCallback()}{MCAL\_STK\_SetCallback()}}
+{\footnotesize\ttfamily void MCAL\+\_\+\+STK\+\_\+\+Set\+Callback (\begin{DoxyParamCaption}\item[{void($\ast$)(void)}]{pf\+Callback }\end{DoxyParamCaption})}
+
+
+
+Sets the callback function for the Sys\+Tick timer interrupt. 
+
+This function assigns a user-\/defined callback function that will be executed when the Sys\+Tick interrupt is triggered.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pf\+Callback} & Pointer to the callback function to be executed on Sys\+Tick interrupt. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+This function allows the user to specify a function that will be called when the Sys\+Tick timer interrupt occurs.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pf\+Callback} & Pointer to the callback function.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__SYSTICK__Functions_ga721edfb448646eecc4e3e54f3861eb31}\label{group__SYSTICK__Functions_ga721edfb448646eecc4e3e54f3861eb31}} 
+\index{API Function Prototypes@{API Function Prototypes}!MCAL\_STK\_SetReload@{MCAL\_STK\_SetReload}}
+\index{MCAL\_STK\_SetReload@{MCAL\_STK\_SetReload}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{MCAL\_STK\_SetReload()}{MCAL\_STK\_SetReload()}}
+{\footnotesize\ttfamily void MCAL\+\_\+\+STK\+\_\+\+Set\+Reload (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__Platform__Types_ga4b435a49c74bb91f284f075e63416cb6}{uint32}}}]{value }\end{DoxyParamCaption})}
+
+
+
+Sets the reload value for the Sys\+Tick timer. 
+
+This function sets the reload value which determines the Sys\+Tick timer\textquotesingle{}s period.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em value} & The reload value to be set. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+Sets the reload value for the Sys\+Tick timer.
+
+This function sets the value that the Sys\+Tick timer counts down from before generating an interrupt.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em value} & The value to be set as the reload value.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__SYSTICK__Functions_ga7debe5f5279aa4b0e9930e3a371ac58e}\label{group__SYSTICK__Functions_ga7debe5f5279aa4b0e9930e3a371ac58e}} 
+\index{API Function Prototypes@{API Function Prototypes}!MCAL\_STK\_StartTimer@{MCAL\_STK\_StartTimer}}
+\index{MCAL\_STK\_StartTimer@{MCAL\_STK\_StartTimer}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{MCAL\_STK\_StartTimer()}{MCAL\_STK\_StartTimer()}}
+{\footnotesize\ttfamily void MCAL\+\_\+\+STK\+\_\+\+Start\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Starts the Sys\+Tick timer. 
+
+This function starts the Sys\+Tick timer. The timer must be configured using \mbox{\hyperlink{group__SYSTICK__Functions_ga36eba3620572f6acbad1102355816ac7}{MCAL\+\_\+\+STK\+\_\+\+Config()}} before starting it unless default values are used.
+
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+This function initializes and starts the Sys\+Tick timer. The timer will begin counting from the reload value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+MCAL\+\_\+\+STK\+\_\+\+Config should be called first to configure the Sys\+Tick timer unless default values are acceptable. 
+\end{DoxyNote}
+\mbox{\Hypertarget{group__SYSTICK__Functions_ga49458b28a7e8cbdbbe8c7bee8891739f}\label{group__SYSTICK__Functions_ga49458b28a7e8cbdbbe8c7bee8891739f}} 
+\index{API Function Prototypes@{API Function Prototypes}!MCAL\_STK\_StopTimer@{MCAL\_STK\_StopTimer}}
+\index{MCAL\_STK\_StopTimer@{MCAL\_STK\_StopTimer}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{MCAL\_STK\_StopTimer()}{MCAL\_STK\_StopTimer()}}
+{\footnotesize\ttfamily void MCAL\+\_\+\+STK\+\_\+\+Stop\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Stops the Sys\+Tick timer. 
+
+This function stops the Sys\+Tick timer, halting its operation until restarted.
+
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+This function stops the Sys\+Tick timer, halting the countdown and disabling interrupts.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}

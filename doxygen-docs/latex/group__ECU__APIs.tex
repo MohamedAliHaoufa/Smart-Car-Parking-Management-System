@@ -1,0 +1,374 @@
+\hypertarget{group__ECU__APIs}{}\doxysection{ECU APIs}
+\label{group__ECU__APIs}\index{ECU APIs@{ECU APIs}}
+
+
+APIs for managing the ECU functionalities.  
+
+
+Collaboration diagram for ECU APIs\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{group__ECU__APIs}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__ECU__APIs_ga114349133ddf496b9ec98d514f082651}{ECU\+\_\+\+Init}} (void)
+\begin{DoxyCompactList}\small\item\em Initializes all hardware components and peripherals. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__ECU__APIs_ga8f707f3c5d18398a05118002a2d7c92e}{Admin\+\_\+\+Init}} (void)
+\begin{DoxyCompactList}\small\item\em Initializes the admin settings, including setting up user IDs. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__ECU__APIs_gacc7d7576d60033a810374b783a3e1089}{User\+LCD\+\_\+\+Print\+Free\+Slots}} (void)
+\begin{DoxyCompactList}\small\item\em Prints the number of free parking slots on the LCD. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__ID__Check_gaddfbbbd4fbf131c3f3c9b4b22c9e0e8f}{ID\+\_\+\+Check\+\_\+\+Result}} \mbox{\hyperlink{group__ECU__APIs_gaaded311a1a7a0f916cf1d12f6d8b7106}{Check\+\_\+\+ID}} (\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \+\_\+\+ID)
+\begin{DoxyCompactList}\small\item\em Checks if the given ID exists in the system. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{group__ECU__APIs_ga06d565ca71c83a93a053e2edf8714012}{Check\+\_\+\+Flag}} (\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \+\_\+\+ID)
+\begin{DoxyCompactList}\small\item\em Returns the status flag associated with the given ID. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__ECU__APIs_ga0dc95de0d543dc20a08ae05669300e96}{Flag\+\_\+\+SET\+\_\+\+RESET}} (\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \+\_\+\+ID)
+\begin{DoxyCompactList}\small\item\em Toggles the flag associated with the given ID. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{group__ECU__APIs_ga6757e46fabfc552ef0aaa7965b2f2eb3}{Check\+\_\+\+Password}} (\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \+\_\+\+ID)
+\begin{DoxyCompactList}\small\item\em Checks if the entered password matches the stored password for the given ID. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__ECU__APIs_ga0ef83bf1abec10b58e37eea06083b95a}{combine\+Arrays}} (uint8\+\_\+t $\ast$array1, int size1, uint8\+\_\+t $\ast$array2, int size2, uint8\+\_\+t $\ast$array3, int size3, uint8\+\_\+t $\ast$array4, int size4, uint8\+\_\+t $\ast$combined\+Array)
+\begin{DoxyCompactList}\small\item\em Combines four arrays into a single array. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__ECU__APIs_ga834868a3aa2a8b573fb935ea0b4f6f37}{Enter\+\_\+\+Gate\+\_\+\+Open}} (void)
+\begin{DoxyCompactList}\small\item\em Opens the entrance gate and displays the status on the LCD. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__ECU__APIs_gad15430485bcc08c284fe7451e7fb24a2}{Exit\+\_\+\+Gate\+\_\+\+Open}} (void)
+\begin{DoxyCompactList}\small\item\em Opens the exit gate and displays the status on the LCD. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__ECU__APIs_ga23ed05a62f0a4712f8d33022d6ee8695}{Wrong\+\_\+\+RFID}} (void)
+\begin{DoxyCompactList}\small\item\em Triggers the alarm and prints \char`\"{}\+UNKNOWN ID!\char`\"{} on the LCD. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__ECU__APIs_gab08ff0d42e1be4cfb55a0e9f99c9771f}{Trigger\+\_\+\+Alarm}} (\mbox{\hyperlink{structUSART__TypeDef}{USART\+\_\+\+Type\+Def}} $\ast$\+\_\+\+USART)
+\begin{DoxyCompactList}\small\item\em Echoes the entered ID via USART and flashes the red LED. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+APIs for managing the ECU functionalities. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__ECU__APIs_ga8f707f3c5d18398a05118002a2d7c92e}\label{group__ECU__APIs_ga8f707f3c5d18398a05118002a2d7c92e}} 
+\index{ECU APIs@{ECU APIs}!Admin\_Init@{Admin\_Init}}
+\index{Admin\_Init@{Admin\_Init}!ECU APIs@{ECU APIs}}
+\doxysubsubsection{\texorpdfstring{Admin\_Init()}{Admin\_Init()}}
+{\footnotesize\ttfamily void Admin\+\_\+\+Init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Initializes the admin settings, including setting up user IDs. 
+
+This function is called at system startup to set the user IDs and configure the initial admin settings.
+
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+Initializes the admin settings, including setting up user IDs.
+
+This function is called at the very start of the system to set the users\textquotesingle{} IDs. It prompts the admin to enter user IDs via a keypad and displays the entered IDs on the LCD. It also sets the default screen for the rest of the program.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__ECU__APIs_ga06d565ca71c83a93a053e2edf8714012}\label{group__ECU__APIs_ga06d565ca71c83a93a053e2edf8714012}} 
+\index{ECU APIs@{ECU APIs}!Check\_Flag@{Check\_Flag}}
+\index{Check\_Flag@{Check\_Flag}!ECU APIs@{ECU APIs}}
+\doxysubsubsection{\texorpdfstring{Check\_Flag()}{Check\_Flag()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} Check\+\_\+\+Flag (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}}}]{\+\_\+\+ID }\end{DoxyParamCaption})}
+
+
+
+Returns the status flag associated with the given ID. 
+
+This function checks the flag status for the specified user ID. It compares the input ID with stored user IDs and returns the corresponding flag value if a match is found.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em \+\_\+\+ID} & ID whose flag status is to be checked.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+User flag if the ID matches; 0 if no match is found. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__ECU__APIs_gaaded311a1a7a0f916cf1d12f6d8b7106}\label{group__ECU__APIs_gaaded311a1a7a0f916cf1d12f6d8b7106}} 
+\index{ECU APIs@{ECU APIs}!Check\_ID@{Check\_ID}}
+\index{Check\_ID@{Check\_ID}!ECU APIs@{ECU APIs}}
+\doxysubsubsection{\texorpdfstring{Check\_ID()}{Check\_ID()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__ID__Check_gaddfbbbd4fbf131c3f3c9b4b22c9e0e8f}{ID\+\_\+\+Check\+\_\+\+Result}} Check\+\_\+\+ID (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}}}]{\+\_\+\+ID }\end{DoxyParamCaption})}
+
+
+
+Checks if the given ID exists in the system. 
+
+This function checks if the provided ID exists among the saved user IDs.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em \+\_\+\+ID} & The ID to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ID\+\_\+\+Found if the ID is found, ID\+\_\+\+NOT\+\_\+\+Found otherwise.
+\end{DoxyReturn}
+Checks if the given ID exists in the system.
+
+This function searches for the specified ID in the list of saved IDs and returns the result of the search.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em \+\_\+\+ID} & ID to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ID\+\_\+\+Found if the ID is found, ID\+\_\+\+NOT\+\_\+\+Found otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__ECU__APIs_ga6757e46fabfc552ef0aaa7965b2f2eb3}\label{group__ECU__APIs_ga6757e46fabfc552ef0aaa7965b2f2eb3}} 
+\index{ECU APIs@{ECU APIs}!Check\_Password@{Check\_Password}}
+\index{Check\_Password@{Check\_Password}!ECU APIs@{ECU APIs}}
+\doxysubsubsection{\texorpdfstring{Check\_Password()}{Check\_Password()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} Check\+\_\+\+Password (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}}}]{\+\_\+\+ID }\end{DoxyParamCaption})}
+
+
+
+Checks if the entered password matches the stored password for the given ID. 
+
+This function prompts the user to enter a 4-\/digit password using a keypad. It compares the entered password with the stored password for the corresponding ID. If the passwords match, the function returns 1; otherwise, it returns 0.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em \+\_\+\+ID} & ID for which the password is being checked.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if the entered password matches the stored password, 0 otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__ECU__APIs_ga0ef83bf1abec10b58e37eea06083b95a}\label{group__ECU__APIs_ga0ef83bf1abec10b58e37eea06083b95a}} 
+\index{ECU APIs@{ECU APIs}!combineArrays@{combineArrays}}
+\index{combineArrays@{combineArrays}!ECU APIs@{ECU APIs}}
+\doxysubsubsection{\texorpdfstring{combineArrays()}{combineArrays()}}
+{\footnotesize\ttfamily void combine\+Arrays (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{array1,  }\item[{int}]{size1,  }\item[{uint8\+\_\+t $\ast$}]{array2,  }\item[{int}]{size2,  }\item[{uint8\+\_\+t $\ast$}]{array3,  }\item[{int}]{size3,  }\item[{uint8\+\_\+t $\ast$}]{array4,  }\item[{int}]{size4,  }\item[{uint8\+\_\+t $\ast$}]{combined\+Array }\end{DoxyParamCaption})}
+
+
+
+Combines four arrays into a single array. 
+
+This function merges four separate arrays into one single array. It copies the contents of each input array sequentially into the {\ttfamily combined\+Array}. The sizes of the arrays and the final combined array should be managed carefully to avoid buffer overflows.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em array1} & Pointer to the first input array. \\
+\hline
+\mbox{\texttt{ in}}  & {\em size1} & Number of elements in the first array. \\
+\hline
+\mbox{\texttt{ in}}  & {\em array2} & Pointer to the second input array. \\
+\hline
+\mbox{\texttt{ in}}  & {\em size2} & Number of elements in the second array. \\
+\hline
+\mbox{\texttt{ in}}  & {\em array3} & Pointer to the third input array. \\
+\hline
+\mbox{\texttt{ in}}  & {\em size3} & Number of elements in the third array. \\
+\hline
+\mbox{\texttt{ in}}  & {\em array4} & Pointer to the fourth input array. \\
+\hline
+\mbox{\texttt{ in}}  & {\em size4} & Number of elements in the fourth array. \\
+\hline
+\mbox{\texttt{ out}}  & {\em combined\+Array} & Pointer to the array where the combined data will be stored. The size of this array must be at least {\ttfamily size1 + size2 + size3 + size4}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__ECU__APIs_ga114349133ddf496b9ec98d514f082651}\label{group__ECU__APIs_ga114349133ddf496b9ec98d514f082651}} 
+\index{ECU APIs@{ECU APIs}!ECU\_Init@{ECU\_Init}}
+\index{ECU\_Init@{ECU\_Init}!ECU APIs@{ECU APIs}}
+\doxysubsubsection{\texorpdfstring{ECU\_Init()}{ECU\_Init()}}
+{\footnotesize\ttfamily void ECU\+\_\+\+Init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Initializes all hardware components and peripherals. 
+
+This function initializes the necessary peripherals for the application, including USART, servo motors, LCD, LED, and keypad drivers.
+
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Must be called on system boot.
+\end{DoxyNote}
+This function sets up all the essential peripherals, including clock initialization, LED configuration, LCD, UART, and sensor setups. Must be called during system startup.
+
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__ECU__APIs_ga834868a3aa2a8b573fb935ea0b4f6f37}\label{group__ECU__APIs_ga834868a3aa2a8b573fb935ea0b4f6f37}} 
+\index{ECU APIs@{ECU APIs}!Enter\_Gate\_Open@{Enter\_Gate\_Open}}
+\index{Enter\_Gate\_Open@{Enter\_Gate\_Open}!ECU APIs@{ECU APIs}}
+\doxysubsubsection{\texorpdfstring{Enter\_Gate\_Open()}{Enter\_Gate\_Open()}}
+{\footnotesize\ttfamily void Enter\+\_\+\+Gate\+\_\+\+Open (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Opens the entrance gate and displays the status on the LCD. 
+
+This function opens the entrance gate and prints a message on the LCD indicating that the gate is open.
+
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+Opens the entrance gate and displays the status on the LCD.
+
+This function activates the servo to open the entry gate, turns on the green LED to indicate the gate is open, and waits until the PIR sensor detects that the gate is closed before closing the gate.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__ECU__APIs_gad15430485bcc08c284fe7451e7fb24a2}\label{group__ECU__APIs_gad15430485bcc08c284fe7451e7fb24a2}} 
+\index{ECU APIs@{ECU APIs}!Exit\_Gate\_Open@{Exit\_Gate\_Open}}
+\index{Exit\_Gate\_Open@{Exit\_Gate\_Open}!ECU APIs@{ECU APIs}}
+\doxysubsubsection{\texorpdfstring{Exit\_Gate\_Open()}{Exit\_Gate\_Open()}}
+{\footnotesize\ttfamily void Exit\+\_\+\+Gate\+\_\+\+Open (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Opens the exit gate and displays the status on the LCD. 
+
+This function opens the exit gate and prints a message on the LCD indicating that the gate is open.
+
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+Opens the exit gate and displays the status on the LCD.
+
+This function activates the servo to open the exit gate, turns on the green LED to indicate the gate is open, and waits until the PIR sensor detects that the gate is closed before closing the gate.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__ECU__APIs_ga0dc95de0d543dc20a08ae05669300e96}\label{group__ECU__APIs_ga0dc95de0d543dc20a08ae05669300e96}} 
+\index{ECU APIs@{ECU APIs}!Flag\_SET\_RESET@{Flag\_SET\_RESET}}
+\index{Flag\_SET\_RESET@{Flag\_SET\_RESET}!ECU APIs@{ECU APIs}}
+\doxysubsubsection{\texorpdfstring{Flag\_SET\_RESET()}{Flag\_SET\_RESET()}}
+{\footnotesize\ttfamily void Flag\+\_\+\+SET\+\_\+\+RESET (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}}}]{\+\_\+\+ID }\end{DoxyParamCaption})}
+
+
+
+Toggles the flag associated with the given ID. 
+
+This function toggles the flag of a user identified by the provided ID. If the flag is currently set (1), it will be reset (0), and vice versa.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em \+\_\+\+ID} & ID whose flag is to be toggled. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__ECU__APIs_gab08ff0d42e1be4cfb55a0e9f99c9771f}\label{group__ECU__APIs_gab08ff0d42e1be4cfb55a0e9f99c9771f}} 
+\index{ECU APIs@{ECU APIs}!Trigger\_Alarm@{Trigger\_Alarm}}
+\index{Trigger\_Alarm@{Trigger\_Alarm}!ECU APIs@{ECU APIs}}
+\doxysubsubsection{\texorpdfstring{Trigger\_Alarm()}{Trigger\_Alarm()}}
+{\footnotesize\ttfamily void Trigger\+\_\+\+Alarm (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structUSART__TypeDef}{USART\+\_\+\+Type\+Def}} $\ast$}]{\+\_\+\+USART }\end{DoxyParamCaption})}
+
+
+
+Echoes the entered ID via USART and flashes the red LED. 
+
+This function echoes the entered ID through the specified USART and flashes the red LED to signal an alarm condition.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em \+\_\+\+USART} & Pointer to the USART instance that received the ID. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+Echoes the entered ID via USART and flashes the red LED.
+
+This function retrieves the entered ID from the specified USART instance, echoes the ID back on UART, and triggers the red LED to flash multiple times as an alarm indication.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em \+\_\+\+USART} & Pointer to the USART instance that contains the received ID.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The function uses blocking delays to flash the LED. 
+\end{DoxyNote}
+\mbox{\Hypertarget{group__ECU__APIs_gacc7d7576d60033a810374b783a3e1089}\label{group__ECU__APIs_gacc7d7576d60033a810374b783a3e1089}} 
+\index{ECU APIs@{ECU APIs}!UserLCD\_PrintFreeSlots@{UserLCD\_PrintFreeSlots}}
+\index{UserLCD\_PrintFreeSlots@{UserLCD\_PrintFreeSlots}!ECU APIs@{ECU APIs}}
+\doxysubsubsection{\texorpdfstring{UserLCD\_PrintFreeSlots()}{UserLCD\_PrintFreeSlots()}}
+{\footnotesize\ttfamily void User\+LCD\+\_\+\+Print\+Free\+Slots (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Prints the number of free parking slots on the LCD. 
+
+This function prints the number of available parking slots on the user LCD when requested by setting the {\ttfamily Print\+\_\+\+Slots\+\_\+\+LCD\+\_\+\+Flag}.
+
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+{\ttfamily Print\+\_\+\+Slots\+\_\+\+LCD\+\_\+\+Flag} must be set to 1 before calling this function.
+\end{DoxyNote}
+Prints the number of free parking slots on the LCD.
+
+This function updates the User\+LCD with the number of free slots if the {\ttfamily Print\+\_\+\+Slots\+\_\+\+LCD\+\_\+\+Flag} is set. If there are no free slots, it displays a message indicating that parking is full.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Must set {\ttfamily Print\+\_\+\+Slots\+\_\+\+LCD\+\_\+\+Flag} to 1 before calling this function. 
+\end{DoxyNote}
+\mbox{\Hypertarget{group__ECU__APIs_ga23ed05a62f0a4712f8d33022d6ee8695}\label{group__ECU__APIs_ga23ed05a62f0a4712f8d33022d6ee8695}} 
+\index{ECU APIs@{ECU APIs}!Wrong\_RFID@{Wrong\_RFID}}
+\index{Wrong\_RFID@{Wrong\_RFID}!ECU APIs@{ECU APIs}}
+\doxysubsubsection{\texorpdfstring{Wrong\_RFID()}{Wrong\_RFID()}}
+{\footnotesize\ttfamily void Wrong\+\_\+\+RFID (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Triggers the alarm and prints \char`\"{}\+UNKNOWN ID!\char`\"{} on the LCD. 
+
+This function triggers an alarm when an unrecognized RFID tag is presented, and displays a message indicating the unknown ID on the LCD.
+
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+Triggers the alarm and prints \char`\"{}\+UNKNOWN ID!\char`\"{} on the LCD.
+
+This function activates the red LED to indicate an error and sets the servos to the down position. It also displays \char`\"{}\+UNKNOWN ID!\char`\"{} on the LCD to inform the user of the error.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}

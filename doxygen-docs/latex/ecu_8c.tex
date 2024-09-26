@@ -1,0 +1,106 @@
+\hypertarget{ecu_8c}{}\doxysection{Src/ecu.c File Reference}
+\label{ecu_8c}\index{Src/ecu.c@{Src/ecu.c}}
+
+
+Header file containing all necessary information and functionality for managing STM32\+F401xx MCU-\/based peripherals.  
+
+
+{\ttfamily \#include \char`\"{}ecu.\+h\char`\"{}}\newline
+Include dependency graph for ecu.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ecu_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__Global__Variables__Definitions_ga68d34399b41feca1830f2ad3bf471e86}{SIZE1}}~3
+\begin{DoxyCompactList}\small\item\em Definitions for combining arrays. \end{DoxyCompactList}\item 
+\#define {\bfseries SIZE2}~4
+\item 
+\#define {\bfseries SIZE3}~4
+\item 
+\#define {\bfseries SIZE4}~4
+\item 
+\#define {\bfseries TOTAL\+\_\+\+SIZE}~(\mbox{\hyperlink{group__Global__Variables__Definitions_ga68d34399b41feca1830f2ad3bf471e86}{SIZE1}} + SIZE2 + SIZE3 + SIZE4)
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__API__Definitions_gabd2208d5d6454756a916987af947f303}{Enter\+\_\+\+UART\+\_\+\+Call\+Back}} (void)
+\begin{DoxyCompactList}\small\item\em Callback function for handling entry UART events. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__API__Definitions_ga90eaadbbe8b2b1898b1ff5339fc5faa4}{Exit\+\_\+\+UART\+\_\+\+Call\+Back}} (void)
+\begin{DoxyCompactList}\small\item\em Callback function for handling exit UART events. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__API__Definitions_ga114349133ddf496b9ec98d514f082651}{ECU\+\_\+\+Init}} (void)
+\begin{DoxyCompactList}\small\item\em Initializes all hardware components and peripherals. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__API__Definitions_ga8f707f3c5d18398a05118002a2d7c92e}{Admin\+\_\+\+Init}} (void)
+\begin{DoxyCompactList}\small\item\em Initializes user IDs and displays them on the LCD. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__API__Definitions_gacc7d7576d60033a810374b783a3e1089}{User\+LCD\+\_\+\+Print\+Free\+Slots}} (void)
+\begin{DoxyCompactList}\small\item\em Prints the number of free slots on the User\+LCD. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__ID__Check_gaddfbbbd4fbf131c3f3c9b4b22c9e0e8f}{ID\+\_\+\+Check\+\_\+\+Result}} \mbox{\hyperlink{group__API__Definitions_gaaded311a1a7a0f916cf1d12f6d8b7106}{Check\+\_\+\+ID}} (\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \+\_\+\+ID)
+\begin{DoxyCompactList}\small\item\em Checks if the given ID is present in the saved IDs. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{group__API__Definitions_ga06d565ca71c83a93a053e2edf8714012}{Check\+\_\+\+Flag}} (\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \+\_\+\+ID)
+\begin{DoxyCompactList}\small\item\em Returns the status flag associated with the given ID. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__API__Definitions_ga0dc95de0d543dc20a08ae05669300e96}{Flag\+\_\+\+SET\+\_\+\+RESET}} (\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \+\_\+\+ID)
+\begin{DoxyCompactList}\small\item\em Toggles the flag associated with the given ID. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{group__API__Definitions_ga6757e46fabfc552ef0aaa7965b2f2eb3}{Check\+\_\+\+Password}} (\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \+\_\+\+ID)
+\begin{DoxyCompactList}\small\item\em Checks if the entered password matches the stored password for the given ID. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__API__Definitions_ga0ef83bf1abec10b58e37eea06083b95a}{combine\+Arrays}} (uint8\+\_\+t $\ast$array1, int size1, uint8\+\_\+t $\ast$array2, int size2, uint8\+\_\+t $\ast$array3, int size3, uint8\+\_\+t $\ast$array4, int size4, uint8\+\_\+t $\ast$combined\+Array)
+\begin{DoxyCompactList}\small\item\em Combines four arrays into a single array. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__API__Definitions_ga834868a3aa2a8b573fb935ea0b4f6f37}{Enter\+\_\+\+Gate\+\_\+\+Open}} (void)
+\begin{DoxyCompactList}\small\item\em Opens the entry gate and displays a message on the LCD. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__API__Definitions_gad15430485bcc08c284fe7451e7fb24a2}{Exit\+\_\+\+Gate\+\_\+\+Open}} (void)
+\begin{DoxyCompactList}\small\item\em Opens the exit gate and displays a message on the LCD. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__API__Definitions_ga23ed05a62f0a4712f8d33022d6ee8695}{Wrong\+\_\+\+RFID}} (void)
+\begin{DoxyCompactList}\small\item\em Triggers an alarm and displays an \char`\"{}\+UNKNOWN ID!\char`\"{} message on the LCD. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__API__Definitions_gab08ff0d42e1be4cfb55a0e9f99c9771f}{Trigger\+\_\+\+Alarm}} (\mbox{\hyperlink{structUSART__TypeDef}{USART\+\_\+\+Type\+Def}} $\ast$\+\_\+\+USART)
+\begin{DoxyCompactList}\small\item\em Triggers an alarm by echoing the received ID on UART and flashing the red LED. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+volatile \mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{group__Global__Variables__Definitions_ga6eccbdea114a356b50ba8ca1d4d520da}{Enter\+\_\+\+Flag}}
+\begin{DoxyCompactList}\small\item\em Flags and variables used for managing system state. \end{DoxyCompactList}\item 
+volatile \mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{group__Global__Variables__Definitions_gae2251646161719f20cde4469825a47ca}{Exit\+\_\+\+Flag}}
+\item 
+\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{group__Global__Variables__Definitions_ga35e5b6e006589360d53e1b25005fd4f6}{Free\+\_\+\+Slots}} = 3
+\item 
+\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{group__Global__Variables__Definitions_ga916dcbf524c7f03ccf608cecb18a1710}{Print\+\_\+\+Slots\+\_\+\+LCD\+\_\+\+Flag}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file containing all necessary information and functionality for managing STM32\+F401xx MCU-\/based peripherals. 
+
+Contains the main program logic for managing STM32\+F401xx MCU-\/based peripherals.
+
+\begin{DoxyAuthor}{Author}
+Mohamed Ali Haoufa 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2024-\/09-\/21
+\end{DoxyDate}
+This file contains the initialization and control logic for peripherals including LEDs, LCDs, UART, PIR sensors, and servo motors.
+
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2024
+\end{DoxyCopyright}
+\begin{DoxyAuthor}{Author}
+Mohamed Ali Haoufa 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2024-\/09-\/21
+\end{DoxyDate}
+This file includes the initialization and control logic for peripherals such as LEDs, LCDs, UART, PIR sensors, and servo motors. It operates the system based on a state machine, managing various hardware components.
+
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2024 Mohamed Ali Haoufa. All rights reserved. 
+\end{DoxyCopyright}

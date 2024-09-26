@@ -1,0 +1,223 @@
+\hypertarget{group__RCC__Functions}{}\doxysection{API Function Prototypes}
+\label{group__RCC__Functions}\index{API Function Prototypes@{API Function Prototypes}}
+Collaboration diagram for API Function Prototypes\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{group__RCC__Functions}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__RCC__Functions_ga750edf69053325d7ba3c84bff5714a61}{MCAL\+\_\+\+RCC\+\_\+\+Select\+\_\+\+Clock}} (uint8\+\_\+t clock)
+\begin{DoxyCompactList}\small\item\em Select the clock source for the MCU. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__RCC__Functions_gae8f354a9bcd4e18bc159459cce9c771a}{MCAL\+\_\+\+RCC\+\_\+\+Enable\+\_\+\+Peripheral}} (uint8\+\_\+t peripheral)
+\begin{DoxyCompactList}\small\item\em Enable the clock for a specific peripheral. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__RCC__Functions_ga893a5d2c3fc9f1b06b275e3e7364fba0}{MCAL\+\_\+\+RCC\+\_\+\+Reset\+\_\+\+Peripheral}} (uint8\+\_\+t peripheral)
+\begin{DoxyCompactList}\small\item\em Reset a specific peripheral. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{group__RCC__Functions_gaf3af4b099caa7ae245b400edfd0d45dd}{MCAL\+\_\+\+RCC\+\_\+\+Get\+SYS\+\_\+\+CLKFreq}} (void)
+\begin{DoxyCompactList}\small\item\em Get the frequency of the system clock. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{group__RCC__Functions_gad2d528cfb287685ebb89c8779ec19c16}{MCAL\+\_\+\+RCC\+\_\+\+Get\+HCLKFreq}} (void)
+\begin{DoxyCompactList}\small\item\em Get the frequency of the AHB bus clock. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{group__RCC__Functions_ga94962bbf968298b8547a9b97fd63ce1c}{MCAL\+\_\+\+RCC\+\_\+\+Get\+PCLK1\+Freq}} (void)
+\begin{DoxyCompactList}\small\item\em Get the frequency of the APB1 bus clock. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{group__RCC__Functions_gabd40775c1d738c3196b2bbde4dc1bc3c}{MCAL\+\_\+\+RCC\+\_\+\+Get\+PCLK2\+Freq}} (void)
+\begin{DoxyCompactList}\small\item\em Get the frequency of the APB2 bus clock. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{group__RCC__Functions_gad90448e5252ea8b6e9d0063909cb9446}{RCC\+\_\+\+Get\+PLLOutput\+Clock}} (void)
+\begin{DoxyCompactList}\small\item\em Get the frequency of the PLL (Phase-\/\+Locked Loop) output clock. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__RCC__Functions_gae8f354a9bcd4e18bc159459cce9c771a}\label{group__RCC__Functions_gae8f354a9bcd4e18bc159459cce9c771a}} 
+\index{API Function Prototypes@{API Function Prototypes}!MCAL\_RCC\_Enable\_Peripheral@{MCAL\_RCC\_Enable\_Peripheral}}
+\index{MCAL\_RCC\_Enable\_Peripheral@{MCAL\_RCC\_Enable\_Peripheral}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{MCAL\_RCC\_Enable\_Peripheral()}{MCAL\_RCC\_Enable\_Peripheral()}}
+{\footnotesize\ttfamily void MCAL\+\_\+\+RCC\+\_\+\+Enable\+\_\+\+Peripheral (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{peripheral }\end{DoxyParamCaption})}
+
+
+
+Enable the clock for a specific peripheral. 
+
+This function enables the clock for the specified peripheral.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em peripheral} & Peripheral to enable, as defined in \mbox{\hyperlink{group__RCC__PERIPHERALS__define}{Peripheral Selection}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__RCC__Functions_gad2d528cfb287685ebb89c8779ec19c16}\label{group__RCC__Functions_gad2d528cfb287685ebb89c8779ec19c16}} 
+\index{API Function Prototypes@{API Function Prototypes}!MCAL\_RCC\_GetHCLKFreq@{MCAL\_RCC\_GetHCLKFreq}}
+\index{MCAL\_RCC\_GetHCLKFreq@{MCAL\_RCC\_GetHCLKFreq}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{MCAL\_RCC\_GetHCLKFreq()}{MCAL\_RCC\_GetHCLKFreq()}}
+{\footnotesize\ttfamily uint32\+\_\+t MCAL\+\_\+\+RCC\+\_\+\+Get\+HCLKFreq (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the frequency of the AHB bus clock. 
+
+This function retrieves the frequency of the AHB (Advanced High-\/performance Bus) clock.
+
+\begin{DoxyReturn}{Returns}
+Frequency of the AHB bus clock in Hertz.
+\end{DoxyReturn}
+Get the frequency of the AHB bus clock.
+
+This function calculates and returns the frequency of the AHB bus clock (HCLK) in Hz.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Frequency of the AHB bus clock in Hz. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__RCC__Functions_ga94962bbf968298b8547a9b97fd63ce1c}\label{group__RCC__Functions_ga94962bbf968298b8547a9b97fd63ce1c}} 
+\index{API Function Prototypes@{API Function Prototypes}!MCAL\_RCC\_GetPCLK1Freq@{MCAL\_RCC\_GetPCLK1Freq}}
+\index{MCAL\_RCC\_GetPCLK1Freq@{MCAL\_RCC\_GetPCLK1Freq}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{MCAL\_RCC\_GetPCLK1Freq()}{MCAL\_RCC\_GetPCLK1Freq()}}
+{\footnotesize\ttfamily uint32\+\_\+t MCAL\+\_\+\+RCC\+\_\+\+Get\+PCLK1\+Freq (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the frequency of the APB1 bus clock. 
+
+This function retrieves the frequency of the APB1 (Advanced Peripheral Bus 1) clock.
+
+\begin{DoxyReturn}{Returns}
+Frequency of the APB1 bus clock in Hertz.
+\end{DoxyReturn}
+Get the frequency of the APB1 bus clock.
+
+This function calculates and returns the frequency of the APB1 bus clock (PCLK1) in Hz.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Frequency of the APB1 bus clock in Hz. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__RCC__Functions_gabd40775c1d738c3196b2bbde4dc1bc3c}\label{group__RCC__Functions_gabd40775c1d738c3196b2bbde4dc1bc3c}} 
+\index{API Function Prototypes@{API Function Prototypes}!MCAL\_RCC\_GetPCLK2Freq@{MCAL\_RCC\_GetPCLK2Freq}}
+\index{MCAL\_RCC\_GetPCLK2Freq@{MCAL\_RCC\_GetPCLK2Freq}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{MCAL\_RCC\_GetPCLK2Freq()}{MCAL\_RCC\_GetPCLK2Freq()}}
+{\footnotesize\ttfamily uint32\+\_\+t MCAL\+\_\+\+RCC\+\_\+\+Get\+PCLK2\+Freq (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the frequency of the APB2 bus clock. 
+
+This function retrieves the frequency of the APB2 (Advanced Peripheral Bus 2) clock.
+
+\begin{DoxyReturn}{Returns}
+Frequency of the APB2 bus clock in Hertz.
+\end{DoxyReturn}
+Get the frequency of the APB2 bus clock.
+
+This function calculates and returns the frequency of the APB2 bus clock (PCLK2) in Hz.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Frequency of the APB2 bus clock in Hz. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__RCC__Functions_gaf3af4b099caa7ae245b400edfd0d45dd}\label{group__RCC__Functions_gaf3af4b099caa7ae245b400edfd0d45dd}} 
+\index{API Function Prototypes@{API Function Prototypes}!MCAL\_RCC\_GetSYS\_CLKFreq@{MCAL\_RCC\_GetSYS\_CLKFreq}}
+\index{MCAL\_RCC\_GetSYS\_CLKFreq@{MCAL\_RCC\_GetSYS\_CLKFreq}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{MCAL\_RCC\_GetSYS\_CLKFreq()}{MCAL\_RCC\_GetSYS\_CLKFreq()}}
+{\footnotesize\ttfamily uint32\+\_\+t MCAL\+\_\+\+RCC\+\_\+\+Get\+SYS\+\_\+\+CLKFreq (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the frequency of the system clock. 
+
+This function retrieves the frequency of the system clock (SYSCLK).
+
+\begin{DoxyReturn}{Returns}
+Frequency of the system clock in Hertz.
+\end{DoxyReturn}
+Get the frequency of the system clock.
+
+This function calculates and returns the frequency of the system clock (SYSCLK) in Hz.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Frequency of the system clock in Hz. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__RCC__Functions_ga893a5d2c3fc9f1b06b275e3e7364fba0}\label{group__RCC__Functions_ga893a5d2c3fc9f1b06b275e3e7364fba0}} 
+\index{API Function Prototypes@{API Function Prototypes}!MCAL\_RCC\_Reset\_Peripheral@{MCAL\_RCC\_Reset\_Peripheral}}
+\index{MCAL\_RCC\_Reset\_Peripheral@{MCAL\_RCC\_Reset\_Peripheral}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{MCAL\_RCC\_Reset\_Peripheral()}{MCAL\_RCC\_Reset\_Peripheral()}}
+{\footnotesize\ttfamily void MCAL\+\_\+\+RCC\+\_\+\+Reset\+\_\+\+Peripheral (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{peripheral }\end{DoxyParamCaption})}
+
+
+
+Reset a specific peripheral. 
+
+This function resets the specified peripheral.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em peripheral} & Peripheral to reset, as defined in \mbox{\hyperlink{group__RCC__PERIPHERALS__define}{Peripheral Selection}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__RCC__Functions_ga750edf69053325d7ba3c84bff5714a61}\label{group__RCC__Functions_ga750edf69053325d7ba3c84bff5714a61}} 
+\index{API Function Prototypes@{API Function Prototypes}!MCAL\_RCC\_Select\_Clock@{MCAL\_RCC\_Select\_Clock}}
+\index{MCAL\_RCC\_Select\_Clock@{MCAL\_RCC\_Select\_Clock}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{MCAL\_RCC\_Select\_Clock()}{MCAL\_RCC\_Select\_Clock()}}
+{\footnotesize\ttfamily void MCAL\+\_\+\+RCC\+\_\+\+Select\+\_\+\+Clock (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{clock }\end{DoxyParamCaption})}
+
+
+
+Select the clock source for the MCU. 
+
+This function configures the clock source used by the microcontroller.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em clock} & Clock source to select, as defined in \mbox{\hyperlink{group__RCC__CLOCK__SOURCE__define}{Clock Source Selection}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__RCC__Functions_gad90448e5252ea8b6e9d0063909cb9446}\label{group__RCC__Functions_gad90448e5252ea8b6e9d0063909cb9446}} 
+\index{API Function Prototypes@{API Function Prototypes}!RCC\_GetPLLOutputClock@{RCC\_GetPLLOutputClock}}
+\index{RCC\_GetPLLOutputClock@{RCC\_GetPLLOutputClock}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{RCC\_GetPLLOutputClock()}{RCC\_GetPLLOutputClock()}}
+{\footnotesize\ttfamily uint32\+\_\+t RCC\+\_\+\+Get\+PLLOutput\+Clock (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the frequency of the PLL (Phase-\/\+Locked Loop) output clock. 
+
+This function calculates and returns the frequency of the PLL output clock.
+
+\begin{DoxyReturn}{Returns}
+Frequency of the PLL output clock in Hertz.
+\end{DoxyReturn}
+This function calculates and returns the frequency of the PLL output clock.
+
+\begin{DoxyReturn}{Returns}
+The PLL output clock frequency in Hertz. 
+\end{DoxyReturn}

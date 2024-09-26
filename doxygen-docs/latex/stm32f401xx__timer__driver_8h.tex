@@ -1,0 +1,74 @@
+\hypertarget{stm32f401xx__timer__driver_8h}{}\doxysection{drivers/\+Inc/stm32f401xx\+\_\+timer\+\_\+driver.h File Reference}
+\label{stm32f401xx__timer__driver_8h}\index{drivers/Inc/stm32f401xx\_timer\_driver.h@{drivers/Inc/stm32f401xx\_timer\_driver.h}}
+
+
+Header file providing timer functionalities for the STM32\+F401xx MCU. This file contains the necessary definitions, macros, and functions to manage Timer 2 (TIM2) in the STM32\+F401xx microcontroller.  
+
+
+{\ttfamily \#include \char`\"{}stm32f401xx.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stm32f401xx\+\_\+gpio\+\_\+driver.\+h\char`\"{}}\newline
+Include dependency graph for stm32f401xx\+\_\+timer\+\_\+driver.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{stm32f401xx__timer__driver_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{stm32f401xx__timer__driver_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__TIM2__Register_gad4baa1f26b04719fe3d4e2f02d7dde40}{RCC\+\_\+\+APB1\+ENR}}~$\ast$(volatile \mbox{\hyperlink{group__Platform__Types_ga4b435a49c74bb91f284f075e63416cb6}{uint32}} $\ast$)(\mbox{\hyperlink{group__AHB__PERIPHERALS__BASE__ADDRESSES_ga0e681b03f364532055d88f63fec0d99d}{RCC\+\_\+\+BASE}} + 0x40)
+\begin{DoxyCompactList}\small\item\em Enable the APB1 peripheral clock for TIM2. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__TIM2__Register_ga6d4cd87f49d551c356fed82cbbddc5a4}{RCC\+\_\+\+APB2\+ENR}}~$\ast$(volatile \mbox{\hyperlink{group__Platform__Types_ga4b435a49c74bb91f284f075e63416cb6}{uint32}} $\ast$)(\mbox{\hyperlink{group__AHB__PERIPHERALS__BASE__ADDRESSES_ga0e681b03f364532055d88f63fec0d99d}{RCC\+\_\+\+BASE}} + 0x44)
+\begin{DoxyCompactList}\small\item\em Enable the APB2 peripheral clock for TIM2. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__TIM2__Register_gaea087898c959b928fe07ee65f4420f9f}{TIM2\+\_\+\+TIMER\+\_\+\+BASE}}~0x40000000
+\begin{DoxyCompactList}\small\item\em TIM2\+\_\+\+Register TIM2 Register Base Addresses and Offsets. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__TIM2__Register_gab24fffc378e2c8b41357f644a85db741}{TIM2\+\_\+\+CR1}}~$\ast$(volatile \mbox{\hyperlink{group__Platform__Types_ga4b435a49c74bb91f284f075e63416cb6}{uint32}} $\ast$)(\mbox{\hyperlink{group__TIM2__Register_gaea087898c959b928fe07ee65f4420f9f}{TIM2\+\_\+\+TIMER\+\_\+\+BASE}} + 0x00)
+\begin{DoxyCompactList}\small\item\em Control register 1 (CR1) for TIM2. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__TIM2__Register_gaca496f20d9af3b4758a5ea16e5fb820e}{TIM2\+\_\+\+DIER}}~$\ast$(volatile \mbox{\hyperlink{group__Platform__Types_ga4b435a49c74bb91f284f075e63416cb6}{uint32}} $\ast$)(\mbox{\hyperlink{group__TIM2__Register_gaea087898c959b928fe07ee65f4420f9f}{TIM2\+\_\+\+TIMER\+\_\+\+BASE}} + 0x0C)
+\begin{DoxyCompactList}\small\item\em DMA/interrupt enable register (DIER) for TIM2. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__TIM2__Register_gaa3efa1c66b0bae318673f65cfce9f617}{TIM2\+\_\+\+SR}}~$\ast$(volatile \mbox{\hyperlink{group__Platform__Types_ga4b435a49c74bb91f284f075e63416cb6}{uint32}} $\ast$)(\mbox{\hyperlink{group__TIM2__Register_gaea087898c959b928fe07ee65f4420f9f}{TIM2\+\_\+\+TIMER\+\_\+\+BASE}} + 0x10)
+\begin{DoxyCompactList}\small\item\em Status register (SR) for TIM2. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__TIM2__Register_gadaca4b7a298da08c4795d6a1177c1abe}{TIM2\+\_\+\+CNT}}~$\ast$(volatile \mbox{\hyperlink{group__Platform__Types_ga4b435a49c74bb91f284f075e63416cb6}{uint32}} $\ast$)(\mbox{\hyperlink{group__TIM2__Register_gaea087898c959b928fe07ee65f4420f9f}{TIM2\+\_\+\+TIMER\+\_\+\+BASE}} + 0x24)
+\begin{DoxyCompactList}\small\item\em Counter register (CNT) for TIM2. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__TIM2__Register_gaf0e1e8b150a6a80588c2de7b4abe1994}{TIM2\+\_\+\+PSC}}~$\ast$(volatile \mbox{\hyperlink{group__Platform__Types_ga4b435a49c74bb91f284f075e63416cb6}{uint32}} $\ast$)(\mbox{\hyperlink{group__TIM2__Register_gaea087898c959b928fe07ee65f4420f9f}{TIM2\+\_\+\+TIMER\+\_\+\+BASE}} + 0x28)
+\begin{DoxyCompactList}\small\item\em Prescaler register (PSC) for TIM2. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__TIM2__Register_ga7e23a551449bab7a29e421d494b5fb4f}{TIM2\+\_\+\+ARR}}~$\ast$(volatile \mbox{\hyperlink{group__Platform__Types_ga4b435a49c74bb91f284f075e63416cb6}{uint32}} $\ast$)(\mbox{\hyperlink{group__TIM2__Register_gaea087898c959b928fe07ee65f4420f9f}{TIM2\+\_\+\+TIMER\+\_\+\+BASE}} + 0x2C)
+\begin{DoxyCompactList}\small\item\em Auto-\/reload register (ARR) for TIM2. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__TIMER__Functions_gabb4523665e9a6aab3b16e3d33ae49bc8}{Timer2\+\_\+init}} (void)
+\begin{DoxyCompactList}\small\item\em Initialize Timer 2 (TIM2) for basic timing functionalities. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__TIMER__Functions_ga7b7d0274a670a934f1e92cebd34383d9}{dus}} (int us)
+\begin{DoxyCompactList}\small\item\em Delay execution for a specified number of microseconds. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__TIMER__Functions_ga3259614a52dbe2f0de711bc638b689d1}{dms}} (int ms)
+\begin{DoxyCompactList}\small\item\em Delay execution for a specified number of milliseconds. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file providing timer functionalities for the STM32\+F401xx MCU. This file contains the necessary definitions, macros, and functions to manage Timer 2 (TIM2) in the STM32\+F401xx microcontroller. 
+
+\begin{DoxyAuthor}{Author}
+Mohamed Ali Haoufa 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2024-\/09-\/21
+\end{DoxyDate}
+This file is part of the STM32\+F401xx peripheral driver library, which offers low-\/level control of the MCU\textquotesingle{}s timers, specifically Timer 2 (TIM2). It provides initialization functions for TIM2, along with delay functionalities in microseconds and milliseconds.
+
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2024 Mohamed Ali Haoufa. All rights reserved. This software is provided \char`\"{}as is,\char`\"{} without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement. 
+\end{DoxyCopyright}

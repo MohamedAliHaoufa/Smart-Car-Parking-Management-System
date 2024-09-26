@@ -1,0 +1,153 @@
+\hypertarget{stm32f401xx__i2c__driver_8h}{}\doxysection{drivers/\+Inc/stm32f401xx\+\_\+i2c\+\_\+driver.h File Reference}
+\label{stm32f401xx__i2c__driver_8h}\index{drivers/Inc/stm32f401xx\_i2c\_driver.h@{drivers/Inc/stm32f401xx\_i2c\_driver.h}}
+
+
+Header file for STM32\+F401xx I2C driver.  
+
+
+{\ttfamily \#include \char`\"{}stm32f401xx\+\_\+gpio\+\_\+driver.\+h\char`\"{}}\newline
+Include dependency graph for stm32f401xx\+\_\+i2c\+\_\+driver.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{stm32f401xx__i2c__driver_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{stm32f401xx__i2c__driver_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structS__I2C__Slave__address}{S\+\_\+\+I2\+C\+\_\+\+Slave\+\_\+address}}
+\begin{DoxyCompactList}\small\item\em Structure for I2C slave address configuration. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structS__I2C__Config__t}{S\+\_\+\+I2\+C\+\_\+\+Config\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Structure for I2C configuration. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__I2C__Speed__Define_ga67940ffeacceabbe0a65c1e447dd27b4}{I2\+C\+\_\+\+SCK\+\_\+\+SM\+\_\+50K}}~(0x50000\+UL)
+\item 
+\#define \mbox{\hyperlink{group__I2C__Speed__Define_gac5440fe4772aa74e83094e17f775f2c7}{I2\+C\+\_\+\+SCK\+\_\+\+SM\+\_\+100K}}~(100000\+UL)
+\item 
+\#define \mbox{\hyperlink{group__I2C__Speed__Define_gab55acaf875c5c9a94847621ffb951e56}{I2\+C\+\_\+\+SCK\+\_\+\+FM\+\_\+200K}}~(200000\+UL)
+\item 
+\#define \mbox{\hyperlink{group__I2C__Speed__Define_ga2f4ac72d2f617de66f6d388af3f830e1}{I2\+C\+\_\+\+SCK\+\_\+\+FM\+\_\+400K}}~(400000\+UL)
+\item 
+\#define \mbox{\hyperlink{group__I2C__StretchMode__Define_ga85cbac5d881324ee0fc7837a870a0bfb}{I2\+C\+\_\+\+Stretch\+Mode\+\_\+enabled}}~0x00000000U
+\item 
+\#define \mbox{\hyperlink{group__I2C__StretchMode__Define_ga973ea2b43010cfa088e8823f1742e8b2}{I2\+C\+\_\+\+Stretch\+Mode\+\_\+disabled}}~\mbox{\hyperlink{group__I2C__CR1__Register__Bit__Definitions_ga197aaca79f64e832af3a0a0864c2a08c}{I2\+C\+\_\+\+CR1\+\_\+\+NOSTRETCH}}
+\item 
+\#define \mbox{\hyperlink{group__I2C__Mode__Define_ga8bc3b0555ca31b6f8423bc2ada45d1ac}{I2\+C\+\_\+\+Mode\+\_\+\+I2C}}~0
+\item 
+\#define \mbox{\hyperlink{group__I2C__Mode__Define_ga23323a1aa888e83b43c1a70075087a71}{I2\+C\+\_\+\+Mode\+\_\+\+SMBus}}~\mbox{\hyperlink{group__I2C__CR1__Register__Bit__Definitions_ga4cfee7b020a49bd037fa7cf27c796abc}{I2\+C\+\_\+\+CR1\+\_\+\+SMBUS}}
+\item 
+\#define \mbox{\hyperlink{group__I2C__Addressing__Slave_ga5fc9b8795b4b27f4337c76ed07488fda}{I2\+C\+\_\+\+Addressing\+\_\+\+Slave\+\_\+7bits}}~0
+\item 
+\#define \mbox{\hyperlink{group__I2C__Addressing__Slave_ga276a420ca7e8a12571ac254f399a0dcc}{I2\+C\+\_\+\+Addressing\+\_\+\+Slave\+\_\+10bits}}~(uint16\+\_\+t)(1$<$$<$15)
+\item 
+\#define \mbox{\hyperlink{group__I2C__Ack__Control__Define_ga5361b163e862ba3a64e5bb7924ce342c}{I2\+C\+\_\+\+Ack\+\_\+\+Control\+\_\+\+Enable}}~\mbox{\hyperlink{group__I2C__CR1__Register__Bit__Definitions_gaf933b105259a4bc46a957576adb8d96d}{I2\+C\+\_\+\+CR1\+\_\+\+ACK}}
+\item 
+\#define \mbox{\hyperlink{group__I2C__Ack__Control__Define_gaece170225390f5a57079302f744f44c0}{I2\+C\+\_\+\+Ack\+\_\+\+Control\+\_\+\+Disable}}~0
+\item 
+\#define \mbox{\hyperlink{group__I2C__ENGC_gadbc5e54390ff60dc2f1ad98d749f7d2e}{I2\+C\+\_\+\+ENGC\+\_\+\+Enable}}~\mbox{\hyperlink{group__I2C__CR1__Register__Bit__Definitions_ga1d8c219193b11f8507d7b85831d14912}{I2\+C\+\_\+\+CR1\+\_\+\+ENGC}}
+\item 
+\#define \mbox{\hyperlink{group__I2C__ENGC_ga3d06cfbbe40815d099f6953afda81268}{I2\+C\+\_\+\+ENGC\+\_\+\+Disable}}~0x00
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__I2C__Driver_gafb74f066bbdcc3f4b4d838405a46675b}{Slave\+\_\+\+State}} \{ \newline
+\mbox{\hyperlink{group__I2C__Driver_ggafb74f066bbdcc3f4b4d838405a46675ba5fadbc77673cd23c60381ee9000fa294}{I2\+C\+\_\+\+EV\+\_\+\+Stop}}
+, \mbox{\hyperlink{group__I2C__Driver_ggafb74f066bbdcc3f4b4d838405a46675ba646602ba2f03a6dacd0e63142b8d67b5}{I2\+C\+\_\+\+Error\+\_\+\+AF}}
+, \mbox{\hyperlink{group__I2C__Driver_ggafb74f066bbdcc3f4b4d838405a46675baaa8a1ada8461aee6e673ecd6a842cc72}{I2\+C\+\_\+\+Ev\+\_\+\+Address\+\_\+\+Matched}}
+, \mbox{\hyperlink{group__I2C__Driver_ggafb74f066bbdcc3f4b4d838405a46675ba3c469e88540218534a7658e2404fea75}{I2\+C\+\_\+\+Ev\+\_\+\+Data\+\_\+\+Req}}
+, \newline
+\mbox{\hyperlink{group__I2C__Driver_ggafb74f066bbdcc3f4b4d838405a46675ba5975c5cba0fe51d6d7e3950d9fe4d289}{I2\+C\+\_\+\+Ev\+\_\+\+Data\+\_\+\+RCV}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeration for I2C slave states. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__I2C__Driver_gad28059d4f7c1eed28786a8a79a8eebca}{Stop\+Condition}} \{ \mbox{\hyperlink{group__I2C__Driver_ggad28059d4f7c1eed28786a8a79a8eebcaafdc4f5674461e7394cae8a43adb17938}{With\+Stop}}
+, \mbox{\hyperlink{group__I2C__Driver_ggad28059d4f7c1eed28786a8a79a8eebcaab05daf7de55896d39332ae1f237685cd}{Without\+Stop}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeration for I2C stop condition. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__I2C__Driver_ga322c6c98c49987a2cdb0d4e16262ddfc}{Repeated\+\_\+\+Start}} \{ \mbox{\hyperlink{group__I2C__Driver_gga322c6c98c49987a2cdb0d4e16262ddfcabd5f9c956752ce4dc707b4624b3a36f7}{Start}}
+, \mbox{\hyperlink{group__I2C__Driver_gga322c6c98c49987a2cdb0d4e16262ddfcaadb35125235cce27e3ce0878d4cd7feb}{Repeated}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeration for I2C repeated start condition. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__I2C__Driver_ga059f052a2fc4426778fd92549bd923d9}{Functional\+\_\+\+State}} \{ \mbox{\hyperlink{group__I2C__Driver_gga059f052a2fc4426778fd92549bd923d9ad3a9df141be0ccf10389b640f492b26d}{DISABLE}}
+, \mbox{\hyperlink{group__I2C__Driver_gga059f052a2fc4426778fd92549bd923d9a7d46875fa3ebd2c34d2756950eda83bf}{ENABLE}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeration for functional state. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__I2C__Driver_ga89136caac2e14c55151f527ac02daaff}{Flag\+Status}} \{ {\bfseries RESET} = 0
+, {\bfseries SET} = !\+RESET
+, \mbox{\hyperlink{group__I2C__Driver_gga89136caac2e14c55151f527ac02daaffa92793663441ced378f4676b8a6524385}{Reset}}
+, \mbox{\hyperlink{group__I2C__Driver_gga89136caac2e14c55151f527ac02daaffa20120ef9c542d271e929c93efa56b665}{Set}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeration for flag status. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__I2C__Driver_ga67a0db04d321a74b7e7fcfd3f1a3f70b}{Status}} \{ \newline
+\mbox{\hyperlink{group__I2C__Driver_gga67a0db04d321a74b7e7fcfd3f1a3f70ba5e10fc52d837ecc365ebc5714c70114b}{I2\+C\+\_\+\+Flag\+\_\+\+Busy}}
+, \mbox{\hyperlink{group__I2C__Driver_gga67a0db04d321a74b7e7fcfd3f1a3f70ba494c582cdbd23916f642f300efb808e6}{EV5}}
+, \mbox{\hyperlink{group__I2C__Driver_gga67a0db04d321a74b7e7fcfd3f1a3f70ba59209ee62853ae0634bc91bcdf412a80}{EV6}}
+, \mbox{\hyperlink{group__I2C__Driver_gga67a0db04d321a74b7e7fcfd3f1a3f70ba0eaac06e6fdd52de131725b891884cf1}{EV7}}
+, \newline
+\mbox{\hyperlink{group__I2C__Driver_gga67a0db04d321a74b7e7fcfd3f1a3f70badcd7d5cea20df0101bf9697abcce25c2}{EV8}}
+, \mbox{\hyperlink{group__I2C__Driver_gga67a0db04d321a74b7e7fcfd3f1a3f70ba019b8162569759cd5137dd2933a3b272}{EV8\+\_\+1}}
+, \mbox{\hyperlink{group__I2C__Driver_gga67a0db04d321a74b7e7fcfd3f1a3f70ba9db62e63f3c926182117469cb269b719}{Master\+\_\+\+Byte\+\_\+\+Transmitting}} = (uint32\+\_\+t)(0x00070080)
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeration for I2C status flags. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__I2C__Driver_gad75a0ed7a23161498c3ab8a520181c4a}{I2\+C\+\_\+\+Direction}} \{ \mbox{\hyperlink{group__I2C__Driver_ggad75a0ed7a23161498c3ab8a520181c4aa85ed1df0ec8457ab5298f45ceb9ee0ef}{I2\+C\+\_\+\+Direction\+\_\+\+Transmitter}}
+, \mbox{\hyperlink{group__I2C__Driver_ggad75a0ed7a23161498c3ab8a520181c4aa006d83e645bf8f7e68e649b1a02d1b39}{I2\+C\+\_\+\+Direction\+\_\+\+Receiver}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeration for I2C direction. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__I2C__Functions_ga5541ea9e8f7db64d52992e74afddc987}{MCAL\+\_\+\+I2\+C\+\_\+\+Init}} (\mbox{\hyperlink{structI2C__TypeDef}{I2\+C\+\_\+\+Type\+Def}} $\ast$I2\+Cx, \mbox{\hyperlink{structS__I2C__Config__t}{S\+\_\+\+I2\+C\+\_\+\+Config\+\_\+t}} $\ast$I2\+C\+\_\+\+Init\+\_\+\+Struct)
+\begin{DoxyCompactList}\small\item\em Initializes the I2C peripheral. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__I2C__Functions_ga03da751c9fb2f7d84f70b963491e5016}{MCAL\+\_\+\+I2\+C\+\_\+\+Deinit}} (\mbox{\hyperlink{structI2C__TypeDef}{I2\+C\+\_\+\+Type\+Def}} $\ast$I2\+Cx)
+\begin{DoxyCompactList}\small\item\em Deinitializes the I2C peripheral. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__I2C__Functions_ga7766a6e23af532e9802f343f9653d97e}{MCAL\+\_\+\+I2\+C\+\_\+\+Set\+\_\+\+GPIO}} (\mbox{\hyperlink{structI2C__TypeDef}{I2\+C\+\_\+\+Type\+Def}} $\ast$I2\+Cx)
+\begin{DoxyCompactList}\small\item\em Sets the GPIO configuration for I2C. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__I2C__Functions_ga5e9f598f8f5a6ccd465354f7414430b6}{MCAL\+\_\+\+I2\+C\+\_\+\+Master\+\_\+\+Tx}} (\mbox{\hyperlink{structI2C__TypeDef}{I2\+C\+\_\+\+Type\+Def}} $\ast$I2\+Cx, uint16\+\_\+t Slave\+Add, uint8\+\_\+t $\ast$dataout, uint32\+\_\+t datalen, \mbox{\hyperlink{group__I2C__Driver_gad28059d4f7c1eed28786a8a79a8eebca}{Stop\+Condition}} Stop, \mbox{\hyperlink{group__I2C__Driver_ga322c6c98c49987a2cdb0d4e16262ddfc}{Repeated\+\_\+\+Start}} start)
+\begin{DoxyCompactList}\small\item\em Transmits data from the master to the slave. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__I2C__Functions_ga6325aba076ca99fe5535a63419bff067}{MCAL\+\_\+\+I2\+C\+\_\+\+Master\+\_\+\+Rx}} (\mbox{\hyperlink{structI2C__TypeDef}{I2\+C\+\_\+\+Type\+Def}} $\ast$I2\+Cx, uint16\+\_\+t Slave\+Add, uint8\+\_\+t $\ast$dataout, uint32\+\_\+t datalen, \mbox{\hyperlink{group__I2C__Driver_gad28059d4f7c1eed28786a8a79a8eebca}{Stop\+Condition}} Stop, \mbox{\hyperlink{group__I2C__Driver_ga322c6c98c49987a2cdb0d4e16262ddfc}{Repeated\+\_\+\+Start}} start)
+\begin{DoxyCompactList}\small\item\em Receives data from the master. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__I2C__Functions_ga6f9cd934c8b1f2fce031922e8b591921}{MCAL\+\_\+\+I2\+C\+\_\+\+Slave\+\_\+\+Send\+Data}} (\mbox{\hyperlink{structI2C__TypeDef}{I2\+C\+\_\+\+Type\+Def}} $\ast$I2\+Cx, uint8\+\_\+t data)
+\begin{DoxyCompactList}\small\item\em Sends data from the slave. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{group__I2C__Functions_ga6b72403def531b70b116007328ac5967}{MCAL\+\_\+\+I2\+C\+\_\+\+Slave\+Receive\+Data}} (\mbox{\hyperlink{structI2C__TypeDef}{I2\+C\+\_\+\+Type\+Def}} $\ast$I2\+Cx)
+\begin{DoxyCompactList}\small\item\em Receives data in slave mode. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__I2C__Functions_ga36fc8957864b183825ec0232ea00c394}{I2\+C\+\_\+\+Generate\+\_\+\+Start}} (\mbox{\hyperlink{structI2C__TypeDef}{I2\+C\+\_\+\+Type\+Def}} $\ast$I2\+Cx, \mbox{\hyperlink{group__I2C__Driver_ga059f052a2fc4426778fd92549bd923d9}{Functional\+\_\+\+State}} state, \mbox{\hyperlink{group__I2C__Driver_ga322c6c98c49987a2cdb0d4e16262ddfc}{Repeated\+\_\+\+Start}} start)
+\begin{DoxyCompactList}\small\item\em Generates a start condition on the I2C bus. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__Exported__types_ga89136caac2e14c55151f527ac02daaff}{Flag\+Status}} \mbox{\hyperlink{group__I2C__Functions_ga313bb3e8079ca7d07082b3671104d346}{I2\+C\+\_\+\+Get\+\_\+\+Flag\+Status}} (\mbox{\hyperlink{structI2C__TypeDef}{I2\+C\+\_\+\+Type\+Def}} $\ast$I2\+Cx, \mbox{\hyperlink{group__I2C__Driver_ga67a0db04d321a74b7e7fcfd3f1a3f70b}{Status}} flag)
+\begin{DoxyCompactList}\small\item\em Gets the status of a specific flag. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__I2C__Functions_gad647af69e97ed5f8d5d9465574fd84a2}{I2\+C\+\_\+\+Send\+Address}} (\mbox{\hyperlink{structI2C__TypeDef}{I2\+C\+\_\+\+Type\+Def}} $\ast$I2\+Cx, uint16\+\_\+t Slave\+Address, \mbox{\hyperlink{group__I2C__Driver_gad75a0ed7a23161498c3ab8a520181c4a}{I2\+C\+\_\+\+Direction}} \mbox{\hyperlink{group__I2C__Driver_gad75a0ed7a23161498c3ab8a520181c4a}{I2\+C\+\_\+\+Direction}})
+\begin{DoxyCompactList}\small\item\em Sends an address to the I2C bus. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__I2C__Functions_ga2b467ddc086b2698e9dbf5905b7183da}{I2\+C\+\_\+\+Generate\+\_\+\+Stop}} (\mbox{\hyperlink{structI2C__TypeDef}{I2\+C\+\_\+\+Type\+Def}} $\ast$I2\+Cx, \mbox{\hyperlink{group__I2C__Driver_ga059f052a2fc4426778fd92549bd923d9}{Functional\+\_\+\+State}} New\+State)
+\begin{DoxyCompactList}\small\item\em Generates a stop condition on the I2C bus. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__I2C__Functions_ga6e1320832ec9216d3589c3866cd487f5}{I2\+C\+\_\+\+ACKnowlage\+Config}} (\mbox{\hyperlink{structI2C__TypeDef}{I2\+C\+\_\+\+Type\+Def}} $\ast$I2\+Cx, \mbox{\hyperlink{group__I2C__Driver_ga059f052a2fc4426778fd92549bd923d9}{Functional\+\_\+\+State}} New\+State)
+\begin{DoxyCompactList}\small\item\em Configures the I2C acknowledge feature. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file for STM32\+F401xx I2C driver. 
+
+\begin{DoxyAuthor}{Author}
+Mohamed Ali Haoufa 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2024-\/09-\/21
+\end{DoxyDate}
+This file provides the interface for initializing and controlling the I2C peripheral on the STM32\+F401xx microcontroller. It includes definitions for I2C configurations, enumerations for I2C status and control, and function prototypes for I2C operations.
+
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2023 Fam Ayman. All rights reserved. 
+\end{DoxyCopyright}

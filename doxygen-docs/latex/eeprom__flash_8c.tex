@@ -1,0 +1,50 @@
+\hypertarget{eeprom__flash_8c}{}\doxysection{bsp/\+Src/eeprom\+\_\+flash.c File Reference}
+\label{eeprom__flash_8c}\index{bsp/Src/eeprom\_flash.c@{bsp/Src/eeprom\_flash.c}}
+
+
+Implementation of EEPROM flash memory operations for STM32\+F401xx MCU.  
+
+
+{\ttfamily \#include \char`\"{}eeprom\+\_\+flash.\+h\char`\"{}}\newline
+Include dependency graph for eeprom\+\_\+flash.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{eeprom__flash_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__EEPROM__Functions_ga9b96be87feb3d06051077ffd4c53f38d}{EEPROM\+\_\+\+Init}} (void)
+\begin{DoxyCompactList}\small\item\em Initializes the EEPROM for I2C communication. \end{DoxyCompactList}\item 
+unsigned char \mbox{\hyperlink{group__EEPROM__Functions_ga62809128ad58a308650f2001b3c45e58}{EEPROM\+\_\+\+Write\+\_\+\+NBytes}} (unsigned int Memory\+\_\+address, unsigned char $\ast$bytes, uint8\+\_\+t Data\+\_\+\+Length)
+\begin{DoxyCompactList}\small\item\em Writes a block of data to the EEPROM. \end{DoxyCompactList}\item 
+unsigned char \mbox{\hyperlink{group__EEPROM__Functions_gafa97580968925317b35a8cfd4d254f75}{EEPROM\+\_\+\+Read\+\_\+byte}} (unsigned int Memory\+\_\+address, uint8\+\_\+t $\ast$dataout, uint8\+\_\+t datalen)
+\begin{DoxyCompactList}\small\item\em Reads a byte from the EEPROM. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{eeprom__flash_8c_a7b13e39c43296f16ce75848767f94edc}\label{eeprom__flash_8c_a7b13e39c43296f16ce75848767f94edc}} 
+uint8\+\_\+t \mbox{\hyperlink{eeprom__flash_8c_a7b13e39c43296f16ce75848767f94edc}{buffer}} \mbox{[}256\mbox{]}
+\begin{DoxyCompactList}\small\item\em Buffer used for I2C communication with AT24\+C1024B EEPROM. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementation of EEPROM flash memory operations for STM32\+F401xx MCU. 
+
+\begin{DoxyAuthor}{Author}
+Mohamed Ali Haoufa 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2024-\/09-\/21
+\end{DoxyDate}
+This file contains the implementation of functions to initialize and manage EEPROM flash memory using I2C communication with the STM32\+F401xx MCU. It includes functions for writing and reading data from the EEPROM.
+
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2024 Mohamed Ali Haoufa. All rights reserved. 
+\end{DoxyCopyright}

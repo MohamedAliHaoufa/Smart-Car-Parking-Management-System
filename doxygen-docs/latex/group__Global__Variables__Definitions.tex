@@ -1,0 +1,91 @@
+\hypertarget{group__Global__Variables__Definitions}{}\doxysection{Global\+\_\+\+Variables\+\_\+\+Definitions}
+\label{group__Global__Variables__Definitions}\index{Global\_Variables\_Definitions@{Global\_Variables\_Definitions}}
+
+
+Global variable definitions for LEDs, LCDs, UART, and system states.  
+
+
+Collaboration diagram for Global\+\_\+\+Variables\+\_\+\+Definitions\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__Global__Variables__Definitions}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__Global__Variables__Definitions_ga68d34399b41feca1830f2ad3bf471e86}{SIZE1}}~3
+\begin{DoxyCompactList}\small\item\em Definitions for combining arrays. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__Global__Variables__Definitions_ga52e67c20715e5017fad111d424d11486}\label{group__Global__Variables__Definitions_ga52e67c20715e5017fad111d424d11486}} 
+\#define {\bfseries SIZE2}~4
+\item 
+\mbox{\Hypertarget{group__Global__Variables__Definitions_gafd0da25e84c1911d0e5841d2a8cb7bb4}\label{group__Global__Variables__Definitions_gafd0da25e84c1911d0e5841d2a8cb7bb4}} 
+\#define {\bfseries SIZE3}~4
+\item 
+\mbox{\Hypertarget{group__Global__Variables__Definitions_ga6c5bf883c7e82c09c89c1e0238fac7ba}\label{group__Global__Variables__Definitions_ga6c5bf883c7e82c09c89c1e0238fac7ba}} 
+\#define {\bfseries SIZE4}~4
+\item 
+\mbox{\Hypertarget{group__Global__Variables__Definitions_ga7d6dd25c7c2cc919a260a1b09143fbf0}\label{group__Global__Variables__Definitions_ga7d6dd25c7c2cc919a260a1b09143fbf0}} 
+\#define {\bfseries TOTAL\+\_\+\+SIZE}~(\mbox{\hyperlink{group__Global__Variables__Definitions_ga68d34399b41feca1830f2ad3bf471e86}{SIZE1}} + SIZE2 + SIZE3 + SIZE4)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__Global__Variables__Definitions_ga6eccbdea114a356b50ba8ca1d4d520da}\label{group__Global__Variables__Definitions_ga6eccbdea114a356b50ba8ca1d4d520da}} 
+volatile \mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{group__Global__Variables__Definitions_ga6eccbdea114a356b50ba8ca1d4d520da}{Enter\+\_\+\+Flag}}
+\begin{DoxyCompactList}\small\item\em Flags and variables used for managing system state. \end{DoxyCompactList}\item 
+volatile \mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{group__Global__Variables__Definitions_gae2251646161719f20cde4469825a47ca}{Exit\+\_\+\+Flag}}
+\item 
+\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{group__Global__Variables__Definitions_ga35e5b6e006589360d53e1b25005fd4f6}{Free\+\_\+\+Slots}} = 3
+\item 
+\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{group__Global__Variables__Definitions_ga916dcbf524c7f03ccf608cecb18a1710}{Print\+\_\+\+Slots\+\_\+\+LCD\+\_\+\+Flag}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Global variable definitions for LEDs, LCDs, UART, and system states. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__Global__Variables__Definitions_ga68d34399b41feca1830f2ad3bf471e86}\label{group__Global__Variables__Definitions_ga68d34399b41feca1830f2ad3bf471e86}} 
+\index{Global\_Variables\_Definitions@{Global\_Variables\_Definitions}!SIZE1@{SIZE1}}
+\index{SIZE1@{SIZE1}!Global\_Variables\_Definitions@{Global\_Variables\_Definitions}}
+\doxysubsubsection{\texorpdfstring{SIZE1}{SIZE1}}
+{\footnotesize\ttfamily \#define SIZE1~3}
+
+
+
+Definitions for combining arrays. 
+
+
+\begin{DoxyItemize}
+\item {\ttfamily SIZE1}\+: Size of the first array.
+\item {\ttfamily SIZE2}\+: Size of the second array.
+\item {\ttfamily SIZE3}\+: Size of the third array.
+\item {\ttfamily SIZE4}\+: Size of the fourth array.
+\item {\ttfamily TOTAL\+\_\+\+SIZE}\+: Total size for the combined array. 
+\end{DoxyItemize}
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{group__Global__Variables__Definitions_gae2251646161719f20cde4469825a47ca}\label{group__Global__Variables__Definitions_gae2251646161719f20cde4469825a47ca}} 
+\index{Global\_Variables\_Definitions@{Global\_Variables\_Definitions}!Exit\_Flag@{Exit\_Flag}}
+\index{Exit\_Flag@{Exit\_Flag}!Global\_Variables\_Definitions@{Global\_Variables\_Definitions}}
+\doxysubsubsection{\texorpdfstring{Exit\_Flag}{Exit\_Flag}}
+{\footnotesize\ttfamily volatile \mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} Exit\+\_\+\+Flag}
+
+Flags to manage entry and exit \mbox{\Hypertarget{group__Global__Variables__Definitions_ga35e5b6e006589360d53e1b25005fd4f6}\label{group__Global__Variables__Definitions_ga35e5b6e006589360d53e1b25005fd4f6}} 
+\index{Global\_Variables\_Definitions@{Global\_Variables\_Definitions}!Free\_Slots@{Free\_Slots}}
+\index{Free\_Slots@{Free\_Slots}!Global\_Variables\_Definitions@{Global\_Variables\_Definitions}}
+\doxysubsubsection{\texorpdfstring{Free\_Slots}{Free\_Slots}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} Free\+\_\+\+Slots = 3}
+
+Number of free parking slots \mbox{\Hypertarget{group__Global__Variables__Definitions_ga916dcbf524c7f03ccf608cecb18a1710}\label{group__Global__Variables__Definitions_ga916dcbf524c7f03ccf608cecb18a1710}} 
+\index{Global\_Variables\_Definitions@{Global\_Variables\_Definitions}!Print\_Slots\_LCD\_Flag@{Print\_Slots\_LCD\_Flag}}
+\index{Print\_Slots\_LCD\_Flag@{Print\_Slots\_LCD\_Flag}!Global\_Variables\_Definitions@{Global\_Variables\_Definitions}}
+\doxysubsubsection{\texorpdfstring{Print\_Slots\_LCD\_Flag}{Print\_Slots\_LCD\_Flag}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} Print\+\_\+\+Slots\+\_\+\+LCD\+\_\+\+Flag}
+
+Flag to trigger printing free slots 

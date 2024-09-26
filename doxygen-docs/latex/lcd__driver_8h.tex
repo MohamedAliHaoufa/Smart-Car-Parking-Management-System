@@ -1,0 +1,124 @@
+\hypertarget{lcd__driver_8h}{}\doxysection{bsp/\+Inc/lcd\+\_\+driver.h File Reference}
+\label{lcd__driver_8h}\index{bsp/Inc/lcd\_driver.h@{bsp/Inc/lcd\_driver.h}}
+
+
+Header file for the STM32\+F401xx microcontroller LCD driver.  
+
+
+{\ttfamily \#include \char`\"{}stm32f401xx\+\_\+gpio\+\_\+driver.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stm32f401xx\+\_\+systick\+\_\+driver.\+h\char`\"{}}\newline
+Include dependency graph for lcd\+\_\+driver.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{lcd__driver_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{lcd__driver_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structLCD__t}{LCD\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Structure for configuring the LCD. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__LCD__COMMANDS__define_ga3f2897b31d9b8ee5ada65f840adb635b}{LCD\+\_\+\+CLEAR\+\_\+\+DISPLAY}}~(0x01)
+\begin{DoxyCompactList}\small\item\em Command to clear the LCD display. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__LCD__COMMANDS__define_ga8f9bf7b2d236dfd31791e1c178e43e74}{LCD\+\_\+\+RETURN\+\_\+\+HOME}}~(0x02)
+\begin{DoxyCompactList}\small\item\em Command to return the cursor to the home position. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__LCD__COMMANDS__define_ga4a557827359cae5ac1474415aedb6510}{LCD\+\_\+\+ENTRY\+\_\+\+MODE\+\_\+\+DEC\+\_\+\+SHIFT\+\_\+\+OFF}}~(0x04)
+\begin{DoxyCompactList}\small\item\em Command to set the entry mode to decrement and shift off. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__LCD__COMMANDS__define_ga8d49406f8085dc57c744797853213db3}{LCD\+\_\+\+ENTRY\+\_\+\+MODE\+\_\+\+DEC\+\_\+\+SHIFT\+\_\+\+ON}}~(0x05)
+\begin{DoxyCompactList}\small\item\em Command to set the entry mode to decrement and shift on. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__LCD__COMMANDS__define_gacf88f7d910bc4e40dfffa31a8973591d}{LCD\+\_\+\+ENTRY\+\_\+\+MODE\+\_\+\+INC\+\_\+\+SHIFT\+\_\+\+OFF}}~(0x06)
+\begin{DoxyCompactList}\small\item\em Command to set the entry mode to increment and shift off. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__LCD__COMMANDS__define_ga3052dfed9739d7f2e9d961eacfde698e}{LCD\+\_\+\+ENTRY\+\_\+\+MODE\+\_\+\+INC\+\_\+\+SHIFT\+\_\+\+ON}}~(0x07)
+\begin{DoxyCompactList}\small\item\em Command to set the entry mode to increment and shift on. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__LCD__COMMANDS__define_gad6606e30fc8c71977d3d1eeec007baae}{LCD\+\_\+\+CURSOR\+\_\+\+MOVE\+\_\+\+SHIFT\+\_\+\+LEFT}}~(0x10)
+\begin{DoxyCompactList}\small\item\em Command to move the cursor left. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__LCD__COMMANDS__define_ga710e82a93cd5ef8375de64c48323e24f}{LCD\+\_\+\+CURSOR\+\_\+\+MOVE\+\_\+\+SHIFT\+\_\+\+RIGHT}}~(0x14)
+\begin{DoxyCompactList}\small\item\em Command to move the cursor right. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__LCD__COMMANDS__define_ga1654759c8da2a65b4a74c5a542320e83}{LCD\+\_\+\+DISPLAY\+\_\+\+SHIFT\+\_\+\+LEFT}}~(0x18)
+\begin{DoxyCompactList}\small\item\em Command to shift the display left. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__LCD__COMMANDS__define_ga55e541c5f46ba4563b2346e2c11b23a0}{LCD\+\_\+\+DISPLAY\+\_\+\+SHIFT\+\_\+\+RIGHT}}~(0x1C)
+\begin{DoxyCompactList}\small\item\em Command to shift the display right. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__LCD__COMMANDS__define_ga2ebc586076acebae8543c860d6f50179}{LCD\+\_\+\+DISPLAY\+\_\+\+ON\+\_\+\+UNDERLINE\+\_\+\+OFF\+\_\+\+CURSOR\+\_\+\+OFF}}~(0x0C)
+\begin{DoxyCompactList}\small\item\em Command to turn on the display with underline off and cursor off. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__LCD__COMMANDS__define_gad7135082632df82217d1dd151542179a}{LCD\+\_\+\+DISPLAY\+\_\+\+ON\+\_\+\+UNDERLINE\+\_\+\+OFF\+\_\+\+CURSOR\+\_\+\+ON}}~(0x0D)
+\begin{DoxyCompactList}\small\item\em Command to turn on the display with underline off and cursor on. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__LCD__COMMANDS__define_gadefe7a039625cf41b7186fee61374bb9}{LCD\+\_\+\+DISPLAY\+\_\+\+ON\+\_\+\+UNDERLINE\+\_\+\+ON\+\_\+\+CURSOR\+\_\+\+OFF}}~(0x0E)
+\begin{DoxyCompactList}\small\item\em Command to turn on the display with underline on and cursor off. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__LCD__COMMANDS__define_ga1077566e2f93c32e04c42e84a4c97274}{LCD\+\_\+\+DISPLAY\+\_\+\+ON\+\_\+\+UNDERLINE\+\_\+\+ON\+\_\+\+CURSOR\+\_\+\+ON}}~(0x0F)
+\begin{DoxyCompactList}\small\item\em Command to turn on the display with underline on and cursor on. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__LCD__COMMANDS__define_gac4265619d3ab168c4d4191aa0877f251}{LCD\+\_\+\+DISPLAY\+\_\+\+OFF\+\_\+\+CURSOR\+\_\+\+OFF}}~(0x08)
+\begin{DoxyCompactList}\small\item\em Command to turn off the display with cursor off. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__LCD__COMMANDS__define_ga05a7feffb02823a0aaf5ad34af013c0e}{LCD\+\_\+8\+BIT\+\_\+\+MODE\+\_\+2\+\_\+\+LINE}}~(0x38)
+\begin{DoxyCompactList}\small\item\em Command to set the display in 8-\/bit mode with 2 lines. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__LCD__COMMANDS__define_ga483ef174ac605cd51f25dc0570127a9f}{LCD\+\_\+4\+BIT\+\_\+\+MODE\+\_\+2\+\_\+\+LINE}}~(0x28)
+\begin{DoxyCompactList}\small\item\em Command to set the display in 4-\/bit mode with 2 lines. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__LCD__ROWS__POS__define_gaec572b7ab3f0b9b7d46b222f14248f76}{LCD\+\_\+\+FIRST\+\_\+\+ROW}}~(0x80)
+\begin{DoxyCompactList}\small\item\em Command to set the cursor position to the first row. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__LCD__ROWS__POS__define_ga855b9e200219122c2815274e9a1368a3}{LCD\+\_\+\+SECOND\+\_\+\+ROW}}~(0x\+C0)
+\begin{DoxyCompactList}\small\item\em Command to set the cursor position to the second row. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__LCD__ROWS__POS__define_ga2a87ba040fb43f3d868b03e96d397cb2}{LCD\+\_\+\+THIRD\+\_\+\+ROW}}~(0x94)
+\begin{DoxyCompactList}\small\item\em Command to set the cursor position to the third row. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__LCD__ROWS__POS__define_gaa6b7597b4d76cc3d584ea7ccb4164b5e}{LCD\+\_\+\+FOURTH\+\_\+\+ROW}}~(0x\+D4)
+\begin{DoxyCompactList}\small\item\em Command to set the cursor position to the fourth row. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__LCD__Driver_gac7a0680c1b56eb884b1225e0791c3b85}{LCD\+\_\+\+MODE\+\_\+t}} \{ \mbox{\hyperlink{group__LCD__Driver_ggac7a0680c1b56eb884b1225e0791c3b85a5b880d2c16f25ea80561fd510d1228db}{LCD\+\_\+8\+BIT}}
+, \mbox{\hyperlink{group__LCD__Driver_ggac7a0680c1b56eb884b1225e0791c3b85a9321a3799433406c0c454fb571f5fca0}{LCD\+\_\+4\+BIT}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enum for specifying the LCD mode. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__LCD__Driver_ga76915c0e9fa9564d35da87ce5dc6083d}{LCD\+\_\+\+ROWS\+\_\+t}} \{ \mbox{\hyperlink{group__LCD__Driver_gga76915c0e9fa9564d35da87ce5dc6083da96c49c04b86f0f54e9710e0e6e07874b}{LCD\+\_\+2\+ROWS}}
+, \mbox{\hyperlink{group__LCD__Driver_gga76915c0e9fa9564d35da87ce5dc6083da01eb20a4631c5f4675081a0228ea9c0e}{LCD\+\_\+4\+ROWS}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enum for specifying the number of rows on the LCD. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__LCD__Functions_gae10bfb836fc7f71736981230c6f93410}{LCD\+\_\+\+Init}} (\mbox{\hyperlink{structLCD__t}{LCD\+\_\+t}} $\ast$LCD\+\_\+cfg)
+\begin{DoxyCompactList}\small\item\em Initializes the LCD with user-\/defined configurations. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__LCD__Functions_ga9cd66e7ffbe44bf68d4926335fa43992}{LCD\+\_\+\+Send\+\_\+\+Command}} (\mbox{\hyperlink{structLCD__t}{LCD\+\_\+t}} $\ast$LCD\+\_\+cfg, \mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} command)
+\begin{DoxyCompactList}\small\item\em Sends a command to the LCD to be executed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__LCD__Functions_ga49f90497a42f7e50d9ffbb1a1e9e1bd4}{LCD\+\_\+\+Send\+\_\+\+Char}} (\mbox{\hyperlink{structLCD__t}{LCD\+\_\+t}} $\ast$LCD\+\_\+cfg, \mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} Char)
+\begin{DoxyCompactList}\small\item\em Sends a character to the LCD to be displayed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__LCD__Functions_gad0f1825d7e6621f3ef992ac6e417110f}{LCD\+\_\+\+Send\+\_\+\+Char\+\_\+\+Pos}} (\mbox{\hyperlink{structLCD__t}{LCD\+\_\+t}} $\ast$LCD\+\_\+cfg, \mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} Char, \mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} row, \mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} column)
+\begin{DoxyCompactList}\small\item\em Sends a character to the LCD to be displayed at a specific location. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__LCD__Functions_gaf8502a6ce32be8fbf1766c50f8760f68}{LCD\+\_\+\+Send\+\_\+\+String}} (\mbox{\hyperlink{structLCD__t}{LCD\+\_\+t}} $\ast$LCD\+\_\+cfg, \mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} $\ast$string)
+\begin{DoxyCompactList}\small\item\em Sends a string to the LCD to be displayed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__LCD__Functions_gab5caef627b88d83f3c863bc2e3d54678}{LCD\+\_\+\+Send\+\_\+\+String\+\_\+\+Pos}} (\mbox{\hyperlink{structLCD__t}{LCD\+\_\+t}} $\ast$LCD\+\_\+cfg, \mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} $\ast$string, \mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} row, \mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} column)
+\begin{DoxyCompactList}\small\item\em Sends a string to the LCD to be displayed at a specific location. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__LCD__Functions_ga4dbb4ca44749573a14305937a8fee358}{LCD\+\_\+\+Send\+\_\+\+Enable\+\_\+\+Signal}} (\mbox{\hyperlink{structLCD__t}{LCD\+\_\+t}} $\ast$LCD\+\_\+cfg)
+\begin{DoxyCompactList}\small\item\em Sends an enable signal to the LCD. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__LCD__Functions_gae63444e290979d80c1b88fad989d2e40}{LCD\+\_\+\+Set\+\_\+\+Cursor}} (\mbox{\hyperlink{structLCD__t}{LCD\+\_\+t}} $\ast$LCD\+\_\+cfg, \mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} row, \mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} column)
+\begin{DoxyCompactList}\small\item\em Sets the location of the cursor on the LCD. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file for the STM32\+F401xx microcontroller LCD driver. 
+
+\begin{DoxyAuthor}{Author}
+Mohamed Ali Haoufa 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2024-\/09-\/21
+\end{DoxyDate}
+This header file provides the necessary definitions, macros, and function prototypes for interfacing with an LCD connected to the STM32\+F401xx microcontroller. It includes configurations for LCD modes, rows, and various LCD commands and functions.
+
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2024 Mohamed Ali Haoufa. All rights reserved. 
+\end{DoxyCopyright}

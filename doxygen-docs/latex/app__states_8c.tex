@@ -1,0 +1,66 @@
+\hypertarget{app__states_8c}{}\doxysection{Src/app\+\_\+states.c File Reference}
+\label{app__states_8c}\index{Src/app\_states.c@{Src/app\_states.c}}
+
+
+Application state machine implementation for managing entry/exit gates and parking slots using the STM32\+F401xx MCU.  
+
+
+{\ttfamily \#include \char`\"{}app\+\_\+states.\+h\char`\"{}}\newline
+Include dependency graph for app\+\_\+states.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{app__states_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{group__App__States_gabee0ad092198b70b71d561c1b5416fcb}{STATE\+\_\+\+API}} (\mbox{\hyperlink{group__App__States_gga94b1da2e055fff4d143aa6aa891f79a9a2847acd039e659572aad85db0c091878}{Init\+\_\+\+STATE}})
+\begin{DoxyCompactList}\small\item\em Initializes the system and sets up the initial state. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__App__States_gad8a2486472ef1a08fb95776d003257c6}{STATE\+\_\+\+API}} (\mbox{\hyperlink{group__App__States_gga94b1da2e055fff4d143aa6aa891f79a9ac6f38c79bae23cb85a5ef37912107ba7}{Admin\+\_\+\+STATE}})
+\begin{DoxyCompactList}\small\item\em Admin state to initialize the user IDs and prepare the system. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__App__States_gacc7b9f3bac8f025c559bd68e90b315c3}{STATE\+\_\+\+API}} (\mbox{\hyperlink{group__App__States_gga94b1da2e055fff4d143aa6aa891f79a9a99932a784534b9d850c6a1e47bcf7f41}{Idle\+\_\+\+STATE}})
+\begin{DoxyCompactList}\small\item\em Idle state where the system waits for user input (entry/exit requests). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__App__States_ga594fb56fad564ace392ecf6be391ac91}{STATE\+\_\+\+API}} (\mbox{\hyperlink{group__App__States_gga94b1da2e055fff4d143aa6aa891f79a9a9851c861af1e052708bb6536aa9e80b2}{Enter\+\_\+\+Gate\+\_\+\+STATE}})
+\begin{DoxyCompactList}\small\item\em Handles the logic for opening the entry gate. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__App__States_gac5b9799daaacaeee545c5ac1dc8aaddf}{STATE\+\_\+\+API}} (\mbox{\hyperlink{group__App__States_gga94b1da2e055fff4d143aa6aa891f79a9a7a6b826bd915657aa25f67051b1655fe}{Exit\+\_\+\+Gate\+\_\+\+STATE}})
+\begin{DoxyCompactList}\small\item\em Handles the logic for opening the exit gate. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__App__States_gad931edca56701f8ce40a79ddd7f5f38b}{STATE\+\_\+\+API}} (\mbox{\hyperlink{group__App__States_gga94b1da2e055fff4d143aa6aa891f79a9a1e5a4d3858268c1a9b0e31733cb0379b}{Full\+\_\+\+STATE}})
+\begin{DoxyCompactList}\small\item\em Full state where the parking lot is full, and no entry is allowed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+volatile \mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{group__App__States_ga6eccbdea114a356b50ba8ca1d4d520da}{Enter\+\_\+\+Flag}}
+\begin{DoxyCompactList}\small\item\em Flags and variables used for managing system state. \end{DoxyCompactList}\item 
+volatile \mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{group__App__States_gae2251646161719f20cde4469825a47ca}{Exit\+\_\+\+Flag}}
+\begin{DoxyCompactList}\small\item\em Flags for entry and exit state triggers. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{group__App__States_ga35e5b6e006589360d53e1b25005fd4f6}{Free\+\_\+\+Slots}}
+\item 
+\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{group__App__States_ga916dcbf524c7f03ccf608cecb18a1710}{Print\+\_\+\+Slots\+\_\+\+LCD\+\_\+\+Flag}}
+\begin{DoxyCompactList}\small\item\em Available parking slots and LCD print flag. \end{DoxyCompactList}\item 
+void($\ast$ \mbox{\hyperlink{group__App__States_ga1192329f146b59749d3b842a19c7a99c}{fp\+\_\+\+App\+\_\+\+State\+\_\+\+Handler}} )() = \mbox{\hyperlink{group__State__Macros_ga7504af73b0ae03874bd7f0a35552c8ea}{STATE\+\_\+\+NAME}}(\mbox{\hyperlink{group__App__States_gga94b1da2e055fff4d143aa6aa891f79a9a2847acd039e659572aad85db0c091878}{Init\+\_\+\+STATE}})
+\begin{DoxyCompactList}\small\item\em Function pointer to manage current state transitions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__App__States_ga94b1da2e055fff4d143aa6aa891f79a9}{STATES}} \mbox{\hyperlink{group__App__States_gadc37a7ffc3965acc859f13ac628b8376}{APP\+\_\+\+Current\+\_\+\+State}}
+\begin{DoxyCompactList}\small\item\em Current application state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Application state machine implementation for managing entry/exit gates and parking slots using the STM32\+F401xx MCU. 
+
+~\newline
+ \begin{DoxyAuthor}{Author}
+Mohamed Ali Haoufa 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2024-\/09-\/21
+\end{DoxyDate}
+This file defines the application states and associated functions to manage the parking system, including initializing the system, handling user entry/exit, and updating the number of available parking slots.
+
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2024 
+\end{DoxyCopyright}

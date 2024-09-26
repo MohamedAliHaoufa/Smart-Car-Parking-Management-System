@@ -1,0 +1,101 @@
+\hypertarget{stm32f401xx__i2c__driver_8c}{}\doxysection{drivers/\+Src/stm32f401xx\+\_\+i2c\+\_\+driver.c File Reference}
+\label{stm32f401xx__i2c__driver_8c}\index{drivers/Src/stm32f401xx\_i2c\_driver.c@{drivers/Src/stm32f401xx\_i2c\_driver.c}}
+
+
+I2C Peripheral Driver Implementation for STM32\+F103\+C6.  
+
+
+{\ttfamily \#include \char`\"{}stm32f401xx\+\_\+i2c\+\_\+driver.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stm32f401xx\+\_\+usart\+\_\+driver.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stm32f401xx\+\_\+rcc\+\_\+driver.\+h\char`\"{}}\newline
+Include dependency graph for stm32f401xx\+\_\+i2c\+\_\+driver.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{stm32f401xx__i2c__driver_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{stm32f401xx__i2c__driver_8c_a7b08be5434a428efec8165cdf63d7472}{I2\+C1\+\_\+\+Index}}~0
+\item 
+\#define \mbox{\hyperlink{stm32f401xx__i2c__driver_8c_a56aaaa86dc6fbc49cc9ddf06dedf51d9}{I2\+C2\+\_\+\+Index}}~1
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__I2C__Functions_ga5541ea9e8f7db64d52992e74afddc987}{MCAL\+\_\+\+I2\+C\+\_\+\+Init}} (\mbox{\hyperlink{structI2C__TypeDef}{I2\+C\+\_\+\+Type\+Def}} $\ast$I2\+Cx, \mbox{\hyperlink{structS__I2C__Config__t}{S\+\_\+\+I2\+C\+\_\+\+Config\+\_\+t}} $\ast$I2\+C\+\_\+\+Init\+\_\+\+Struct)
+\begin{DoxyCompactList}\small\item\em Initializes the I2C peripheral. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__I2C__Functions_ga03da751c9fb2f7d84f70b963491e5016}{MCAL\+\_\+\+I2\+C\+\_\+\+Deinit}} (\mbox{\hyperlink{structI2C__TypeDef}{I2\+C\+\_\+\+Type\+Def}} $\ast$I2\+Cx)
+\begin{DoxyCompactList}\small\item\em De-\/initializes the I2C peripheral. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__I2C__Functions_ga7766a6e23af532e9802f343f9653d97e}{MCAL\+\_\+\+I2\+C\+\_\+\+Set\+\_\+\+GPIO}} (\mbox{\hyperlink{structI2C__TypeDef}{I2\+C\+\_\+\+Type\+Def}} $\ast$I2\+Cx)
+\begin{DoxyCompactList}\small\item\em Configures GPIO pins for I2C functionality. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__I2C__Functions_ga5e9f598f8f5a6ccd465354f7414430b6}{MCAL\+\_\+\+I2\+C\+\_\+\+Master\+\_\+\+Tx}} (\mbox{\hyperlink{structI2C__TypeDef}{I2\+C\+\_\+\+Type\+Def}} $\ast$I2\+Cx, uint16\+\_\+t Slave\+Add, uint8\+\_\+t $\ast$dataout, uint32\+\_\+t datalen, \mbox{\hyperlink{group__I2C__Driver_gad28059d4f7c1eed28786a8a79a8eebca}{Stop\+Condition}} Stop, \mbox{\hyperlink{group__I2C__Driver_ga322c6c98c49987a2cdb0d4e16262ddfc}{Repeated\+\_\+\+Start}} start)
+\begin{DoxyCompactList}\small\item\em Transmits data from the I2C master to a slave device. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__I2C__Functions_ga6325aba076ca99fe5535a63419bff067}{MCAL\+\_\+\+I2\+C\+\_\+\+Master\+\_\+\+Rx}} (\mbox{\hyperlink{structI2C__TypeDef}{I2\+C\+\_\+\+Type\+Def}} $\ast$I2\+Cx, uint16\+\_\+t Slave\+Add, uint8\+\_\+t $\ast$dataout, uint32\+\_\+t datalen, \mbox{\hyperlink{group__I2C__Driver_gad28059d4f7c1eed28786a8a79a8eebca}{Stop\+Condition}} Stop, \mbox{\hyperlink{group__I2C__Driver_ga322c6c98c49987a2cdb0d4e16262ddfc}{Repeated\+\_\+\+Start}} start)
+\begin{DoxyCompactList}\small\item\em Receives data from an I2C slave device. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__I2C__Functions_ga36fc8957864b183825ec0232ea00c394}{I2\+C\+\_\+\+Generate\+\_\+\+Start}} (\mbox{\hyperlink{structI2C__TypeDef}{I2\+C\+\_\+\+Type\+Def}} $\ast$I2\+Cx, \mbox{\hyperlink{group__I2C__Driver_ga059f052a2fc4426778fd92549bd923d9}{Functional\+\_\+\+State}} state, \mbox{\hyperlink{group__I2C__Driver_ga322c6c98c49987a2cdb0d4e16262ddfc}{Repeated\+\_\+\+Start}} start)
+\begin{DoxyCompactList}\small\item\em Generates a start condition or a repeated start condition. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__I2C__Functions_ga6e1320832ec9216d3589c3866cd487f5}{I2\+C\+\_\+\+ACKnowlage\+Config}} (\mbox{\hyperlink{structI2C__TypeDef}{I2\+C\+\_\+\+Type\+Def}} $\ast$I2\+Cx, \mbox{\hyperlink{group__I2C__Driver_ga059f052a2fc4426778fd92549bd923d9}{Functional\+\_\+\+State}} New\+State)
+\begin{DoxyCompactList}\small\item\em Configures the acknowledgment feature of the I2C peripheral. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__Exported__types_ga89136caac2e14c55151f527ac02daaff}{Flag\+Status}} \mbox{\hyperlink{group__I2C__Functions_ga313bb3e8079ca7d07082b3671104d346}{I2\+C\+\_\+\+Get\+\_\+\+Flag\+Status}} (\mbox{\hyperlink{structI2C__TypeDef}{I2\+C\+\_\+\+Type\+Def}} $\ast$I2\+Cx, \mbox{\hyperlink{group__I2C__Driver_ga67a0db04d321a74b7e7fcfd3f1a3f70b}{Status}} flag)
+\begin{DoxyCompactList}\small\item\em Checks the status of I2C flags. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__I2C__Functions_gad647af69e97ed5f8d5d9465574fd84a2}{I2\+C\+\_\+\+Send\+Address}} (\mbox{\hyperlink{structI2C__TypeDef}{I2\+C\+\_\+\+Type\+Def}} $\ast$I2\+Cx, uint16\+\_\+t Slave\+Address, \mbox{\hyperlink{group__I2C__Driver_gad75a0ed7a23161498c3ab8a520181c4a}{I2\+C\+\_\+\+Direction}} Direction)
+\begin{DoxyCompactList}\small\item\em Sends a 7-\/bit slave address to the I2C peripheral. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__I2C__Functions_ga2b467ddc086b2698e9dbf5905b7183da}{I2\+C\+\_\+\+Generate\+\_\+\+Stop}} (\mbox{\hyperlink{structI2C__TypeDef}{I2\+C\+\_\+\+Type\+Def}} $\ast$I2\+Cx, \mbox{\hyperlink{group__I2C__Driver_ga059f052a2fc4426778fd92549bd923d9}{Functional\+\_\+\+State}} New\+State)
+\begin{DoxyCompactList}\small\item\em Generates a stop condition on the I2C bus. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__I2C__Functions_ga6f9cd934c8b1f2fce031922e8b591921}{MCAL\+\_\+\+I2\+C\+\_\+\+Slave\+\_\+\+Send\+Data}} (\mbox{\hyperlink{structI2C__TypeDef}{I2\+C\+\_\+\+Type\+Def}} $\ast$I2\+Cx, uint8\+\_\+t data)
+\begin{DoxyCompactList}\small\item\em Sends a single byte of data in slave mode. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{group__I2C__Functions_ga6b72403def531b70b116007328ac5967}{MCAL\+\_\+\+I2\+C\+\_\+\+Slave\+Receive\+Data}} (\mbox{\hyperlink{structI2C__TypeDef}{I2\+C\+\_\+\+Type\+Def}} $\ast$I2\+Cx)
+\begin{DoxyCompactList}\small\item\em Receives a single byte of data in slave mode. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structS__I2C__Config__t}{S\+\_\+\+I2\+C\+\_\+\+Config\+\_\+t}} \mbox{\hyperlink{stm32f401xx__i2c__driver_8c_a46b96adc7ccc9c29b360536ad6b0a0bb}{Global\+\_\+\+I2\+C\+\_\+\+Config}} \mbox{[}2\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+I2C Peripheral Driver Implementation for STM32\+F103\+C6. 
+
+\begin{DoxyAuthor}{Author}
+Mohamed Ali Haoufa 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2024-\/09-\/21
+\end{DoxyDate}
+This file implements the driver functions for the I2C (Inter-\/\+Integrated Circuit) peripheral of the STM32\+F103\+C6 microcontroller. The driver includes functions for initialization, de-\/initialization, data transmission, and reception. Additionally, it provides utility functions to facilitate I2C operations.
+
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2023 Fam Ayman. All rights reserved. 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{stm32f401xx__i2c__driver_8c_a7b08be5434a428efec8165cdf63d7472}\label{stm32f401xx__i2c__driver_8c_a7b08be5434a428efec8165cdf63d7472}} 
+\index{stm32f401xx\_i2c\_driver.c@{stm32f401xx\_i2c\_driver.c}!I2C1\_Index@{I2C1\_Index}}
+\index{I2C1\_Index@{I2C1\_Index}!stm32f401xx\_i2c\_driver.c@{stm32f401xx\_i2c\_driver.c}}
+\doxysubsubsection{\texorpdfstring{I2C1\_Index}{I2C1\_Index}}
+{\footnotesize\ttfamily \#define I2\+C1\+\_\+\+Index~0}
+
+Index for I2\+C1 peripheral. \mbox{\Hypertarget{stm32f401xx__i2c__driver_8c_a56aaaa86dc6fbc49cc9ddf06dedf51d9}\label{stm32f401xx__i2c__driver_8c_a56aaaa86dc6fbc49cc9ddf06dedf51d9}} 
+\index{stm32f401xx\_i2c\_driver.c@{stm32f401xx\_i2c\_driver.c}!I2C2\_Index@{I2C2\_Index}}
+\index{I2C2\_Index@{I2C2\_Index}!stm32f401xx\_i2c\_driver.c@{stm32f401xx\_i2c\_driver.c}}
+\doxysubsubsection{\texorpdfstring{I2C2\_Index}{I2C2\_Index}}
+{\footnotesize\ttfamily \#define I2\+C2\+\_\+\+Index~1}
+
+Index for I2\+C2 peripheral. 
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{stm32f401xx__i2c__driver_8c_a46b96adc7ccc9c29b360536ad6b0a0bb}\label{stm32f401xx__i2c__driver_8c_a46b96adc7ccc9c29b360536ad6b0a0bb}} 
+\index{stm32f401xx\_i2c\_driver.c@{stm32f401xx\_i2c\_driver.c}!Global\_I2C\_Config@{Global\_I2C\_Config}}
+\index{Global\_I2C\_Config@{Global\_I2C\_Config}!stm32f401xx\_i2c\_driver.c@{stm32f401xx\_i2c\_driver.c}}
+\doxysubsubsection{\texorpdfstring{Global\_I2C\_Config}{Global\_I2C\_Config}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structS__I2C__Config__t}{S\+\_\+\+I2\+C\+\_\+\+Config\+\_\+t}} Global\+\_\+\+I2\+C\+\_\+\+Config\mbox{[}2\mbox{]}}
+
+Global array to hold I2C configurations. 

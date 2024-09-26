@@ -1,0 +1,88 @@
+\hypertarget{stm32f401xx__systick__driver_8h}{}\doxysection{drivers/\+Inc/stm32f401xx\+\_\+systick\+\_\+driver.h File Reference}
+\label{stm32f401xx__systick__driver_8h}\index{drivers/Inc/stm32f401xx\_systick\_driver.h@{drivers/Inc/stm32f401xx\_systick\_driver.h}}
+
+
+Header file for configuring and controlling the Sys\+Tick timer in the STM32\+F401xx MCU. This file contains the necessary structures, macros, and function prototypes for Sys\+Tick initialization, configuration, and handling delays.  
+
+
+{\ttfamily \#include \char`\"{}stm32f401xx.\+h\char`\"{}}\newline
+Include dependency graph for stm32f401xx\+\_\+systick\+\_\+driver.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{stm32f401xx__systick__driver_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{stm32f401xx__systick__driver_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structSTK__config__t}{STK\+\_\+config\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Sys\+Tick Configuration Structure Definition. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__SYSTICK__Driver_gabee289c1d34dc724976a06f35b3c2679}{STK\+\_\+\+INTERRUPT\+\_\+\+MASK}}~0x02\+UL
+\begin{DoxyCompactList}\small\item\em Interrupt enable/disable mask for the Sys\+Tick timer. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__SYSTICK__Driver_gae089bdae66af7609d335f5b3aa653600}{STK\+\_\+\+CLK\+\_\+\+MASK}}~0x04\+UL
+\begin{DoxyCompactList}\small\item\em Clock source mask for the Sys\+Tick timer. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__SYSTICK__Driver_ga08d1931820e640fe2fb0e5f6fa1e48b3}{STK\+\_\+\+RELOAD\+\_\+\+MASK}}~0x00\+FFFFFFUL
+\begin{DoxyCompactList}\small\item\em Reload value mask for the Sys\+Tick timer. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__SYSTICK__Driver_ga9c47b7f579570ae0116d4d96c3106fc0}{STK\+\_\+\+FCPU}}~8000000\+UL
+\begin{DoxyCompactList}\small\item\em CPU frequency definition for the Sys\+Tick timer. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__stk__interrupt__config__define_ga0973724d48697c413e875f25820e1572}{STK\+\_\+\+INTERRUPT\+\_\+\+ENABLED}}~0x02\+UL
+\item 
+\#define \mbox{\hyperlink{group__stk__interrupt__config__define_ga6eeed0f6e417a7efb2585abcdcc6993c}{STK\+\_\+\+INTERRUPT\+\_\+\+DISABLED}}~0x00\+UL
+\item 
+\#define \mbox{\hyperlink{group__stk__clock__config__define_gaa6f2e74b6d625eb2d4ec771c5fdaa0b1}{STK\+\_\+\+CLK\+\_\+\+AHB}}~0x04\+UL
+\item 
+\#define \mbox{\hyperlink{group__stk__clock__config__define_gac598e3b2e2634da4ce38d1f39bc9222d}{STK\+\_\+\+CLK\+\_\+\+AHB\+\_\+8}}~0x00\+UL
+\item 
+\#define \mbox{\hyperlink{group__stk__running__mode__define_ga3011076d92fc11e51fc54c5f6a38444e}{STK\+\_\+\+PERIODIC\+\_\+\+MODE}}~0x01U
+\item 
+\#define \mbox{\hyperlink{group__stk__running__mode__define_gab5db76239dcf88c85f0e6eac4426b6c6}{STK\+\_\+\+ONE\+\_\+\+SHOT\+\_\+\+MODE}}~0x00U
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__SYSTICK__Functions_ga36eba3620572f6acbad1102355816ac7}{MCAL\+\_\+\+STK\+\_\+\+Config}} (\mbox{\hyperlink{structSTK__config__t}{STK\+\_\+config\+\_\+t}} $\ast$\+\_\+cfg)
+\begin{DoxyCompactList}\small\item\em Configures the Sys\+Tick timer with the specified parameters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__SYSTICK__Functions_ga721edfb448646eecc4e3e54f3861eb31}{MCAL\+\_\+\+STK\+\_\+\+Set\+Reload}} (\mbox{\hyperlink{group__Platform__Types_ga4b435a49c74bb91f284f075e63416cb6}{uint32}} value)
+\begin{DoxyCompactList}\small\item\em Sets the reload value for the Sys\+Tick timer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__SYSTICK__Functions_ga024450ece04b2df53a63fd0b41f4f14f}{MCAL\+\_\+\+STK\+\_\+\+Set\+Callback}} (void($\ast$pf\+Callback)(void))
+\begin{DoxyCompactList}\small\item\em Sets the callback function for the Sys\+Tick timer interrupt. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__SYSTICK__Functions_ga7debe5f5279aa4b0e9930e3a371ac58e}{MCAL\+\_\+\+STK\+\_\+\+Start\+Timer}} ()
+\begin{DoxyCompactList}\small\item\em Starts the Sys\+Tick timer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__SYSTICK__Functions_ga49458b28a7e8cbdbbe8c7bee8891739f}{MCAL\+\_\+\+STK\+\_\+\+Stop\+Timer}} ()
+\begin{DoxyCompactList}\small\item\em Stops the Sys\+Tick timer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__SYSTICK__Functions_gacc4f8116e14dd1c8a696f3264b53336e}{MCAL\+\_\+\+STK\+\_\+\+Delay}} (\mbox{\hyperlink{group__Platform__Types_ga4b435a49c74bb91f284f075e63416cb6}{uint32}} delay\+\_\+ticks)
+\begin{DoxyCompactList}\small\item\em Delays the system by a specified number of ticks using the Sys\+Tick timer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__SYSTICK__Functions_gac43392c1a1fed482b528b07a39047364}{MCAL\+\_\+\+STK\+\_\+\+Delay1ms}} (\mbox{\hyperlink{group__Platform__Types_ga4b435a49c74bb91f284f075e63416cb6}{uint32}} delay\+\_\+ms)
+\begin{DoxyCompactList}\small\item\em Delays the system by a specified number of milliseconds. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file for configuring and controlling the Sys\+Tick timer in the STM32\+F401xx MCU. This file contains the necessary structures, macros, and function prototypes for Sys\+Tick initialization, configuration, and handling delays. 
+
+\begin{DoxyAuthor}{Author}
+Mohamed Ali Haoufa 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2024-\/09-\/21
+\end{DoxyDate}
+This file is part of the STM32\+F401xx peripheral driver library, focusing on the Sys\+Tick timer. The driver allows users to configure Sys\+Tick as a periodic or one-\/shot timer, handle interrupt configuration, and generate delays.
+
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2024 Mohamed Ali Haoufa. All rights reserved. This software is provided \char`\"{}as is,\char`\"{} without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement. 
+\end{DoxyCopyright}

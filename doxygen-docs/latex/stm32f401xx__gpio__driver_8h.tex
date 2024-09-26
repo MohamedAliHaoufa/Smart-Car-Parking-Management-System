@@ -1,0 +1,168 @@
+\hypertarget{stm32f401xx__gpio__driver_8h}{}\doxysection{drivers/\+Inc/stm32f401xx\+\_\+gpio\+\_\+driver.h File Reference}
+\label{stm32f401xx__gpio__driver_8h}\index{drivers/Inc/stm32f401xx\_gpio\_driver.h@{drivers/Inc/stm32f401xx\_gpio\_driver.h}}
+
+
+Header file for GPIO driver for STM32\+F401xx microcontroller.  
+
+
+{\ttfamily \#include \char`\"{}stm32f401xx.\+h\char`\"{}}\newline
+Include dependency graph for stm32f401xx\+\_\+gpio\+\_\+driver.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{stm32f401xx__gpio__driver_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{stm32f401xx__gpio__driver_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structGPIO__PinConfig__t}{GPIO\+\_\+\+Pin\+Config\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Configuration structure for GPIO pins. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries GPIO\+\_\+\+PIN\+\_\+0}~0
+\item 
+\#define {\bfseries GPIO\+\_\+\+PIN\+\_\+1}~1
+\item 
+\#define {\bfseries GPIO\+\_\+\+PIN\+\_\+2}~2
+\item 
+\#define {\bfseries GPIO\+\_\+\+PIN\+\_\+3}~3
+\item 
+\#define {\bfseries GPIO\+\_\+\+PIN\+\_\+4}~4
+\item 
+\#define {\bfseries GPIO\+\_\+\+PIN\+\_\+5}~5
+\item 
+\#define {\bfseries GPIO\+\_\+\+PIN\+\_\+6}~6
+\item 
+\#define {\bfseries GPIO\+\_\+\+PIN\+\_\+7}~7
+\item 
+\#define {\bfseries GPIO\+\_\+\+PIN\+\_\+8}~8
+\item 
+\#define {\bfseries GPIO\+\_\+\+PIN\+\_\+9}~9
+\item 
+\#define {\bfseries GPIO\+\_\+\+PIN\+\_\+10}~10
+\item 
+\#define {\bfseries GPIO\+\_\+\+PIN\+\_\+11}~11
+\item 
+\#define {\bfseries GPIO\+\_\+\+PIN\+\_\+12}~12
+\item 
+\#define {\bfseries GPIO\+\_\+\+PIN\+\_\+13}~13
+\item 
+\#define {\bfseries GPIO\+\_\+\+PIN\+\_\+14}~14
+\item 
+\#define {\bfseries GPIO\+\_\+\+PIN\+\_\+15}~15
+\item 
+\#define {\bfseries GPIO\+\_\+\+PIN\+\_\+\+ALL}~((\mbox{\hyperlink{group__Platform__Types_ga05f6b0ae8f6a6e135b0e290c25fe0e4e}{uint16}})0x\+FFFF)
+\item 
+\#define \mbox{\hyperlink{group__GPIO__MODE__define_ga3064ad374c66456d132d1489cfe6cb86}{GPIO\+\_\+\+MODE\+\_\+\+INPUT\+\_\+\+FLO}}~0x00000001U
+\item 
+\#define \mbox{\hyperlink{group__GPIO__MODE__define_ga1e70dfd61bdfa414b654417edfdc8caf}{GPIO\+\_\+\+MODE\+\_\+\+INPUT\+\_\+\+PU}}~0x00000002U
+\item 
+\#define \mbox{\hyperlink{group__GPIO__MODE__define_gae38fd28ef841c59246734403e10a3d28}{GPIO\+\_\+\+MODE\+\_\+\+INPUT\+\_\+\+PD}}~0x00000003U
+\item 
+\#define \mbox{\hyperlink{group__GPIO__MODE__define_ga1013838a64cec2f8c88f079c449d1982}{GPIO\+\_\+\+MODE\+\_\+\+OUTPUT\+\_\+\+PP}}~0x00000004U
+\item 
+\#define \mbox{\hyperlink{group__GPIO__MODE__define_ga2f91757829f6e9505ec386b840941929}{GPIO\+\_\+\+MODE\+\_\+\+OUTPUT\+\_\+\+OD}}~0x00000005U
+\item 
+\#define \mbox{\hyperlink{group__GPIO__MODE__define_gaee23bd75563d9aa9e7820bb76fa3b1ce}{GPIO\+\_\+\+MODE\+\_\+\+OUTPUT\+\_\+\+AF\+\_\+\+PP}}~0x00000006U
+\item 
+\#define \mbox{\hyperlink{group__GPIO__MODE__define_ga54f97ef334df3353404e9229c512e126}{GPIO\+\_\+\+MODE\+\_\+\+OUTPUT\+\_\+\+AF\+\_\+\+OD}}~0x00000007U
+\item 
+\#define \mbox{\hyperlink{group__GPIO__MODE__define_gadb81109590b66d8e48076820064921b1}{GPIO\+\_\+\+MODE\+\_\+\+AF\+\_\+\+INPUT}}~0x00000008U
+\item 
+\#define \mbox{\hyperlink{group__GPIO__SPEED__define_gad9023219aec3960866a665876da67e51}{GPIO\+\_\+\+SPEED\+\_\+10M}}~0x00000001U
+\item 
+\#define \mbox{\hyperlink{group__GPIO__SPEED__define_ga37fd90487df55d93079eeadfd850d5d9}{GPIO\+\_\+\+SPEED\+\_\+2M}}~0x00000002U
+\item 
+\#define \mbox{\hyperlink{group__GPIO__SPEED__define_ga08e3e3682f6da65395057e14ea0195c0}{GPIO\+\_\+\+SPEED\+\_\+50M}}~0x00000003U
+\item 
+\#define \mbox{\hyperlink{group__GPIO__PIN__STATE_ga91d0fd3e69589389c320fff36dea968d}{GPIO\+\_\+\+PIN\+\_\+\+SET}}~1
+\item 
+\#define \mbox{\hyperlink{group__GPIO__PIN__STATE_ga42fa7f29052b8f1661b34ba2bf4aea9f}{GPIO\+\_\+\+PIN\+\_\+\+RESET}}~0
+\item 
+\#define \mbox{\hyperlink{group__GPIO__RETURN__LOCK_ga05d017ae5739d355199b3750ca534b31}{GPIO\+\_\+\+RETURN\+\_\+\+LOCK\+\_\+\+OK}}~1
+\item 
+\#define \mbox{\hyperlink{group__GPIO__RETURN__LOCK_ga83125bc27328fad34b667649244d4e63}{GPIO\+\_\+\+RETURN\+\_\+\+LOCK\+\_\+\+ERROR}}~0
+\item 
+\#define \mbox{\hyperlink{group__GPIO__PIN__MODES_ga995e5bd9af1641f9e20d64803b969ef3}{GPIO\+\_\+\+MODE\+\_\+\+IN}}~0
+\item 
+\#define \mbox{\hyperlink{group__GPIO__PIN__MODES_ga8b9e26ba32586932cc345bee5fecb180}{GPIO\+\_\+\+MODE\+\_\+\+OUT}}~1
+\item 
+\#define \mbox{\hyperlink{group__GPIO__PIN__MODES_gab109312d6bcee05263b5aa134ad48725}{GPIO\+\_\+\+MODE\+\_\+\+ALTFN}}~2
+\item 
+\#define \mbox{\hyperlink{group__GPIO__PIN__MODES_ga7a04f9ab65ad572ad20791a35009220c}{GPIO\+\_\+\+MODE\+\_\+\+ANALOG}}~3
+\item 
+\#define \mbox{\hyperlink{group__GPIO__PIN__MODES_gaadda8601af0fb9af9a41b3f910199679}{GPIO\+\_\+\+MODE\+\_\+\+IT\+\_\+\+FT}}~4
+\item 
+\#define \mbox{\hyperlink{group__GPIO__PIN__MODES_gaf97a5b7678a3a575277c11739cc1ce0f}{GPIO\+\_\+\+MODE\+\_\+\+IT\+\_\+\+RT}}~5
+\item 
+\#define \mbox{\hyperlink{group__GPIO__PIN__MODES_gaa1469670a733f79770703fe65753139d}{GPIO\+\_\+\+MODE\+\_\+\+IT\+\_\+\+RFT}}~6
+\item 
+\#define \mbox{\hyperlink{group__GPIO__SPEEDS_ga5510b387afb7ec2117b5d4207889163c}{GPIO\+\_\+\+SPEED\+\_\+\+LOW}}~0
+\item 
+\#define \mbox{\hyperlink{group__GPIO__SPEEDS_ga44a0eb2335a21858efbbb1557ce8d5e5}{GPIO\+\_\+\+SPEED\+\_\+\+MEDIUM}}~1
+\item 
+\#define \mbox{\hyperlink{group__GPIO__SPEEDS_gac1b1830b902c29ae791caa033d14202c}{GPIO\+\_\+\+SPEED\+\_\+\+FAST}}~2
+\item 
+\#define \mbox{\hyperlink{group__GPIO__SPEEDS_gad693110177bf2e34c5431555c6977e8c}{GPIO\+\_\+\+SPEED\+\_\+\+HIGH}}~3
+\item 
+\#define \mbox{\hyperlink{group__GPIO__PUPD_ga714441e96f8e8fb8da3233ca6b0bcee2}{GPIO\+\_\+\+NO\+\_\+\+PUPD}}~0
+\item 
+\#define \mbox{\hyperlink{group__GPIO__PUPD_gaa2215266368daa06caed64d2e142abec}{GPIO\+\_\+\+PIN\+\_\+\+PU}}~1
+\item 
+\#define \mbox{\hyperlink{group__GPIO__PUPD_ga9cad17aecf8a91f2d4581fb7cd194fee}{GPIO\+\_\+\+PIN\+\_\+\+PD}}~2
+\item 
+\#define \mbox{\hyperlink{group__GPIO__OUTPUT__TYPES_ga8fab3cc9114990a89695903630083789}{GPIO\+\_\+\+OP\+\_\+\+TYPE\+\_\+\+PP}}~0
+\item 
+\#define \mbox{\hyperlink{group__GPIO__OUTPUT__TYPES_ga7d07f73c03f1b79472b36f0098c147c8}{GPIO\+\_\+\+OP\+\_\+\+TYPE\+\_\+\+OD}}~1
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__GPIO__Functions_ga215a5c7757fa42f0b11f9d1257462156}{MCAL\+\_\+\+GPIO\+\_\+\+Init}} (\mbox{\hyperlink{structGPIO__TypeDef}{GPIO\+\_\+\+Type\+Def}} $\ast$GPIOx, \mbox{\hyperlink{structGPIO__PinConfig__t}{GPIO\+\_\+\+Pin\+Config\+\_\+t}} $\ast$Pin\+Config)
+\begin{DoxyCompactList}\small\item\em Initializes the specified GPIO pin according to the provided configuration. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__GPIO__Functions_ga3b9e24a9bee907a6436e9a5fe6504a1f}{MCAL\+\_\+\+GPIO\+\_\+\+De\+Init}} (\mbox{\hyperlink{structGPIO__TypeDef}{GPIO\+\_\+\+Type\+Def}} $\ast$GPIOx)
+\begin{DoxyCompactList}\small\item\em Resets the specified GPIO port. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{group__GPIO__Functions_ga2383583317e5236b9d9faa783abac74c}{MCAL\+\_\+\+GPIO\+\_\+\+Read\+Pin}} (\mbox{\hyperlink{structGPIO__TypeDef}{GPIO\+\_\+\+Type\+Def}} $\ast$GPIOx, \mbox{\hyperlink{group__Platform__Types_ga05f6b0ae8f6a6e135b0e290c25fe0e4e}{uint16}} Pin\+Number)
+\begin{DoxyCompactList}\small\item\em Reads the value of a specified GPIO pin. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__Platform__Types_ga05f6b0ae8f6a6e135b0e290c25fe0e4e}{uint16}} \mbox{\hyperlink{group__GPIO__Functions_ga50c8e47be7541f84acb8ddb217722ebe}{MCAL\+\_\+\+GPIO\+\_\+\+Read\+Port}} (\mbox{\hyperlink{structGPIO__TypeDef}{GPIO\+\_\+\+Type\+Def}} $\ast$GPIOx)
+\begin{DoxyCompactList}\small\item\em Reads the value of the entire GPIO port. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__GPIO__Functions_ga6e2b68d519bddd1f214fecd75465d670}{MCAL\+\_\+\+GPIO\+\_\+\+Write\+Pin}} (\mbox{\hyperlink{structGPIO__TypeDef}{GPIO\+\_\+\+Type\+Def}} $\ast$GPIOx, \mbox{\hyperlink{group__Platform__Types_ga05f6b0ae8f6a6e135b0e290c25fe0e4e}{uint16}} Pin\+Number, \mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} Value)
+\begin{DoxyCompactList}\small\item\em Writes a value to a specified GPIO pin. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__GPIO__Functions_gafb6f56a606270825197b3a47e3b67b29}{MCAL\+\_\+\+GPIO\+\_\+\+Write\+Port}} (\mbox{\hyperlink{structGPIO__TypeDef}{GPIO\+\_\+\+Type\+Def}} $\ast$GPIOx, \mbox{\hyperlink{group__Platform__Types_ga05f6b0ae8f6a6e135b0e290c25fe0e4e}{uint16}} Value)
+\begin{DoxyCompactList}\small\item\em Writes a value to the entire GPIO port. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__GPIO__Functions_gabb92cd9e935de6ea3f07cf856ac230ad}{MCAL\+\_\+\+GPIO\+\_\+\+Toggle\+Pin}} (\mbox{\hyperlink{structGPIO__TypeDef}{GPIO\+\_\+\+Type\+Def}} $\ast$GPIOx, \mbox{\hyperlink{group__Platform__Types_ga05f6b0ae8f6a6e135b0e290c25fe0e4e}{uint16}} Pin\+Number)
+\begin{DoxyCompactList}\small\item\em Toggles the state of a specified GPIO pin. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__GPIO__Functions_ga0581014960e2e1f8180c1ac5872c9865}{MCAL\+\_\+\+GPIO\+\_\+\+Toggle\+Port}} (\mbox{\hyperlink{structGPIO__TypeDef}{GPIO\+\_\+\+Type\+Def}} $\ast$GPIOx)
+\begin{DoxyCompactList}\small\item\em Toggles the value of a specific GPIO Port. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{group__GPIO__Functions_ga58f814251a43dc441f951c992ab01edd}{MCAL\+\_\+\+GPIO\+\_\+\+Lock\+Pin}} (\mbox{\hyperlink{structGPIO__TypeDef}{GPIO\+\_\+\+Type\+Def}} $\ast$GPIOx, \mbox{\hyperlink{group__Platform__Types_ga05f6b0ae8f6a6e135b0e290c25fe0e4e}{uint16}} Pin\+Number)
+\begin{DoxyCompactList}\small\item\em Locks the configuration of a specific GPIO pin to prevent further changes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file for GPIO driver for STM32\+F401xx microcontroller. 
+
+\begin{DoxyAuthor}{Author}
+Mohamed Ali Haoufa 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2024-\/09-\/21
+\end{DoxyDate}
+This file provides the definitions, macros, and function prototypes for configuring and controlling GPIO pins on the STM32\+F401xx microcontroller.
+
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2024 Mohamed Ali Haoufa 
+\end{DoxyCopyright}

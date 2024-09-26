@@ -1,0 +1,388 @@
+\hypertarget{group__NVIC__Functions}{}\doxysection{API Function Prototypes}
+\label{group__NVIC__Functions}\index{API Function Prototypes@{API Function Prototypes}}
+Collaboration diagram for API Function Prototypes\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{group__NVIC__Functions}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__NVIC__Functions_ga13b7ac22aad57e45a3c9112be7fabc0e}{MCAL\+\_\+\+NVIC\+\_\+\+Set\+Priority\+Grouping}} (\mbox{\hyperlink{group__Platform__Types_ga4b435a49c74bb91f284f075e63416cb6}{uint32}} priority\+\_\+grouping)
+\begin{DoxyCompactList}\small\item\em Set the priority grouping for the NVIC. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__Platform__Types_ga4b435a49c74bb91f284f075e63416cb6}{uint32}} \mbox{\hyperlink{group__NVIC__Functions_gadb1932f2764fc275a802507ef08056dc}{MCAL\+\_\+\+NVIC\+\_\+\+Get\+Priority\+Grouping}} (void)
+\begin{DoxyCompactList}\small\item\em Get the current priority grouping configuration of the NVIC. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__NVIC__Functions_ga283dc9f1b6d8dca9b5f0bab7b422c62b}{MCAL\+\_\+\+NVIC\+\_\+\+Enable\+IRQ}} (\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{group__Configuration__section__for__CMSIS_ga666eb0caeb12ec0e281415592ae89083}{IRQn}})
+\begin{DoxyCompactList}\small\item\em Enable a specified IRQ. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__NVIC__Functions_ga0f5617d6b7d5f46279ebffcfee2ecf35}{MCAL\+\_\+\+NVIC\+\_\+\+Disable\+IRQ}} (\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{group__Configuration__section__for__CMSIS_ga666eb0caeb12ec0e281415592ae89083}{IRQn}})
+\begin{DoxyCompactList}\small\item\em Disable a specified IRQ. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{group__NVIC__Functions_ga165b17f21f6b795218028acb60459d32}{MCAL\+\_\+\+NVIC\+\_\+\+Get\+Pending\+IRQ}} (\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{group__Configuration__section__for__CMSIS_ga666eb0caeb12ec0e281415592ae89083}{IRQn}})
+\begin{DoxyCompactList}\small\item\em Get the pending status of a specified IRQ. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__NVIC__Functions_ga592d392ce733c22df6eb98c7b27a3493}{MCAL\+\_\+\+NVIC\+\_\+\+Set\+Pending\+IRQ}} (\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{group__Configuration__section__for__CMSIS_ga666eb0caeb12ec0e281415592ae89083}{IRQn}})
+\begin{DoxyCompactList}\small\item\em Set the pending status of a specified IRQ. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__NVIC__Functions_ga88594ff547329d115d4e74df523a90af}{MCAL\+\_\+\+NVIC\+\_\+\+Clear\+Pending\+IRQ}} (\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{group__Configuration__section__for__CMSIS_ga666eb0caeb12ec0e281415592ae89083}{IRQn}})
+\begin{DoxyCompactList}\small\item\em Clear the pending status of a specified IRQ. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{group__NVIC__Functions_ga1f622d8056538637f73667decee87140}{MCAL\+\_\+\+NVIC\+\_\+\+Get\+Active}} (\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{group__Configuration__section__for__CMSIS_ga666eb0caeb12ec0e281415592ae89083}{IRQn}})
+\begin{DoxyCompactList}\small\item\em Get the active status of a specified IRQ. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__NVIC__Functions_gaf9e55ca7bcfcba07a21d4eeaadbadd1f}{MCAL\+\_\+\+NVIC\+\_\+\+Set\+Priority}} (\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{group__Configuration__section__for__CMSIS_ga666eb0caeb12ec0e281415592ae89083}{IRQn}}, \mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} priority)
+\begin{DoxyCompactList}\small\item\em Set the priority of a specified IRQ. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{group__NVIC__Functions_ga82af3479353edeca491c1b1526e07d89}{MCAL\+\_\+\+NVIC\+\_\+\+Get\+Priority}} (\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{group__Configuration__section__for__CMSIS_ga666eb0caeb12ec0e281415592ae89083}{IRQn}})
+\begin{DoxyCompactList}\small\item\em Retrieves the priority level of a specified IRQn. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__NVIC__Functions_ga26aba5a0740c2bcd0f7c06acbf0dae40}{MCAL\+\_\+\+NVIC\+\_\+\+System\+Reset}} (void)
+\begin{DoxyCompactList}\small\item\em Performs a system reset. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__NVIC__Functions_ga88594ff547329d115d4e74df523a90af}\label{group__NVIC__Functions_ga88594ff547329d115d4e74df523a90af}} 
+\index{API Function Prototypes@{API Function Prototypes}!MCAL\_NVIC\_ClearPendingIRQ@{MCAL\_NVIC\_ClearPendingIRQ}}
+\index{MCAL\_NVIC\_ClearPendingIRQ@{MCAL\_NVIC\_ClearPendingIRQ}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{MCAL\_NVIC\_ClearPendingIRQ()}{MCAL\_NVIC\_ClearPendingIRQ()}}
+{\footnotesize\ttfamily void MCAL\+\_\+\+NVIC\+\_\+\+Clear\+Pending\+IRQ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}}}]{IRQn }\end{DoxyParamCaption})}
+
+
+
+Clear the pending status of a specified IRQ. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em IRQn} & IRQ number to clear pending status as defined in \mbox{\hyperlink{group__NVIC__Interrupt__Requests}{Interrupt Requests}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+Clear the pending status of a specified IRQ.
+
+
+\begin{DoxyParams}{Parameters}
+{\em IRQn} & Number of interrupt request as defined in vector table or in Interrupt\+\_\+\+Requests\+\_\+\+Numbers\+\_\+define. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+None 
+\end{DoxyNote}
+\mbox{\Hypertarget{group__NVIC__Functions_ga0f5617d6b7d5f46279ebffcfee2ecf35}\label{group__NVIC__Functions_ga0f5617d6b7d5f46279ebffcfee2ecf35}} 
+\index{API Function Prototypes@{API Function Prototypes}!MCAL\_NVIC\_DisableIRQ@{MCAL\_NVIC\_DisableIRQ}}
+\index{MCAL\_NVIC\_DisableIRQ@{MCAL\_NVIC\_DisableIRQ}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{MCAL\_NVIC\_DisableIRQ()}{MCAL\_NVIC\_DisableIRQ()}}
+{\footnotesize\ttfamily void MCAL\+\_\+\+NVIC\+\_\+\+Disable\+IRQ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}}}]{IRQn }\end{DoxyParamCaption})}
+
+
+
+Disable a specified IRQ. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em IRQn} & IRQ number to disable as defined in \mbox{\hyperlink{group__NVIC__Interrupt__Requests}{Interrupt Requests}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+Disable a specified IRQ.
+
+
+\begin{DoxyParams}{Parameters}
+{\em IRQn} & Number of interrupt request as defined in vector table or in Interrupt\+\_\+\+Requests\+\_\+\+Numbers\+\_\+define. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+None 
+\end{DoxyNote}
+\mbox{\Hypertarget{group__NVIC__Functions_ga283dc9f1b6d8dca9b5f0bab7b422c62b}\label{group__NVIC__Functions_ga283dc9f1b6d8dca9b5f0bab7b422c62b}} 
+\index{API Function Prototypes@{API Function Prototypes}!MCAL\_NVIC\_EnableIRQ@{MCAL\_NVIC\_EnableIRQ}}
+\index{MCAL\_NVIC\_EnableIRQ@{MCAL\_NVIC\_EnableIRQ}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{MCAL\_NVIC\_EnableIRQ()}{MCAL\_NVIC\_EnableIRQ()}}
+{\footnotesize\ttfamily void MCAL\+\_\+\+NVIC\+\_\+\+Enable\+IRQ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}}}]{IRQn }\end{DoxyParamCaption})}
+
+
+
+Enable a specified IRQ. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em IRQn} & IRQ number to enable as defined in \mbox{\hyperlink{group__NVIC__Interrupt__Requests}{Interrupt Requests}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+Enable a specified IRQ.
+
+
+\begin{DoxyParams}{Parameters}
+{\em IRQn} & Number of interrupt request as defined in vector table or in Interrupt\+\_\+\+Requests\+\_\+\+Numbers\+\_\+define. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+None 
+\end{DoxyNote}
+\mbox{\Hypertarget{group__NVIC__Functions_ga1f622d8056538637f73667decee87140}\label{group__NVIC__Functions_ga1f622d8056538637f73667decee87140}} 
+\index{API Function Prototypes@{API Function Prototypes}!MCAL\_NVIC\_GetActive@{MCAL\_NVIC\_GetActive}}
+\index{MCAL\_NVIC\_GetActive@{MCAL\_NVIC\_GetActive}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{MCAL\_NVIC\_GetActive()}{MCAL\_NVIC\_GetActive()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} MCAL\+\_\+\+NVIC\+\_\+\+Get\+Active (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}}}]{IRQn }\end{DoxyParamCaption})}
+
+
+
+Get the active status of a specified IRQ. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em IRQn} & IRQ number to check as defined in \mbox{\hyperlink{group__NVIC__Interrupt__Requests}{Interrupt Requests}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if IRQ is active, 0 otherwise
+\end{DoxyReturn}
+Get the active status of a specified IRQ.
+
+
+\begin{DoxyParams}{Parameters}
+{\em IRQn} & Number of interrupt request as defined in vector table or in Interrupt\+\_\+\+Requests\+\_\+\+Numbers\+\_\+define. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if IRQn is active, 0 otherwise. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+None 
+\end{DoxyNote}
+\mbox{\Hypertarget{group__NVIC__Functions_ga165b17f21f6b795218028acb60459d32}\label{group__NVIC__Functions_ga165b17f21f6b795218028acb60459d32}} 
+\index{API Function Prototypes@{API Function Prototypes}!MCAL\_NVIC\_GetPendingIRQ@{MCAL\_NVIC\_GetPendingIRQ}}
+\index{MCAL\_NVIC\_GetPendingIRQ@{MCAL\_NVIC\_GetPendingIRQ}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{MCAL\_NVIC\_GetPendingIRQ()}{MCAL\_NVIC\_GetPendingIRQ()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} MCAL\+\_\+\+NVIC\+\_\+\+Get\+Pending\+IRQ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}}}]{IRQn }\end{DoxyParamCaption})}
+
+
+
+Get the pending status of a specified IRQ. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em IRQn} & IRQ number to check as defined in \mbox{\hyperlink{group__NVIC__Interrupt__Requests}{Interrupt Requests}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if IRQ is pending, 0 otherwise
+\end{DoxyReturn}
+Get the pending status of a specified IRQ.
+
+
+\begin{DoxyParams}{Parameters}
+{\em IRQn} & Number of interrupt request as defined in vector table or in Interrupt\+\_\+\+Requests\+\_\+\+Numbers\+\_\+define. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if IRQn is pending, 0 otherwise. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+None 
+\end{DoxyNote}
+\mbox{\Hypertarget{group__NVIC__Functions_ga82af3479353edeca491c1b1526e07d89}\label{group__NVIC__Functions_ga82af3479353edeca491c1b1526e07d89}} 
+\index{API Function Prototypes@{API Function Prototypes}!MCAL\_NVIC\_GetPriority@{MCAL\_NVIC\_GetPriority}}
+\index{MCAL\_NVIC\_GetPriority@{MCAL\_NVIC\_GetPriority}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{MCAL\_NVIC\_GetPriority()}{MCAL\_NVIC\_GetPriority()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} MCAL\+\_\+\+NVIC\+\_\+\+Get\+Priority (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}}}]{IRQn }\end{DoxyParamCaption})}
+
+
+
+Retrieves the priority level of a specified IRQn. 
+
+This function reads the priority level assigned to the interrupt request number (IRQn). The priority value returned should be one of the defined values in Interrupt\+\_\+\+Priorities\+\_\+define.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em IRQn} & The interrupt request number as defined in the vector table or in Interrupt\+\_\+\+Requests\+\_\+\+Numbers\+\_\+define. \\
+\hline
+\mbox{\texttt{ out}}  & {\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8 The priority value for the specified IRQn.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+None
+\end{DoxyNote}
+Retrieves the priority level of a specified IRQn.
+
+
+\begin{DoxyParams}{Parameters}
+{\em IRQn} & Number of interrupt request as defined in vector table or in Interrupt\+\_\+\+Requests\+\_\+\+Numbers\+\_\+define. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Priority level of the interrupt. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+None 
+\end{DoxyNote}
+\mbox{\Hypertarget{group__NVIC__Functions_gadb1932f2764fc275a802507ef08056dc}\label{group__NVIC__Functions_gadb1932f2764fc275a802507ef08056dc}} 
+\index{API Function Prototypes@{API Function Prototypes}!MCAL\_NVIC\_GetPriorityGrouping@{MCAL\_NVIC\_GetPriorityGrouping}}
+\index{MCAL\_NVIC\_GetPriorityGrouping@{MCAL\_NVIC\_GetPriorityGrouping}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{MCAL\_NVIC\_GetPriorityGrouping()}{MCAL\_NVIC\_GetPriorityGrouping()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__Platform__Types_ga4b435a49c74bb91f284f075e63416cb6}{uint32}} MCAL\+\_\+\+NVIC\+\_\+\+Get\+Priority\+Grouping (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the current priority grouping configuration of the NVIC. 
+
+\begin{DoxyReturn}{Returns}
+Current priority grouping configuration as defined in \mbox{\hyperlink{group__NVIC__Priority__Groups}{Priority Groups}}
+\end{DoxyReturn}
+Get the current priority grouping configuration of the NVIC.
+
+\begin{DoxyReturn}{Returns}
+Configuration of priority grouping as defined in priority\+\_\+groups\+\_\+define. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+None 
+\end{DoxyNote}
+\mbox{\Hypertarget{group__NVIC__Functions_ga592d392ce733c22df6eb98c7b27a3493}\label{group__NVIC__Functions_ga592d392ce733c22df6eb98c7b27a3493}} 
+\index{API Function Prototypes@{API Function Prototypes}!MCAL\_NVIC\_SetPendingIRQ@{MCAL\_NVIC\_SetPendingIRQ}}
+\index{MCAL\_NVIC\_SetPendingIRQ@{MCAL\_NVIC\_SetPendingIRQ}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{MCAL\_NVIC\_SetPendingIRQ()}{MCAL\_NVIC\_SetPendingIRQ()}}
+{\footnotesize\ttfamily void MCAL\+\_\+\+NVIC\+\_\+\+Set\+Pending\+IRQ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}}}]{IRQn }\end{DoxyParamCaption})}
+
+
+
+Set the pending status of a specified IRQ. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em IRQn} & IRQ number to set as pending as defined in \mbox{\hyperlink{group__NVIC__Interrupt__Requests}{Interrupt Requests}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+Set the pending status of a specified IRQ.
+
+
+\begin{DoxyParams}{Parameters}
+{\em IRQn} & Number of interrupt request as defined in vector table or in Interrupt\+\_\+\+Requests\+\_\+\+Numbers\+\_\+define. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+None 
+\end{DoxyNote}
+\mbox{\Hypertarget{group__NVIC__Functions_gaf9e55ca7bcfcba07a21d4eeaadbadd1f}\label{group__NVIC__Functions_gaf9e55ca7bcfcba07a21d4eeaadbadd1f}} 
+\index{API Function Prototypes@{API Function Prototypes}!MCAL\_NVIC\_SetPriority@{MCAL\_NVIC\_SetPriority}}
+\index{MCAL\_NVIC\_SetPriority@{MCAL\_NVIC\_SetPriority}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{MCAL\_NVIC\_SetPriority()}{MCAL\_NVIC\_SetPriority()}}
+{\footnotesize\ttfamily void MCAL\+\_\+\+NVIC\+\_\+\+Set\+Priority (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}}}]{IRQn,  }\item[{\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}}}]{priority }\end{DoxyParamCaption})}
+
+
+
+Set the priority of a specified IRQ. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em IRQn} & IRQ number for which to set the priority as defined in \mbox{\hyperlink{group__NVIC__Interrupt__Requests}{Interrupt Requests}} \\
+\hline
+{\em priority} & Priority level to set as defined in \mbox{\hyperlink{group__NVIC__Interrupt__Priorities}{Interrupt Priorities}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+Set the priority of a specified IRQ.
+
+
+\begin{DoxyParams}{Parameters}
+{\em IRQn} & Number of interrupt request as defined in vector table or in Interrupt\+\_\+\+Requests\+\_\+\+Numbers\+\_\+define. \\
+\hline
+{\em priority} & Priority level of the interrupt as defined in Interrupt\+\_\+\+Priorities\+\_\+define. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+None 
+\end{DoxyNote}
+\mbox{\Hypertarget{group__NVIC__Functions_ga13b7ac22aad57e45a3c9112be7fabc0e}\label{group__NVIC__Functions_ga13b7ac22aad57e45a3c9112be7fabc0e}} 
+\index{API Function Prototypes@{API Function Prototypes}!MCAL\_NVIC\_SetPriorityGrouping@{MCAL\_NVIC\_SetPriorityGrouping}}
+\index{MCAL\_NVIC\_SetPriorityGrouping@{MCAL\_NVIC\_SetPriorityGrouping}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{MCAL\_NVIC\_SetPriorityGrouping()}{MCAL\_NVIC\_SetPriorityGrouping()}}
+{\footnotesize\ttfamily void MCAL\+\_\+\+NVIC\+\_\+\+Set\+Priority\+Grouping (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__Platform__Types_ga4b435a49c74bb91f284f075e63416cb6}{uint32}}}]{priority\+\_\+grouping }\end{DoxyParamCaption})}
+
+
+
+Set the priority grouping for the NVIC. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em priority\+\_\+grouping} & Priority grouping configuration as defined in \mbox{\hyperlink{group__NVIC__Priority__Groups}{Priority Groups}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+Set the priority grouping for the NVIC.
+
+
+\begin{DoxyParams}{Parameters}
+{\em priority\+\_\+grouping} & Configuration of priority grouping as defined in priority\+\_\+groups\+\_\+define. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+None 
+\end{DoxyNote}
+\mbox{\Hypertarget{group__NVIC__Functions_ga26aba5a0740c2bcd0f7c06acbf0dae40}\label{group__NVIC__Functions_ga26aba5a0740c2bcd0f7c06acbf0dae40}} 
+\index{API Function Prototypes@{API Function Prototypes}!MCAL\_NVIC\_SystemReset@{MCAL\_NVIC\_SystemReset}}
+\index{MCAL\_NVIC\_SystemReset@{MCAL\_NVIC\_SystemReset}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{MCAL\_NVIC\_SystemReset()}{MCAL\_NVIC\_SystemReset()}}
+{\footnotesize\ttfamily void MCAL\+\_\+\+NVIC\+\_\+\+System\+Reset (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Performs a system reset. 
+
+This function resets the entire system. It does not alter the priority grouping configuration.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em None} & \\
+\hline
+\mbox{\texttt{ out}}  & {\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The priority groups remain unchanged after the system reset.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Keeps priority grouping configuration unchanged. 
+\end{DoxyNote}

@@ -1,0 +1,91 @@
+\hypertarget{structS__I2C__Config__t}{}\doxysection{S\+\_\+\+I2\+C\+\_\+\+Config\+\_\+t Struct Reference}
+\label{structS__I2C__Config__t}\index{S\_I2C\_Config\_t@{S\_I2C\_Config\_t}}
+
+
+Structure for I2C configuration.  
+
+
+
+
+{\ttfamily \#include $<$stm32f401xx\+\_\+i2c\+\_\+driver.\+h$>$}
+
+
+
+Collaboration diagram for S\+\_\+\+I2\+C\+\_\+\+Config\+\_\+t\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{structS__I2C__Config__t__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structS__I2C__Config__t_ae19561c4bee5583a13d7b6c9d3b5b28f}{I2\+C\+\_\+\+Speed}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structS__I2C__Config__t_a3fbe3e0b9e03b6af7a68b23c7bc71777}{I2\+C\+\_\+stretchmode}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structS__I2C__Config__t_acacd8d4b15fb17da5c141719d04bc462}{I2\+C\+\_\+\+Mode}}
+\item 
+struct \mbox{\hyperlink{structS__I2C__Slave__address}{S\+\_\+\+I2\+C\+\_\+\+Slave\+\_\+address}} \mbox{\hyperlink{structS__I2C__Config__t_ae11e423f6f86bbe384eec4c9fba830b2}{I2\+C\+\_\+\+Slave\+\_\+address}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structS__I2C__Config__t_ad43621df80f1f179fdd7189c026013cb}{I2\+C\+\_\+\+Ack\+\_\+\+Conrtol}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structS__I2C__Config__t_a4e50370006ff50ec318152fa3bd9bd4b}{General\+\_\+\+Call\+\_\+\+Address\+\_\+\+Detection}}
+\item 
+void($\ast$ \mbox{\hyperlink{structS__I2C__Config__t_aa1768387557253f726f96835b6a1ea12}{P\+\_\+\+Slave\+\_\+\+Event\+\_\+\+Call\+Back}} )(\mbox{\hyperlink{group__I2C__Driver_gafb74f066bbdcc3f4b4d838405a46675b}{Slave\+\_\+\+State}} state)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Structure for I2C configuration. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structS__I2C__Config__t_a4e50370006ff50ec318152fa3bd9bd4b}\label{structS__I2C__Config__t_a4e50370006ff50ec318152fa3bd9bd4b}} 
+\index{S\_I2C\_Config\_t@{S\_I2C\_Config\_t}!General\_Call\_Address\_Detection@{General\_Call\_Address\_Detection}}
+\index{General\_Call\_Address\_Detection@{General\_Call\_Address\_Detection}!S\_I2C\_Config\_t@{S\_I2C\_Config\_t}}
+\doxysubsubsection{\texorpdfstring{General\_Call\_Address\_Detection}{General\_Call\_Address\_Detection}}
+{\footnotesize\ttfamily uint32\+\_\+t S\+\_\+\+I2\+C\+\_\+\+Config\+\_\+t\+::\+General\+\_\+\+Call\+\_\+\+Address\+\_\+\+Detection}
+
+General call address detection. \mbox{\Hypertarget{structS__I2C__Config__t_ad43621df80f1f179fdd7189c026013cb}\label{structS__I2C__Config__t_ad43621df80f1f179fdd7189c026013cb}} 
+\index{S\_I2C\_Config\_t@{S\_I2C\_Config\_t}!I2C\_Ack\_Conrtol@{I2C\_Ack\_Conrtol}}
+\index{I2C\_Ack\_Conrtol@{I2C\_Ack\_Conrtol}!S\_I2C\_Config\_t@{S\_I2C\_Config\_t}}
+\doxysubsubsection{\texorpdfstring{I2C\_Ack\_Conrtol}{I2C\_Ack\_Conrtol}}
+{\footnotesize\ttfamily uint32\+\_\+t S\+\_\+\+I2\+C\+\_\+\+Config\+\_\+t\+::\+I2\+C\+\_\+\+Ack\+\_\+\+Conrtol}
+
+Acknowledge control. \mbox{\Hypertarget{structS__I2C__Config__t_acacd8d4b15fb17da5c141719d04bc462}\label{structS__I2C__Config__t_acacd8d4b15fb17da5c141719d04bc462}} 
+\index{S\_I2C\_Config\_t@{S\_I2C\_Config\_t}!I2C\_Mode@{I2C\_Mode}}
+\index{I2C\_Mode@{I2C\_Mode}!S\_I2C\_Config\_t@{S\_I2C\_Config\_t}}
+\doxysubsubsection{\texorpdfstring{I2C\_Mode}{I2C\_Mode}}
+{\footnotesize\ttfamily uint32\+\_\+t S\+\_\+\+I2\+C\+\_\+\+Config\+\_\+t\+::\+I2\+C\+\_\+\+Mode}
+
+I2C or SMBus mode. \mbox{\Hypertarget{structS__I2C__Config__t_ae11e423f6f86bbe384eec4c9fba830b2}\label{structS__I2C__Config__t_ae11e423f6f86bbe384eec4c9fba830b2}} 
+\index{S\_I2C\_Config\_t@{S\_I2C\_Config\_t}!I2C\_Slave\_address@{I2C\_Slave\_address}}
+\index{I2C\_Slave\_address@{I2C\_Slave\_address}!S\_I2C\_Config\_t@{S\_I2C\_Config\_t}}
+\doxysubsubsection{\texorpdfstring{I2C\_Slave\_address}{I2C\_Slave\_address}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structS__I2C__Slave__address}{S\+\_\+\+I2\+C\+\_\+\+Slave\+\_\+address}} S\+\_\+\+I2\+C\+\_\+\+Config\+\_\+t\+::\+I2\+C\+\_\+\+Slave\+\_\+address}
+
+Slave address configuration. \mbox{\Hypertarget{structS__I2C__Config__t_ae19561c4bee5583a13d7b6c9d3b5b28f}\label{structS__I2C__Config__t_ae19561c4bee5583a13d7b6c9d3b5b28f}} 
+\index{S\_I2C\_Config\_t@{S\_I2C\_Config\_t}!I2C\_Speed@{I2C\_Speed}}
+\index{I2C\_Speed@{I2C\_Speed}!S\_I2C\_Config\_t@{S\_I2C\_Config\_t}}
+\doxysubsubsection{\texorpdfstring{I2C\_Speed}{I2C\_Speed}}
+{\footnotesize\ttfamily uint32\+\_\+t S\+\_\+\+I2\+C\+\_\+\+Config\+\_\+t\+::\+I2\+C\+\_\+\+Speed}
+
+I2C clock speed. \mbox{\Hypertarget{structS__I2C__Config__t_a3fbe3e0b9e03b6af7a68b23c7bc71777}\label{structS__I2C__Config__t_a3fbe3e0b9e03b6af7a68b23c7bc71777}} 
+\index{S\_I2C\_Config\_t@{S\_I2C\_Config\_t}!I2C\_stretchmode@{I2C\_stretchmode}}
+\index{I2C\_stretchmode@{I2C\_stretchmode}!S\_I2C\_Config\_t@{S\_I2C\_Config\_t}}
+\doxysubsubsection{\texorpdfstring{I2C\_stretchmode}{I2C\_stretchmode}}
+{\footnotesize\ttfamily uint32\+\_\+t S\+\_\+\+I2\+C\+\_\+\+Config\+\_\+t\+::\+I2\+C\+\_\+stretchmode}
+
+Clock stretching mode. \mbox{\Hypertarget{structS__I2C__Config__t_aa1768387557253f726f96835b6a1ea12}\label{structS__I2C__Config__t_aa1768387557253f726f96835b6a1ea12}} 
+\index{S\_I2C\_Config\_t@{S\_I2C\_Config\_t}!P\_Slave\_Event\_CallBack@{P\_Slave\_Event\_CallBack}}
+\index{P\_Slave\_Event\_CallBack@{P\_Slave\_Event\_CallBack}!S\_I2C\_Config\_t@{S\_I2C\_Config\_t}}
+\doxysubsubsection{\texorpdfstring{P\_Slave\_Event\_CallBack}{P\_Slave\_Event\_CallBack}}
+{\footnotesize\ttfamily void($\ast$ S\+\_\+\+I2\+C\+\_\+\+Config\+\_\+t\+::\+P\+\_\+\+Slave\+\_\+\+Event\+\_\+\+Call\+Back) (\mbox{\hyperlink{group__I2C__Driver_gafb74f066bbdcc3f4b4d838405a46675b}{Slave\+\_\+\+State}} state)}
+
+Callback function for slave events. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+drivers/\+Inc/\mbox{\hyperlink{stm32f401xx__i2c__driver_8h}{stm32f401xx\+\_\+i2c\+\_\+driver.\+h}}\end{DoxyCompactItemize}

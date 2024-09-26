@@ -1,0 +1,131 @@
+\hypertarget{group__EEPROM__Functions}{}\doxysection{API Function Prototypes}
+\label{group__EEPROM__Functions}\index{API Function Prototypes@{API Function Prototypes}}
+Collaboration diagram for API Function Prototypes\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__EEPROM__Functions}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__EEPROM__Functions_ga9b96be87feb3d06051077ffd4c53f38d}{EEPROM\+\_\+\+Init}} (void)
+\begin{DoxyCompactList}\small\item\em Initializes the EEPROM for communication. \end{DoxyCompactList}\item 
+unsigned char \mbox{\hyperlink{group__EEPROM__Functions_ga62809128ad58a308650f2001b3c45e58}{EEPROM\+\_\+\+Write\+\_\+\+NBytes}} (unsigned int Memory\+\_\+address, unsigned char $\ast$bytes, uint8\+\_\+t Data\+\_\+\+Length)
+\begin{DoxyCompactList}\small\item\em Writes multiple bytes to the EEPROM. \end{DoxyCompactList}\item 
+unsigned char \mbox{\hyperlink{group__EEPROM__Functions_gafa97580968925317b35a8cfd4d254f75}{EEPROM\+\_\+\+Read\+\_\+byte}} (unsigned int Memory\+\_\+address, uint8\+\_\+t $\ast$dataout, uint8\+\_\+t datalen)
+\begin{DoxyCompactList}\small\item\em Reads a byte from the EEPROM. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__EEPROM__Functions_ga9b96be87feb3d06051077ffd4c53f38d}\label{group__EEPROM__Functions_ga9b96be87feb3d06051077ffd4c53f38d}} 
+\index{API Function Prototypes@{API Function Prototypes}!EEPROM\_Init@{EEPROM\_Init}}
+\index{EEPROM\_Init@{EEPROM\_Init}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{EEPROM\_Init()}{EEPROM\_Init()}}
+{\footnotesize\ttfamily void EEPROM\+\_\+\+Init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Initializes the EEPROM for communication. 
+
+This function sets up the necessary configuration to communicate with the EEPROM over I2C. It should be called before any read or write operations are performed.
+
+Initializes the EEPROM for communication.
+
+This function configures the I2\+C1 peripheral of the STM32\+F401xx MCU for communication with the EEPROM. It sets up the I2C speed, address detection, and other relevant parameters.
+
+
+\begin{DoxyItemize}
+\item Configures PB6 as I2\+C1\+\_\+\+SCL and PB7 as I2\+C1\+\_\+\+SDA.
+\item Enables general call address detection.
+\item Enables acknowledgment control.
+\item Sets I2C speed to 100k\+Hz.
+\item Configures I2C mode and stretch mode. 
+\end{DoxyItemize}\mbox{\Hypertarget{group__EEPROM__Functions_gafa97580968925317b35a8cfd4d254f75}\label{group__EEPROM__Functions_gafa97580968925317b35a8cfd4d254f75}} 
+\index{API Function Prototypes@{API Function Prototypes}!EEPROM\_Read\_byte@{EEPROM\_Read\_byte}}
+\index{EEPROM\_Read\_byte@{EEPROM\_Read\_byte}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{EEPROM\_Read\_byte()}{EEPROM\_Read\_byte()}}
+{\footnotesize\ttfamily unsigned char EEPROM\+\_\+\+Read\+\_\+byte (\begin{DoxyParamCaption}\item[{unsigned int}]{Memory\+\_\+address,  }\item[{uint8\+\_\+t $\ast$}]{dataout,  }\item[{uint8\+\_\+t}]{datalen }\end{DoxyParamCaption})}
+
+
+
+Reads a byte from the EEPROM. 
+
+This function reads a single byte of data from a specified memory address in the EEPROM.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Memory\+\_\+address} & The address in the EEPROM from which to read the data. \\
+\hline
+\mbox{\texttt{ out}}  & {\em dataout} & Pointer to a variable where the read byte will be stored. \\
+\hline
+\mbox{\texttt{ in}}  & {\em datalen} & The number of bytes to read. In this case, should be 1 for a single byte read.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status of the read operation. Returns 0 for success, non-\/zero for failure.
+\end{DoxyReturn}
+This function reads a single byte from a specified memory address in the EEPROM.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Memory\+\_\+address} & The address in the EEPROM from which to read the data. \\
+\hline
+\mbox{\texttt{ out}}  & {\em dataout} & Pointer to a variable where the read byte will be stored. \\
+\hline
+\mbox{\texttt{ in}}  & {\em datalen} & The number of bytes to read. For this function, should be 1.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status of the read operation. Returns 0 for success. 
+\end{DoxyReturn}
+$<$ High byte of the memory address
+
+$<$ Low byte of the memory address\mbox{\Hypertarget{group__EEPROM__Functions_ga62809128ad58a308650f2001b3c45e58}\label{group__EEPROM__Functions_ga62809128ad58a308650f2001b3c45e58}} 
+\index{API Function Prototypes@{API Function Prototypes}!EEPROM\_Write\_NBytes@{EEPROM\_Write\_NBytes}}
+\index{EEPROM\_Write\_NBytes@{EEPROM\_Write\_NBytes}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{EEPROM\_Write\_NBytes()}{EEPROM\_Write\_NBytes()}}
+{\footnotesize\ttfamily unsigned char EEPROM\+\_\+\+Write\+\_\+\+NBytes (\begin{DoxyParamCaption}\item[{unsigned int}]{Memory\+\_\+address,  }\item[{unsigned char $\ast$}]{bytes,  }\item[{uint8\+\_\+t}]{Data\+\_\+\+Length }\end{DoxyParamCaption})}
+
+
+
+Writes multiple bytes to the EEPROM. 
+
+This function writes a block of data to a specified memory address in the EEPROM.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Memory\+\_\+address} & The starting address in the EEPROM where the data will be written. \\
+\hline
+\mbox{\texttt{ in}}  & {\em bytes} & Pointer to the data buffer to be written to the EEPROM. \\
+\hline
+\mbox{\texttt{ in}}  & {\em Data\+\_\+\+Length} & The number of bytes to write to the EEPROM.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status of the write operation. Returns 0 for success, non-\/zero for failure.
+\end{DoxyReturn}
+Writes multiple bytes to the EEPROM.
+
+This function writes multiple bytes to a specified memory address in the EEPROM.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Memory\+\_\+address} & The starting address in the EEPROM where data will be written. \\
+\hline
+\mbox{\texttt{ in}}  & {\em bytes} & Pointer to the data buffer to be written to the EEPROM. \\
+\hline
+\mbox{\texttt{ in}}  & {\em Data\+\_\+\+Length} & The number of bytes to write.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status of the write operation. Returns 0 for success. 
+\end{DoxyReturn}
+$<$ High byte of the memory address
+
+$<$ Low byte of the memory address

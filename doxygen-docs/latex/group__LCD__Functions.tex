@@ -1,0 +1,328 @@
+\hypertarget{group__LCD__Functions}{}\doxysection{API Function Prototypes}
+\label{group__LCD__Functions}\index{API Function Prototypes@{API Function Prototypes}}
+Collaboration diagram for API Function Prototypes\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=317pt]{group__LCD__Functions}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__LCD__Functions_gae10bfb836fc7f71736981230c6f93410}{LCD\+\_\+\+Init}} (\mbox{\hyperlink{structLCD__t}{LCD\+\_\+t}} $\ast$LCD\+\_\+cfg)
+\begin{DoxyCompactList}\small\item\em Initializes the LCD with user-\/defined configurations. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__LCD__Functions_ga9cd66e7ffbe44bf68d4926335fa43992}{LCD\+\_\+\+Send\+\_\+\+Command}} (\mbox{\hyperlink{structLCD__t}{LCD\+\_\+t}} $\ast$LCD\+\_\+cfg, \mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} command)
+\begin{DoxyCompactList}\small\item\em Sends a command to the LCD to be executed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__LCD__Functions_ga49f90497a42f7e50d9ffbb1a1e9e1bd4}{LCD\+\_\+\+Send\+\_\+\+Char}} (\mbox{\hyperlink{structLCD__t}{LCD\+\_\+t}} $\ast$LCD\+\_\+cfg, \mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} Char)
+\begin{DoxyCompactList}\small\item\em Sends a character to the LCD to be displayed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__LCD__Functions_gad0f1825d7e6621f3ef992ac6e417110f}{LCD\+\_\+\+Send\+\_\+\+Char\+\_\+\+Pos}} (\mbox{\hyperlink{structLCD__t}{LCD\+\_\+t}} $\ast$LCD\+\_\+cfg, \mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} Char, \mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} row, \mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} column)
+\begin{DoxyCompactList}\small\item\em Sends a character to the LCD to be displayed at a specific location. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__LCD__Functions_gaf8502a6ce32be8fbf1766c50f8760f68}{LCD\+\_\+\+Send\+\_\+\+String}} (\mbox{\hyperlink{structLCD__t}{LCD\+\_\+t}} $\ast$LCD\+\_\+cfg, \mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} $\ast$string)
+\begin{DoxyCompactList}\small\item\em Sends a string to the LCD to be displayed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__LCD__Functions_gab5caef627b88d83f3c863bc2e3d54678}{LCD\+\_\+\+Send\+\_\+\+String\+\_\+\+Pos}} (\mbox{\hyperlink{structLCD__t}{LCD\+\_\+t}} $\ast$LCD\+\_\+cfg, \mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} $\ast$string, \mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} row, \mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} column)
+\begin{DoxyCompactList}\small\item\em Sends a string to the LCD to be displayed at a specific location. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__LCD__Functions_ga4dbb4ca44749573a14305937a8fee358}{LCD\+\_\+\+Send\+\_\+\+Enable\+\_\+\+Signal}} (\mbox{\hyperlink{structLCD__t}{LCD\+\_\+t}} $\ast$LCD\+\_\+cfg)
+\begin{DoxyCompactList}\small\item\em Sends an enable signal to the LCD. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__LCD__Functions_gae63444e290979d80c1b88fad989d2e40}{LCD\+\_\+\+Set\+\_\+\+Cursor}} (\mbox{\hyperlink{structLCD__t}{LCD\+\_\+t}} $\ast$LCD\+\_\+cfg, \mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} row, \mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} column)
+\begin{DoxyCompactList}\small\item\em Sets the location of the cursor on the LCD. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__LCD__Functions_gae10bfb836fc7f71736981230c6f93410}\label{group__LCD__Functions_gae10bfb836fc7f71736981230c6f93410}} 
+\index{API Function Prototypes@{API Function Prototypes}!LCD\_Init@{LCD\_Init}}
+\index{LCD\_Init@{LCD\_Init}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{LCD\_Init()}{LCD\_Init()}}
+{\footnotesize\ttfamily void LCD\+\_\+\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structLCD__t}{LCD\+\_\+t}} $\ast$}]{LCD\+\_\+cfg }\end{DoxyParamCaption})}
+
+
+
+Initializes the LCD with user-\/defined configurations. 
+
+This function sets up the LCD based on the configuration specified in the provided structure. It initializes the LCD in the mode and row settings defined by the user.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em LCD\+\_\+cfg} & Pointer to the structure containing LCD configuration. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+User must set configurations using the \mbox{\hyperlink{group__LCD__COMMANDS__define}{LCD Commands}} macros.
+\end{DoxyNote}
+Initializes the LCD with user-\/defined configurations.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em LCD\+\_\+cfg} & Pointer to the structure containing LCD configuration.\\
+\hline
+\end{DoxyParams}
+This function initializes the LCD by setting up the GPIO pins, sending function set commands, and configuring display and entry modes. It also clears the display.
+
+\begin{DoxyNote}{Note}
+User must set configurations as defined in LCD\+\_\+\+CONFIG\+\_\+define. 
+\end{DoxyNote}
+\mbox{\Hypertarget{group__LCD__Functions_ga49f90497a42f7e50d9ffbb1a1e9e1bd4}\label{group__LCD__Functions_ga49f90497a42f7e50d9ffbb1a1e9e1bd4}} 
+\index{API Function Prototypes@{API Function Prototypes}!LCD\_Send\_Char@{LCD\_Send\_Char}}
+\index{LCD\_Send\_Char@{LCD\_Send\_Char}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{LCD\_Send\_Char()}{LCD\_Send\_Char()}}
+{\footnotesize\ttfamily void LCD\+\_\+\+Send\+\_\+\+Char (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structLCD__t}{LCD\+\_\+t}} $\ast$}]{LCD\+\_\+cfg,  }\item[{\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}}}]{Char }\end{DoxyParamCaption})}
+
+
+
+Sends a character to the LCD to be displayed. 
+
+This function sends an ASCII character to the LCD to be displayed at the current cursor position.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em LCD\+\_\+cfg} & Pointer to the structure containing LCD configuration. \\
+\hline
+\mbox{\texttt{ in}}  & {\em Char} & ASCII character to be displayed on the screen. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+None
+\end{DoxyNote}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em LCD\+\_\+cfg} & Pointer to the structure containing LCD configuration. \\
+\hline
+\mbox{\texttt{ in}}  & {\em Char} & ASCII character to be displayed.\\
+\hline
+\end{DoxyParams}
+This function sends a character to the LCD to be displayed. The character is sent in either 8-\/bit or 4-\/bit mode depending on the LCD configuration. \mbox{\Hypertarget{group__LCD__Functions_gad0f1825d7e6621f3ef992ac6e417110f}\label{group__LCD__Functions_gad0f1825d7e6621f3ef992ac6e417110f}} 
+\index{API Function Prototypes@{API Function Prototypes}!LCD\_Send\_Char\_Pos@{LCD\_Send\_Char\_Pos}}
+\index{LCD\_Send\_Char\_Pos@{LCD\_Send\_Char\_Pos}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{LCD\_Send\_Char\_Pos()}{LCD\_Send\_Char\_Pos()}}
+{\footnotesize\ttfamily void LCD\+\_\+\+Send\+\_\+\+Char\+\_\+\+Pos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structLCD__t}{LCD\+\_\+t}} $\ast$}]{LCD\+\_\+cfg,  }\item[{\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}}}]{Char,  }\item[{\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}}}]{row,  }\item[{\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}}}]{column }\end{DoxyParamCaption})}
+
+
+
+Sends a character to the LCD to be displayed at a specific location. 
+
+This function sends an ASCII character to the LCD to be displayed at a specific row and column location.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em LCD\+\_\+cfg} & Pointer to the structure containing LCD configuration. \\
+\hline
+\mbox{\texttt{ in}}  & {\em Char} & ASCII character to be displayed on the screen. \\
+\hline
+\mbox{\texttt{ in}}  & {\em row} & Row number where the character should be displayed (see \mbox{\hyperlink{group__LCD__ROWS__POS__define}{LCD Row Positions}}). \\
+\hline
+\mbox{\texttt{ in}}  & {\em column} & Column number where the character should be displayed (1...16). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+None
+\end{DoxyNote}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em LCD\+\_\+cfg} & Pointer to the structure containing LCD configuration. \\
+\hline
+\mbox{\texttt{ in}}  & {\em Char} & ASCII character to be displayed on the screen. \\
+\hline
+\mbox{\texttt{ in}}  & {\em row} & Selects the row number of the displayed character (\mbox{\hyperlink{group__LCD__ROWS__POS__define}{LCD Row Positions}}). \\
+\hline
+\mbox{\texttt{ in}}  & {\em column} & Selects the column number of the displayed character (1...16). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+This function sets the cursor to the specified row and column and sends the given character to the LCD for display. \mbox{\Hypertarget{group__LCD__Functions_ga9cd66e7ffbe44bf68d4926335fa43992}\label{group__LCD__Functions_ga9cd66e7ffbe44bf68d4926335fa43992}} 
+\index{API Function Prototypes@{API Function Prototypes}!LCD\_Send\_Command@{LCD\_Send\_Command}}
+\index{LCD\_Send\_Command@{LCD\_Send\_Command}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{LCD\_Send\_Command()}{LCD\_Send\_Command()}}
+{\footnotesize\ttfamily void LCD\+\_\+\+Send\+\_\+\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structLCD__t}{LCD\+\_\+t}} $\ast$}]{LCD\+\_\+cfg,  }\item[{\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}}}]{command }\end{DoxyParamCaption})}
+
+
+
+Sends a command to the LCD to be executed. 
+
+This function sends a command to the LCD to perform a specific action, such as clearing the display or shifting the cursor.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em LCD\+\_\+cfg} & Pointer to the structure containing LCD configuration. \\
+\hline
+\mbox{\texttt{ in}}  & {\em command} & Command to be executed (see \mbox{\hyperlink{group__LCD__COMMANDS__define}{LCD Commands}}). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+None
+\end{DoxyNote}
+Sends a command to the LCD to be executed.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em LCD\+\_\+cfg} & Pointer to the structure containing LCD configuration. \\
+\hline
+\mbox{\texttt{ in}}  & {\em command} & Command to be executed as defined in \mbox{\hyperlink{group__LCD__COMMANDS__define}{LCD Commands}}.\\
+\hline
+\end{DoxyParams}
+This function sends a command to the LCD for execution. The command is sent in either 8-\/bit or 4-\/bit mode depending on the LCD configuration. \mbox{\Hypertarget{group__LCD__Functions_ga4dbb4ca44749573a14305937a8fee358}\label{group__LCD__Functions_ga4dbb4ca44749573a14305937a8fee358}} 
+\index{API Function Prototypes@{API Function Prototypes}!LCD\_Send\_Enable\_Signal@{LCD\_Send\_Enable\_Signal}}
+\index{LCD\_Send\_Enable\_Signal@{LCD\_Send\_Enable\_Signal}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{LCD\_Send\_Enable\_Signal()}{LCD\_Send\_Enable\_Signal()}}
+{\footnotesize\ttfamily void LCD\+\_\+\+Send\+\_\+\+Enable\+\_\+\+Signal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structLCD__t}{LCD\+\_\+t}} $\ast$}]{LCD\+\_\+cfg }\end{DoxyParamCaption})}
+
+
+
+Sends an enable signal to the LCD. 
+
+This function triggers the enable signal to the LCD, which is necessary for executing commands and data transfers. The signal is typically sent for a short duration to latch the data or command on the LCD.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em LCD\+\_\+cfg} & Pointer to the structure containing LCD configuration.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This function assumes that the enable pin is properly configured in the {\ttfamily LCD\+\_\+cfg} structure.
+\end{DoxyNote}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em LCD\+\_\+cfg} & Pointer to the structure containing LCD configuration. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+This function generates an enable pulse for the LCD by toggling the enable pin. \mbox{\Hypertarget{group__LCD__Functions_gaf8502a6ce32be8fbf1766c50f8760f68}\label{group__LCD__Functions_gaf8502a6ce32be8fbf1766c50f8760f68}} 
+\index{API Function Prototypes@{API Function Prototypes}!LCD\_Send\_String@{LCD\_Send\_String}}
+\index{LCD\_Send\_String@{LCD\_Send\_String}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{LCD\_Send\_String()}{LCD\_Send\_String()}}
+{\footnotesize\ttfamily void LCD\+\_\+\+Send\+\_\+\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structLCD__t}{LCD\+\_\+t}} $\ast$}]{LCD\+\_\+cfg,  }\item[{\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} $\ast$}]{string }\end{DoxyParamCaption})}
+
+
+
+Sends a string to the LCD to be displayed. 
+
+This function sends a string of characters to the LCD to be displayed from the current cursor position.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em LCD\+\_\+cfg} & Pointer to the structure containing LCD configuration. \\
+\hline
+\mbox{\texttt{ in}}  & {\em string} & Pointer to a string of characters to be displayed on the LCD. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+None
+\end{DoxyNote}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em LCD\+\_\+cfg} & Pointer to the structure containing LCD configuration. \\
+\hline
+\mbox{\texttt{ in}}  & {\em string} & Pointer to a string of characters to be displayed on the LCD. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+This function sends a string to the LCD, character by character, until the null-\/terminator is encountered. \mbox{\Hypertarget{group__LCD__Functions_gab5caef627b88d83f3c863bc2e3d54678}\label{group__LCD__Functions_gab5caef627b88d83f3c863bc2e3d54678}} 
+\index{API Function Prototypes@{API Function Prototypes}!LCD\_Send\_String\_Pos@{LCD\_Send\_String\_Pos}}
+\index{LCD\_Send\_String\_Pos@{LCD\_Send\_String\_Pos}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{LCD\_Send\_String\_Pos()}{LCD\_Send\_String\_Pos()}}
+{\footnotesize\ttfamily void LCD\+\_\+\+Send\+\_\+\+String\+\_\+\+Pos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structLCD__t}{LCD\+\_\+t}} $\ast$}]{LCD\+\_\+cfg,  }\item[{\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} $\ast$}]{string,  }\item[{\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}}}]{row,  }\item[{\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}}}]{column }\end{DoxyParamCaption})}
+
+
+
+Sends a string to the LCD to be displayed at a specific location. 
+
+This function sends a string of characters to the LCD to be displayed at a specific row and column location.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em LCD\+\_\+cfg} & Pointer to the structure containing LCD configuration. \\
+\hline
+\mbox{\texttt{ in}}  & {\em string} & Pointer to a string of characters to be displayed on the LCD. \\
+\hline
+\mbox{\texttt{ in}}  & {\em row} & Row number where the string should be displayed (see \mbox{\hyperlink{group__LCD__ROWS__POS__define}{LCD Row Positions}}). \\
+\hline
+\mbox{\texttt{ in}}  & {\em column} & Column number where the string should be displayed (1...16). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+None
+\end{DoxyNote}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em LCD\+\_\+cfg} & Pointer to the structure containing LCD configuration. \\
+\hline
+\mbox{\texttt{ in}}  & {\em string} & Pointer to a string of characters to be displayed on the LCD. \\
+\hline
+\mbox{\texttt{ in}}  & {\em row} & Selects the row number of the displayed character (\mbox{\hyperlink{group__LCD__ROWS__POS__define}{LCD Row Positions}}). \\
+\hline
+\mbox{\texttt{ in}}  & {\em column} & Selects the column number of the displayed character (1...16). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+This function sets the cursor to the specified row and column, then sends the given string to the LCD for display. \mbox{\Hypertarget{group__LCD__Functions_gae63444e290979d80c1b88fad989d2e40}\label{group__LCD__Functions_gae63444e290979d80c1b88fad989d2e40}} 
+\index{API Function Prototypes@{API Function Prototypes}!LCD\_Set\_Cursor@{LCD\_Set\_Cursor}}
+\index{LCD\_Set\_Cursor@{LCD\_Set\_Cursor}!API Function Prototypes@{API Function Prototypes}}
+\doxysubsubsection{\texorpdfstring{LCD\_Set\_Cursor()}{LCD\_Set\_Cursor()}}
+{\footnotesize\ttfamily void LCD\+\_\+\+Set\+\_\+\+Cursor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structLCD__t}{LCD\+\_\+t}} $\ast$}]{LCD\+\_\+cfg,  }\item[{\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}}}]{row,  }\item[{\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}}}]{column }\end{DoxyParamCaption})}
+
+
+
+Sets the location of the cursor on the LCD. 
+
+This function positions the cursor to the specified row and column on the LCD. This is useful for placing characters at specific locations on the display.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em LCD\+\_\+cfg} & Pointer to the structure containing LCD configuration. \\
+\hline
+\mbox{\texttt{ in}}  & {\em row} & Selects the row number of the displayed character (see \mbox{\hyperlink{group__LCD__ROWS__POS__define}{LCD Row Positions}}). \\
+\hline
+\mbox{\texttt{ in}}  & {\em column} & Selects the column number of the displayed character (1...16).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This function assumes that the LCD is initialized and configured correctly according to the {\ttfamily LCD\+\_\+cfg} structure.
+\end{DoxyNote}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em LCD\+\_\+cfg} & Pointer to the structure containing LCD configuration. \\
+\hline
+\mbox{\texttt{ in}}  & {\em row} & Selects the row number of the displayed character (\mbox{\hyperlink{group__LCD__ROWS__POS__define}{LCD Row Positions}}). \\
+\hline
+\mbox{\texttt{ in}}  & {\em column} & Selects the column number of the displayed character (1...16). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+This function sets the cursor position to the specified row and column by sending the appropriate command to the LCD. 

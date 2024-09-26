@@ -1,0 +1,251 @@
+\hypertarget{stm32f401xx__nvic__driver_8h}{}\doxysection{drivers/\+Inc/stm32f401xx\+\_\+nvic\+\_\+driver.h File Reference}
+\label{stm32f401xx__nvic__driver_8h}\index{drivers/Inc/stm32f401xx\_nvic\_driver.h@{drivers/Inc/stm32f401xx\_nvic\_driver.h}}
+
+
+Header file for NVIC (Nested Vectored Interrupt Controller) driver for STM32\+F401xx microcontroller.  
+
+
+{\ttfamily \#include \char`\"{}stm32f401xx.\+h\char`\"{}}\newline
+Include dependency graph for stm32f401xx\+\_\+nvic\+\_\+driver.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{stm32f401xx__nvic__driver_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{stm32f401xx__nvic__driver_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__NVIC__Register__Definitions_gab37d21c2e44fe7e3967deaf10e30a763}{NVIC\+\_\+\+ISER0}}~($\ast$(volatile uint32\+\_\+t $\ast$)(\mbox{\hyperlink{group__CORTEX__M4__BASE__ADDRESSES_gaa0288691785a5f868238e0468b39523d}{NVIC\+\_\+\+BASE}} + 0x0))
+\begin{DoxyCompactList}\small\item\em Interrupt Set Enable Register 0 (ISER0) Used to enable interrupts 0 to 31. Write a 1 to the corresponding bit position to enable an interrupt. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__NVIC__Register__Definitions_gaeea822ab87e3ef3b207f26c6176a746c}{NVIC\+\_\+\+ISER1}}~($\ast$(volatile uint32\+\_\+t $\ast$)(\mbox{\hyperlink{group__CORTEX__M4__BASE__ADDRESSES_gaa0288691785a5f868238e0468b39523d}{NVIC\+\_\+\+BASE}} + 0x4))
+\begin{DoxyCompactList}\small\item\em Interrupt Set Enable Register 1 (ISER1) Used to enable interrupts 32 to 63. Write a 1 to the corresponding bit position to enable an interrupt. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__NVIC__Register__Definitions_gaf1656caf06ddb60684c2a936b87f89fa}{NVIC\+\_\+\+ISER2}}~($\ast$(volatile uint32\+\_\+t $\ast$)(\mbox{\hyperlink{group__CORTEX__M4__BASE__ADDRESSES_gaa0288691785a5f868238e0468b39523d}{NVIC\+\_\+\+BASE}} + 0x8))
+\begin{DoxyCompactList}\small\item\em Interrupt Set Enable Register 2 (ISER2) Used to enable interrupts 64 to 95. Write a 1 to the corresponding bit position to enable an interrupt. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__NVIC__Register__Definitions_ga11cfe60b26fed9d1df48860d0274983b}{NVIC\+\_\+\+ICER0}}~($\ast$(volatile uint32\+\_\+t $\ast$)(\mbox{\hyperlink{group__CORTEX__M4__BASE__ADDRESSES_gaa0288691785a5f868238e0468b39523d}{NVIC\+\_\+\+BASE}} + 0x80))
+\begin{DoxyCompactList}\small\item\em Interrupt Clear Enable Register 0 (ICER0) Used to disable interrupts 0 to 31. Write a 1 to the corresponding bit position to disable an interrupt. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__NVIC__Register__Definitions_gab65a09923e3fb94e67ea4642b7f85ccf}{NVIC\+\_\+\+ICER1}}~($\ast$(volatile uint32\+\_\+t $\ast$)(\mbox{\hyperlink{group__CORTEX__M4__BASE__ADDRESSES_gaa0288691785a5f868238e0468b39523d}{NVIC\+\_\+\+BASE}} + 0x84))
+\begin{DoxyCompactList}\small\item\em Interrupt Clear Enable Register 1 (ICER1) Used to disable interrupts 32 to 63. Write a 1 to the corresponding bit position to disable an interrupt. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__NVIC__Register__Definitions_gad3652891fd1762d24da3ddcbd9e3165f}{NVIC\+\_\+\+ICER2}}~($\ast$(volatile uint32\+\_\+t $\ast$)(\mbox{\hyperlink{group__CORTEX__M4__BASE__ADDRESSES_gaa0288691785a5f868238e0468b39523d}{NVIC\+\_\+\+BASE}} + 0x88))
+\begin{DoxyCompactList}\small\item\em Interrupt Clear Enable Register 2 (ICER2) Used to disable interrupts 64 to 95. Write a 1 to the corresponding bit position to disable an interrupt. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__NVIC__Macros_ga0b5a9a8f029a73df2640988e19c39808}{SCB\+\_\+\+VECTKEY}}~0x05\+FA0000\+UL
+\begin{DoxyCompactList}\small\item\em Vector key for setting priority grouping in NVIC. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__NVIC__Macros_ga00a8e090570e72dec89b2317566f4998}{SCB\+\_\+\+VECTKEY\+\_\+\+MASK}}~0x\+FFFF0000\+UL
+\begin{DoxyCompactList}\small\item\em Mask for vector key. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__NVIC__Macros_ga20b45e3285ba4249f5f041406ea31f83}{NVIC\+\_\+\+PRIGROUP\+\_\+\+SET\+\_\+\+MASK}}~0x700\+UL
+\begin{DoxyCompactList}\small\item\em Mask for setting NVIC priority grouping. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__NVIC__Macros_ga78a267480bd13c151abab4854747a851}{NVIC\+\_\+\+PRIGROUP\+\_\+\+CLEAR\+\_\+\+MASK}}~0x\+FFFFF8\+FFUL
+\begin{DoxyCompactList}\small\item\em Mask for clearing NVIC priority grouping. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__NVIC__Interrupt__Status_gae3937807465b61bac6ff015c6dbea29a}{NVIC\+\_\+\+INTERRUPT\+\_\+\+ACTIVE}}~1UL
+\begin{DoxyCompactList}\small\item\em Status indicating an active interrupt. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__NVIC__Interrupt__Status_ga9f508ecd1bebdc695e7c5044f455bf05}{NVIC\+\_\+\+INTERRUPT\+\_\+\+INACTIVE}}~0\+UL
+\begin{DoxyCompactList}\small\item\em Status indicating an inactive interrupt. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__NVIC__Priority__Groups_gaf68b86b5d37b18ca702a9377a06521f9}{NVIC\+\_\+\+PRIO\+\_\+16\+GRP\+\_\+0\+SUBGRP}}~0x300U
+\begin{DoxyCompactList}\small\item\em Priority grouping configuration for 16 groups and 0 subgroups. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__NVIC__Priority__Groups_ga0e2c9127969c532b6f581b7b05336cb8}{NVIC\+\_\+\+PRIO\+\_\+8\+GRP\+\_\+2\+SUBGRP}}~0x400U
+\begin{DoxyCompactList}\small\item\em Priority grouping configuration for 8 groups and 2 subgroups. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__NVIC__Priority__Groups_ga6c99360f3c7a3775e652fc1723c655ba}{NVIC\+\_\+\+PRIO\+\_\+4\+GRP\+\_\+4\+SUBGRP}}~0x500U
+\begin{DoxyCompactList}\small\item\em Priority grouping configuration for 4 groups and 4 subgroups. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__NVIC__Priority__Groups_ga03fcd8838d650ff6cd9368af2b64f57d}{NVIC\+\_\+\+PRIO\+\_\+2\+GRP\+\_\+8\+SUBGRP}}~0x600U
+\begin{DoxyCompactList}\small\item\em Priority grouping configuration for 2 groups and 8 subgroups. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__NVIC__Priority__Groups_ga9bf14aa7ca458c563ddafd9428678ec7}{NVIC\+\_\+\+PRIO\+\_\+0\+GRP\+\_\+8\+SUBGRP}}~0x700U
+\begin{DoxyCompactList}\small\item\em Priority grouping configuration for 0 groups and 8 subgroups. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__NVIC__Interrupt__Priorities_gab89aac1f6d3d612acea650562210c53b}{NVIC\+\_\+\+PRIO\+\_\+0000}}~0x00U
+\begin{DoxyCompactList}\small\item\em Priority level 0. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__NVIC__Interrupt__Priorities_ga3d2533d4442e76f5f4206d5bd54451b7}{NVIC\+\_\+\+PRIO\+\_\+0001}}~0x10U
+\begin{DoxyCompactList}\small\item\em Priority level 1. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__NVIC__Interrupt__Priorities_gab06fe9f1b4bd3ef14a8c2e14d198420f}{NVIC\+\_\+\+PRIO\+\_\+0010}}~0x20U
+\begin{DoxyCompactList}\small\item\em Priority level 2. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__NVIC__Interrupt__Priorities_ga7207b7606a97cf1c563202a94f03ee9a}{NVIC\+\_\+\+PRIO\+\_\+0011}}~0x30U
+\begin{DoxyCompactList}\small\item\em Priority level 3. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__NVIC__Interrupt__Priorities_ga3eb87f340e48ba65df2f100c7cafdd38}{NVIC\+\_\+\+PRIO\+\_\+0100}}~0x40U
+\begin{DoxyCompactList}\small\item\em Priority level 4. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__NVIC__Interrupt__Priorities_gab1020673593f41f12cf9cb3b6009d6f8}{NVIC\+\_\+\+PRIO\+\_\+0101}}~0x50U
+\begin{DoxyCompactList}\small\item\em Priority level 5. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__NVIC__Interrupt__Priorities_ga67289956cf66c6c7567ce8e126d9c908}{NVIC\+\_\+\+PRIO\+\_\+0110}}~0x60U
+\begin{DoxyCompactList}\small\item\em Priority level 6. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__NVIC__Interrupt__Priorities_gaad7e455f870e246dc482dd4694cd99df}{NVIC\+\_\+\+PRIO\+\_\+0111}}~0x70U
+\begin{DoxyCompactList}\small\item\em Priority level 7. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__NVIC__Interrupt__Priorities_ga49932e4b0940af55538a853be9450b4d}{NVIC\+\_\+\+PRIO\+\_\+1000}}~0x80U
+\begin{DoxyCompactList}\small\item\em Priority level 8. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__NVIC__Interrupt__Priorities_gaf500c5f9d248e1632115e5de602ec4de}{NVIC\+\_\+\+PRIO\+\_\+1001}}~0x90U
+\begin{DoxyCompactList}\small\item\em Priority level 9. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__NVIC__Interrupt__Priorities_ga055588bac9f9afad7459c27f50375fb7}{NVIC\+\_\+\+PRIO\+\_\+1010}}~0x\+A0U
+\begin{DoxyCompactList}\small\item\em Priority level 10. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__NVIC__Interrupt__Priorities_ga60600c3d8ffa11adad24314bb11823d6}{NVIC\+\_\+\+PRIO\+\_\+1011}}~0x\+B0U
+\begin{DoxyCompactList}\small\item\em Priority level 11. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__NVIC__Interrupt__Priorities_gaf2abf1481ca259493cd02483b5abafb4}{NVIC\+\_\+\+PRIO\+\_\+1100}}~0x\+C0U
+\begin{DoxyCompactList}\small\item\em Priority level 12. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__NVIC__Interrupt__Priorities_ga2d8da37cf9bfd7ff50b114b803d58814}{NVIC\+\_\+\+PRIO\+\_\+1101}}~0x\+D0U
+\begin{DoxyCompactList}\small\item\em Priority level 13. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__NVIC__Interrupt__Priorities_ga2efcd7f43900171375b44dece447b8ee}{NVIC\+\_\+\+PRIO\+\_\+1110}}~0x\+E0U
+\begin{DoxyCompactList}\small\item\em Priority level 14. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__NVIC__Interrupt__Priorities_gaf5ad259650bb0a18bf8b176ee3acf042}{NVIC\+\_\+\+PRIO\+\_\+1111}}~0x\+F0U
+\begin{DoxyCompactList}\small\item\em Priority level 15. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__NVIC__Interrupt__Requests_ga7ce52eb488ef186a3302b32468387bad}{EXTI0\+\_\+\+IRQ}}~6
+\begin{DoxyCompactList}\small\item\em External Interrupt Request 0. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__NVIC__Interrupt__Requests_ga1c087b8f09fc4ae4ec8d50b63491e127}{EXTI1\+\_\+\+IRQ}}~7
+\begin{DoxyCompactList}\small\item\em External Interrupt Request 1. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__NVIC__Interrupt__Requests_ga68acee87aea6562819dfd31daa4b37af}{EXTI2\+\_\+\+IRQ}}~8
+\begin{DoxyCompactList}\small\item\em External Interrupt Request 2. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__NVIC__Interrupt__Requests_ga5b32702dbefeb3a16c048cbc2d6eb57f}{EXTI3\+\_\+\+IRQ}}~9
+\begin{DoxyCompactList}\small\item\em External Interrupt Request 3. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__NVIC__Interrupt__Requests_ga0e43d3c52d89ce8f099c745564099ad7}{EXTI4\+\_\+\+IRQ}}~10
+\begin{DoxyCompactList}\small\item\em External Interrupt Request 4. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__NVIC__Interrupt__Requests_gaf38e3d27a37d6ae8ef112165efc400bf}{EXTI5\+\_\+\+IRQ}}~23
+\begin{DoxyCompactList}\small\item\em External Interrupt Request 5. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__NVIC__Interrupt__Requests_gaa4d5cd0c2a8a54a7267bd756eca3e416}{EXTI6\+\_\+\+IRQ}}~23
+\begin{DoxyCompactList}\small\item\em External Interrupt Request 6. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__NVIC__Interrupt__Requests_ga2c4341d881182221222385d6c904c6b1}{EXTI7\+\_\+\+IRQ}}~23
+\begin{DoxyCompactList}\small\item\em External Interrupt Request 7. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__NVIC__Interrupt__Requests_gaba11c178e447931083975aba6efde15e}{EXTI8\+\_\+\+IRQ}}~23
+\begin{DoxyCompactList}\small\item\em External Interrupt Request 8. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__NVIC__Interrupt__Requests_ga41788fae19d59160d084b154b71e2530}{EXTI9\+\_\+\+IRQ}}~23
+\begin{DoxyCompactList}\small\item\em External Interrupt Request 9. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__NVIC__Interrupt__Requests_ga66dfb40a448531f30c387a34186c15a3}{EXTI10\+\_\+\+IRQ}}~40
+\begin{DoxyCompactList}\small\item\em External Interrupt Request 10. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__NVIC__Interrupt__Requests_gab8eac80a11ef148a16e407661c902e61}{EXTI11\+\_\+\+IRQ}}~40
+\begin{DoxyCompactList}\small\item\em External Interrupt Request 11. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__NVIC__Interrupt__Requests_gac76ecbae5d766a62ae42e7dc3d14f5bd}{EXTI12\+\_\+\+IRQ}}~40
+\begin{DoxyCompactList}\small\item\em External Interrupt Request 12. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__NVIC__Interrupt__Requests_ga88e0cd06aeeea5cebe6e02de5dd043d1}{EXTI13\+\_\+\+IRQ}}~40
+\begin{DoxyCompactList}\small\item\em External Interrupt Request 13. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__NVIC__Interrupt__Requests_ga8babfff8770dd2161df45b80837c852f}{EXTI14\+\_\+\+IRQ}}~40
+\begin{DoxyCompactList}\small\item\em External Interrupt Request 14. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__NVIC__Interrupt__Requests_ga8448b278d2b2e5bf84297feca5e49733}{EXTI15\+\_\+\+IRQ}}~40
+\begin{DoxyCompactList}\small\item\em External Interrupt Request 15. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__NVIC__Interrupt__Requests_gaa677628b60d2d06e4e1614cfb26091c2}{USART1\+\_\+\+IRQ}}~37
+\begin{DoxyCompactList}\small\item\em USART1 Interrupt Request. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__NVIC__Interrupt__Requests_ga91ea1a8e2cd1c9a3adf816c11c0d89ec}{USART2\+\_\+\+IRQ}}~38
+\begin{DoxyCompactList}\small\item\em USART2 Interrupt Request. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__NVIC__Interrupt__Requests_ga6f92468598957a7b8bc698325beb7c2f}{USART6\+\_\+\+IRQ}}~71
+\begin{DoxyCompactList}\small\item\em USART6 Interrupt Request. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__NVIC__Interrupt__Requests_gac521872be69d4ba245e6f42407533c70}{SPI1\+\_\+\+IRQ}}~35
+\begin{DoxyCompactList}\small\item\em SPI1 Interrupt Request. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__NVIC__Interrupt__Requests_ga6d78fa371ed5e81ca405dd8d1b4c14fa}{SPI2\+\_\+\+IRQ}}~36
+\begin{DoxyCompactList}\small\item\em SPI2 Interrupt Request. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__NVIC__Interrupt__Requests_ga2b176ccd055eb016c45f02a99f85e6b0}{I2\+C1\+\_\+\+EV\+\_\+\+IRQ}}~31
+\begin{DoxyCompactList}\small\item\em I2\+C1 Event Interrupt Request. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__NVIC__Interrupt__Requests_ga0a003273888cf3a3b35d6d7c303b0607}{I2\+C1\+\_\+\+ER\+\_\+\+IRQ}}~32
+\begin{DoxyCompactList}\small\item\em I2\+C1 Error Interrupt Request. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__NVIC__Interrupt__Requests_gadda322d0c78a960e0a8312b47a728bb9}{I2\+C2\+\_\+\+EV\+\_\+\+IRQ}}~33
+\begin{DoxyCompactList}\small\item\em I2\+C2 Event Interrupt Request. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__NVIC__Interrupt__Requests_ga0c3ce7200280c0ac21d700978742b4c4}{I2\+C2\+\_\+\+ER\+\_\+\+IRQ}}~34
+\begin{DoxyCompactList}\small\item\em I2\+C2 Error Interrupt Request. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__NVIC__IRQ__Enable__Disable_ga4cbbf4bd1c82ebeca6d50516c7305f05}{NVIC\+\_\+\+IRQ6\+\_\+\+EXTI0\+\_\+\+Enable}}~(\mbox{\hyperlink{group__NVIC__Register__Definitions_gab37d21c2e44fe7e3967deaf10e30a763}{NVIC\+\_\+\+ISER0}} $\vert$= (1$<$$<$6))
+\item 
+\#define \mbox{\hyperlink{group__NVIC__IRQ__Enable__Disable_ga52504d209c4111ac4be1f117040a62fc}{NVIC\+\_\+\+IRQ7\+\_\+\+EXTI1\+\_\+\+Enable}}~(\mbox{\hyperlink{group__NVIC__Register__Definitions_gab37d21c2e44fe7e3967deaf10e30a763}{NVIC\+\_\+\+ISER0}} $\vert$= (1$<$$<$7))
+\item 
+\#define \mbox{\hyperlink{group__NVIC__IRQ__Enable__Disable_ga13ddf256af2f68d08d80a91fc9756531}{NVIC\+\_\+\+IRQ8\+\_\+\+EXTI2\+\_\+\+Enable}}~(\mbox{\hyperlink{group__NVIC__Register__Definitions_gab37d21c2e44fe7e3967deaf10e30a763}{NVIC\+\_\+\+ISER0}} $\vert$= (1$<$$<$8))
+\item 
+\#define \mbox{\hyperlink{group__NVIC__IRQ__Enable__Disable_ga1465d08a085aea7aec56481e2c129aa5}{NVIC\+\_\+\+IRQ9\+\_\+\+EXTI3\+\_\+\+Enable}}~(\mbox{\hyperlink{group__NVIC__Register__Definitions_gab37d21c2e44fe7e3967deaf10e30a763}{NVIC\+\_\+\+ISER0}} $\vert$= (1$<$$<$9))
+\item 
+\#define \mbox{\hyperlink{group__NVIC__IRQ__Enable__Disable_ga56a877a97331dc3853ad22a2dcc1521f}{NVIC\+\_\+\+IRQ10\+\_\+\+EXTI4\+\_\+\+Enable}}~(\mbox{\hyperlink{group__NVIC__Register__Definitions_gab37d21c2e44fe7e3967deaf10e30a763}{NVIC\+\_\+\+ISER0}} $\vert$= (1$<$$<$10))
+\item 
+\#define \mbox{\hyperlink{group__NVIC__IRQ__Enable__Disable_gacde41dbda1dede0d47b2e649d31dd5d8}{NVIC\+\_\+\+IRQ23\+\_\+\+EXTI5\+\_\+9\+\_\+\+Enable}}~(\mbox{\hyperlink{group__NVIC__Register__Definitions_gab37d21c2e44fe7e3967deaf10e30a763}{NVIC\+\_\+\+ISER0}} $\vert$= (1$<$$<$23))
+\item 
+\#define \mbox{\hyperlink{group__NVIC__IRQ__Enable__Disable_ga5440bad07d35f6a95f12cfb3f4de3b40}{NVIC\+\_\+\+IRQ40\+\_\+\+EXTI10\+\_\+15\+\_\+\+Enable}}~(\mbox{\hyperlink{group__NVIC__Register__Definitions_gaeea822ab87e3ef3b207f26c6176a746c}{NVIC\+\_\+\+ISER1}} $\vert$= (1$<$$<$8))
+\item 
+\#define \mbox{\hyperlink{group__NVIC__IRQ__Enable__Disable_gadda4cd5cc1df914a00b93b6f9a919e62}{NVIC\+\_\+\+IRQ6\+\_\+\+EXTI0\+\_\+\+Disable}}~(\mbox{\hyperlink{group__NVIC__Register__Definitions_ga11cfe60b26fed9d1df48860d0274983b}{NVIC\+\_\+\+ICER0}} $\vert$= (1$<$$<$6))
+\item 
+\#define \mbox{\hyperlink{group__NVIC__IRQ__Enable__Disable_ga30c6bd49641c2b2a75895a158942f543}{NVIC\+\_\+\+IRQ7\+\_\+\+EXTI1\+\_\+\+Disable}}~(\mbox{\hyperlink{group__NVIC__Register__Definitions_ga11cfe60b26fed9d1df48860d0274983b}{NVIC\+\_\+\+ICER0}} $\vert$= (1$<$$<$7))
+\item 
+\#define \mbox{\hyperlink{group__NVIC__IRQ__Enable__Disable_ga10d489e5d0e118333abf73de0814fe06}{NVIC\+\_\+\+IRQ8\+\_\+\+EXTI2\+\_\+\+Disable}}~(\mbox{\hyperlink{group__NVIC__Register__Definitions_ga11cfe60b26fed9d1df48860d0274983b}{NVIC\+\_\+\+ICER0}} $\vert$= (1$<$$<$8))
+\item 
+\#define \mbox{\hyperlink{group__NVIC__IRQ__Enable__Disable_ga8cd792367ea5559b2c33c950921fbc1d}{NVIC\+\_\+\+IRQ9\+\_\+\+EXTI3\+\_\+\+Disable}}~(\mbox{\hyperlink{group__NVIC__Register__Definitions_ga11cfe60b26fed9d1df48860d0274983b}{NVIC\+\_\+\+ICER0}} $\vert$= (1$<$$<$9))
+\item 
+\#define \mbox{\hyperlink{group__NVIC__IRQ__Enable__Disable_ga71c10bf5a084dff5a6c8dc4d68b86b33}{NVIC\+\_\+\+IRQ10\+\_\+\+EXTI4\+\_\+\+Disable}}~(\mbox{\hyperlink{group__NVIC__Register__Definitions_ga11cfe60b26fed9d1df48860d0274983b}{NVIC\+\_\+\+ICER0}} $\vert$= (1$<$$<$10))
+\item 
+\#define \mbox{\hyperlink{group__NVIC__IRQ__Enable__Disable_ga4cbb7039951114a3513405944738bf48}{NVIC\+\_\+\+IRQ23\+\_\+\+EXTI5\+\_\+9\+\_\+\+Disable}}~(\mbox{\hyperlink{group__NVIC__Register__Definitions_ga11cfe60b26fed9d1df48860d0274983b}{NVIC\+\_\+\+ICER0}} $\vert$= (1$<$$<$23))
+\item 
+\#define {\bfseries NVIC\+\_\+\+IRQ40\+\_\+\+EXTI10\+\_\+15\+\_\+\+Disable}~(\mbox{\hyperlink{group__NVIC__Register__Definitions_gab65a09923e3fb94e67ea4642b7f85ccf}{NVIC\+\_\+\+ICER1}} $\vert$= (1$<$$<$8))
+\item 
+\#define \mbox{\hyperlink{group__NVIC__IRQ__Enable__Disable_ga4c66c6b49faf4607dd43dbbbe096931f}{NVIC\+\_\+\+IRQ37\+\_\+\+USART1\+\_\+\+Enable}}~(\mbox{\hyperlink{group__NVIC__Register__Definitions_gaeea822ab87e3ef3b207f26c6176a746c}{NVIC\+\_\+\+ISER1}} $\vert$= 1$<$$<$(\mbox{\hyperlink{group__NVIC__Interrupt__Requests_gaa677628b60d2d06e4e1614cfb26091c2}{USART1\+\_\+\+IRQ}} -\/ 32))
+\item 
+\#define \mbox{\hyperlink{group__NVIC__IRQ__Enable__Disable_gab6a6c3d5119c0d133987f14a0e5d5d8e}{NVIC\+\_\+\+IRQ38\+\_\+\+USART2\+\_\+\+Enable}}~(\mbox{\hyperlink{group__NVIC__Register__Definitions_gaeea822ab87e3ef3b207f26c6176a746c}{NVIC\+\_\+\+ISER1}} $\vert$= 1$<$$<$(\mbox{\hyperlink{group__NVIC__Interrupt__Requests_ga91ea1a8e2cd1c9a3adf816c11c0d89ec}{USART2\+\_\+\+IRQ}} -\/ 32))
+\item 
+\#define \mbox{\hyperlink{group__NVIC__IRQ__Enable__Disable_gaf78e5d1c230376193cc4e47d72c2291f}{NVIC\+\_\+\+IRQ39\+\_\+\+USART3\+\_\+\+Enable}}~(\mbox{\hyperlink{group__NVIC__Register__Definitions_gaeea822ab87e3ef3b207f26c6176a746c}{NVIC\+\_\+\+ISER1}} $\vert$= 1$<$$<$(USART3\+\_\+\+IRQ -\/ 32))
+\item 
+\#define \mbox{\hyperlink{group__NVIC__IRQ__Enable__Disable_ga45d44472654e13db23324173e4d509d1}{NVIC\+\_\+\+IRQ37\+\_\+\+USART1\+\_\+\+Disable}}~(\mbox{\hyperlink{group__NVIC__Register__Definitions_gab65a09923e3fb94e67ea4642b7f85ccf}{NVIC\+\_\+\+ICER1}} $\vert$= 1$<$$<$(\mbox{\hyperlink{group__NVIC__Interrupt__Requests_gaa677628b60d2d06e4e1614cfb26091c2}{USART1\+\_\+\+IRQ}} -\/ 32))
+\item 
+\#define \mbox{\hyperlink{group__NVIC__IRQ__Enable__Disable_ga9e0a80dadeff446d765809f7ee3308b5}{NVIC\+\_\+\+IRQ38\+\_\+\+USART2\+\_\+\+Disable}}~(\mbox{\hyperlink{group__NVIC__Register__Definitions_gab65a09923e3fb94e67ea4642b7f85ccf}{NVIC\+\_\+\+ICER1}} $\vert$= 1$<$$<$(\mbox{\hyperlink{group__NVIC__Interrupt__Requests_ga91ea1a8e2cd1c9a3adf816c11c0d89ec}{USART2\+\_\+\+IRQ}} -\/ 32))
+\item 
+\#define {\bfseries NVIC\+\_\+\+IRQ39\+\_\+\+USART3\+\_\+\+Disable}~(\mbox{\hyperlink{group__NVIC__Register__Definitions_gab65a09923e3fb94e67ea4642b7f85ccf}{NVIC\+\_\+\+ICER1}} $\vert$= 1$<$$<$(USART3\+\_\+\+IRQ -\/ 32))
+\item 
+\#define \mbox{\hyperlink{group__NVIC__IRQ__Enable__Disable_ga301364c5d81915046814db1ca07c7973}{NVIC\+\_\+\+IRQ35\+\_\+\+SPI1\+\_\+\+Enable}}~(\mbox{\hyperlink{group__NVIC__Register__Definitions_gaeea822ab87e3ef3b207f26c6176a746c}{NVIC\+\_\+\+ISER1}} $\vert$= 1$<$$<$(\mbox{\hyperlink{group__NVIC__Interrupt__Requests_gac521872be69d4ba245e6f42407533c70}{SPI1\+\_\+\+IRQ}} -\/ 32))
+\item 
+\#define \mbox{\hyperlink{group__NVIC__IRQ__Enable__Disable_ga64982d90d71daea5f5a77cda68242f4e}{NVIC\+\_\+\+IRQ36\+\_\+\+SPI2\+\_\+\+Enable}}~(\mbox{\hyperlink{group__NVIC__Register__Definitions_gaeea822ab87e3ef3b207f26c6176a746c}{NVIC\+\_\+\+ISER1}} $\vert$= 1$<$$<$(\mbox{\hyperlink{group__NVIC__Interrupt__Requests_ga6d78fa371ed5e81ca405dd8d1b4c14fa}{SPI2\+\_\+\+IRQ}} -\/ 32))
+\item 
+\#define \mbox{\hyperlink{group__NVIC__IRQ__Enable__Disable_gaac231594782dc0a72e9251cacf916255}{NVIC\+\_\+\+IRQ35\+\_\+\+SPI1\+\_\+\+Disable}}~(\mbox{\hyperlink{group__NVIC__Register__Definitions_gab65a09923e3fb94e67ea4642b7f85ccf}{NVIC\+\_\+\+ICER1}} \&= $\sim$(1$<$$<$(\mbox{\hyperlink{group__NVIC__Interrupt__Requests_gac521872be69d4ba245e6f42407533c70}{SPI1\+\_\+\+IRQ}} -\/ 32)))
+\item 
+\#define {\bfseries NVIC\+\_\+\+IRQ36\+\_\+\+SPI2\+\_\+\+Disable}~(\mbox{\hyperlink{group__NVIC__Register__Definitions_gab65a09923e3fb94e67ea4642b7f85ccf}{NVIC\+\_\+\+ICER1}} \&= $\sim$(1$<$$<$(\mbox{\hyperlink{group__NVIC__Interrupt__Requests_ga6d78fa371ed5e81ca405dd8d1b4c14fa}{SPI2\+\_\+\+IRQ}} -\/ 32)))
+\item 
+\#define \mbox{\hyperlink{group__NVIC__IRQ__Enable__Disable_ga707bcb30289ca7c4f60a7d1eb68f7f34}{NVIC\+\_\+\+IRQ31\+\_\+\+I2\+C1\+\_\+\+EV\+\_\+\+Enable}}~(\mbox{\hyperlink{group__NVIC__Register__Definitions_gab37d21c2e44fe7e3967deaf10e30a763}{NVIC\+\_\+\+ISER0}} $\vert$= 1$<$$<$(\mbox{\hyperlink{group__NVIC__Interrupt__Requests_ga2b176ccd055eb016c45f02a99f85e6b0}{I2\+C1\+\_\+\+EV\+\_\+\+IRQ}}))
+\item 
+\#define \mbox{\hyperlink{group__NVIC__IRQ__Enable__Disable_gafca6c857337eb14768015a611c422e92}{NVIC\+\_\+\+IRQ32\+\_\+\+I2\+C1\+\_\+\+ER\+\_\+\+Enable}}~(\mbox{\hyperlink{group__NVIC__Register__Definitions_gaeea822ab87e3ef3b207f26c6176a746c}{NVIC\+\_\+\+ISER1}} $\vert$= 1$<$$<$(\mbox{\hyperlink{group__NVIC__Interrupt__Requests_ga0a003273888cf3a3b35d6d7c303b0607}{I2\+C1\+\_\+\+ER\+\_\+\+IRQ}} -\/ 32))
+\item 
+\#define \mbox{\hyperlink{group__NVIC__IRQ__Enable__Disable_ga8bd2f5f4799ecf7c06ddc2a4fc049495}{NVIC\+\_\+\+IRQ33\+\_\+\+I2\+C2\+\_\+\+EV\+\_\+\+Enable}}~(\mbox{\hyperlink{group__NVIC__Register__Definitions_gaeea822ab87e3ef3b207f26c6176a746c}{NVIC\+\_\+\+ISER1}} $\vert$= 1$<$$<$(\mbox{\hyperlink{group__NVIC__Interrupt__Requests_gadda322d0c78a960e0a8312b47a728bb9}{I2\+C2\+\_\+\+EV\+\_\+\+IRQ}} -\/ 32))
+\item 
+\#define \mbox{\hyperlink{group__NVIC__IRQ__Enable__Disable_ga60b1332b51fa7d0cdf7c2081e2971f3c}{NVIC\+\_\+\+IRQ34\+\_\+\+I2\+C2\+\_\+\+ER\+\_\+\+Enable}}~(\mbox{\hyperlink{group__NVIC__Register__Definitions_gaeea822ab87e3ef3b207f26c6176a746c}{NVIC\+\_\+\+ISER1}} $\vert$= 1$<$$<$(\mbox{\hyperlink{group__NVIC__Interrupt__Requests_ga0c3ce7200280c0ac21d700978742b4c4}{I2\+C2\+\_\+\+ER\+\_\+\+IRQ}} -\/ 32))
+\item 
+\#define \mbox{\hyperlink{group__NVIC__IRQ__Enable__Disable_gac4ebdeb1649db8d6b7347167167e5a07}{NVIC\+\_\+\+IRQ31\+\_\+\+I2\+C1\+\_\+\+EV\+\_\+\+Disable}}~(\mbox{\hyperlink{group__NVIC__Register__Definitions_ga11cfe60b26fed9d1df48860d0274983b}{NVIC\+\_\+\+ICER0}} \&= $\sim$(1$<$$<$(\mbox{\hyperlink{group__NVIC__Interrupt__Requests_ga2b176ccd055eb016c45f02a99f85e6b0}{I2\+C1\+\_\+\+EV\+\_\+\+IRQ}})))
+\item 
+\#define \mbox{\hyperlink{group__NVIC__IRQ__Enable__Disable_ga9ff0d813ed494cb282520683aa4cf94c}{NVIC\+\_\+\+IRQ32\+\_\+\+I2\+C1\+\_\+\+ER\+\_\+\+Disable}}~(\mbox{\hyperlink{group__NVIC__Register__Definitions_gab65a09923e3fb94e67ea4642b7f85ccf}{NVIC\+\_\+\+ICER1}} \&= $\sim$(1$<$$<$(\mbox{\hyperlink{group__NVIC__Interrupt__Requests_ga0a003273888cf3a3b35d6d7c303b0607}{I2\+C1\+\_\+\+ER\+\_\+\+IRQ}} -\/ 32)))
+\item 
+\#define \mbox{\hyperlink{group__NVIC__IRQ__Enable__Disable_gafc3b89a2a586bfe1980520d2a173c19f}{NVIC\+\_\+\+IRQ33\+\_\+\+I2\+C2\+\_\+\+EV\+\_\+\+Disable}}~(\mbox{\hyperlink{group__NVIC__Register__Definitions_gab65a09923e3fb94e67ea4642b7f85ccf}{NVIC\+\_\+\+ICER1}} \&= $\sim$(1$<$$<$(\mbox{\hyperlink{group__NVIC__Interrupt__Requests_gadda322d0c78a960e0a8312b47a728bb9}{I2\+C2\+\_\+\+EV\+\_\+\+IRQ}} -\/ 32)))
+\item 
+\#define {\bfseries NVIC\+\_\+\+IRQ34\+\_\+\+I2\+C2\+\_\+\+ER\+\_\+\+Disable}~(\mbox{\hyperlink{group__NVIC__Register__Definitions_gab65a09923e3fb94e67ea4642b7f85ccf}{NVIC\+\_\+\+ICER1}} \&= $\sim$(1$<$$<$(\mbox{\hyperlink{group__NVIC__Interrupt__Requests_ga0c3ce7200280c0ac21d700978742b4c4}{I2\+C2\+\_\+\+ER\+\_\+\+IRQ}} -\/ 32)))
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__NVIC__Functions_ga13b7ac22aad57e45a3c9112be7fabc0e}{MCAL\+\_\+\+NVIC\+\_\+\+Set\+Priority\+Grouping}} (\mbox{\hyperlink{group__Platform__Types_ga4b435a49c74bb91f284f075e63416cb6}{uint32}} priority\+\_\+grouping)
+\begin{DoxyCompactList}\small\item\em Set the priority grouping for the NVIC. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__Platform__Types_ga4b435a49c74bb91f284f075e63416cb6}{uint32}} \mbox{\hyperlink{group__NVIC__Functions_gadb1932f2764fc275a802507ef08056dc}{MCAL\+\_\+\+NVIC\+\_\+\+Get\+Priority\+Grouping}} (void)
+\begin{DoxyCompactList}\small\item\em Get the current priority grouping configuration of the NVIC. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__NVIC__Functions_ga283dc9f1b6d8dca9b5f0bab7b422c62b}{MCAL\+\_\+\+NVIC\+\_\+\+Enable\+IRQ}} (\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{group__Configuration__section__for__CMSIS_ga666eb0caeb12ec0e281415592ae89083}{IRQn}})
+\begin{DoxyCompactList}\small\item\em Enable a specified IRQ. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__NVIC__Functions_ga0f5617d6b7d5f46279ebffcfee2ecf35}{MCAL\+\_\+\+NVIC\+\_\+\+Disable\+IRQ}} (\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{group__Configuration__section__for__CMSIS_ga666eb0caeb12ec0e281415592ae89083}{IRQn}})
+\begin{DoxyCompactList}\small\item\em Disable a specified IRQ. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{group__NVIC__Functions_ga165b17f21f6b795218028acb60459d32}{MCAL\+\_\+\+NVIC\+\_\+\+Get\+Pending\+IRQ}} (\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{group__Configuration__section__for__CMSIS_ga666eb0caeb12ec0e281415592ae89083}{IRQn}})
+\begin{DoxyCompactList}\small\item\em Get the pending status of a specified IRQ. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__NVIC__Functions_ga592d392ce733c22df6eb98c7b27a3493}{MCAL\+\_\+\+NVIC\+\_\+\+Set\+Pending\+IRQ}} (\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{group__Configuration__section__for__CMSIS_ga666eb0caeb12ec0e281415592ae89083}{IRQn}})
+\begin{DoxyCompactList}\small\item\em Set the pending status of a specified IRQ. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__NVIC__Functions_ga88594ff547329d115d4e74df523a90af}{MCAL\+\_\+\+NVIC\+\_\+\+Clear\+Pending\+IRQ}} (\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{group__Configuration__section__for__CMSIS_ga666eb0caeb12ec0e281415592ae89083}{IRQn}})
+\begin{DoxyCompactList}\small\item\em Clear the pending status of a specified IRQ. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{group__NVIC__Functions_ga1f622d8056538637f73667decee87140}{MCAL\+\_\+\+NVIC\+\_\+\+Get\+Active}} (\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{group__Configuration__section__for__CMSIS_ga666eb0caeb12ec0e281415592ae89083}{IRQn}})
+\begin{DoxyCompactList}\small\item\em Get the active status of a specified IRQ. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__NVIC__Functions_gaf9e55ca7bcfcba07a21d4eeaadbadd1f}{MCAL\+\_\+\+NVIC\+\_\+\+Set\+Priority}} (\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{group__Configuration__section__for__CMSIS_ga666eb0caeb12ec0e281415592ae89083}{IRQn}}, \mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} priority)
+\begin{DoxyCompactList}\small\item\em Set the priority of a specified IRQ. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{group__NVIC__Functions_ga82af3479353edeca491c1b1526e07d89}{MCAL\+\_\+\+NVIC\+\_\+\+Get\+Priority}} (\mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{group__Configuration__section__for__CMSIS_ga666eb0caeb12ec0e281415592ae89083}{IRQn}})
+\begin{DoxyCompactList}\small\item\em Retrieves the priority level of a specified IRQn. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__NVIC__Functions_ga26aba5a0740c2bcd0f7c06acbf0dae40}{MCAL\+\_\+\+NVIC\+\_\+\+System\+Reset}} (void)
+\begin{DoxyCompactList}\small\item\em Performs a system reset. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file for NVIC (Nested Vectored Interrupt Controller) driver for STM32\+F401xx microcontroller. 
+
+\begin{DoxyAuthor}{Author}
+Mohamed Ali Haoufa 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2024-\/09-\/21
+\end{DoxyDate}
+This header file provides definitions, macros, and function prototypes for interacting with the NVIC of the STM32\+F401xx microcontroller. It includes functions for configuring interrupt priority, enabling/disabling interrupts, and managing interrupt status.
+
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2024 
+\end{DoxyCopyright}

@@ -1,0 +1,55 @@
+\hypertarget{lcd__driver_8c}{}\doxysection{bsp/\+Src/lcd\+\_\+driver.c File Reference}
+\label{lcd__driver_8c}\index{bsp/Src/lcd\_driver.c@{bsp/Src/lcd\_driver.c}}
+
+
+Contains functions for controlling an LCD using an STM32\+F401xx MCU.  
+
+
+{\ttfamily \#include \char`\"{}lcd\+\_\+driver.\+h\char`\"{}}\newline
+Include dependency graph for lcd\+\_\+driver.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{lcd__driver_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__LCD__Functions_gae10bfb836fc7f71736981230c6f93410}{LCD\+\_\+\+Init}} (\mbox{\hyperlink{structLCD__t}{LCD\+\_\+t}} $\ast$LCD\+\_\+cfg)
+\begin{DoxyCompactList}\small\item\em Initializes the LCD based on user-\/defined configurations. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__LCD__Functions_ga9cd66e7ffbe44bf68d4926335fa43992}{LCD\+\_\+\+Send\+\_\+\+Command}} (\mbox{\hyperlink{structLCD__t}{LCD\+\_\+t}} $\ast$LCD\+\_\+cfg, \mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} command)
+\begin{DoxyCompactList}\small\item\em Sends a command to the LCD. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__LCD__Functions_ga49f90497a42f7e50d9ffbb1a1e9e1bd4}{LCD\+\_\+\+Send\+\_\+\+Char}} (\mbox{\hyperlink{structLCD__t}{LCD\+\_\+t}} $\ast$LCD\+\_\+cfg, \mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} Char)
+\begin{DoxyCompactList}\small\item\em Sends a character to the LCD to be displayed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__LCD__Functions_gad0f1825d7e6621f3ef992ac6e417110f}{LCD\+\_\+\+Send\+\_\+\+Char\+\_\+\+Pos}} (\mbox{\hyperlink{structLCD__t}{LCD\+\_\+t}} $\ast$LCD\+\_\+cfg, \mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} Char, \mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} row, \mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} column)
+\begin{DoxyCompactList}\small\item\em Sends a character to the LCD to be displayed at a specific location. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__LCD__Functions_gaf8502a6ce32be8fbf1766c50f8760f68}{LCD\+\_\+\+Send\+\_\+\+String}} (\mbox{\hyperlink{structLCD__t}{LCD\+\_\+t}} $\ast$LCD\+\_\+cfg, \mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} $\ast$string)
+\begin{DoxyCompactList}\small\item\em Sends a string to the LCD to be displayed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__LCD__Functions_gab5caef627b88d83f3c863bc2e3d54678}{LCD\+\_\+\+Send\+\_\+\+String\+\_\+\+Pos}} (\mbox{\hyperlink{structLCD__t}{LCD\+\_\+t}} $\ast$LCD\+\_\+cfg, \mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} $\ast$string, \mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} row, \mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} column)
+\begin{DoxyCompactList}\small\item\em Sends a string to the LCD to be displayed at a specific location. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__LCD__Functions_ga4dbb4ca44749573a14305937a8fee358}{LCD\+\_\+\+Send\+\_\+\+Enable\+\_\+\+Signal}} (\mbox{\hyperlink{structLCD__t}{LCD\+\_\+t}} $\ast$LCD\+\_\+cfg)
+\begin{DoxyCompactList}\small\item\em Sends an enable signal to the LCD. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__LCD__Functions_gae63444e290979d80c1b88fad989d2e40}{LCD\+\_\+\+Set\+\_\+\+Cursor}} (\mbox{\hyperlink{structLCD__t}{LCD\+\_\+t}} $\ast$LCD\+\_\+cfg, \mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} row, \mbox{\hyperlink{group__Platform__Types_gadde6aaee8457bee49c2a92621fe22b79}{uint8}} column)
+\begin{DoxyCompactList}\small\item\em Sets the location of the cursor on the LCD. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains functions for controlling an LCD using an STM32\+F401xx MCU. 
+
+~\newline
+ \begin{DoxyAuthor}{Author}
+Mohamed Ali Haoufa 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2024-\/09-\/21
+\end{DoxyDate}
+This file implements the LCD driver functions including initialization, sending commands, characters, and strings to the LCD, and controlling the cursor position. It uses GPIOs of the STM32\+F401xx microcontroller for communication with the LCD.
+
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2024 
+\end{DoxyCopyright}
