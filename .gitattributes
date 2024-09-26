@@ -1,6 +1,6 @@
 *.tex linguist-generated
+*.tex linguist-generated
 *.i linguist-generated
 *.html linguist-generated
 *.css linguist-generated
 *.js linguist-generated
-doxygen-docs/latex/*.tex linguist-detectable=false
