@@ -1,10 +1,10 @@
 # Specify the minimum version of CMake
-cmake_minimum_required(VERSION 3.13)
+cmake_minimum_required(VERSION 3.22.1)
 
 # Define the project name and version
 project(Smart-Car-Parking-Management-System
     VERSION 1.0
-    DESCRIPTION " TESTING CMAKE IN MY C CODE "  
+    DESCRIPTION " TESTING CMAKE IN MY Project"  
     LANGUAGES C CXX ASM)
 
 # Set the CPU architecture and other flags
