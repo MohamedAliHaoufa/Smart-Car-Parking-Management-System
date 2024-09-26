@@ -1,0 +1,4 @@
+<map id="I2C General Call Enable Definitions" name="I2C General Call Enable Definitions">
+<area shape="rect" id="node1" title=" " alt="" coords="140,5,315,45"/>
+<area shape="rect" id="node2" href="$group__I2C__Driver.html" title="I2C driver APIs for STM32F401xx MCU." alt="" coords="5,13,92,38"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="Peripheral_registers_structures" name="Peripheral_registers_structures">
+<area shape="rect" id="node1" href="$group__EXTI__Exti__Registers.html" title="EXTI (External Interrupts) Register Map." alt="" coords="461,5,602,31"/>
+<area shape="rect" id="node2" href="$group__SPI__Spi__Registers.html" title="SPI (Serial Peripheral Interface) Register Map." alt="" coords="465,55,597,80"/>
+<area shape="rect" id="node3" href="$group__stm32f4xx.html" title=" " alt="" coords="5,153,99,179"/>
+<area shape="rect" id="node9" title=" " alt="" coords="148,146,300,186"/>
+<area shape="rect" id="node4" href="$group__USART__Usart__Registers.html" title="USART (Universal Synchronous Asynchronous Receiver Transmitter) Register Map." alt="" coords="453,104,609,129"/>
+<area shape="rect" id="node5" href="$group__CRC__Crc__Registers.html" title="CRC (Cyclic Redundancy Check) Register Map." alt="" coords="462,153,601,179"/>
+<area shape="rect" id="node6" href="$group__GPIO__Gpio__Registers.html" title="GPIO (General&#45;Purpose Input/Output) Register Map." alt="" coords="459,203,603,228"/>
+<area shape="rect" id="node7" href="$group__RCC__Rcc__Registers.html" title="RCC (Reset and Clock Control) Register Map." alt="" coords="462,252,601,277"/>
+<area shape="rect" id="node8" href="$group__I2C__I2c__Registers.html" title="I2C (Inter&#45;Integrated Circuit) Register Map." alt="" coords="465,301,598,327"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="Timer Instances" name="Timer Instances">
+<area shape="rect" id="node1" href="$group__Peripheral__Instances.html" title="Peripheral instances for various hardware modules in the STM32 microcontroller." alt="" coords="5,5,160,31"/>
+<area shape="rect" id="node2" title="Instances of the Timers (TIM1 and TIM2)." alt="" coords="208,5,335,31"/>
+</map>

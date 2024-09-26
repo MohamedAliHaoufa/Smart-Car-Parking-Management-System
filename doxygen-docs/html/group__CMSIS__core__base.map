@@ -1,0 +1,6 @@
+<map id="Core Definitions" name="Core Definitions">
+<area shape="rect" id="node1" href="$group__CMSIS__Core__FunctionInterface.html" title=" " alt="" coords="391,5,583,45"/>
+<area shape="rect" id="node2" title="Definitions for base addresses, unions, and structures." alt="" coords="216,42,343,67"/>
+<area shape="rect" id="node3" href="$group__CMSIS__Core__NVICFunctions.html" title="Functions that manage interrupts and exceptions via the NVIC." alt="" coords="427,70,547,95"/>
+<area shape="rect" id="node4" href="$group__CMSIS__CoreDebug.html" title="Type definitions for the Core Debug Registers." alt="" coords="5,35,168,75"/>
+</map>

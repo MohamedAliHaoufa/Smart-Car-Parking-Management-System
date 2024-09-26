@@ -1,0 +1,6 @@
+<map id="Status and Control Registers" name="Status and Control Registers">
+<area shape="rect" id="node1" title="Core Register type definitions." alt="" coords="260,23,403,63"/>
+<area shape="rect" id="node2" href="$group__CMSIS__NVIC.html" title="Type definitions for the NVIC Registers." alt="" coords="451,23,640,63"/>
+<area shape="rect" id="node3" href="$group__CMSIS.html" title=" " alt="" coords="77,5,140,31"/>
+<area shape="rect" id="node4" href="$group__CMSIS__core__register.html" title="Type definitions and defines for Cortex&#45;M processor based devices." alt="" coords="5,55,212,80"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="I2C Registers" name="I2C Registers">
+<area shape="rect" id="node1" href="$group__I2C__SR2__Register__Bit__Definitions.html" title=" " alt="" coords="441,5,593,45"/>
+<area shape="rect" id="node2" href="$group__STM32F401XX__HEADER.html" title="Header file containing all the necessary information about the STM32F401xx MCU." alt="" coords="5,205,232,230"/>
+<area shape="rect" id="node6" title="Bit definitions for the I2C peripheral registers." alt="" coords="280,205,388,230"/>
+<area shape="rect" id="node3" href="$group__I2C__CR1__Register__Bit__Definitions.html" title="Bit definitions for the I2C Control Register 1 (CR1)." alt="" coords="441,69,594,109"/>
+<area shape="rect" id="node4" href="$group__I2C__CCR__Register__Bit__Definitions.html" title=" " alt="" coords="440,133,595,173"/>
+<area shape="rect" id="node5" href="$group__I2C__CR2__Register__Bit__Definitions.html" title="Bit definitions for the I2C Control Register 2 (CR2)." alt="" coords="441,197,594,237"/>
+<area shape="rect" id="node7" href="$group__I2C__OAR2__Register__Bit__Definitions.html" title=" " alt="" coords="436,261,599,301"/>
+<area shape="rect" id="node8" href="$group__I2C__TRISE__Register__Bit__Definitions.html" title=" " alt="" coords="446,325,589,365"/>
+<area shape="rect" id="node9" href="$group__I2C__SR1__Register__Bit__Definitions.html" title=" " alt="" coords="441,389,593,429"/>
+</map>

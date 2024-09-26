@@ -1,0 +1,5 @@
+<map id="EXTI Register Map" name="EXTI Register Map">
+<area shape="rect" id="node1" title="EXTI (External Interrupts) Register Map." alt="" coords="201,13,343,38"/>
+<area shape="rect" id="node3" href="$group__Peripheral__registers__structures.html" title=" " alt="" coords="480,5,632,45"/>
+<area shape="rect" id="node2" href="$group__Peripheral__Registers.html" title="Structures defining the register layouts for various peripherals." alt="" coords="5,5,152,45"/>
+</map>

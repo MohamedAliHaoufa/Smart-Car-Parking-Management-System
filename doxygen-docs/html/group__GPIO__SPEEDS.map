@@ -1,0 +1,4 @@
+<map id="GPIO Output Speeds" name="GPIO Output Speeds">
+<area shape="rect" id="node1" title="Defines possible GPIO pin output speeds." alt="" coords="152,5,305,31"/>
+<area shape="rect" id="node2" href="$group__GPIO__Driver.html" title="GPIO driver APIs for STM32F401xx MCU." alt="" coords="5,5,104,31"/>
+</map>

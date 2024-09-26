@@ -1,0 +1,4 @@
+<map id="Structure for configuring an LED." name="Structure for configuring an LED.">
+<area shape="rect" id="node1" title=" " alt="" coords="144,5,323,45"/>
+<area shape="rect" id="node2" href="$group__LED__Driver.html" title="LED driver for STM32F401xx MCUs." alt="" coords="5,13,96,38"/>
+</map>

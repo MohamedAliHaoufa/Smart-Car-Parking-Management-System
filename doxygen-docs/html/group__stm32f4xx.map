@@ -1,0 +1,11 @@
+<map id="Stm32f4xx" name="Stm32f4xx">
+<area shape="rect" id="node1" title=" " alt="" coords="116,169,209,195"/>
+<area shape="rect" id="node2" href="$group__Peripheral__memory__map.html" title=" " alt="" coords="257,5,444,31"/>
+<area shape="rect" id="node3" href="$group__Exported__constants.html" title=" " alt="" coords="275,55,426,80"/>
+<area shape="rect" id="node4" href="$group__Library__configuration__section.html" title=" " alt="" coords="271,105,430,145"/>
+<area shape="rect" id="node5" href="$group__Exported__types.html" title=" " alt="" coords="289,169,412,195"/>
+<area shape="rect" id="node7" href="$group__Peripheral__registers__structures.html" title=" " alt="" coords="275,219,427,259"/>
+<area shape="rect" id="node8" href="$group__Configuration__section__for__CMSIS.html" title=" " alt="" coords="269,283,432,323"/>
+<area shape="rect" id="node9" href="$group__Peripheral__declaration.html" title=" " alt="" coords="267,348,435,373"/>
+<area shape="rect" id="node6" href="$group__CMSIS.html" title=" " alt="" coords="5,169,68,195"/>
+</map>

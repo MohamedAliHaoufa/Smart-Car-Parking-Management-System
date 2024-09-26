@@ -1,0 +1,4 @@
+<map id="S_I2C_Config_t" name="S_I2C_Config_t">
+<area shape="rect" id="node1" title="Structure for I2C configuration." alt="" coords="25,95,144,121"/>
+<area shape="rect" id="node2" href="$structS__I2C__Slave__address.html" title="Structure for I2C slave address configuration." alt="" coords="5,5,164,32"/>
+</map>

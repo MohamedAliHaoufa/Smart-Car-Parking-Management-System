@@ -1,0 +1,5 @@
+<map id="I2C Register Map" name="I2C Register Map">
+<area shape="rect" id="node1" href="$group__Peripheral__Registers.html" title="Structures defining the register layouts for various peripherals." alt="" coords="5,5,152,45"/>
+<area shape="rect" id="node2" title="I2C (Inter&#45;Integrated Circuit) Register Map." alt="" coords="201,13,335,38"/>
+<area shape="rect" id="node3" href="$group__Peripheral__registers__structures.html" title=" " alt="" coords="464,5,616,45"/>
+</map>

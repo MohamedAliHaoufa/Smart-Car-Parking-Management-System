@@ -1,0 +1,5 @@
+<map id="Trace Port Interface (TPI)" name="Trace Port Interface (TPI)">
+<area shape="rect" id="node1" title="Type definitions for the Trace Port Interface (TPI)" alt="" coords="212,5,360,45"/>
+<area shape="rect" id="node3" href="$group__CMSIS__CoreDebug.html" title="Type definitions for the Core Debug Registers." alt="" coords="408,5,571,45"/>
+<area shape="rect" id="node2" href="$group__CMSIS__DWT.html" title="Type definitions for the Data Watchpoint and Trace (DWT)" alt="" coords="5,5,164,45"/>
+</map>

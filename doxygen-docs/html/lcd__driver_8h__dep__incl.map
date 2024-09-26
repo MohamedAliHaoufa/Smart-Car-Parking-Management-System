@@ -1,0 +1,8 @@
+<map id="bsp/Inc/lcd_driver.h" name="bsp/Inc/lcd_driver.h">
+<area shape="rect" id="node1" title="Header file for the STM32F401xx microcontroller LCD driver." alt="" coords="73,5,220,32"/>
+<area shape="rect" id="node2" href="$lcd__driver_8c.html" title="Contains functions for controlling an LCD using an STM32F401xx MCU." alt="" coords="5,80,152,107"/>
+<area shape="rect" id="node3" href="$ecu_8h.html" title="Header file containing all the necessary information about the STM32F401xx MCU." alt="" coords="176,80,256,107"/>
+<area shape="rect" id="node4" href="$app__states_8h.html" title="Header file containing definitions and macros for managing application states on the STM32F401xx MCU." alt="" coords="88,155,216,181"/>
+<area shape="rect" id="node6" href="$ecu_8c.html" title="Header file containing all necessary information and functionality for managing STM32F401xx MCU&#45;based..." alt="" coords="240,155,320,181"/>
+<area shape="rect" id="node5" href="$app__states_8c.html" title="Application state machine implementation for managing entry/exit gates and parking slots using the ST..." alt="" coords="88,229,216,256"/>
+</map>

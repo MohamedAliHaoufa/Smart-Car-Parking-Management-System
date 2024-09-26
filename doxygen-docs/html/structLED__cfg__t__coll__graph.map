@@ -1,0 +1,5 @@
+<map id="LED_cfg_t" name="LED_cfg_t">
+<area shape="rect" id="node1" title=" " alt="" coords="104,95,191,121"/>
+<area shape="rect" id="node2" href="$structGPIO__PinConfig__t.html" title="Configuration structure for GPIO pins." alt="" coords="5,5,140,32"/>
+<area shape="rect" id="node3" href="$structGPIO__TypeDef.html" title="General Purpose I/O." alt="" coords="165,5,279,32"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="CMSIS/Inc/system_stm32f4xx.h" name="CMSIS/Inc/system_stm32f4xx.h">
+<area shape="rect" id="node1" title="CMSIS Cortex&#45;M4 Device System Source File for STM32F4xx devices." alt="" coords="90,5,317,32"/>
+<area shape="rect" id="node2" href="$stm32f4xx_8h.html" title="CMSIS Cortex&#45;M4 Device Peripheral Access Layer Header File. This file contains all the peripheral reg..." alt="" coords="117,80,289,107"/>
+<area shape="rect" id="node3" href="$stm32f4xx__it_8h_source.html" title=" " alt="" coords="5,155,193,181"/>
+<area shape="rect" id="node4" href="$system__stm32f4xx_8c.html" title="CMSIS Cortex&#45;M4 Device Peripheral Access Layer System Source File. This file contains the system cloc..." alt="" coords="217,155,400,181"/>
+</map>

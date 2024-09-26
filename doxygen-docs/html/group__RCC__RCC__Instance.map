@@ -1,0 +1,4 @@
+<map id="RCC Instance" name="RCC Instance">
+<area shape="rect" id="node1" title="Instance of the Reset and Clock Control (RCC)." alt="" coords="208,5,316,31"/>
+<area shape="rect" id="node2" href="$group__Peripheral__Instances.html" title="Peripheral instances for various hardware modules in the STM32 microcontroller." alt="" coords="5,5,160,31"/>
+</map>

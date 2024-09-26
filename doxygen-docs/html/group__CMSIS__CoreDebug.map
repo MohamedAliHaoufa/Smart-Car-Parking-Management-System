@@ -1,0 +1,5 @@
+<map id="Core Debug Registers (CoreDebug)" name="Core Debug Registers (CoreDebug)">
+<area shape="rect" id="node1" href="$group__CMSIS__TPI.html" title="Type definitions for the Trace Port Interface (TPI)" alt="" coords="5,5,153,45"/>
+<area shape="rect" id="node3" title="Type definitions for the Core Debug Registers." alt="" coords="201,5,364,45"/>
+<area shape="rect" id="node2" href="$group__CMSIS__core__base.html" title="Definitions for base addresses, unions, and structures." alt="" coords="412,13,539,38"/>
+</map>

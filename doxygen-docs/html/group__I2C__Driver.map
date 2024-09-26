@@ -1,0 +1,10 @@
+<map id="I2C Driver" name="I2C Driver">
+<area shape="rect" id="node1" href="$group__I2C__Speed__Define.html" title=" " alt="" coords="163,5,324,31"/>
+<area shape="rect" id="node2" href="$group__I2C__Addressing__Slave.html" title=" " alt="" coords="160,55,327,80"/>
+<area shape="rect" id="node3" href="$group__I2C__ENGC.html" title=" " alt="" coords="156,105,331,145"/>
+<area shape="rect" id="node4" href="$group__I2C__Mode__Define.html" title=" " alt="" coords="165,169,322,195"/>
+<area shape="rect" id="node5" href="$group__I2C__StretchMode__Define.html" title=" " alt="" coords="140,219,347,244"/>
+<area shape="rect" id="node6" title="I2C driver APIs for STM32F401xx MCU." alt="" coords="5,169,92,195"/>
+<area shape="rect" id="node7" href="$group__I2C__Ack__Control__Define.html" title=" " alt="" coords="151,269,336,309"/>
+<area shape="rect" id="node8" href="$group__I2C__Functions.html" title=" " alt="" coords="155,333,331,359"/>
+</map>

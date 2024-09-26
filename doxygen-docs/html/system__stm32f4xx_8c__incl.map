@@ -1,0 +1,10 @@
+<map id="Src/system_stm32f4xx.c" name="Src/system_stm32f4xx.c">
+<area shape="rect" id="node1" title="CMSIS Cortex&#45;M4 Device Peripheral Access Layer System Source File. This file contains the system cloc..." alt="" coords="68,5,251,32"/>
+<area shape="rect" id="node2" href="$stm32f4xx_8h.html" title="CMSIS Cortex&#45;M4 Device Peripheral Access Layer Header File. This file contains all the peripheral reg..." alt="" coords="107,80,211,107"/>
+<area shape="rect" id="node3" href="$core__cm4_8h.html" title="CMSIS Cortex&#45;M4 Core Peripheral Access Layer Header File." alt="" coords="111,155,208,181"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,229,76,256"/>
+<area shape="rect" id="node8" href="$system__stm32f4xx_8h.html" title="CMSIS Cortex&#45;M4 Device System Source File for STM32F4xx devices." alt="" coords="232,155,391,181"/>
+<area shape="rect" id="node5" href="$core__cmInstr_8h.html" title="CMSIS Cortex&#45;M Core Instruction Access Header File." alt="" coords="101,229,218,256"/>
+<area shape="rect" id="node6" href="$core__cmFunc_8h.html" title="CMSIS Cortex&#45;M Core Function Access Header File." alt="" coords="241,229,360,256"/>
+<area shape="rect" id="node7" href="$core__cmSimd_8h.html" title="CMSIS Cortex&#45;M SIMD Header File." alt="" coords="385,229,507,256"/>
+</map>

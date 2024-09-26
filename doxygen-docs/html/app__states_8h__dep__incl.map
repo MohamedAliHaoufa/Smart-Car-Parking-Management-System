@@ -1,0 +1,4 @@
+<map id="Inc/app_states.h" name="Inc/app_states.h">
+<area shape="rect" id="node1" title="Header file containing definitions and macros for managing application states on the STM32F401xx MCU." alt="" coords="5,5,133,32"/>
+<area shape="rect" id="node2" href="$app__states_8c.html" title="Application state machine implementation for managing entry/exit gates and parking slots using the ST..." alt="" coords="5,80,133,107"/>
+</map>

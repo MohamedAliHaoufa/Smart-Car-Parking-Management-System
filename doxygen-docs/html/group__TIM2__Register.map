@@ -1,0 +1,4 @@
+<map id="TIM2 Register group" name="TIM2 Register group">
+<area shape="rect" id="node1" title="TIM2 Register group." alt="" coords="160,5,313,31"/>
+<area shape="rect" id="node2" href="$group__TIMER__Driver.html" title="TIMER driver APIs for STM32F401xx MCU." alt="" coords="5,5,112,31"/>
+</map>

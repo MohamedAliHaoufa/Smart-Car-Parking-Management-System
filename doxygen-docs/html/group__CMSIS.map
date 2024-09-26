@@ -1,0 +1,11 @@
+<map id="CMSIS" name="CMSIS">
+<area shape="rect" id="node1" href="$group__CMSIS__Core__InstructionInterface.html" title=" " alt="" coords="134,5,305,45"/>
+<area shape="rect" id="node2" href="$group__stm32f4xx.html" title=" " alt="" coords="173,70,266,95"/>
+<area shape="rect" id="node3" href="$group__CMSIS__CORE.html" title="Core Register type definitions." alt="" coords="148,120,291,160"/>
+<area shape="rect" id="node4" href="$group__CMSIS__SIMD__intrinsics.html" title=" " alt="" coords="137,185,301,210"/>
+<area shape="rect" id="node5" href="$group__stm32f4xx__system.html" title=" " alt="" coords="145,234,293,259"/>
+<area shape="rect" id="node6" title=" " alt="" coords="5,210,68,235"/>
+<area shape="rect" id="node7" href="$group__CMSIS__core__register.html" title="Type definitions and defines for Cortex&#45;M processor based devices." alt="" coords="116,283,323,309"/>
+<area shape="rect" id="node8" href="$group__CMSIS__Core__RegAccFunctions.html" title=" " alt="" coords="142,333,297,373"/>
+<area shape="rect" id="node9" href="$group__CMSIS__glob__defs.html" title=" " alt="" coords="138,398,301,423"/>
+</map>

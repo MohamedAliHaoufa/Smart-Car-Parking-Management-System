@@ -1,0 +1,6 @@
+<map id="Functions and Instructions Reference" name="Functions and Instructions Reference">
+<area shape="rect" id="node1" title=" " alt="" coords="180,27,372,67"/>
+<area shape="rect" id="node3" href="$group__CMSIS__Core__NVICFunctions.html" title="Functions that manage interrupts and exceptions via the NVIC." alt="" coords="437,5,557,31"/>
+<area shape="rect" id="node4" href="$group__CMSIS__Core__RegAccFunctions.html" title=" " alt="" coords="420,55,575,95"/>
+<area shape="rect" id="node2" href="$group__CMSIS__core__base.html" title="Definitions for base addresses, unions, and structures." alt="" coords="5,35,132,60"/>
+</map>

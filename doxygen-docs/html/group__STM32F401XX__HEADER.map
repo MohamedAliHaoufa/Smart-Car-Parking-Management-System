@@ -1,0 +1,13 @@
+<map id="STM32F401xx MCU Header File" name="STM32F401xx MCU Header File">
+<area shape="rect" id="node1" href="$group__Peripheral__Registers.html" title="Structures defining the register layouts for various peripherals." alt="" coords="307,5,454,45"/>
+<area shape="rect" id="node2" title="Header file containing all the necessary information about the STM32F401xx MCU." alt="" coords="5,287,232,313"/>
+<area shape="rect" id="node3" href="$group__APB1__PERIPHERALS__BASE__ADDRESSES.html" title=" " alt="" coords="296,69,465,109"/>
+<area shape="rect" id="node4" href="$group__CORTEX__M4__BASE__ADDRESSES.html" title=" " alt="" coords="297,133,464,173"/>
+<area shape="rect" id="node5" href="$group__I2C__Registers.html" title="Bit definitions for the I2C peripheral registers." alt="" coords="327,198,435,223"/>
+<area shape="rect" id="node6" href="$group__AHB__PERIPHERALS__BASE__ADDRESSES.html" title=" " alt="" coords="299,248,462,288"/>
+<area shape="rect" id="node7" href="$group__APB2__PERIPHERALS__BASE__ADDRESSES.html" title=" " alt="" coords="296,312,465,352"/>
+<area shape="rect" id="node8" href="$group__RCC__Bit__Positions.html" title="Bit position definitions for various registers in the RCC peripheral." alt="" coords="280,377,481,402"/>
+<area shape="rect" id="node9" href="$group__GPIO__Base__Address__to__Code.html" title="Macros for converting GPIO base addresses to corresponding port codes." alt="" coords="287,427,474,467"/>
+<area shape="rect" id="node10" href="$group__Peripheral__Instances.html" title="Peripheral instances for various hardware modules in the STM32 microcontroller." alt="" coords="303,491,458,517"/>
+<area shape="rect" id="node11" href="$group__MEMORY__BASE__ADDRESSES.html" title=" " alt="" coords="289,541,472,566"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="LED Driver" name="LED Driver">
+<area shape="rect" id="node1" href="$group__LED__Structure__Config.html" title=" " alt="" coords="144,5,323,45"/>
+<area shape="rect" id="node2" href="$group__LED__Functions.html" title=" " alt="" coords="145,70,321,95"/>
+<area shape="rect" id="node3" title="LED driver for STM32F401xx MCUs." alt="" coords="5,70,96,95"/>
+<area shape="rect" id="node4" href="$group__LED__MODES.html" title=" " alt="" coords="158,120,309,160"/>
+</map>

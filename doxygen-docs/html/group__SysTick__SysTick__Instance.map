@@ -1,0 +1,4 @@
+<map id="SysTick Timer Instance" name="SysTick Timer Instance">
+<area shape="rect" id="node1" title="Instance of the SysTick Timer." alt="" coords="208,5,381,31"/>
+<area shape="rect" id="node2" href="$group__Peripheral__Instances.html" title="Peripheral instances for various hardware modules in the STM32 microcontroller." alt="" coords="5,5,160,31"/>
+</map>

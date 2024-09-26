@@ -1,0 +1,8 @@
+<map id="bsp/Inc/eeprom_flash.h" name="bsp/Inc/eeprom_flash.h">
+<area shape="rect" id="node1" title="Header file for EEPROM flash memory operations." alt="" coords="80,5,252,32"/>
+<area shape="rect" id="node2" href="$eeprom__flash_8c.html" title="Implementation of EEPROM flash memory operations for STM32F401xx MCU." alt="" coords="5,80,177,107"/>
+<area shape="rect" id="node3" href="$ecu_8h.html" title="Header file containing all the necessary information about the STM32F401xx MCU." alt="" coords="202,80,282,107"/>
+<area shape="rect" id="node4" href="$app__states_8h.html" title="Header file containing definitions and macros for managing application states on the STM32F401xx MCU." alt="" coords="114,155,242,181"/>
+<area shape="rect" id="node6" href="$ecu_8c.html" title="Header file containing all necessary information and functionality for managing STM32F401xx MCU&#45;based..." alt="" coords="266,155,346,181"/>
+<area shape="rect" id="node5" href="$app__states_8c.html" title="Application state machine implementation for managing entry/exit gates and parking slots using the ST..." alt="" coords="114,229,242,256"/>
+</map>

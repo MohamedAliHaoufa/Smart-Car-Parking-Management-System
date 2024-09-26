@@ -1,0 +1,6 @@
+<map id="Inc/ecu.h" name="Inc/ecu.h">
+<area shape="rect" id="node1" title="Header file containing all the necessary information about the STM32F401xx MCU." alt="" coords="93,5,173,32"/>
+<area shape="rect" id="node2" href="$app__states_8h.html" title="Header file containing definitions and macros for managing application states on the STM32F401xx MCU." alt="" coords="5,80,133,107"/>
+<area shape="rect" id="node4" href="$ecu_8c.html" title="Header file containing all necessary information and functionality for managing STM32F401xx MCU&#45;based..." alt="" coords="157,80,237,107"/>
+<area shape="rect" id="node3" href="$app__states_8c.html" title="Application state machine implementation for managing entry/exit gates and parking slots using the ST..." alt="" coords="5,155,133,181"/>
+</map>

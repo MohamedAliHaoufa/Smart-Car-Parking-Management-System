@@ -1,0 +1,10 @@
+<map id="ECU Definitions and APIs" name="ECU Definitions and APIs">
+<area shape="rect" id="node1" href="$group__Includes.html" title="Required libraries for managing application states." alt="" coords="302,5,378,31"/>
+<area shape="rect" id="node2" title="Definitions and APIs for the ECU (Electronic Control Unit) system." alt="" coords="5,153,188,179"/>
+<area shape="rect" id="node3" href="$group__Functions__Declarations.html" title="Declaration of callback functions for UART operations." alt="" coords="253,55,427,80"/>
+<area shape="rect" id="node4" href="$group__ECU__Macros.html" title="Macros for system configuration." alt="" coords="260,104,420,129"/>
+<area shape="rect" id="node5" href="$group__ECU__APIs.html" title="APIs for managing the ECU functionalities." alt="" coords="299,153,381,179"/>
+<area shape="rect" id="node6" href="$group__ID__Check.html" title=" " alt="" coords="255,203,425,243"/>
+<area shape="rect" id="node7" href="$group__Global__Variables__Definitions.html" title="Global variable definitions for LEDs, LCDs, UART, and system states." alt="" coords="236,268,444,293"/>
+<area shape="rect" id="node8" href="$group__API__Definitions.html" title="API definitions for the ECU functionalities." alt="" coords="280,317,400,343"/>
+</map>

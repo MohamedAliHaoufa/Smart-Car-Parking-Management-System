@@ -1,0 +1,4 @@
+<map id="I2C Instances" name="I2C Instances">
+<area shape="rect" id="node1" title="Instances of the Inter&#45;Integrated Circuits (I2C1 and I2C2)." alt="" coords="208,5,317,31"/>
+<area shape="rect" id="node2" href="$group__Peripheral__Instances.html" title="Peripheral instances for various hardware modules in the STM32 microcontroller." alt="" coords="5,5,160,31"/>
+</map>

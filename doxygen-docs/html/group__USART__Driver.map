@@ -1,0 +1,6 @@
+<map id="USART Driver" name="USART Driver">
+<area shape="rect" id="node1" title="USART peripheral driver for STM32F401 microcontrollers." alt="" coords="5,70,116,95"/>
+<area shape="rect" id="node2" href="$group__USART__Types.html" title=" " alt="" coords="178,5,381,45"/>
+<area shape="rect" id="node3" href="$group__USART__Functions.html" title=" " alt="" coords="191,70,367,95"/>
+<area shape="rect" id="node4" href="$group__USART__Macros.html" title=" " alt="" coords="164,119,395,145"/>
+</map>

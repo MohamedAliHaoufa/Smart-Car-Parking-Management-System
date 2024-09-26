@@ -1,0 +1,11 @@
+<map id="NVIC Driver" name="NVIC Driver">
+<area shape="rect" id="node1" title="NVIC driver APIs for STM32F401xx MCU." alt="" coords="5,206,104,231"/>
+<area shape="rect" id="node2" href="$group__NVIC__Macros.html" title=" " alt="" coords="173,5,318,45"/>
+<area shape="rect" id="node3" href="$group__NVIC__Register__Definitions.html" title="Macros for accessing NVIC registers." alt="" coords="152,70,339,95"/>
+<area shape="rect" id="node4" href="$group__NVIC__Interrupt__Requests.html" title=" " alt="" coords="174,119,317,145"/>
+<area shape="rect" id="node5" href="$group__NVIC__IRQ__Enable__Disable.html" title="Macros for enabling and disabling NVIC IRQ for different peripherals." alt="" coords="154,169,337,209"/>
+<area shape="rect" id="node6" href="$group__NVIC__Interrupt__Priorities.html" title=" " alt="" coords="175,234,315,259"/>
+<area shape="rect" id="node7" href="$group__NVIC__Interrupt__Status.html" title=" " alt="" coords="184,283,307,309"/>
+<area shape="rect" id="node8" href="$group__NVIC__Priority__Groups.html" title=" " alt="" coords="186,333,305,358"/>
+<area shape="rect" id="node9" href="$group__NVIC__Functions.html" title=" " alt="" coords="157,382,333,407"/>
+</map>

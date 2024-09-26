@@ -1,0 +1,4 @@
+<map id="LCD_t" name="LCD_t">
+<area shape="rect" id="node1" title="Structure for configuring the LCD." alt="" coords="33,95,93,121"/>
+<area shape="rect" id="node2" href="$structGPIO__TypeDef.html" title="General Purpose I/O." alt="" coords="5,5,120,32"/>
+</map>
