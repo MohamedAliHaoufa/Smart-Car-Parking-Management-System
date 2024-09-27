@@ -2,4 +2,4 @@
 *.html linguist-generated
 *.css linguist-generated
 *.js linguist-generated
-*.tex linguist-generated
+doxygen-docs/latex/*.tex linguist-generated
