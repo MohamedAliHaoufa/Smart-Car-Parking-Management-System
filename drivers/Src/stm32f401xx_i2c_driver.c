@@ -7,11 +7,11 @@
  *
  * @details
  * This file implements the driver functions for the I2C (Inter-Integrated Circuit)
- * peripheral of the STM32F103C6 microcontroller. The driver includes functions for
+ * peripheral of the STM32F401VE microcontroller. The driver includes functions for
  * initialization, de-initialization, data transmission, and reception. Additionally,
  * it provides utility functions to facilitate I2C operations.
  *
- * @copyright      Copyright (c) 2023 Fam Ayman. All rights reserved.
+ * @copyright      Copyright (c) 2024 Mohamed Ali Haoufa. All rights reserved.
  */
  
 #include "stm32f401xx_i2c_driver.h"
