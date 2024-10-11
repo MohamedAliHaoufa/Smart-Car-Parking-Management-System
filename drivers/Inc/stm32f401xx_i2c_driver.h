@@ -10,7 +10,7 @@
  * I2C configurations, enumerations for I2C status and control, and function
  * prototypes for I2C operations.
  *
- * @copyright      Copyright (c) 2023 Fam Ayman. All rights reserved.
+ * @copyright      Copyright (c) 2024 Mohamed Ali Haoufa All rights reserved.
  */
 
 #ifndef INC_STM32F401XX_I2C_DRIVER_H_
