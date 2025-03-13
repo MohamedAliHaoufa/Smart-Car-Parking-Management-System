@@ -22,7 +22,7 @@ Streamline parking operations and elevate the parking experience with my Smart C
 
 Below is a professional project file structure description formatted similarly to your example. You can copy and paste this directly into your README.md:
 
----
+
 
 ## Project File Structure
 
