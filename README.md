@@ -12,7 +12,7 @@ Welcome to the Smart Car Parking Management System repository! This project intr
 
 - **Space Reservation:** Reserve parking spaces in advance through mobile apps or web platforms.
 
-- **Security:** Enhance security with CCTV integration and automated alerts for suspicious activities.
+<!-- - **Security:** Enhance security with CCTV integration and automated alerts for suspicious activities. -->
 
 - **Efficiency:** Optimize parking space allocation to maximize capacity and reduce congestion.
 
