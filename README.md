@@ -20,9 +20,6 @@ Welcome to the Smart Car Parking Management System repository! This project intr
 
 Streamline parking operations and elevate the parking experience with my Smart Car Parking Management System. Enhance convenience, security, and efficiency for both facility operators and vehicle owners.
 
-Below is a professional project file structure description formatted similarly to your example. You can copy and paste this directly into your README.md:
-
-
 
 ## Project File Structure
 
